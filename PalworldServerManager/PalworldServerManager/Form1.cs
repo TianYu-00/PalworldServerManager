@@ -31,6 +31,8 @@ namespace PalworldServerManager
         private string isUseMultithreadForDS;
         private string isLog;
         private string isNoSteam;
+        private Form_ServerSettings childForm;
+        private string selectedLanguage;
 
         public Form1()
         {
@@ -45,8 +47,13 @@ namespace PalworldServerManager
             textBox2.Text = localIP;
 
             ReadStartServerArg();
+            LoadServerSettingsForm();
+        }
 
-            Form_ServerSettings childForm = new Form_ServerSettings();
+        private void LoadServerSettingsForm()
+        {
+            childForm = new Form_ServerSettings();
+            childForm.ChangeLanguage(selectedLanguage);
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             panel_ServerSettings.Controls.Add(childForm);
@@ -418,6 +425,27 @@ namespace PalworldServerManager
             {
                 MessageBox.Show($"Error opening GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //https://learn.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes
+            selectedLanguage = comboBox_language.SelectedItem.ToString();
+
+            // Change the application language based on the selected language
+            if (selectedLanguage == "English")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-GB");
+            }
+            else if (selectedLanguage == "Chinese")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
+            }
+
+            this.Controls.Clear();
+            InitializeComponent();
+            LoadServerSettingsForm();
+            //childForm.ChangeLanguage(selectedLanguage);
         }
     }
 }

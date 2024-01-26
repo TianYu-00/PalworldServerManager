@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="button1.Text" xml:space="preserve">
+    <value>保存服务器设置到文件</value>
+  </data>
+  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label63.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label64.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_useAuth.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableDefenseOtherGuildPlayer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_existPlayerAfterLogout.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_isStartLocationSelectByMap.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableFastTravel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableNonLoginPenalty.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_canPickupOtherGuildDeathPenaltyDrop.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_isPvP.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_isMultiplay.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_autoResetGuildNoOnlinePlayers.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableAimAssistKeyboard.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableAimAssistPad.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_activeUNKO.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableInvaderEnemy.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enableFriendlyFire.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_enablePlayerToPlayerDamage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_deathPenalty.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_difficulty.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_banListURL.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_region.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_coopPlayerMaxNum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_workSpeedRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palEggDefaultHatchingTime.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_guildPlayerMaxNum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_autoResetGuildTimeNoOnlinePlayers.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_dropItemAliveMaxHours.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_baseCampWorkerMaxNum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_baseCampMaxNum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_dropItemMaxNum_UNKO.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_dropItemMaxNum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_enemyDropItemRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_collectionObjectRespawnSpeedRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_collectionObjectHpRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_collectionDropRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_buildObjectDeteriorationDamageRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_buildObjectDamageRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palAutoHpRegeneRateInSleep.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palAutoHpRegeneRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palStaminaDecreaceRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palStomachDecreaceRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_playerAutoHpRegeneRateInSleep.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_playerAutoHpRegeneRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_playerStaminaDecreaceRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_playerStomachDecreaceRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_playerDamageRateDefense.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_playerDamageRateAttack.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palDamageRateDefense.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palDamageRateAttack.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palSpawnNumRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_palCaptureRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_expRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_nightTimeSpeedRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_dayTimeSpeedRate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_rconPort.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_publicIP.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_publicPort.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_serverPassword.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_adminPassword.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_serverPlayerMaxNum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_serverDescription.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_serverName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBox_rconEnabled.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>
