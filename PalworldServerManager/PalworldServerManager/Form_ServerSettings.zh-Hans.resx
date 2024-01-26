@@ -364,6 +364,12 @@
   <data name="label34.Text" xml:space="preserve">
     <value>死亡惩罚</value>
   </data>
+  <data name="label34.ToolTip" xml:space="preserve">
+    <value>None不掉落
+Item只掉物品不掉装备
+ItemAndEquipment掉物品和装备
+All全都掉</value>
+  </data>
   <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>

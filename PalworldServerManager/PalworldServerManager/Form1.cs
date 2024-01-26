@@ -41,6 +41,15 @@ namespace PalworldServerManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.Seleceted_Language))
+            {
+                comboBox_language.SelectedItem = Properties.Settings.Default.Seleceted_Language;
+            }
+            OnLoad();
+        }
+
+        private void OnLoad()
+        {
             publicIP = GetPublicIpAddress();
             textBox1.Text = publicIP;
             localIP = GetLocalAddress();
@@ -53,7 +62,6 @@ namespace PalworldServerManager
         private void LoadServerSettingsForm()
         {
             childForm = new Form_ServerSettings();
-            childForm.ChangeLanguage(selectedLanguage);
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             panel_ServerSettings.Controls.Add(childForm);
@@ -430,6 +438,7 @@ namespace PalworldServerManager
         private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
         {
             //https://learn.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes
+
             selectedLanguage = comboBox_language.SelectedItem.ToString();
 
             // Change the application language based on the selected language
@@ -442,10 +451,12 @@ namespace PalworldServerManager
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
             }
 
+            Properties.Settings.Default.Seleceted_Language = selectedLanguage;
+            Properties.Settings.Default.Save();
+
             this.Controls.Clear();
             InitializeComponent();
-            LoadServerSettingsForm();
-            //childForm.ChangeLanguage(selectedLanguage);
+            OnLoad();
         }
     }
 }

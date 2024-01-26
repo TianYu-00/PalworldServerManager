@@ -273,6 +273,10 @@ namespace PalworldServerManager
         public Form_ServerSettings()
         {
             InitializeComponent();
+        }
+
+        public void ServerSettingsOnLoad()
+        {
             comboBox_rconEnabled.MouseWheel += ComboBox_MouseWheel;
             comboBox_difficulty.MouseWheel += ComboBox_MouseWheel;
             comboBox_deathPenalty.MouseWheel += ComboBox_MouseWheel;
@@ -303,6 +307,7 @@ namespace PalworldServerManager
         private void Form_ServerSettings_Load(object sender, EventArgs e)
         {
             //READ GAMEWORLDSETTINGS
+            ServerSettingsOnLoad();
             ReadWorldSettingsFile();
             ReadSettingPreset();
         }
@@ -712,21 +717,6 @@ namespace PalworldServerManager
             {
                 MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        public void ChangeLanguage(string selectedLanguage)
-        {
-            // Change the language of the child form controls
-            if (selectedLanguage == "English")
-            {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
-            }
-            else if (selectedLanguage == "Chinese")
-            {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
-            }
-            this.Controls.Clear(); // Clear existing controls
-            InitializeComponent(); // Reinitialize the form
         }
     }
 }
