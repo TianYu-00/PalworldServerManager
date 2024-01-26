@@ -84,17 +84,16 @@ namespace PalworldServerManager
             this.panel1.Controls.Add(this.button_downloadServer);
             this.panel1.Controls.Add(this.button_downloadSteamCMD);
             this.panel1.Name = "panel1";
-            this.toolTip1.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
             // 
             // comboBox_language
             // 
             resources.ApplyResources(this.comboBox_language, "comboBox_language");
+            this.comboBox_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_language.FormattingEnabled = true;
             this.comboBox_language.Items.AddRange(new object[] {
             resources.GetString("comboBox_language.Items"),
             resources.GetString("comboBox_language.Items1")});
             this.comboBox_language.Name = "comboBox_language";
-            this.toolTip1.SetToolTip(this.comboBox_language, resources.GetString("comboBox_language.ToolTip"));
             this.comboBox_language.SelectedIndexChanged += new System.EventHandler(this.comboBox_language_SelectedIndexChanged);
             // 
             // pictureBox4
@@ -142,7 +141,6 @@ namespace PalworldServerManager
             resources.ApplyResources(this.checkBox_noSteam, "checkBox_noSteam");
             this.checkBox_noSteam.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.checkBox_noSteam.Name = "checkBox_noSteam";
-            this.toolTip1.SetToolTip(this.checkBox_noSteam, resources.GetString("checkBox_noSteam.ToolTip"));
             this.checkBox_noSteam.UseVisualStyleBackColor = true;
             // 
             // checkBox_log
@@ -220,7 +218,6 @@ namespace PalworldServerManager
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // button_startServer
             // 
@@ -250,7 +247,6 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(this.panel_ServerSettings, "panel_ServerSettings");
             this.panel_ServerSettings.Name = "panel_ServerSettings";
-            this.toolTip1.SetToolTip(this.panel_ServerSettings, resources.GetString("panel_ServerSettings.ToolTip"));
             // 
             // Form1
             // 
@@ -259,7 +255,6 @@ namespace PalworldServerManager
             this.Controls.Add(this.panel_ServerSettings);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

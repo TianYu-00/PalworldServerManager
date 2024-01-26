@@ -37,6 +37,8 @@ namespace PalworldServerManager
         public Form1()
         {
             InitializeComponent();
+            // Set the selected option from the saved settings, if available
+            comboBox_language.SelectedItem = Properties.Settings.Default.Selected_Language;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -441,6 +443,10 @@ namespace PalworldServerManager
             {
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
             }
+
+            // Update and save the selected option to settings when the selection changes
+            Properties.Settings.Default.Selected_Language = comboBox_language.SelectedItem.ToString();
+            Properties.Settings.Default.Save();
 
             this.Controls.Clear();
             InitializeComponent();
