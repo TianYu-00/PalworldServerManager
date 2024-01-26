@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="comboBox_language.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -601,9 +598,6 @@
         5/n/B7K/mDoMnzwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="checkBox_noSteam.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_log.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 8.25pt</value>
   </data>
@@ -623,49 +617,40 @@
     <value>改为社区服务器</value>
   </data>
   <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>刷新本地IP</value>
   </data>
   <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button4.Text" xml:space="preserve">
-    <value>刷新公网IP</value>
+    <value>刷新公共IP</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 24pt</value>
+    <value>Microsoft YaHei, 24pt, style=Bold</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>幻兽帕鲁服务器管理器</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_startServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button_startServer.Text" xml:space="preserve">
     <value>运行服务器</value>
   </data>
   <data name="button_downloadServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button_downloadServer.Text" xml:space="preserve">
     <value>下载/更新/验证 服务器文件</value>
   </data>
   <data name="button_downloadSteamCMD.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button_downloadSteamCMD.Text" xml:space="preserve">
     <value>下载解压 Steam CMD</value>
-  </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="panel_ServerSettings.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1510,8 +1495,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>幻兽帕鲁服务器管理器 v1</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

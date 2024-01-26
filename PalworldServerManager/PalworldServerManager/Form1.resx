@@ -120,19 +120,15 @@
   <data name="button_downloadSteamCMD.ToolTip" xml:space="preserve">
     <value>Download &amp; Extract SteamCMD from official site.</value>
   </data>
-  <data name="checkBox_noSteam.ToolTip" xml:space="preserve">
+  <data name="panel_ServerSettings.ToolTip" xml:space="preserve">
     <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 26</value>
+  </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -141,20 +137,27 @@
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="checkBox_log.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="panel_ServerSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;checkBox_communityServer.Name" xml:space="preserve">
+    <value>checkBox_communityServer</value>
+  </data>
+  <data name="comboBox_language.Items1" xml:space="preserve">
+    <value>Chinese</value>
   </data>
   <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkBox_communityServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="&gt;&gt;checkBox_log.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="checkBox_useMultithreadForDS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -165,29 +168,26 @@
   <data name="pictureBox3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox4.ToolTip" xml:space="preserve">
     <value>Direct to github repo.</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
+  <data name="&gt;&gt;button_downloadSteamCMD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 6</value>
   </data>
-  <data name="button_startServer.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>623, 62</value>
   </data>
   <data name="&gt;&gt;comboBox_language.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -201,17 +201,11 @@
   <data name="&gt;&gt;button5.Name" xml:space="preserve">
     <value>button5</value>
   </data>
-  <data name="button_downloadSteamCMD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 63</value>
-  </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
   </data>
   <data name="button_startServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 50</value>
-  </data>
-  <data name="button_downloadSteamCMD.Text" xml:space="preserve">
-    <value>Download and Extract Steam CMD</value>
   </data>
   <data name="checkBox_useMultithreadForDS.Text" xml:space="preserve">
     <value>UseMultithreadForDS</value>
@@ -234,14 +228,11 @@
   <data name="&gt;&gt;checkBox_log.Name" xml:space="preserve">
     <value>checkBox_log</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_noAsyncLoadingThread.Text" xml:space="preserve">
     <value>NoAsyncLoadingThread</value>
   </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
   <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 17</value>
@@ -255,9 +246,6 @@
   <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
   </data>
@@ -266,9 +254,6 @@
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="checkBox_communityServer.ToolTip" xml:space="preserve">
     <value>Enabling this will allow your server to be in community server list.</value>
@@ -1319,20 +1304,20 @@
   <data name="button_downloadSteamCMD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;button_downloadServer.Name" xml:space="preserve">
+    <value>button_downloadServer</value>
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox_communityServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button5.ToolTip" xml:space="preserve">
+    <value>Update your local IP</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="comboBox_language.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 37</value>
+  <data name="panel_ServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="checkBox_communityServer.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1355,8 +1340,14 @@
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;checkBox_noSteam.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;comboBox_language.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="button_downloadServer.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1364,37 +1355,34 @@
   <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="checkBox_useperfthreads.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="checkBox_useMultithreadForDS.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="checkBox_noSteam.Text" xml:space="preserve">
+    <value>NoSteam</value>
   </data>
-  <data name="button4.ToolTip" xml:space="preserve">
-    <value>Update your public IP</value>
+  <data name="checkBox_noSteam.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
     <value>panel1</value>
-  </data>
-  <data name="button_downloadSteamCMD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 23</value>
   </data>
   <data name="checkBox_useMultithreadForDS.ToolTip" xml:space="preserve">
     <value>Improves performance in multi-threaded CPU environments.
 It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
 </value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
-  </data>
-  <data name="&gt;&gt;comboBox_language.Name" xml:space="preserve">
-    <value>comboBox_language</value>
   </data>
   <data name="&gt;&gt;checkBox_useMultithreadForDS.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useMultithreadForDS.Name" xml:space="preserve">
+    <value>checkBox_useMultithreadForDS</value>
   </data>
   <data name="button_startServer.Location" type="System.Drawing.Point, System.Drawing">
     <value>244, 63</value>
@@ -1402,20 +1390,23 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="checkBox_useperfthreads.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
   </data>
-  <data name="pictureBox4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="button_downloadServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>500, 63</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>664, 6</value>
@@ -1435,6 +1426,12 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;checkBox_log.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="button_startServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="comboBox_language.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 37</value>
+  </data>
   <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -1450,14 +1447,8 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="panel_ServerSettings.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button5.ToolTip" xml:space="preserve">
-    <value>Update your local IP</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="comboBox_language.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1474,11 +1465,14 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;panel_ServerSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="pictureBox4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
-    <value>Refresh Local IP</value>
+  <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="checkBox_useperfthreads.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -1493,14 +1487,17 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Improves performance in multi-threaded CPU environments.
 It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.</value>
   </data>
-  <data name="panel_ServerSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 573</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>panel1</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 118</value>
   </data>
   <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1636,8 +1633,8 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;button_downloadServer.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox2.ToolTip" xml:space="preserve">
     <value>Your Local IP</value>
@@ -1648,14 +1645,14 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;button5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>750, 750</value>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="comboBox_language.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 21</value>
+  <data name="button_downloadSteamCMD.Text" xml:space="preserve">
+    <value>Download and Extract Steam CMD</value>
   </data>
   <data name="checkBox_communityServer.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 118</value>
@@ -1663,14 +1660,14 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="checkBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="comboBox_language.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="button4.ToolTip" xml:space="preserve">
+    <value>Update your public IP</value>
   </data>
   <data name="panel_ServerSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="checkBox_communityServer.Text" xml:space="preserve">
-    <value>Make As Community Server</value>
+  <data name="button_downloadServer.ToolTip" xml:space="preserve">
+    <value>Download/Update/Verify your palworld server. Could be used to validate your files if there is an issue with your server.</value>
   </data>
   <data name="&gt;&gt;checkBox_noSteam.Name" xml:space="preserve">
     <value>checkBox_noSteam</value>
@@ -1678,23 +1675,17 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Palworld Server Manager</value>
-  </data>
-  <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Palworld Server Manager v1</value>
   </data>
   <data name="checkBox_log.ToolTip" xml:space="preserve">
     <value>Create a log file to capture information about the session, including any errors or important messages.</value>
   </data>
-  <data name="button_downloadServer.ToolTip" xml:space="preserve">
-    <value>Download/Update/Verify your palworld server. Could be used to validate your files if there is an issue with your server.</value>
+  <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="button_downloadSteamCMD.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="pictureBox3.ToolTip" xml:space="preserve">
     <value>Show Instruction </value>
@@ -1708,23 +1699,29 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="checkBox_noSteam.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
   </data>
-  <data name="checkBox_log.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;checkBox_noSteam.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="button_downloadServer.Text" xml:space="preserve">
     <value>Download/Update/Verify Server</value>
   </data>
-  <data name="comboBox_language.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;comboBox_language.Name" xml:space="preserve">
+    <value>comboBox_language</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Refresh Public IP</value>
   </data>
   <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 17</value>
   </data>
-  <data name="comboBox_language.Items1" xml:space="preserve">
-    <value>Chinese</value>
+  <data name="comboBox_language.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -1738,20 +1735,14 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
     <value>pictureBox3</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;button_downloadServer.Name" xml:space="preserve">
-    <value>button_downloadServer</value>
-  </data>
   <data name="&gt;&gt;checkBox_log.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="&gt;&gt;checkBox_useperfthreads.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="checkBox_noSteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 17</value>
+  <data name="button_startServer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
     <value>textBox1</value>
@@ -1759,14 +1750,14 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox_useperfthreads.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 118</value>
+  <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;checkBox_communityServer.Name" xml:space="preserve">
-    <value>checkBox_communityServer</value>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="button_downloadServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="&gt;&gt;panel_ServerSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1777,8 +1768,8 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1798,11 +1789,14 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;checkBox_useperfthreads.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="button_startServer.ToolTip" xml:space="preserve">
-    <value>Startup the server.</value>
+  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useperfthreads.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_communityServer.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1810,8 +1804,8 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox_noSteam.Text" xml:space="preserve">
-    <value>NoSteam</value>
+  <data name="&gt;&gt;panel_ServerSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>734, 59</value>
@@ -1821,71 +1815,6 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   </data>
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Parent" xml:space="preserve">
     <value>panel1</value>
-  </data>
-  <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="checkBox_useperfthreads.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="pictureBox1.ToolTip" xml:space="preserve">
-    <value>https://github.com/Tianyu-00</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox_useperfthreads.Text" xml:space="preserve">
-    <value>useperfthreads</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAA/dJREFUaEPtmUerFEEURkfMKOa01KUo6q8wYHZn2im6MaBuDTvjShD8HYqIioqg
-        Yg4bsyvDQtSdCRX9TjMXin7dM9NVd3rmPd4Hh5nurr5d1VV169btxrCGsKaJdeKkuCBeiK/iVxP+Pxdc
-        o8xaMVX0hcaJreKy+Cv+VeSPuCS2iLGido0X+8VHYZX6Ka6Jg4KemS9446Ob8J9zXDskrgvusfs/iH2C
-        l1OLVoq3wipwX2wTk0VVTRHbxQNh9t6IFaJr4k2dFfbAh2Kp8NJy8ViY/TPCvXfmCCrOA76JXWKk8BY2
-        94jvgmfR27OFi+YJuhvDeJ2FottaJF4KnvlaUIckzRRm8J6YIeoSzuGm4NnMSUZFlBifNpxuiwmibvHM
-        O4I6MMyi5oxNbIYTi11VjRHHBS4a13qsea6qpgsbFTiASsLFciMTO3ZOUHFshHAuRswZcwB4t47EYmfr
-        BN4pVvRC2AjgXKz2Cmww+TsaYgcENzA/Ulysd0NGiScCOzSqpWiphR2pi13R0DoqUsSKj533omVsRvBG
-        QTxEqpjYNIZegNjJHmqEME+6iRNluiIoROzUr9ohqOPF7KhAuFjCaiLSmACwLrFQsr/5LQrruV7Q0qvZ
-        UX/rhqCuq7OjnE4JLrKf6HcdEdT1RHaUE1tQLq7JjtKEnSK8ZKPnXHaU0yvBRXZxqQorH+KlBQJ75AUG
-        6IvgYkxcVaawEeAlonDsfcqOcsITcDHV14cKGwFeYjHEHh52gIZMQwbT0GLDh73CoeU52U1hI8BLLSe7
-        uV8ygF4KGwFe2iCwV+h+bUEkeealsBHgpZYLIhlALpIt9FLYCPCShSirsqOcCMYsaCQD6KFuNARnZEHj
-        JE4UiYQyDySN6aFuNGSnwBZzulSbBYXIxXoobASkio3VI4GtjZwoEwsN20gKLuNEosJGQKqYE9h5J9p+
-        hiC1T2FanprfDRsBKSL58FRgZzcn2okEhOV6SSjHKKx8ETGyF0yyrm1vmCxbQVKM5FhVhZUuoqqWiB+C
-        eytnd0hPciNvgLRlr0RcRVKOupzmRFUxxEgLYYBEci+S2BPFXUEd+O14SOXF2yAwwxCfFTiuSyx8twTP
-        Zs4mf/DhI4t1LcNssei2mBP2TKLyucJFvA0bZjgAcq+4Q29hE+9kE5vhNEu4ijljDgBIKHt9fWXF5lOG
-        rRPAxI6eE52I7xPW7UAuljQmQWdVMQ+InSzsAIaS59filqJ3GF4WzgARKeH1YUHeiV0cbpscAPCfj0Zs
-        iihDWcsTAGEHK3ZXe6FMPJSsOAlltgBWqU4hFCeKJQDsSQOKREKZXCy7tvOCb4+fBW8d+P9MsD2lDGVL
-        9xPDGtxqNP4DUFp9NZn1PzsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
-  </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button_downloadServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox_language.Items" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>695, 3</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
   </data>
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2026,11 +1955,82 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
         ob4t1eTCS3qTi7+eJhedkZYufPXg/HW4BQv+P8XoN/1qWn4wAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox_useperfthreads.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Palworld Server Manager</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox_useperfthreads.Text" xml:space="preserve">
+    <value>useperfthreads</value>
+  </data>
+  <data name="checkBox_communityServer.Text" xml:space="preserve">
+    <value>Make As Community Server</value>
+  </data>
+  <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAA/dJREFUaEPtmUerFEEURkfMKOa01KUo6q8wYHZn2im6MaBuDTvjShD8HYqIioqg
+        Yg4bsyvDQtSdCRX9TjMXin7dM9NVd3rmPd4Hh5nurr5d1VV169btxrCGsKaJdeKkuCBeiK/iVxP+Pxdc
+        o8xaMVX0hcaJreKy+Cv+VeSPuCS2iLGido0X+8VHYZX6Ka6Jg4KemS9446Ob8J9zXDskrgvusfs/iH2C
+        l1OLVoq3wipwX2wTk0VVTRHbxQNh9t6IFaJr4k2dFfbAh2Kp8NJy8ViY/TPCvXfmCCrOA76JXWKk8BY2
+        94jvgmfR27OFi+YJuhvDeJ2FottaJF4KnvlaUIckzRRm8J6YIeoSzuGm4NnMSUZFlBifNpxuiwmibvHM
+        O4I6MMyi5oxNbIYTi11VjRHHBS4a13qsea6qpgsbFTiASsLFciMTO3ZOUHFshHAuRswZcwB4t47EYmfr
+        BN4pVvRC2AjgXKz2Cmww+TsaYgcENzA/Ulysd0NGiScCOzSqpWiphR2pi13R0DoqUsSKj533omVsRvBG
+        QTxEqpjYNIZegNjJHmqEME+6iRNluiIoROzUr9ohqOPF7KhAuFjCaiLSmACwLrFQsr/5LQrruV7Q0qvZ
+        UX/rhqCuq7OjnE4JLrKf6HcdEdT1RHaUE1tQLq7JjtKEnSK8ZKPnXHaU0yvBRXZxqQorH+KlBQJ75AUG
+        6IvgYkxcVaawEeAlonDsfcqOcsITcDHV14cKGwFeYjHEHh52gIZMQwbT0GLDh73CoeU52U1hI8BLLSe7
+        uV8ygF4KGwFe2iCwV+h+bUEkeealsBHgpZYLIhlALpIt9FLYCPCShSirsqOcCMYsaCQD6KFuNARnZEHj
+        JE4UiYQyDySN6aFuNGSnwBZzulSbBYXIxXoobASkio3VI4GtjZwoEwsN20gKLuNEosJGQKqYE9h5J9p+
+        hiC1T2FanprfDRsBKSL58FRgZzcn2okEhOV6SSjHKKx8ETGyF0yyrm1vmCxbQVKM5FhVhZUuoqqWiB+C
+        eytnd0hPciNvgLRlr0RcRVKOupzmRFUxxEgLYYBEci+S2BPFXUEd+O14SOXF2yAwwxCfFTiuSyx8twTP
+        Zs4mf/DhI4t1LcNssei2mBP2TKLyucJFvA0bZjgAcq+4Q29hE+9kE5vhNEu4ijljDgBIKHt9fWXF5lOG
+        rRPAxI6eE52I7xPW7UAuljQmQWdVMQ+InSzsAIaS59filqJ3GF4WzgARKeH1YUHeiV0cbpscAPCfj0Zs
+        iihDWcsTAGEHK3ZXe6FMPJSsOAlltgBWqU4hFCeKJQDsSQOKREKZXCy7tvOCb4+fBW8d+P9MsD2lDGVL
+        9xPDGtxqNP4DUFp9NZn1PzsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="checkBox_noSteam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="&gt;&gt;button_downloadSteamCMD.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_downloadServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_ServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>734, 573</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>695, 3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="button_downloadSteamCMD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 63</value>
+  </data>
   <data name="textBox1.ToolTip" xml:space="preserve">
     <value>Your Public IP</value>
   </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="button_startServer.ToolTip" xml:space="preserve">
+    <value>Startup the server.</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
@@ -2041,43 +2041,55 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="checkBox_noSteam.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;checkBox_log.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;comboBox_language.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox1.ToolTip" xml:space="preserve">
+    <value>https://github.com/Tianyu-00</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="button_startServer.Text" xml:space="preserve">
     <value>Start Server</value>
   </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.ToolTip" xml:space="preserve">
     <value>Improves performance in multi-threaded CPU environments.
 It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
 </value>
   </data>
-  <data name="checkBox_useperfthreads.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="button5.Text" xml:space="preserve">
+    <value>Refresh Local IP</value>
   </data>
   <data name="pictureBox2.ToolTip" xml:space="preserve">
     <value>Opens up base directory.</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>Refresh Public IP</value>
+  <data name="&gt;&gt;checkBox_communityServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 22</value>
   </data>
-  <data name="checkBox_noAsyncLoadingThread.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 118</value>
+  <data name="comboBox_language.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 21</value>
+  </data>
+  <data name="button_downloadSteamCMD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 23</value>
   </data>
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Name" xml:space="preserve">
     <value>checkBox_noAsyncLoadingThread</value>
@@ -2085,29 +2097,32 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="button_downloadSteamCMD.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
+  <data name="comboBox_language.Items" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+  <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 62</value>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_noSteam.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
+  <data name="checkBox_log.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Name" xml:space="preserve">
-    <value>checkBox_useMultithreadForDS</value>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="checkBox_useperfthreads.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 118</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 25</value>
@@ -2121,11 +2136,11 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>734, 138</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 22</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>750, 750</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
