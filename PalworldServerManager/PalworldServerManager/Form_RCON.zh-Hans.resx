@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel_playersSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel_topSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="richTextBox_output.Text" xml:space="preserve">
     <value>====================================================================
 Info - (显示服务器信息)
@@ -127,7 +139,17 @@ KickPlayer {Steam ID} - (踢出玩家)
 BanPlayer {Steam ID} - (封禁玩家)
 Shutdown {Seconds} {MessageText} - (通知服务器在线玩家n秒后服务器关闭)
 DoExit - (停止服务器)
-====================================================================</value>
+====================================================================
+</value>
+  </data>
+  <data name="richTextBox_output.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel_sendSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_commandText.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button_sendCommand.Font" type="System.Drawing.Font, System.Drawing">
@@ -136,11 +158,23 @@ DoExit - (停止服务器)
   <data name="button_sendCommand.Text" xml:space="preserve">
     <value>发送</value>
   </data>
+  <data name="button_sendCommand.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel_playerListSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="button_kick.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button_kick.Text" xml:space="preserve">
     <value>踢出</value>
+  </data>
+  <data name="button_kick.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button_ban.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -148,14 +182,29 @@ DoExit - (停止服务器)
   <data name="button_ban.Text" xml:space="preserve">
     <value>封禁</value>
   </data>
+  <data name="button_ban.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>名称 | 玩家UID | SteamID</value>
   </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_ipRCON.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="textBox_portRCON.PlaceholderText" xml:space="preserve">
     <value>RCON 端口</value>
+  </data>
+  <data name="textBox_portRCON.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="button_connectRCON.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -163,13 +212,28 @@ DoExit - (停止服务器)
   <data name="button_connectRCON.Text" xml:space="preserve">
     <value>链接 RCON</value>
   </data>
+  <data name="button_connectRCON.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="button_disconnectRCON.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
   <data name="button_disconnectRCON.Text" xml:space="preserve">
     <value>断开 RCON</value>
   </data>
+  <data name="button_disconnectRCON.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="textBox_passwordRCON.PlaceholderText" xml:space="preserve">
     <value>管理员密码</value>
+  </data>
+  <data name="textBox_passwordRCON.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

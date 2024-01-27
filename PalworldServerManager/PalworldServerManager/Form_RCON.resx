@@ -146,7 +146,8 @@ KickPlayer {Steam ID} - (Kick player off the server)
 BanPlayer {Steam ID} - (Ban the player from joining the server)
 Shutdown {Seconds} {MessageText} - (Alert players before shutdown)
 DoExit - (Stop server)
-====================================================================</value>
+====================================================================
+</value>
   </data>
   <data name="&gt;&gt;richTextBox_output.Name" xml:space="preserve">
     <value>richTextBox_output</value>
