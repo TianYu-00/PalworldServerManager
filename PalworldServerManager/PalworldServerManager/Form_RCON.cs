@@ -28,31 +28,41 @@ namespace PalworldServerManager
 
         {
             InitializeComponent();
+            // Set the selection alignment to vertical
         }
 
         private void Form_RCON_Load(object sender, EventArgs e)
         {
+            OnLoad();
             button_connectRCON.Enabled = true;
             button_disconnectRCON.Enabled = false;
+            richTextBox_output.TextChanged += richTextBoxOutput_TextChanged;
+        }
+
+        private void richTextBoxOutput_TextChanged(object sender, EventArgs e)
+        {
+            // set the current caret position to the end
+            richTextBox_output.SelectionStart = richTextBox_output.Text.Length;
+            // scroll it automatically
+            richTextBox_output.ScrollToCaret();
+        }
+
+        private void OnLoad()
+        { 
+            textBox_ipRCON.Text = Properties.Settings.Default.Saved_RconIP;
+            textBox_portRCON.Text = Properties.Settings.Default.Saved_RconPort;
+            textBox_passwordRCON.Text = Properties.Settings.Default.Saved_RconPassword;
         }
 
         private async void ConnectRCON(string ipRcon, int portRcon, string passwordRcon)
         {
-            
+
             try
             {
                 // Open the connection
-                 _rconClient.ConnectAsync();
-                //richTextBox_output.AppendText("Connected to RCON server." + Environment.NewLine);
-            }
-            catch (Exception ex)
-            {
-                richTextBox_output.AppendText($"Failed to connect: {ex.Message}" + Environment.NewLine);
-            }
-
-            try {
+                _rconClient.ConnectAsync();
                 // Send a RCON packet with type AUTH and the RCON password for the target server
-                bool authenticated = await _rconClient.AuthenticateAsync(passwordRCON);
+                var authenticated = await _rconClient.AuthenticateAsync(passwordRCON);
                 richTextBox_output.AppendText("Validating Password..." + Environment.NewLine);
                 if (authenticated)
                 {
@@ -61,6 +71,7 @@ namespace PalworldServerManager
                     GetPlayerList();
                     button_connectRCON.Enabled = false;
                     button_disconnectRCON.Enabled = true;
+                    timer1.Start();
                 }
                 else
                 {
@@ -69,7 +80,33 @@ namespace PalworldServerManager
             }
             catch (Exception ex) { richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine); }
 
-            
+
+        }
+        
+        private async void ReConnectRCON(string ipRcon, int portRcon, string passwordRcon)
+        {
+
+            try
+            {
+                // Open the connection
+                _rconClient.ConnectAsync();
+                // Send a RCON packet with type AUTH and the RCON password for the target server
+                var authenticated = await _rconClient.AuthenticateAsync(passwordRCON);
+                if (authenticated)
+                {
+                    GetPlayerList();
+                    button_connectRCON.Enabled = false;
+                    button_disconnectRCON.Enabled = true;
+                    //richTextBox_output.AppendText("Reconnected" + Environment.NewLine);
+                }
+                else
+                {
+                    richTextBox_output.AppendText("Reconnect Incorrect Password" + Environment.NewLine);
+                }
+            }
+            catch (Exception ex) { richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine); }
+
+
         }
 
         private async void DisconnectRCON()
@@ -86,7 +123,7 @@ namespace PalworldServerManager
                 }
                 else
                 {
-                    //richTextBox_output.AppendText($"Not Connecetd To RCON" + Environment.NewLine);
+                    richTextBox_output.AppendText($"Not Connecetd To RCON" + Environment.NewLine);
                 }
             }
             catch (Exception ex)
@@ -97,17 +134,26 @@ namespace PalworldServerManager
 
         private async void button_connectRCON_Click(object sender, EventArgs e)
         {
+            //Save the settings
+            Properties.Settings.Default.Saved_RconIP = textBox_ipRCON.Text;
+            Properties.Settings.Default.Saved_RconPort = textBox_portRCON.Text;
+            Properties.Settings.Default.Saved_RconPassword = textBox_passwordRCON.Text;
+            Properties.Settings.Default.Save();
+            //Check for empty
             if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
             {
                 richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
                 return;
             }
             
+            //Store the values
             ipRCON = textBox_ipRCON.Text;
             portRCON = int.Parse(textBox_portRCON.Text);
             passwordRCON = textBox_passwordRCON.Text;
             _rconClient = RconClient.Create(ipRCON, portRCON);
             ConnectRCON(ipRCON, portRCON, passwordRCON);
+            
+
 
 
 
@@ -115,22 +161,30 @@ namespace PalworldServerManager
 
         private async void GetPlayerList()
         {
-            string listOfPlayers = await _rconClient.ExecuteCommandAsync("showplayers");
-            //string listOfPlayers = "Player1\nPlayer2\nPlayer3\nPlayer4\nPlayer5\nPlayer6\nPlayer7\nPlayer8\nPlayer9\nPlayer10\nPlayer11\nPlayer12\nPlayer13\nPlayer14\nPlayer15\nPlayer16\nPlayer17\nPlayer18\nPlayer19\nPlayer20\nPlayer21\nPlayer22\nPlayer23\nPlayer24\nPlayer25\nPlayer26\nPlayer27\nPlayer28\nPlayer29\nPlayer30\nPlayer31\nPlayer32\n";
-            // Clear existing buttons if any
-            panel_playerListSection.Controls.Clear();
-            // Split the player list string into individual player names
-            string[] players = listOfPlayers.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-
-            // Create and add buttons for each player except the line on the list
-            for (int i = 1; i < players.Length; i++)
+            try
             {
-                Button button = new Button();
-                button.Text = players[i];
-                button.Dock = DockStyle.Top;
-                button.Click += SelectedPlayer_Click; // Subscribe to Click event
-                panel_playerListSection.Controls.Add(button);
+                string listOfPlayers = await _rconClient.ExecuteCommandAsync("showplayers");
+                //string listOfPlayers = "Player1\nPlayer2\nPlayer3\nPlayer4\nPlayer5\nPlayer6\nPlayer7\nPlayer8\nPlayer9\nPlayer10\nPlayer11\nPlayer12\nPlayer13\nPlayer14\nPlayer15\nPlayer16\nPlayer17\nPlayer18\nPlayer19\nPlayer20\nPlayer21\nPlayer22\nPlayer23\nPlayer24\nPlayer25\nPlayer26\nPlayer27\nPlayer28\nPlayer29\nPlayer30\nPlayer31\nPlayer32\n";
+                // Clear existing buttons if any
+                panel_playerListSection.Controls.Clear();
+                // Split the player list string into individual player names
+                string[] players = listOfPlayers.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+                // Create and add buttons for each player except the line on the list
+                for (int i = 1; i < players.Length; i++)
+                {
+                    Button button = new Button();
+                    button.Text = players[i];
+                    button.Dock = DockStyle.Top;
+                    button.Click += SelectedPlayer_Click; // Subscribe to Click event
+                    panel_playerListSection.Controls.Add(button);
+                }
             }
+            catch (Exception ex)
+            { 
+                //Handle error
+            }
+            
 
         }
         private void SelectedPlayer_Click(object sender, EventArgs e)
@@ -152,14 +206,14 @@ namespace PalworldServerManager
             GetPlayerList();
         }
 
+
         private async void button_sendCommand_Click(object sender, EventArgs e)
         {
-            //TO BE WORKED ON
             try
             {
                 if (_rconClient != null)
                 {
-                    string sendCommand = await _rconClient.ExecuteCommandAsync(textBox_commandText.Text);
+                    var sendCommand = await _rconClient.ExecuteCommandAsync(textBox_commandText.Text);
                     richTextBox_output.AppendText(sendCommand.ToString() + Environment.NewLine);
                     textBox_commandText.Clear();
                 }
@@ -168,47 +222,14 @@ namespace PalworldServerManager
                     richTextBox_output.AppendText($"Not Connecetd To RCON" + Environment.NewLine);
                 }
             }
-            catch (TaskCanceledException tex)
-            {
-                richTextBox_output.AppendText($"TaskCanceledException Error: {tex.Message} " + Environment.NewLine);
-            }
-            catch (NullReferenceException nex)
-            {
-                richTextBox_output.AppendText($"NullReferenceException Error: {nex.Message} " + Environment.NewLine);
-            }
-            catch (Exception ex)
-            {
-                richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
-            }
+            catch (Exception ex) { }
 
-
-            //if (_rconClient != null)
-            //{
-            //    try
-            //    {
-            //        var sendCommand = await _rconClient.ExecuteCommandAsync(textBox_commandText.Text);
-            //        richTextBox_output.AppendText(sendCommand.ToString() + Environment.NewLine);
-            //        textBox_commandText.Clear();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
-            //        DisconnectRCON();
-            //        ConnectRCON(ipRCON, portRCON, passwordRCON);
-
-            //    }
-            //}
-            //else
-            //{
-            //    richTextBox_output.AppendText($"Not Connecetd To RCON" + Environment.NewLine);
-            //}
-               
 
         }
 
         private async void button_kick_Click(object sender, EventArgs e)
         {
-            
+
             if (selectedSteamID != null)
             {
                 try
@@ -258,8 +279,28 @@ namespace PalworldServerManager
         {
 
             DisconnectRCON();
+            timer1.Stop(); // Stop the loop reconnect timer
 
 
+        }
+
+        private async void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                ////Send 1 packet to keep it active
+                //string info = await _rconClient.ExecuteCommandAsync("info");
+                //richTextBox_output.AppendText(info + Environment.NewLine);
+
+                //GetPlayerList has 1 packet PERFECT in this case, itll also update my player list! AWSOME!
+                GetPlayerList();
+            }
+            catch (SocketException sex) { 
+                ReConnectRCON(ipRCON, portRCON, passwordRCON);
+                richTextBox_output.AppendText("Reconnected" + Environment.NewLine);
+            }
+            catch (Exception ex) { }
+            
         }
     }
 }

@@ -52,6 +52,7 @@ namespace PalworldServerManager
             textBox_passwordRCON = new System.Windows.Forms.TextBox();
             button1 = new System.Windows.Forms.Button();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             tableLayoutPanel_sendSection.SuspendLayout();
@@ -196,6 +197,11 @@ namespace PalworldServerManager
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // timer1
+            // 
+            timer1.Interval = 10000;
+            timer1.Tick += timer1_Tick;
+            // 
             // Form_RCON
             // 
             resources.ApplyResources(this, "$this");
@@ -237,5 +243,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button_kick;
         private System.Windows.Forms.Button button_ban;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
