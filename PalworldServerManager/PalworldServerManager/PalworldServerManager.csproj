@@ -71,6 +71,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_RCON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RCON.Designer.cs">
+      <DependentUpon>Form_RCON.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ServerSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.zh-Hans.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RCON.resx">
+      <DependentUpon>Form_RCON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RCON.zh-Hans.resx">
+      <DependentUpon>Form_RCON.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ServerSettings.resx">
       <DependentUpon>Form_ServerSettings.cs</DependentUpon>

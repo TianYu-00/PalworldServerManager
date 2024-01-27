@@ -32,11 +32,6 @@ namespace PalworldServerManager
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox_language = new System.Windows.Forms.ComboBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBox_noSteam = new System.Windows.Forms.CheckBox();
             this.checkBox_log = new System.Windows.Forms.CheckBox();
             this.checkBox_useMultithreadForDS = new System.Windows.Forms.CheckBox();
@@ -51,24 +46,29 @@ namespace PalworldServerManager
             this.button_startServer = new System.Windows.Forms.Button();
             this.button_downloadServer = new System.Windows.Forms.Button();
             this.button_downloadSteamCMD = new System.Windows.Forms.Button();
-            this.panel_ServerSettings = new System.Windows.Forms.Panel();
+            this.panel_chilForm = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.serverSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rCONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.githubToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.repoPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.directoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.baseDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chineseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.instructionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.comboBox_language);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.checkBox_noSteam);
             this.panel1.Controls.Add(this.checkBox_log);
             this.panel1.Controls.Add(this.checkBox_useMultithreadForDS);
@@ -84,65 +84,12 @@ namespace PalworldServerManager
             this.panel1.Controls.Add(this.button_downloadServer);
             this.panel1.Controls.Add(this.button_downloadSteamCMD);
             this.panel1.Name = "panel1";
-            this.toolTip1.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
-            // 
-            // comboBox_language
-            // 
-            resources.ApplyResources(this.comboBox_language, "comboBox_language");
-            this.comboBox_language.FormattingEnabled = true;
-            this.comboBox_language.Items.AddRange(new object[] {
-            resources.GetString("comboBox_language.Items"),
-            resources.GetString("comboBox_language.Items1")});
-            this.comboBox_language.Name = "comboBox_language";
-            this.toolTip1.SetToolTip(this.comboBox_language, resources.GetString("comboBox_language.ToolTip"));
-            this.comboBox_language.SelectedIndexChanged += new System.EventHandler(this.comboBox_language_SelectedIndexChanged);
-            // 
-            // pictureBox4
-            // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, resources.GetString("pictureBox4.ToolTip"));
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, resources.GetString("pictureBox3.ToolTip"));
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // checkBox_noSteam
             // 
             resources.ApplyResources(this.checkBox_noSteam, "checkBox_noSteam");
             this.checkBox_noSteam.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.checkBox_noSteam.Name = "checkBox_noSteam";
-            this.toolTip1.SetToolTip(this.checkBox_noSteam, resources.GetString("checkBox_noSteam.ToolTip"));
             this.checkBox_noSteam.UseVisualStyleBackColor = true;
             // 
             // checkBox_log
@@ -220,7 +167,6 @@ namespace PalworldServerManager
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // button_startServer
             // 
@@ -246,28 +192,121 @@ namespace PalworldServerManager
             this.button_downloadSteamCMD.UseVisualStyleBackColor = true;
             this.button_downloadSteamCMD.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel_ServerSettings
+            // panel_chilForm
             // 
-            resources.ApplyResources(this.panel_ServerSettings, "panel_ServerSettings");
-            this.panel_ServerSettings.Name = "panel_ServerSettings";
-            this.toolTip1.SetToolTip(this.panel_ServerSettings, resources.GetString("panel_ServerSettings.ToolTip"));
+            resources.ApplyResources(this.panel_chilForm, "panel_chilForm");
+            this.panel_chilForm.Name = "panel_chilForm";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.serverSettingsToolStripMenuItem,
+            this.rCONToolStripMenuItem,
+            this.infoToolStripMenuItem,
+            this.languageToolStripMenuItem,
+            this.directoryToolStripMenuItem,
+            this.githubToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // serverSettingsToolStripMenuItem
+            // 
+            this.serverSettingsToolStripMenuItem.Name = "serverSettingsToolStripMenuItem";
+            resources.ApplyResources(this.serverSettingsToolStripMenuItem, "serverSettingsToolStripMenuItem");
+            this.serverSettingsToolStripMenuItem.Click += new System.EventHandler(this.serverSettingsToolStripMenuItem_Click);
+            // 
+            // rCONToolStripMenuItem
+            // 
+            this.rCONToolStripMenuItem.Name = "rCONToolStripMenuItem";
+            resources.ApplyResources(this.rCONToolStripMenuItem, "rCONToolStripMenuItem");
+            this.rCONToolStripMenuItem.Click += new System.EventHandler(this.rCONToolStripMenuItem_Click);
+            // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.githubToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.githubToolStripMenuItem1,
+            this.repoPageToolStripMenuItem});
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
+            // 
+            // githubToolStripMenuItem1
+            // 
+            this.githubToolStripMenuItem1.Name = "githubToolStripMenuItem1";
+            resources.ApplyResources(this.githubToolStripMenuItem1, "githubToolStripMenuItem1");
+            this.githubToolStripMenuItem1.Click += new System.EventHandler(this.githubToolStripMenuItem1_Click);
+            // 
+            // repoPageToolStripMenuItem
+            // 
+            this.repoPageToolStripMenuItem.Name = "repoPageToolStripMenuItem";
+            resources.ApplyResources(this.repoPageToolStripMenuItem, "repoPageToolStripMenuItem");
+            this.repoPageToolStripMenuItem.Click += new System.EventHandler(this.repoPageToolStripMenuItem_Click);
+            // 
+            // directoryToolStripMenuItem
+            // 
+            this.directoryToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.directoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.baseDirectoryToolStripMenuItem});
+            this.directoryToolStripMenuItem.Name = "directoryToolStripMenuItem";
+            resources.ApplyResources(this.directoryToolStripMenuItem, "directoryToolStripMenuItem");
+            // 
+            // baseDirectoryToolStripMenuItem
+            // 
+            this.baseDirectoryToolStripMenuItem.Name = "baseDirectoryToolStripMenuItem";
+            resources.ApplyResources(this.baseDirectoryToolStripMenuItem, "baseDirectoryToolStripMenuItem");
+            this.baseDirectoryToolStripMenuItem.Click += new System.EventHandler(this.baseDirectoryToolStripMenuItem_Click);
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.chineseToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // chineseToolStripMenuItem
+            // 
+            this.chineseToolStripMenuItem.Name = "chineseToolStripMenuItem";
+            resources.ApplyResources(this.chineseToolStripMenuItem, "chineseToolStripMenuItem");
+            this.chineseToolStripMenuItem.Click += new System.EventHandler(this.chineseToolStripMenuItem_Click);
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.instructionToolStripMenuItem});
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            resources.ApplyResources(this.infoToolStripMenuItem, "infoToolStripMenuItem");
+            // 
+            // instructionToolStripMenuItem
+            // 
+            this.instructionToolStripMenuItem.Name = "instructionToolStripMenuItem";
+            resources.ApplyResources(this.instructionToolStripMenuItem, "instructionToolStripMenuItem");
+            this.instructionToolStripMenuItem.Click += new System.EventHandler(this.instructionToolStripMenuItem_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel_ServerSettings);
+            this.Controls.Add(this.panel_chilForm);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,19 +321,27 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel_ServerSettings;
+        private System.Windows.Forms.Panel panel_chilForm;
         private System.Windows.Forms.CheckBox checkBox_communityServer;
         private System.Windows.Forms.CheckBox checkBox_useperfthreads;
         private System.Windows.Forms.CheckBox checkBox_useMultithreadForDS;
         private System.Windows.Forms.CheckBox checkBox_noAsyncLoadingThread;
         private System.Windows.Forms.CheckBox checkBox_log;
         private System.Windows.Forms.CheckBox checkBox_noSteam;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.ComboBox comboBox_language;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem serverSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rCONToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chineseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem directoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem baseDirectoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem instructionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem repoPageToolStripMenuItem;
     }
 }
 

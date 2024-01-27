@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -31,44 +32,68 @@ namespace PalworldServerManager
         private string isUseMultithreadForDS;
         private string isLog;
         private string isNoSteam;
-        private Form_ServerSettings childForm;
-        private string selectedLanguage;
 
         public Form1()
         {
+            LoadLanguage();
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(Properties.Settings.Default.Seleceted_Language))
-            {
-                comboBox_language.SelectedItem = Properties.Settings.Default.Seleceted_Language;
-            }
             OnLoad();
+        }
+
+        private void LoadLanguage()
+        {
+            string selectedLanguage = Properties.Settings.Default.Seleceted_Language;
+
+            if (!string.IsNullOrEmpty(selectedLanguage))
+            {
+                try
+                {
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(selectedLanguage);
+                }
+                catch (CultureNotFoundException ex)
+                {
+                    //Default Language if somehow the code fails to get the language in a readable state
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB");
+                }
+            }
+            else
+            {
+                //Default Language
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB");
+            }
         }
 
         private void OnLoad()
         {
-            publicIP = GetPublicIpAddress();
-            textBox1.Text = publicIP;
-            localIP = GetLocalAddress();
-            textBox2.Text = localIP;
-
+            //Load Mainform values
+            //publicIP = GetPublicIpAddress();
+            //textBox1.Text = publicIP;
+            //localIP = GetLocalAddress();
+            //textBox2.Text = localIP;
             ReadStartServerArg();
-            LoadServerSettingsForm();
+            //Load Form
+            Form_ServerSettings serverSettingsForm = new Form_ServerSettings();
+            LoadForm(serverSettingsForm);
         }
 
-        private void LoadServerSettingsForm()
+        private void LoadForm(Form formToLoad)
         {
-            childForm = new Form_ServerSettings();
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            panel_ServerSettings.Controls.Add(childForm);
-            childForm.Dock = DockStyle.Fill;
-            childForm.Show();
+            //FORMNAME NEWVARIABLENAME = new FORMNAME();
+            if (formToLoad != null)
+            {
+                formToLoad.TopLevel = false;
+                panel_chilForm.Controls.Add(formToLoad);
+                formToLoad.FormBorderStyle = FormBorderStyle.None;
+                formToLoad.Dock = DockStyle.Fill;
+                formToLoad.Show();
+            }
         }
 
+        //MAIN FORM SECTION
         private string GetPublicIpAddress()
         {
             try
@@ -376,21 +401,35 @@ namespace PalworldServerManager
             return (CheckState)Enum.Parse(typeof(CheckState), value);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        //TOOLSTRIPMENU SECTION
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string githubUrl = "https://github.com/Tianyu-00";
-
-            try
-            {
-                Process.Start(githubUrl);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            ChangeLanguage("en-GB", "English"); //culture code, languagename(to let myself know what language it is)
+            Application.Restart();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void chineseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("zh-Hans", "Chinese");
+            Application.Restart();
+        }
+
+        private void ChangeLanguage(string cultureCode, string languageName)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureCode);
+            Properties.Settings.Default.Seleceted_Language = cultureCode;
+            Properties.Settings.Default.Save();
+        }
+
+        private void rCONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void serverSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void baseDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -406,7 +445,7 @@ namespace PalworldServerManager
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void instructionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string title = "Instruction";
             string message = "1)Click Download Steam CMD\n" +
@@ -421,7 +460,21 @@ namespace PalworldServerManager
             MessageBox.Show(message, title);
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void githubToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            string githubUrl = "https://github.com/Tianyu-00";
+
+            try
+            {
+                Process.Start(githubUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void repoPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string githubRepoUrl = "https://github.com/TianYu-00/PalworldServerManager";
 
@@ -433,30 +486,6 @@ namespace PalworldServerManager
             {
                 MessageBox.Show($"Error opening GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //https://learn.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes
-
-            selectedLanguage = comboBox_language.SelectedItem.ToString();
-
-            // Change the application language based on the selected language
-            if (selectedLanguage == "English")
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-GB");
-            }
-            else if (selectedLanguage == "Chinese")
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-Hans");
-            }
-
-            Properties.Settings.Default.Seleceted_Language = selectedLanguage;
-            Properties.Settings.Default.Save();
-
-            this.Controls.Clear();
-            InitializeComponent();
-            OnLoad();
         }
     }
 }
