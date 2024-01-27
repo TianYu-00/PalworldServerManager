@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+  <!--
     Microsoft ResX Schema 
-    
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,16 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 120</value>
+    <value>0, 138</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>709, 814</value>
+    <value>827, 942</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
@@ -139,7 +143,7 @@
     <value>richTextBox1</value>
   </data>
   <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -157,10 +161,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_commandText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 3</value>
+  </data>
+  <data name="textBox_commandText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_commandText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>571, 20</value>
+    <value>665, 23</value>
   </data>
   <data name="textBox_commandText.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -169,7 +176,7 @@
     <value>textBox_commandText</value>
   </data>
   <data name="&gt;&gt;textBox_commandText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_commandText.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -181,10 +188,13 @@
     <value>Top</value>
   </data>
   <data name="button_sendCommand.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 3</value>
+    <value>677, 3</value>
+  </data>
+  <data name="button_sendCommand.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button_sendCommand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
+    <value>146, 23</value>
   </data>
   <data name="button_sendCommand.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -196,7 +206,7 @@
     <value>button_sendCommand</value>
   </data>
   <data name="&gt;&gt;button_sendCommand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_sendCommand.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -208,13 +218,16 @@
     <value>Bottom</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 934</value>
+    <value>0, 1080</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>709, 52</value>
+    <value>827, 58</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -223,7 +236,7 @@
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -241,16 +254,19 @@
     <value>Fill</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 59</value>
+    <value>4, 68</value>
+  </data>
+  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="textBox1.PlaceholderText" xml:space="preserve">
+    <value>IP</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 20</value>
+    <value>405, 23</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Public IP</value>
   </data>
   <data name="textBox1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -259,7 +275,7 @@
     <value>textBox1</value>
   </data>
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -271,22 +287,25 @@
     <value>Fill</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 59</value>
+    <value>417, 68</value>
+  </data>
+  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="textBox2.PlaceholderText" xml:space="preserve">
+    <value>RCON Port</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 20</value>
+    <value>406, 23</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="textBox2.Text" xml:space="preserve">
-    <value>RCON Port</value>
   </data>
   <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
     <value>textBox2</value>
   </data>
   <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -301,10 +320,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_connectRCON.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 3</value>
+  </data>
+  <data name="button_connectRCON.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button_connectRCON.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 50</value>
+    <value>405, 59</value>
   </data>
   <data name="button_connectRCON.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -316,7 +338,7 @@
     <value>button_connectRCON</value>
   </data>
   <data name="&gt;&gt;button_connectRCON.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_connectRCON.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -328,10 +350,13 @@
     <value>Fill</value>
   </data>
   <data name="button_disconnectRCON.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 3</value>
+    <value>417, 3</value>
+  </data>
+  <data name="button_disconnectRCON.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button_disconnectRCON.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 50</value>
+    <value>406, 59</value>
   </data>
   <data name="button_disconnectRCON.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -343,7 +368,7 @@
     <value>button_disconnectRCON</value>
   </data>
   <data name="&gt;&gt;button_disconnectRCON.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_disconnectRCON.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -355,22 +380,25 @@
     <value>Fill</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 88</value>
+    <value>417, 101</value>
+  </data>
+  <data name="textBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="textBox3.PlaceholderText" xml:space="preserve">
+    <value>Password</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 20</value>
+    <value>406, 23</value>
   </data>
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="textBox3.Text" xml:space="preserve">
-    <value>Password</value>
   </data>
   <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
     <value>textBox3</value>
   </data>
   <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -384,11 +412,14 @@
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="tableLayoutPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>709, 120</value>
+    <value>827, 138</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -397,7 +428,7 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -406,7 +437,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_connectRCON" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button_disconnectRCON" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,65.88235,Percent,34.11765,Absolute,34,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_connectRCON" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button_disconnectRCON" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,65.88235,Percent,34.11765,Absolute,39,Absolute,23" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -414,8 +445,11 @@
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>709, 986</value>
+    <value>827, 1138</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -424,7 +458,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -436,13 +470,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>709, 986</value>
+    <value>827, 1138</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>725, 39</value>
+    <value>843, 39</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form_RCON</value>
@@ -451,6 +488,6 @@
     <value>Form_RCON</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

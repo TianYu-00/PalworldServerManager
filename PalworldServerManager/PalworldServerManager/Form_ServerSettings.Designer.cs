@@ -29,1139 +29,1099 @@ namespace PalworldServerManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ServerSettings));
-            this.button1 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label63 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox_useAuth = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableDefenseOtherGuildPlayer = new System.Windows.Forms.ComboBox();
-            this.comboBox_existPlayerAfterLogout = new System.Windows.Forms.ComboBox();
-            this.comboBox_isStartLocationSelectByMap = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableFastTravel = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableNonLoginPenalty = new System.Windows.Forms.ComboBox();
-            this.comboBox_canPickupOtherGuildDeathPenaltyDrop = new System.Windows.Forms.ComboBox();
-            this.comboBox_isPvP = new System.Windows.Forms.ComboBox();
-            this.comboBox_isMultiplay = new System.Windows.Forms.ComboBox();
-            this.comboBox_autoResetGuildNoOnlinePlayers = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableAimAssistKeyboard = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableAimAssistPad = new System.Windows.Forms.ComboBox();
-            this.comboBox_activeUNKO = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableInvaderEnemy = new System.Windows.Forms.ComboBox();
-            this.comboBox_enableFriendlyFire = new System.Windows.Forms.ComboBox();
-            this.comboBox_enablePlayerToPlayerDamage = new System.Windows.Forms.ComboBox();
-            this.comboBox_deathPenalty = new System.Windows.Forms.ComboBox();
-            this.comboBox_difficulty = new System.Windows.Forms.ComboBox();
-            this.textBox_banListURL = new System.Windows.Forms.TextBox();
-            this.textBox_region = new System.Windows.Forms.TextBox();
-            this.textBox_coopPlayerMaxNum = new System.Windows.Forms.TextBox();
-            this.textBox_workSpeedRate = new System.Windows.Forms.TextBox();
-            this.textBox_palEggDefaultHatchingTime = new System.Windows.Forms.TextBox();
-            this.textBox_guildPlayerMaxNum = new System.Windows.Forms.TextBox();
-            this.textBox_autoResetGuildTimeNoOnlinePlayers = new System.Windows.Forms.TextBox();
-            this.textBox_dropItemAliveMaxHours = new System.Windows.Forms.TextBox();
-            this.textBox_baseCampWorkerMaxNum = new System.Windows.Forms.TextBox();
-            this.textBox_baseCampMaxNum = new System.Windows.Forms.TextBox();
-            this.textBox_dropItemMaxNum_UNKO = new System.Windows.Forms.TextBox();
-            this.textBox_dropItemMaxNum = new System.Windows.Forms.TextBox();
-            this.textBox_enemyDropItemRate = new System.Windows.Forms.TextBox();
-            this.textBox_collectionObjectRespawnSpeedRate = new System.Windows.Forms.TextBox();
-            this.textBox_collectionObjectHpRate = new System.Windows.Forms.TextBox();
-            this.textBox_collectionDropRate = new System.Windows.Forms.TextBox();
-            this.textBox_buildObjectDeteriorationDamageRate = new System.Windows.Forms.TextBox();
-            this.textBox_buildObjectDamageRate = new System.Windows.Forms.TextBox();
-            this.textBox_palAutoHpRegeneRateInSleep = new System.Windows.Forms.TextBox();
-            this.textBox_palAutoHpRegeneRate = new System.Windows.Forms.TextBox();
-            this.textBox_palStaminaDecreaceRate = new System.Windows.Forms.TextBox();
-            this.textBox_palStomachDecreaceRate = new System.Windows.Forms.TextBox();
-            this.textBox_playerAutoHpRegeneRateInSleep = new System.Windows.Forms.TextBox();
-            this.textBox_playerAutoHpRegeneRate = new System.Windows.Forms.TextBox();
-            this.textBox_playerStaminaDecreaceRate = new System.Windows.Forms.TextBox();
-            this.textBox_playerStomachDecreaceRate = new System.Windows.Forms.TextBox();
-            this.textBox_playerDamageRateDefense = new System.Windows.Forms.TextBox();
-            this.textBox_playerDamageRateAttack = new System.Windows.Forms.TextBox();
-            this.textBox_palDamageRateDefense = new System.Windows.Forms.TextBox();
-            this.textBox_palDamageRateAttack = new System.Windows.Forms.TextBox();
-            this.textBox_palSpawnNumRate = new System.Windows.Forms.TextBox();
-            this.textBox_palCaptureRate = new System.Windows.Forms.TextBox();
-            this.textBox_expRate = new System.Windows.Forms.TextBox();
-            this.textBox_nightTimeSpeedRate = new System.Windows.Forms.TextBox();
-            this.textBox_dayTimeSpeedRate = new System.Windows.Forms.TextBox();
-            this.textBox_rconPort = new System.Windows.Forms.TextBox();
-            this.textBox_publicIP = new System.Windows.Forms.TextBox();
-            this.textBox_publicPort = new System.Windows.Forms.TextBox();
-            this.textBox_serverPassword = new System.Windows.Forms.TextBox();
-            this.textBox_adminPassword = new System.Windows.Forms.TextBox();
-            this.textBox_serverPlayerMaxNum = new System.Windows.Forms.TextBox();
-            this.textBox_serverDescription = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.textBox_serverName = new System.Windows.Forms.TextBox();
-            this.comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.SuspendLayout();
+            button1 = new System.Windows.Forms.Button();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            button2 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
+            label63 = new System.Windows.Forms.Label();
+            richTextBox2 = new System.Windows.Forms.RichTextBox();
+            label64 = new System.Windows.Forms.Label();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            comboBox_useAuth = new System.Windows.Forms.ComboBox();
+            comboBox_enableDefenseOtherGuildPlayer = new System.Windows.Forms.ComboBox();
+            comboBox_existPlayerAfterLogout = new System.Windows.Forms.ComboBox();
+            comboBox_isStartLocationSelectByMap = new System.Windows.Forms.ComboBox();
+            comboBox_enableFastTravel = new System.Windows.Forms.ComboBox();
+            comboBox_enableNonLoginPenalty = new System.Windows.Forms.ComboBox();
+            comboBox_canPickupOtherGuildDeathPenaltyDrop = new System.Windows.Forms.ComboBox();
+            comboBox_isPvP = new System.Windows.Forms.ComboBox();
+            comboBox_isMultiplay = new System.Windows.Forms.ComboBox();
+            comboBox_autoResetGuildNoOnlinePlayers = new System.Windows.Forms.ComboBox();
+            comboBox_enableAimAssistKeyboard = new System.Windows.Forms.ComboBox();
+            comboBox_enableAimAssistPad = new System.Windows.Forms.ComboBox();
+            comboBox_activeUNKO = new System.Windows.Forms.ComboBox();
+            comboBox_enableInvaderEnemy = new System.Windows.Forms.ComboBox();
+            comboBox_enableFriendlyFire = new System.Windows.Forms.ComboBox();
+            comboBox_enablePlayerToPlayerDamage = new System.Windows.Forms.ComboBox();
+            comboBox_deathPenalty = new System.Windows.Forms.ComboBox();
+            comboBox_difficulty = new System.Windows.Forms.ComboBox();
+            textBox_banListURL = new System.Windows.Forms.TextBox();
+            textBox_region = new System.Windows.Forms.TextBox();
+            textBox_coopPlayerMaxNum = new System.Windows.Forms.TextBox();
+            textBox_workSpeedRate = new System.Windows.Forms.TextBox();
+            textBox_palEggDefaultHatchingTime = new System.Windows.Forms.TextBox();
+            textBox_guildPlayerMaxNum = new System.Windows.Forms.TextBox();
+            textBox_autoResetGuildTimeNoOnlinePlayers = new System.Windows.Forms.TextBox();
+            textBox_dropItemAliveMaxHours = new System.Windows.Forms.TextBox();
+            textBox_baseCampWorkerMaxNum = new System.Windows.Forms.TextBox();
+            textBox_baseCampMaxNum = new System.Windows.Forms.TextBox();
+            textBox_dropItemMaxNum_UNKO = new System.Windows.Forms.TextBox();
+            textBox_dropItemMaxNum = new System.Windows.Forms.TextBox();
+            textBox_enemyDropItemRate = new System.Windows.Forms.TextBox();
+            textBox_collectionObjectRespawnSpeedRate = new System.Windows.Forms.TextBox();
+            textBox_collectionObjectHpRate = new System.Windows.Forms.TextBox();
+            textBox_collectionDropRate = new System.Windows.Forms.TextBox();
+            textBox_buildObjectDeteriorationDamageRate = new System.Windows.Forms.TextBox();
+            textBox_buildObjectDamageRate = new System.Windows.Forms.TextBox();
+            textBox_palAutoHpRegeneRateInSleep = new System.Windows.Forms.TextBox();
+            textBox_palAutoHpRegeneRate = new System.Windows.Forms.TextBox();
+            textBox_palStaminaDecreaceRate = new System.Windows.Forms.TextBox();
+            textBox_palStomachDecreaceRate = new System.Windows.Forms.TextBox();
+            textBox_playerAutoHpRegeneRateInSleep = new System.Windows.Forms.TextBox();
+            textBox_playerAutoHpRegeneRate = new System.Windows.Forms.TextBox();
+            textBox_playerStaminaDecreaceRate = new System.Windows.Forms.TextBox();
+            textBox_playerStomachDecreaceRate = new System.Windows.Forms.TextBox();
+            textBox_playerDamageRateDefense = new System.Windows.Forms.TextBox();
+            textBox_playerDamageRateAttack = new System.Windows.Forms.TextBox();
+            textBox_palDamageRateDefense = new System.Windows.Forms.TextBox();
+            textBox_palDamageRateAttack = new System.Windows.Forms.TextBox();
+            textBox_palSpawnNumRate = new System.Windows.Forms.TextBox();
+            textBox_palCaptureRate = new System.Windows.Forms.TextBox();
+            textBox_expRate = new System.Windows.Forms.TextBox();
+            textBox_nightTimeSpeedRate = new System.Windows.Forms.TextBox();
+            textBox_dayTimeSpeedRate = new System.Windows.Forms.TextBox();
+            textBox_rconPort = new System.Windows.Forms.TextBox();
+            textBox_publicIP = new System.Windows.Forms.TextBox();
+            textBox_publicPort = new System.Windows.Forms.TextBox();
+            textBox_serverPassword = new System.Windows.Forms.TextBox();
+            textBox_adminPassword = new System.Windows.Forms.TextBox();
+            textBox_serverPlayerMaxNum = new System.Windows.Forms.TextBox();
+            textBox_serverDescription = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
+            label8 = new System.Windows.Forms.Label();
+            label9 = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
+            label11 = new System.Windows.Forms.Label();
+            label12 = new System.Windows.Forms.Label();
+            label13 = new System.Windows.Forms.Label();
+            label14 = new System.Windows.Forms.Label();
+            label15 = new System.Windows.Forms.Label();
+            label16 = new System.Windows.Forms.Label();
+            label17 = new System.Windows.Forms.Label();
+            label18 = new System.Windows.Forms.Label();
+            label19 = new System.Windows.Forms.Label();
+            label20 = new System.Windows.Forms.Label();
+            label21 = new System.Windows.Forms.Label();
+            label22 = new System.Windows.Forms.Label();
+            label23 = new System.Windows.Forms.Label();
+            label24 = new System.Windows.Forms.Label();
+            label25 = new System.Windows.Forms.Label();
+            label26 = new System.Windows.Forms.Label();
+            label27 = new System.Windows.Forms.Label();
+            label28 = new System.Windows.Forms.Label();
+            label29 = new System.Windows.Forms.Label();
+            label30 = new System.Windows.Forms.Label();
+            label31 = new System.Windows.Forms.Label();
+            label32 = new System.Windows.Forms.Label();
+            label33 = new System.Windows.Forms.Label();
+            label34 = new System.Windows.Forms.Label();
+            label35 = new System.Windows.Forms.Label();
+            label36 = new System.Windows.Forms.Label();
+            label37 = new System.Windows.Forms.Label();
+            label38 = new System.Windows.Forms.Label();
+            label39 = new System.Windows.Forms.Label();
+            label40 = new System.Windows.Forms.Label();
+            label41 = new System.Windows.Forms.Label();
+            label42 = new System.Windows.Forms.Label();
+            label43 = new System.Windows.Forms.Label();
+            label44 = new System.Windows.Forms.Label();
+            label45 = new System.Windows.Forms.Label();
+            label46 = new System.Windows.Forms.Label();
+            label47 = new System.Windows.Forms.Label();
+            label48 = new System.Windows.Forms.Label();
+            label49 = new System.Windows.Forms.Label();
+            label50 = new System.Windows.Forms.Label();
+            label51 = new System.Windows.Forms.Label();
+            label52 = new System.Windows.Forms.Label();
+            label53 = new System.Windows.Forms.Label();
+            label54 = new System.Windows.Forms.Label();
+            label55 = new System.Windows.Forms.Label();
+            label56 = new System.Windows.Forms.Label();
+            label57 = new System.Windows.Forms.Label();
+            label58 = new System.Windows.Forms.Label();
+            label59 = new System.Windows.Forms.Label();
+            label60 = new System.Windows.Forms.Label();
+            label61 = new System.Windows.Forms.Label();
+            label62 = new System.Windows.Forms.Label();
+            textBox_serverName = new System.Windows.Forms.TextBox();
+            comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
+            toolTip1 = new System.Windows.Forms.ToolTip(components);
+            tableLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            SuspendLayout();
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.toolTip1.SetToolTip(this.button1, resources.GetString("button1.ToolTip"));
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            toolTip1.SetToolTip(button1, resources.GetString("button1.ToolTip"));
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // tableLayoutPanel1
             // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 1, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            resources.ApplyResources(tableLayoutPanel1, "tableLayoutPanel1");
+            tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            tableLayoutPanel1.Controls.Add(button2, 0, 0);
+            tableLayoutPanel1.Controls.Add(button3, 1, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // button2
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.toolTip1.SetToolTip(this.button2, resources.GetString("button2.ToolTip"));
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(button2, "button2");
+            button2.Name = "button2";
+            toolTip1.SetToolTip(button2, resources.GetString("button2.ToolTip"));
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.toolTip1.SetToolTip(this.button3, resources.GetString("button3.ToolTip"));
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            resources.ApplyResources(button3, "button3");
+            button3.Name = "button3";
+            toolTip1.SetToolTip(button3, resources.GetString("button3.ToolTip"));
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.label63);
-            this.panel1.Controls.Add(this.richTextBox2);
-            this.panel1.Controls.Add(this.label64);
-            this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(panel1, "panel1");
+            panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            panel1.Controls.Add(label63);
+            panel1.Controls.Add(richTextBox2);
+            panel1.Controls.Add(label64);
+            panel1.Controls.Add(richTextBox1);
+            panel1.Controls.Add(tableLayoutPanel2);
+            panel1.Name = "panel1";
             // 
             // label63
             // 
-            resources.ApplyResources(this.label63, "label63");
-            this.label63.Name = "label63";
+            resources.ApplyResources(label63, "label63");
+            label63.Name = "label63";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.richTextBox2, "richTextBox2");
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
+            richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(richTextBox2, "richTextBox2");
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.ReadOnly = true;
             // 
             // label64
             // 
-            resources.ApplyResources(this.label64, "label64");
-            this.label64.Name = "label64";
+            resources.ApplyResources(label64, "label64");
+            label64.Name = "label64";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.richTextBox1, "richTextBox1");
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
+            richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(richTextBox1, "richTextBox1");
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
             // 
             // tableLayoutPanel2
             // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_useAuth, 1, 60);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableDefenseOtherGuildPlayer, 1, 57);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_existPlayerAfterLogout, 1, 56);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_isStartLocationSelectByMap, 1, 55);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableFastTravel, 1, 54);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableNonLoginPenalty, 1, 53);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_canPickupOtherGuildDeathPenaltyDrop, 1, 52);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_isPvP, 1, 51);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_isMultiplay, 1, 50);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_autoResetGuildNoOnlinePlayers, 1, 45);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableAimAssistKeyboard, 1, 39);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableAimAssistPad, 1, 38);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_activeUNKO, 1, 37);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableInvaderEnemy, 1, 36);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enableFriendlyFire, 1, 35);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_enablePlayerToPlayerDamage, 1, 34);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_deathPenalty, 1, 33);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_difficulty, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_banListURL, 1, 61);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_region, 1, 59);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_coopPlayerMaxNum, 1, 58);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_workSpeedRate, 1, 49);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palEggDefaultHatchingTime, 1, 48);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_guildPlayerMaxNum, 1, 47);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_autoResetGuildTimeNoOnlinePlayers, 1, 46);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_dropItemAliveMaxHours, 1, 44);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_baseCampWorkerMaxNum, 1, 43);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_baseCampMaxNum, 1, 42);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_dropItemMaxNum_UNKO, 1, 41);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_dropItemMaxNum, 1, 40);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_enemyDropItemRate, 1, 32);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_collectionObjectRespawnSpeedRate, 1, 31);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_collectionObjectHpRate, 1, 30);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_collectionDropRate, 1, 29);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_buildObjectDeteriorationDamageRate, 1, 28);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_buildObjectDamageRate, 1, 27);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palAutoHpRegeneRateInSleep, 1, 26);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palAutoHpRegeneRate, 1, 25);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palStaminaDecreaceRate, 1, 24);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palStomachDecreaceRate, 1, 23);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_playerAutoHpRegeneRateInSleep, 1, 22);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_playerAutoHpRegeneRate, 1, 21);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_playerStaminaDecreaceRate, 1, 20);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_playerStomachDecreaceRate, 1, 19);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_playerDamageRateDefense, 1, 18);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_playerDamageRateAttack, 1, 17);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palDamageRateDefense, 1, 16);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palDamageRateAttack, 1, 15);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palSpawnNumRate, 1, 14);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_palCaptureRate, 1, 13);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_expRate, 1, 12);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_nightTimeSpeedRate, 1, 11);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_dayTimeSpeedRate, 1, 10);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_rconPort, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_publicIP, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_publicPort, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_serverPassword, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_adminPassword, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_serverPlayerMaxNum, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_serverDescription, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label13, 0, 12);
-            this.tableLayoutPanel2.Controls.Add(this.label14, 0, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label15, 0, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 15);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 0, 16);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 17);
-            this.tableLayoutPanel2.Controls.Add(this.label19, 0, 18);
-            this.tableLayoutPanel2.Controls.Add(this.label20, 0, 19);
-            this.tableLayoutPanel2.Controls.Add(this.label21, 0, 20);
-            this.tableLayoutPanel2.Controls.Add(this.label22, 0, 21);
-            this.tableLayoutPanel2.Controls.Add(this.label23, 0, 22);
-            this.tableLayoutPanel2.Controls.Add(this.label24, 0, 23);
-            this.tableLayoutPanel2.Controls.Add(this.label25, 0, 24);
-            this.tableLayoutPanel2.Controls.Add(this.label26, 0, 25);
-            this.tableLayoutPanel2.Controls.Add(this.label27, 0, 26);
-            this.tableLayoutPanel2.Controls.Add(this.label28, 0, 27);
-            this.tableLayoutPanel2.Controls.Add(this.label29, 0, 28);
-            this.tableLayoutPanel2.Controls.Add(this.label30, 0, 29);
-            this.tableLayoutPanel2.Controls.Add(this.label31, 0, 30);
-            this.tableLayoutPanel2.Controls.Add(this.label32, 0, 31);
-            this.tableLayoutPanel2.Controls.Add(this.label33, 0, 32);
-            this.tableLayoutPanel2.Controls.Add(this.label34, 0, 33);
-            this.tableLayoutPanel2.Controls.Add(this.label35, 0, 34);
-            this.tableLayoutPanel2.Controls.Add(this.label36, 0, 35);
-            this.tableLayoutPanel2.Controls.Add(this.label37, 0, 36);
-            this.tableLayoutPanel2.Controls.Add(this.label38, 0, 37);
-            this.tableLayoutPanel2.Controls.Add(this.label39, 0, 38);
-            this.tableLayoutPanel2.Controls.Add(this.label40, 0, 39);
-            this.tableLayoutPanel2.Controls.Add(this.label41, 0, 40);
-            this.tableLayoutPanel2.Controls.Add(this.label42, 0, 41);
-            this.tableLayoutPanel2.Controls.Add(this.label43, 0, 42);
-            this.tableLayoutPanel2.Controls.Add(this.label44, 0, 43);
-            this.tableLayoutPanel2.Controls.Add(this.label45, 0, 44);
-            this.tableLayoutPanel2.Controls.Add(this.label46, 0, 45);
-            this.tableLayoutPanel2.Controls.Add(this.label47, 0, 46);
-            this.tableLayoutPanel2.Controls.Add(this.label48, 0, 47);
-            this.tableLayoutPanel2.Controls.Add(this.label49, 0, 48);
-            this.tableLayoutPanel2.Controls.Add(this.label50, 0, 49);
-            this.tableLayoutPanel2.Controls.Add(this.label51, 0, 50);
-            this.tableLayoutPanel2.Controls.Add(this.label52, 0, 51);
-            this.tableLayoutPanel2.Controls.Add(this.label53, 0, 52);
-            this.tableLayoutPanel2.Controls.Add(this.label54, 0, 53);
-            this.tableLayoutPanel2.Controls.Add(this.label55, 0, 54);
-            this.tableLayoutPanel2.Controls.Add(this.label56, 0, 55);
-            this.tableLayoutPanel2.Controls.Add(this.label57, 0, 56);
-            this.tableLayoutPanel2.Controls.Add(this.label58, 0, 57);
-            this.tableLayoutPanel2.Controls.Add(this.label59, 0, 58);
-            this.tableLayoutPanel2.Controls.Add(this.label60, 0, 59);
-            this.tableLayoutPanel2.Controls.Add(this.label61, 0, 60);
-            this.tableLayoutPanel2.Controls.Add(this.label62, 0, 61);
-            this.tableLayoutPanel2.Controls.Add(this.textBox_serverName, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox_rconEnabled, 1, 7);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
+            tableLayoutPanel2.Controls.Add(comboBox_useAuth, 1, 60);
+            tableLayoutPanel2.Controls.Add(comboBox_enableDefenseOtherGuildPlayer, 1, 57);
+            tableLayoutPanel2.Controls.Add(comboBox_existPlayerAfterLogout, 1, 56);
+            tableLayoutPanel2.Controls.Add(comboBox_isStartLocationSelectByMap, 1, 55);
+            tableLayoutPanel2.Controls.Add(comboBox_enableFastTravel, 1, 54);
+            tableLayoutPanel2.Controls.Add(comboBox_enableNonLoginPenalty, 1, 53);
+            tableLayoutPanel2.Controls.Add(comboBox_canPickupOtherGuildDeathPenaltyDrop, 1, 52);
+            tableLayoutPanel2.Controls.Add(comboBox_isPvP, 1, 51);
+            tableLayoutPanel2.Controls.Add(comboBox_isMultiplay, 1, 50);
+            tableLayoutPanel2.Controls.Add(comboBox_autoResetGuildNoOnlinePlayers, 1, 45);
+            tableLayoutPanel2.Controls.Add(comboBox_enableAimAssistKeyboard, 1, 39);
+            tableLayoutPanel2.Controls.Add(comboBox_enableAimAssistPad, 1, 38);
+            tableLayoutPanel2.Controls.Add(comboBox_activeUNKO, 1, 37);
+            tableLayoutPanel2.Controls.Add(comboBox_enableInvaderEnemy, 1, 36);
+            tableLayoutPanel2.Controls.Add(comboBox_enableFriendlyFire, 1, 35);
+            tableLayoutPanel2.Controls.Add(comboBox_enablePlayerToPlayerDamage, 1, 34);
+            tableLayoutPanel2.Controls.Add(comboBox_deathPenalty, 1, 33);
+            tableLayoutPanel2.Controls.Add(comboBox_difficulty, 1, 9);
+            tableLayoutPanel2.Controls.Add(textBox_banListURL, 1, 61);
+            tableLayoutPanel2.Controls.Add(textBox_region, 1, 59);
+            tableLayoutPanel2.Controls.Add(textBox_coopPlayerMaxNum, 1, 58);
+            tableLayoutPanel2.Controls.Add(textBox_workSpeedRate, 1, 49);
+            tableLayoutPanel2.Controls.Add(textBox_palEggDefaultHatchingTime, 1, 48);
+            tableLayoutPanel2.Controls.Add(textBox_guildPlayerMaxNum, 1, 47);
+            tableLayoutPanel2.Controls.Add(textBox_autoResetGuildTimeNoOnlinePlayers, 1, 46);
+            tableLayoutPanel2.Controls.Add(textBox_dropItemAliveMaxHours, 1, 44);
+            tableLayoutPanel2.Controls.Add(textBox_baseCampWorkerMaxNum, 1, 43);
+            tableLayoutPanel2.Controls.Add(textBox_baseCampMaxNum, 1, 42);
+            tableLayoutPanel2.Controls.Add(textBox_dropItemMaxNum_UNKO, 1, 41);
+            tableLayoutPanel2.Controls.Add(textBox_dropItemMaxNum, 1, 40);
+            tableLayoutPanel2.Controls.Add(textBox_enemyDropItemRate, 1, 32);
+            tableLayoutPanel2.Controls.Add(textBox_collectionObjectRespawnSpeedRate, 1, 31);
+            tableLayoutPanel2.Controls.Add(textBox_collectionObjectHpRate, 1, 30);
+            tableLayoutPanel2.Controls.Add(textBox_collectionDropRate, 1, 29);
+            tableLayoutPanel2.Controls.Add(textBox_buildObjectDeteriorationDamageRate, 1, 28);
+            tableLayoutPanel2.Controls.Add(textBox_buildObjectDamageRate, 1, 27);
+            tableLayoutPanel2.Controls.Add(textBox_palAutoHpRegeneRateInSleep, 1, 26);
+            tableLayoutPanel2.Controls.Add(textBox_palAutoHpRegeneRate, 1, 25);
+            tableLayoutPanel2.Controls.Add(textBox_palStaminaDecreaceRate, 1, 24);
+            tableLayoutPanel2.Controls.Add(textBox_palStomachDecreaceRate, 1, 23);
+            tableLayoutPanel2.Controls.Add(textBox_playerAutoHpRegeneRateInSleep, 1, 22);
+            tableLayoutPanel2.Controls.Add(textBox_playerAutoHpRegeneRate, 1, 21);
+            tableLayoutPanel2.Controls.Add(textBox_playerStaminaDecreaceRate, 1, 20);
+            tableLayoutPanel2.Controls.Add(textBox_playerStomachDecreaceRate, 1, 19);
+            tableLayoutPanel2.Controls.Add(textBox_playerDamageRateDefense, 1, 18);
+            tableLayoutPanel2.Controls.Add(textBox_playerDamageRateAttack, 1, 17);
+            tableLayoutPanel2.Controls.Add(textBox_palDamageRateDefense, 1, 16);
+            tableLayoutPanel2.Controls.Add(textBox_palDamageRateAttack, 1, 15);
+            tableLayoutPanel2.Controls.Add(textBox_palSpawnNumRate, 1, 14);
+            tableLayoutPanel2.Controls.Add(textBox_palCaptureRate, 1, 13);
+            tableLayoutPanel2.Controls.Add(textBox_expRate, 1, 12);
+            tableLayoutPanel2.Controls.Add(textBox_nightTimeSpeedRate, 1, 11);
+            tableLayoutPanel2.Controls.Add(textBox_dayTimeSpeedRate, 1, 10);
+            tableLayoutPanel2.Controls.Add(textBox_rconPort, 1, 8);
+            tableLayoutPanel2.Controls.Add(textBox_publicIP, 1, 6);
+            tableLayoutPanel2.Controls.Add(textBox_publicPort, 1, 5);
+            tableLayoutPanel2.Controls.Add(textBox_serverPassword, 1, 4);
+            tableLayoutPanel2.Controls.Add(textBox_adminPassword, 1, 3);
+            tableLayoutPanel2.Controls.Add(textBox_serverPlayerMaxNum, 1, 2);
+            tableLayoutPanel2.Controls.Add(textBox_serverDescription, 1, 1);
+            tableLayoutPanel2.Controls.Add(label1, 0, 0);
+            tableLayoutPanel2.Controls.Add(label2, 0, 1);
+            tableLayoutPanel2.Controls.Add(label3, 0, 2);
+            tableLayoutPanel2.Controls.Add(label4, 0, 3);
+            tableLayoutPanel2.Controls.Add(label5, 0, 4);
+            tableLayoutPanel2.Controls.Add(label6, 0, 5);
+            tableLayoutPanel2.Controls.Add(label7, 0, 6);
+            tableLayoutPanel2.Controls.Add(label8, 0, 7);
+            tableLayoutPanel2.Controls.Add(label9, 0, 8);
+            tableLayoutPanel2.Controls.Add(label10, 0, 9);
+            tableLayoutPanel2.Controls.Add(label11, 0, 10);
+            tableLayoutPanel2.Controls.Add(label12, 0, 11);
+            tableLayoutPanel2.Controls.Add(label13, 0, 12);
+            tableLayoutPanel2.Controls.Add(label14, 0, 13);
+            tableLayoutPanel2.Controls.Add(label15, 0, 14);
+            tableLayoutPanel2.Controls.Add(label16, 0, 15);
+            tableLayoutPanel2.Controls.Add(label17, 0, 16);
+            tableLayoutPanel2.Controls.Add(label18, 0, 17);
+            tableLayoutPanel2.Controls.Add(label19, 0, 18);
+            tableLayoutPanel2.Controls.Add(label20, 0, 19);
+            tableLayoutPanel2.Controls.Add(label21, 0, 20);
+            tableLayoutPanel2.Controls.Add(label22, 0, 21);
+            tableLayoutPanel2.Controls.Add(label23, 0, 22);
+            tableLayoutPanel2.Controls.Add(label24, 0, 23);
+            tableLayoutPanel2.Controls.Add(label25, 0, 24);
+            tableLayoutPanel2.Controls.Add(label26, 0, 25);
+            tableLayoutPanel2.Controls.Add(label27, 0, 26);
+            tableLayoutPanel2.Controls.Add(label28, 0, 27);
+            tableLayoutPanel2.Controls.Add(label29, 0, 28);
+            tableLayoutPanel2.Controls.Add(label30, 0, 29);
+            tableLayoutPanel2.Controls.Add(label31, 0, 30);
+            tableLayoutPanel2.Controls.Add(label32, 0, 31);
+            tableLayoutPanel2.Controls.Add(label33, 0, 32);
+            tableLayoutPanel2.Controls.Add(label34, 0, 33);
+            tableLayoutPanel2.Controls.Add(label35, 0, 34);
+            tableLayoutPanel2.Controls.Add(label36, 0, 35);
+            tableLayoutPanel2.Controls.Add(label37, 0, 36);
+            tableLayoutPanel2.Controls.Add(label38, 0, 37);
+            tableLayoutPanel2.Controls.Add(label39, 0, 38);
+            tableLayoutPanel2.Controls.Add(label40, 0, 39);
+            tableLayoutPanel2.Controls.Add(label41, 0, 40);
+            tableLayoutPanel2.Controls.Add(label42, 0, 41);
+            tableLayoutPanel2.Controls.Add(label43, 0, 42);
+            tableLayoutPanel2.Controls.Add(label44, 0, 43);
+            tableLayoutPanel2.Controls.Add(label45, 0, 44);
+            tableLayoutPanel2.Controls.Add(label46, 0, 45);
+            tableLayoutPanel2.Controls.Add(label47, 0, 46);
+            tableLayoutPanel2.Controls.Add(label48, 0, 47);
+            tableLayoutPanel2.Controls.Add(label49, 0, 48);
+            tableLayoutPanel2.Controls.Add(label50, 0, 49);
+            tableLayoutPanel2.Controls.Add(label51, 0, 50);
+            tableLayoutPanel2.Controls.Add(label52, 0, 51);
+            tableLayoutPanel2.Controls.Add(label53, 0, 52);
+            tableLayoutPanel2.Controls.Add(label54, 0, 53);
+            tableLayoutPanel2.Controls.Add(label55, 0, 54);
+            tableLayoutPanel2.Controls.Add(label56, 0, 55);
+            tableLayoutPanel2.Controls.Add(label57, 0, 56);
+            tableLayoutPanel2.Controls.Add(label58, 0, 57);
+            tableLayoutPanel2.Controls.Add(label59, 0, 58);
+            tableLayoutPanel2.Controls.Add(label60, 0, 59);
+            tableLayoutPanel2.Controls.Add(label61, 0, 60);
+            tableLayoutPanel2.Controls.Add(label62, 0, 61);
+            tableLayoutPanel2.Controls.Add(textBox_serverName, 1, 0);
+            tableLayoutPanel2.Controls.Add(comboBox_rconEnabled, 1, 7);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // comboBox_useAuth
             // 
-            resources.ApplyResources(this.comboBox_useAuth, "comboBox_useAuth");
-            this.comboBox_useAuth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_useAuth.FormattingEnabled = true;
-            this.comboBox_useAuth.Items.AddRange(new object[] {
-            resources.GetString("comboBox_useAuth.Items"),
-            resources.GetString("comboBox_useAuth.Items1")});
-            this.comboBox_useAuth.Name = "comboBox_useAuth";
+            resources.ApplyResources(comboBox_useAuth, "comboBox_useAuth");
+            comboBox_useAuth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_useAuth.FormattingEnabled = true;
+            comboBox_useAuth.Items.AddRange(new object[] { resources.GetString("comboBox_useAuth.Items"), resources.GetString("comboBox_useAuth.Items1") });
+            comboBox_useAuth.Name = "comboBox_useAuth";
             // 
             // comboBox_enableDefenseOtherGuildPlayer
             // 
-            resources.ApplyResources(this.comboBox_enableDefenseOtherGuildPlayer, "comboBox_enableDefenseOtherGuildPlayer");
-            this.comboBox_enableDefenseOtherGuildPlayer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableDefenseOtherGuildPlayer.FormattingEnabled = true;
-            this.comboBox_enableDefenseOtherGuildPlayer.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableDefenseOtherGuildPlayer.Items"),
-            resources.GetString("comboBox_enableDefenseOtherGuildPlayer.Items1")});
-            this.comboBox_enableDefenseOtherGuildPlayer.Name = "comboBox_enableDefenseOtherGuildPlayer";
+            resources.ApplyResources(comboBox_enableDefenseOtherGuildPlayer, "comboBox_enableDefenseOtherGuildPlayer");
+            comboBox_enableDefenseOtherGuildPlayer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableDefenseOtherGuildPlayer.FormattingEnabled = true;
+            comboBox_enableDefenseOtherGuildPlayer.Items.AddRange(new object[] { resources.GetString("comboBox_enableDefenseOtherGuildPlayer.Items"), resources.GetString("comboBox_enableDefenseOtherGuildPlayer.Items1") });
+            comboBox_enableDefenseOtherGuildPlayer.Name = "comboBox_enableDefenseOtherGuildPlayer";
             // 
             // comboBox_existPlayerAfterLogout
             // 
-            resources.ApplyResources(this.comboBox_existPlayerAfterLogout, "comboBox_existPlayerAfterLogout");
-            this.comboBox_existPlayerAfterLogout.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_existPlayerAfterLogout.FormattingEnabled = true;
-            this.comboBox_existPlayerAfterLogout.Items.AddRange(new object[] {
-            resources.GetString("comboBox_existPlayerAfterLogout.Items"),
-            resources.GetString("comboBox_existPlayerAfterLogout.Items1")});
-            this.comboBox_existPlayerAfterLogout.Name = "comboBox_existPlayerAfterLogout";
+            resources.ApplyResources(comboBox_existPlayerAfterLogout, "comboBox_existPlayerAfterLogout");
+            comboBox_existPlayerAfterLogout.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_existPlayerAfterLogout.FormattingEnabled = true;
+            comboBox_existPlayerAfterLogout.Items.AddRange(new object[] { resources.GetString("comboBox_existPlayerAfterLogout.Items"), resources.GetString("comboBox_existPlayerAfterLogout.Items1") });
+            comboBox_existPlayerAfterLogout.Name = "comboBox_existPlayerAfterLogout";
             // 
             // comboBox_isStartLocationSelectByMap
             // 
-            resources.ApplyResources(this.comboBox_isStartLocationSelectByMap, "comboBox_isStartLocationSelectByMap");
-            this.comboBox_isStartLocationSelectByMap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_isStartLocationSelectByMap.FormattingEnabled = true;
-            this.comboBox_isStartLocationSelectByMap.Items.AddRange(new object[] {
-            resources.GetString("comboBox_isStartLocationSelectByMap.Items"),
-            resources.GetString("comboBox_isStartLocationSelectByMap.Items1")});
-            this.comboBox_isStartLocationSelectByMap.Name = "comboBox_isStartLocationSelectByMap";
+            resources.ApplyResources(comboBox_isStartLocationSelectByMap, "comboBox_isStartLocationSelectByMap");
+            comboBox_isStartLocationSelectByMap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_isStartLocationSelectByMap.FormattingEnabled = true;
+            comboBox_isStartLocationSelectByMap.Items.AddRange(new object[] { resources.GetString("comboBox_isStartLocationSelectByMap.Items"), resources.GetString("comboBox_isStartLocationSelectByMap.Items1") });
+            comboBox_isStartLocationSelectByMap.Name = "comboBox_isStartLocationSelectByMap";
             // 
             // comboBox_enableFastTravel
             // 
-            resources.ApplyResources(this.comboBox_enableFastTravel, "comboBox_enableFastTravel");
-            this.comboBox_enableFastTravel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableFastTravel.FormattingEnabled = true;
-            this.comboBox_enableFastTravel.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableFastTravel.Items"),
-            resources.GetString("comboBox_enableFastTravel.Items1")});
-            this.comboBox_enableFastTravel.Name = "comboBox_enableFastTravel";
+            resources.ApplyResources(comboBox_enableFastTravel, "comboBox_enableFastTravel");
+            comboBox_enableFastTravel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableFastTravel.FormattingEnabled = true;
+            comboBox_enableFastTravel.Items.AddRange(new object[] { resources.GetString("comboBox_enableFastTravel.Items"), resources.GetString("comboBox_enableFastTravel.Items1") });
+            comboBox_enableFastTravel.Name = "comboBox_enableFastTravel";
             // 
             // comboBox_enableNonLoginPenalty
             // 
-            resources.ApplyResources(this.comboBox_enableNonLoginPenalty, "comboBox_enableNonLoginPenalty");
-            this.comboBox_enableNonLoginPenalty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableNonLoginPenalty.FormattingEnabled = true;
-            this.comboBox_enableNonLoginPenalty.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableNonLoginPenalty.Items"),
-            resources.GetString("comboBox_enableNonLoginPenalty.Items1")});
-            this.comboBox_enableNonLoginPenalty.Name = "comboBox_enableNonLoginPenalty";
+            resources.ApplyResources(comboBox_enableNonLoginPenalty, "comboBox_enableNonLoginPenalty");
+            comboBox_enableNonLoginPenalty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableNonLoginPenalty.FormattingEnabled = true;
+            comboBox_enableNonLoginPenalty.Items.AddRange(new object[] { resources.GetString("comboBox_enableNonLoginPenalty.Items"), resources.GetString("comboBox_enableNonLoginPenalty.Items1") });
+            comboBox_enableNonLoginPenalty.Name = "comboBox_enableNonLoginPenalty";
             // 
             // comboBox_canPickupOtherGuildDeathPenaltyDrop
             // 
-            resources.ApplyResources(this.comboBox_canPickupOtherGuildDeathPenaltyDrop, "comboBox_canPickupOtherGuildDeathPenaltyDrop");
-            this.comboBox_canPickupOtherGuildDeathPenaltyDrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_canPickupOtherGuildDeathPenaltyDrop.FormattingEnabled = true;
-            this.comboBox_canPickupOtherGuildDeathPenaltyDrop.Items.AddRange(new object[] {
-            resources.GetString("comboBox_canPickupOtherGuildDeathPenaltyDrop.Items"),
-            resources.GetString("comboBox_canPickupOtherGuildDeathPenaltyDrop.Items1")});
-            this.comboBox_canPickupOtherGuildDeathPenaltyDrop.Name = "comboBox_canPickupOtherGuildDeathPenaltyDrop";
+            resources.ApplyResources(comboBox_canPickupOtherGuildDeathPenaltyDrop, "comboBox_canPickupOtherGuildDeathPenaltyDrop");
+            comboBox_canPickupOtherGuildDeathPenaltyDrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_canPickupOtherGuildDeathPenaltyDrop.FormattingEnabled = true;
+            comboBox_canPickupOtherGuildDeathPenaltyDrop.Items.AddRange(new object[] { resources.GetString("comboBox_canPickupOtherGuildDeathPenaltyDrop.Items"), resources.GetString("comboBox_canPickupOtherGuildDeathPenaltyDrop.Items1") });
+            comboBox_canPickupOtherGuildDeathPenaltyDrop.Name = "comboBox_canPickupOtherGuildDeathPenaltyDrop";
             // 
             // comboBox_isPvP
             // 
-            resources.ApplyResources(this.comboBox_isPvP, "comboBox_isPvP");
-            this.comboBox_isPvP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_isPvP.FormattingEnabled = true;
-            this.comboBox_isPvP.Items.AddRange(new object[] {
-            resources.GetString("comboBox_isPvP.Items"),
-            resources.GetString("comboBox_isPvP.Items1")});
-            this.comboBox_isPvP.Name = "comboBox_isPvP";
+            resources.ApplyResources(comboBox_isPvP, "comboBox_isPvP");
+            comboBox_isPvP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_isPvP.FormattingEnabled = true;
+            comboBox_isPvP.Items.AddRange(new object[] { resources.GetString("comboBox_isPvP.Items"), resources.GetString("comboBox_isPvP.Items1") });
+            comboBox_isPvP.Name = "comboBox_isPvP";
             // 
             // comboBox_isMultiplay
             // 
-            resources.ApplyResources(this.comboBox_isMultiplay, "comboBox_isMultiplay");
-            this.comboBox_isMultiplay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_isMultiplay.FormattingEnabled = true;
-            this.comboBox_isMultiplay.Items.AddRange(new object[] {
-            resources.GetString("comboBox_isMultiplay.Items"),
-            resources.GetString("comboBox_isMultiplay.Items1")});
-            this.comboBox_isMultiplay.Name = "comboBox_isMultiplay";
+            resources.ApplyResources(comboBox_isMultiplay, "comboBox_isMultiplay");
+            comboBox_isMultiplay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_isMultiplay.FormattingEnabled = true;
+            comboBox_isMultiplay.Items.AddRange(new object[] { resources.GetString("comboBox_isMultiplay.Items"), resources.GetString("comboBox_isMultiplay.Items1") });
+            comboBox_isMultiplay.Name = "comboBox_isMultiplay";
             // 
             // comboBox_autoResetGuildNoOnlinePlayers
             // 
-            resources.ApplyResources(this.comboBox_autoResetGuildNoOnlinePlayers, "comboBox_autoResetGuildNoOnlinePlayers");
-            this.comboBox_autoResetGuildNoOnlinePlayers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_autoResetGuildNoOnlinePlayers.FormattingEnabled = true;
-            this.comboBox_autoResetGuildNoOnlinePlayers.Items.AddRange(new object[] {
-            resources.GetString("comboBox_autoResetGuildNoOnlinePlayers.Items"),
-            resources.GetString("comboBox_autoResetGuildNoOnlinePlayers.Items1")});
-            this.comboBox_autoResetGuildNoOnlinePlayers.Name = "comboBox_autoResetGuildNoOnlinePlayers";
+            resources.ApplyResources(comboBox_autoResetGuildNoOnlinePlayers, "comboBox_autoResetGuildNoOnlinePlayers");
+            comboBox_autoResetGuildNoOnlinePlayers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_autoResetGuildNoOnlinePlayers.FormattingEnabled = true;
+            comboBox_autoResetGuildNoOnlinePlayers.Items.AddRange(new object[] { resources.GetString("comboBox_autoResetGuildNoOnlinePlayers.Items"), resources.GetString("comboBox_autoResetGuildNoOnlinePlayers.Items1") });
+            comboBox_autoResetGuildNoOnlinePlayers.Name = "comboBox_autoResetGuildNoOnlinePlayers";
             // 
             // comboBox_enableAimAssistKeyboard
             // 
-            resources.ApplyResources(this.comboBox_enableAimAssistKeyboard, "comboBox_enableAimAssistKeyboard");
-            this.comboBox_enableAimAssistKeyboard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableAimAssistKeyboard.FormattingEnabled = true;
-            this.comboBox_enableAimAssistKeyboard.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableAimAssistKeyboard.Items"),
-            resources.GetString("comboBox_enableAimAssistKeyboard.Items1")});
-            this.comboBox_enableAimAssistKeyboard.Name = "comboBox_enableAimAssistKeyboard";
+            resources.ApplyResources(comboBox_enableAimAssistKeyboard, "comboBox_enableAimAssistKeyboard");
+            comboBox_enableAimAssistKeyboard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableAimAssistKeyboard.FormattingEnabled = true;
+            comboBox_enableAimAssistKeyboard.Items.AddRange(new object[] { resources.GetString("comboBox_enableAimAssistKeyboard.Items"), resources.GetString("comboBox_enableAimAssistKeyboard.Items1") });
+            comboBox_enableAimAssistKeyboard.Name = "comboBox_enableAimAssistKeyboard";
             // 
             // comboBox_enableAimAssistPad
             // 
-            resources.ApplyResources(this.comboBox_enableAimAssistPad, "comboBox_enableAimAssistPad");
-            this.comboBox_enableAimAssistPad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableAimAssistPad.FormattingEnabled = true;
-            this.comboBox_enableAimAssistPad.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableAimAssistPad.Items"),
-            resources.GetString("comboBox_enableAimAssistPad.Items1")});
-            this.comboBox_enableAimAssistPad.Name = "comboBox_enableAimAssistPad";
+            resources.ApplyResources(comboBox_enableAimAssistPad, "comboBox_enableAimAssistPad");
+            comboBox_enableAimAssistPad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableAimAssistPad.FormattingEnabled = true;
+            comboBox_enableAimAssistPad.Items.AddRange(new object[] { resources.GetString("comboBox_enableAimAssistPad.Items"), resources.GetString("comboBox_enableAimAssistPad.Items1") });
+            comboBox_enableAimAssistPad.Name = "comboBox_enableAimAssistPad";
             // 
             // comboBox_activeUNKO
             // 
-            resources.ApplyResources(this.comboBox_activeUNKO, "comboBox_activeUNKO");
-            this.comboBox_activeUNKO.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_activeUNKO.FormattingEnabled = true;
-            this.comboBox_activeUNKO.Items.AddRange(new object[] {
-            resources.GetString("comboBox_activeUNKO.Items"),
-            resources.GetString("comboBox_activeUNKO.Items1")});
-            this.comboBox_activeUNKO.Name = "comboBox_activeUNKO";
+            resources.ApplyResources(comboBox_activeUNKO, "comboBox_activeUNKO");
+            comboBox_activeUNKO.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_activeUNKO.FormattingEnabled = true;
+            comboBox_activeUNKO.Items.AddRange(new object[] { resources.GetString("comboBox_activeUNKO.Items"), resources.GetString("comboBox_activeUNKO.Items1") });
+            comboBox_activeUNKO.Name = "comboBox_activeUNKO";
             // 
             // comboBox_enableInvaderEnemy
             // 
-            resources.ApplyResources(this.comboBox_enableInvaderEnemy, "comboBox_enableInvaderEnemy");
-            this.comboBox_enableInvaderEnemy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableInvaderEnemy.FormattingEnabled = true;
-            this.comboBox_enableInvaderEnemy.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableInvaderEnemy.Items"),
-            resources.GetString("comboBox_enableInvaderEnemy.Items1")});
-            this.comboBox_enableInvaderEnemy.Name = "comboBox_enableInvaderEnemy";
+            resources.ApplyResources(comboBox_enableInvaderEnemy, "comboBox_enableInvaderEnemy");
+            comboBox_enableInvaderEnemy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableInvaderEnemy.FormattingEnabled = true;
+            comboBox_enableInvaderEnemy.Items.AddRange(new object[] { resources.GetString("comboBox_enableInvaderEnemy.Items"), resources.GetString("comboBox_enableInvaderEnemy.Items1") });
+            comboBox_enableInvaderEnemy.Name = "comboBox_enableInvaderEnemy";
             // 
             // comboBox_enableFriendlyFire
             // 
-            resources.ApplyResources(this.comboBox_enableFriendlyFire, "comboBox_enableFriendlyFire");
-            this.comboBox_enableFriendlyFire.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enableFriendlyFire.FormattingEnabled = true;
-            this.comboBox_enableFriendlyFire.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enableFriendlyFire.Items"),
-            resources.GetString("comboBox_enableFriendlyFire.Items1")});
-            this.comboBox_enableFriendlyFire.Name = "comboBox_enableFriendlyFire";
+            resources.ApplyResources(comboBox_enableFriendlyFire, "comboBox_enableFriendlyFire");
+            comboBox_enableFriendlyFire.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enableFriendlyFire.FormattingEnabled = true;
+            comboBox_enableFriendlyFire.Items.AddRange(new object[] { resources.GetString("comboBox_enableFriendlyFire.Items"), resources.GetString("comboBox_enableFriendlyFire.Items1") });
+            comboBox_enableFriendlyFire.Name = "comboBox_enableFriendlyFire";
             // 
             // comboBox_enablePlayerToPlayerDamage
             // 
-            resources.ApplyResources(this.comboBox_enablePlayerToPlayerDamage, "comboBox_enablePlayerToPlayerDamage");
-            this.comboBox_enablePlayerToPlayerDamage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_enablePlayerToPlayerDamage.FormattingEnabled = true;
-            this.comboBox_enablePlayerToPlayerDamage.Items.AddRange(new object[] {
-            resources.GetString("comboBox_enablePlayerToPlayerDamage.Items"),
-            resources.GetString("comboBox_enablePlayerToPlayerDamage.Items1")});
-            this.comboBox_enablePlayerToPlayerDamage.Name = "comboBox_enablePlayerToPlayerDamage";
+            resources.ApplyResources(comboBox_enablePlayerToPlayerDamage, "comboBox_enablePlayerToPlayerDamage");
+            comboBox_enablePlayerToPlayerDamage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_enablePlayerToPlayerDamage.FormattingEnabled = true;
+            comboBox_enablePlayerToPlayerDamage.Items.AddRange(new object[] { resources.GetString("comboBox_enablePlayerToPlayerDamage.Items"), resources.GetString("comboBox_enablePlayerToPlayerDamage.Items1") });
+            comboBox_enablePlayerToPlayerDamage.Name = "comboBox_enablePlayerToPlayerDamage";
             // 
             // comboBox_deathPenalty
             // 
-            resources.ApplyResources(this.comboBox_deathPenalty, "comboBox_deathPenalty");
-            this.comboBox_deathPenalty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_deathPenalty.FormattingEnabled = true;
-            this.comboBox_deathPenalty.Items.AddRange(new object[] {
-            resources.GetString("comboBox_deathPenalty.Items"),
-            resources.GetString("comboBox_deathPenalty.Items1"),
-            resources.GetString("comboBox_deathPenalty.Items2"),
-            resources.GetString("comboBox_deathPenalty.Items3")});
-            this.comboBox_deathPenalty.Name = "comboBox_deathPenalty";
+            resources.ApplyResources(comboBox_deathPenalty, "comboBox_deathPenalty");
+            comboBox_deathPenalty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_deathPenalty.FormattingEnabled = true;
+            comboBox_deathPenalty.Items.AddRange(new object[] { resources.GetString("comboBox_deathPenalty.Items"), resources.GetString("comboBox_deathPenalty.Items1"), resources.GetString("comboBox_deathPenalty.Items2"), resources.GetString("comboBox_deathPenalty.Items3") });
+            comboBox_deathPenalty.Name = "comboBox_deathPenalty";
             // 
             // comboBox_difficulty
             // 
-            resources.ApplyResources(this.comboBox_difficulty, "comboBox_difficulty");
-            this.comboBox_difficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_difficulty.FormattingEnabled = true;
-            this.comboBox_difficulty.Items.AddRange(new object[] {
-            resources.GetString("comboBox_difficulty.Items")});
-            this.comboBox_difficulty.Name = "comboBox_difficulty";
+            resources.ApplyResources(comboBox_difficulty, "comboBox_difficulty");
+            comboBox_difficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_difficulty.FormattingEnabled = true;
+            comboBox_difficulty.Items.AddRange(new object[] { resources.GetString("comboBox_difficulty.Items") });
+            comboBox_difficulty.Name = "comboBox_difficulty";
             // 
             // textBox_banListURL
             // 
-            resources.ApplyResources(this.textBox_banListURL, "textBox_banListURL");
-            this.textBox_banListURL.Name = "textBox_banListURL";
+            resources.ApplyResources(textBox_banListURL, "textBox_banListURL");
+            textBox_banListURL.Name = "textBox_banListURL";
             // 
             // textBox_region
             // 
-            resources.ApplyResources(this.textBox_region, "textBox_region");
-            this.textBox_region.Name = "textBox_region";
+            resources.ApplyResources(textBox_region, "textBox_region");
+            textBox_region.Name = "textBox_region";
             // 
             // textBox_coopPlayerMaxNum
             // 
-            resources.ApplyResources(this.textBox_coopPlayerMaxNum, "textBox_coopPlayerMaxNum");
-            this.textBox_coopPlayerMaxNum.Name = "textBox_coopPlayerMaxNum";
+            resources.ApplyResources(textBox_coopPlayerMaxNum, "textBox_coopPlayerMaxNum");
+            textBox_coopPlayerMaxNum.Name = "textBox_coopPlayerMaxNum";
             // 
             // textBox_workSpeedRate
             // 
-            resources.ApplyResources(this.textBox_workSpeedRate, "textBox_workSpeedRate");
-            this.textBox_workSpeedRate.Name = "textBox_workSpeedRate";
+            resources.ApplyResources(textBox_workSpeedRate, "textBox_workSpeedRate");
+            textBox_workSpeedRate.Name = "textBox_workSpeedRate";
             // 
             // textBox_palEggDefaultHatchingTime
             // 
-            resources.ApplyResources(this.textBox_palEggDefaultHatchingTime, "textBox_palEggDefaultHatchingTime");
-            this.textBox_palEggDefaultHatchingTime.Name = "textBox_palEggDefaultHatchingTime";
+            resources.ApplyResources(textBox_palEggDefaultHatchingTime, "textBox_palEggDefaultHatchingTime");
+            textBox_palEggDefaultHatchingTime.Name = "textBox_palEggDefaultHatchingTime";
             // 
             // textBox_guildPlayerMaxNum
             // 
-            resources.ApplyResources(this.textBox_guildPlayerMaxNum, "textBox_guildPlayerMaxNum");
-            this.textBox_guildPlayerMaxNum.Name = "textBox_guildPlayerMaxNum";
+            resources.ApplyResources(textBox_guildPlayerMaxNum, "textBox_guildPlayerMaxNum");
+            textBox_guildPlayerMaxNum.Name = "textBox_guildPlayerMaxNum";
             // 
             // textBox_autoResetGuildTimeNoOnlinePlayers
             // 
-            resources.ApplyResources(this.textBox_autoResetGuildTimeNoOnlinePlayers, "textBox_autoResetGuildTimeNoOnlinePlayers");
-            this.textBox_autoResetGuildTimeNoOnlinePlayers.Name = "textBox_autoResetGuildTimeNoOnlinePlayers";
+            resources.ApplyResources(textBox_autoResetGuildTimeNoOnlinePlayers, "textBox_autoResetGuildTimeNoOnlinePlayers");
+            textBox_autoResetGuildTimeNoOnlinePlayers.Name = "textBox_autoResetGuildTimeNoOnlinePlayers";
             // 
             // textBox_dropItemAliveMaxHours
             // 
-            resources.ApplyResources(this.textBox_dropItemAliveMaxHours, "textBox_dropItemAliveMaxHours");
-            this.textBox_dropItemAliveMaxHours.Name = "textBox_dropItemAliveMaxHours";
+            resources.ApplyResources(textBox_dropItemAliveMaxHours, "textBox_dropItemAliveMaxHours");
+            textBox_dropItemAliveMaxHours.Name = "textBox_dropItemAliveMaxHours";
             // 
             // textBox_baseCampWorkerMaxNum
             // 
-            resources.ApplyResources(this.textBox_baseCampWorkerMaxNum, "textBox_baseCampWorkerMaxNum");
-            this.textBox_baseCampWorkerMaxNum.Name = "textBox_baseCampWorkerMaxNum";
+            resources.ApplyResources(textBox_baseCampWorkerMaxNum, "textBox_baseCampWorkerMaxNum");
+            textBox_baseCampWorkerMaxNum.Name = "textBox_baseCampWorkerMaxNum";
             // 
             // textBox_baseCampMaxNum
             // 
-            resources.ApplyResources(this.textBox_baseCampMaxNum, "textBox_baseCampMaxNum");
-            this.textBox_baseCampMaxNum.Name = "textBox_baseCampMaxNum";
+            resources.ApplyResources(textBox_baseCampMaxNum, "textBox_baseCampMaxNum");
+            textBox_baseCampMaxNum.Name = "textBox_baseCampMaxNum";
             // 
             // textBox_dropItemMaxNum_UNKO
             // 
-            resources.ApplyResources(this.textBox_dropItemMaxNum_UNKO, "textBox_dropItemMaxNum_UNKO");
-            this.textBox_dropItemMaxNum_UNKO.Name = "textBox_dropItemMaxNum_UNKO";
+            resources.ApplyResources(textBox_dropItemMaxNum_UNKO, "textBox_dropItemMaxNum_UNKO");
+            textBox_dropItemMaxNum_UNKO.Name = "textBox_dropItemMaxNum_UNKO";
             // 
             // textBox_dropItemMaxNum
             // 
-            resources.ApplyResources(this.textBox_dropItemMaxNum, "textBox_dropItemMaxNum");
-            this.textBox_dropItemMaxNum.Name = "textBox_dropItemMaxNum";
+            resources.ApplyResources(textBox_dropItemMaxNum, "textBox_dropItemMaxNum");
+            textBox_dropItemMaxNum.Name = "textBox_dropItemMaxNum";
             // 
             // textBox_enemyDropItemRate
             // 
-            resources.ApplyResources(this.textBox_enemyDropItemRate, "textBox_enemyDropItemRate");
-            this.textBox_enemyDropItemRate.Name = "textBox_enemyDropItemRate";
+            resources.ApplyResources(textBox_enemyDropItemRate, "textBox_enemyDropItemRate");
+            textBox_enemyDropItemRate.Name = "textBox_enemyDropItemRate";
             // 
             // textBox_collectionObjectRespawnSpeedRate
             // 
-            resources.ApplyResources(this.textBox_collectionObjectRespawnSpeedRate, "textBox_collectionObjectRespawnSpeedRate");
-            this.textBox_collectionObjectRespawnSpeedRate.Name = "textBox_collectionObjectRespawnSpeedRate";
+            resources.ApplyResources(textBox_collectionObjectRespawnSpeedRate, "textBox_collectionObjectRespawnSpeedRate");
+            textBox_collectionObjectRespawnSpeedRate.Name = "textBox_collectionObjectRespawnSpeedRate";
             // 
             // textBox_collectionObjectHpRate
             // 
-            resources.ApplyResources(this.textBox_collectionObjectHpRate, "textBox_collectionObjectHpRate");
-            this.textBox_collectionObjectHpRate.Name = "textBox_collectionObjectHpRate";
+            resources.ApplyResources(textBox_collectionObjectHpRate, "textBox_collectionObjectHpRate");
+            textBox_collectionObjectHpRate.Name = "textBox_collectionObjectHpRate";
             // 
             // textBox_collectionDropRate
             // 
-            resources.ApplyResources(this.textBox_collectionDropRate, "textBox_collectionDropRate");
-            this.textBox_collectionDropRate.Name = "textBox_collectionDropRate";
+            resources.ApplyResources(textBox_collectionDropRate, "textBox_collectionDropRate");
+            textBox_collectionDropRate.Name = "textBox_collectionDropRate";
             // 
             // textBox_buildObjectDeteriorationDamageRate
             // 
-            resources.ApplyResources(this.textBox_buildObjectDeteriorationDamageRate, "textBox_buildObjectDeteriorationDamageRate");
-            this.textBox_buildObjectDeteriorationDamageRate.Name = "textBox_buildObjectDeteriorationDamageRate";
+            resources.ApplyResources(textBox_buildObjectDeteriorationDamageRate, "textBox_buildObjectDeteriorationDamageRate");
+            textBox_buildObjectDeteriorationDamageRate.Name = "textBox_buildObjectDeteriorationDamageRate";
             // 
             // textBox_buildObjectDamageRate
             // 
-            resources.ApplyResources(this.textBox_buildObjectDamageRate, "textBox_buildObjectDamageRate");
-            this.textBox_buildObjectDamageRate.Name = "textBox_buildObjectDamageRate";
+            resources.ApplyResources(textBox_buildObjectDamageRate, "textBox_buildObjectDamageRate");
+            textBox_buildObjectDamageRate.Name = "textBox_buildObjectDamageRate";
             // 
             // textBox_palAutoHpRegeneRateInSleep
             // 
-            resources.ApplyResources(this.textBox_palAutoHpRegeneRateInSleep, "textBox_palAutoHpRegeneRateInSleep");
-            this.textBox_palAutoHpRegeneRateInSleep.Name = "textBox_palAutoHpRegeneRateInSleep";
+            resources.ApplyResources(textBox_palAutoHpRegeneRateInSleep, "textBox_palAutoHpRegeneRateInSleep");
+            textBox_palAutoHpRegeneRateInSleep.Name = "textBox_palAutoHpRegeneRateInSleep";
             // 
             // textBox_palAutoHpRegeneRate
             // 
-            resources.ApplyResources(this.textBox_palAutoHpRegeneRate, "textBox_palAutoHpRegeneRate");
-            this.textBox_palAutoHpRegeneRate.Name = "textBox_palAutoHpRegeneRate";
+            resources.ApplyResources(textBox_palAutoHpRegeneRate, "textBox_palAutoHpRegeneRate");
+            textBox_palAutoHpRegeneRate.Name = "textBox_palAutoHpRegeneRate";
             // 
             // textBox_palStaminaDecreaceRate
             // 
-            resources.ApplyResources(this.textBox_palStaminaDecreaceRate, "textBox_palStaminaDecreaceRate");
-            this.textBox_palStaminaDecreaceRate.Name = "textBox_palStaminaDecreaceRate";
+            resources.ApplyResources(textBox_palStaminaDecreaceRate, "textBox_palStaminaDecreaceRate");
+            textBox_palStaminaDecreaceRate.Name = "textBox_palStaminaDecreaceRate";
             // 
             // textBox_palStomachDecreaceRate
             // 
-            resources.ApplyResources(this.textBox_palStomachDecreaceRate, "textBox_palStomachDecreaceRate");
-            this.textBox_palStomachDecreaceRate.Name = "textBox_palStomachDecreaceRate";
+            resources.ApplyResources(textBox_palStomachDecreaceRate, "textBox_palStomachDecreaceRate");
+            textBox_palStomachDecreaceRate.Name = "textBox_palStomachDecreaceRate";
             // 
             // textBox_playerAutoHpRegeneRateInSleep
             // 
-            resources.ApplyResources(this.textBox_playerAutoHpRegeneRateInSleep, "textBox_playerAutoHpRegeneRateInSleep");
-            this.textBox_playerAutoHpRegeneRateInSleep.Name = "textBox_playerAutoHpRegeneRateInSleep";
+            resources.ApplyResources(textBox_playerAutoHpRegeneRateInSleep, "textBox_playerAutoHpRegeneRateInSleep");
+            textBox_playerAutoHpRegeneRateInSleep.Name = "textBox_playerAutoHpRegeneRateInSleep";
             // 
             // textBox_playerAutoHpRegeneRate
             // 
-            resources.ApplyResources(this.textBox_playerAutoHpRegeneRate, "textBox_playerAutoHpRegeneRate");
-            this.textBox_playerAutoHpRegeneRate.Name = "textBox_playerAutoHpRegeneRate";
+            resources.ApplyResources(textBox_playerAutoHpRegeneRate, "textBox_playerAutoHpRegeneRate");
+            textBox_playerAutoHpRegeneRate.Name = "textBox_playerAutoHpRegeneRate";
             // 
             // textBox_playerStaminaDecreaceRate
             // 
-            resources.ApplyResources(this.textBox_playerStaminaDecreaceRate, "textBox_playerStaminaDecreaceRate");
-            this.textBox_playerStaminaDecreaceRate.Name = "textBox_playerStaminaDecreaceRate";
+            resources.ApplyResources(textBox_playerStaminaDecreaceRate, "textBox_playerStaminaDecreaceRate");
+            textBox_playerStaminaDecreaceRate.Name = "textBox_playerStaminaDecreaceRate";
             // 
             // textBox_playerStomachDecreaceRate
             // 
-            resources.ApplyResources(this.textBox_playerStomachDecreaceRate, "textBox_playerStomachDecreaceRate");
-            this.textBox_playerStomachDecreaceRate.Name = "textBox_playerStomachDecreaceRate";
+            resources.ApplyResources(textBox_playerStomachDecreaceRate, "textBox_playerStomachDecreaceRate");
+            textBox_playerStomachDecreaceRate.Name = "textBox_playerStomachDecreaceRate";
             // 
             // textBox_playerDamageRateDefense
             // 
-            resources.ApplyResources(this.textBox_playerDamageRateDefense, "textBox_playerDamageRateDefense");
-            this.textBox_playerDamageRateDefense.Name = "textBox_playerDamageRateDefense";
+            resources.ApplyResources(textBox_playerDamageRateDefense, "textBox_playerDamageRateDefense");
+            textBox_playerDamageRateDefense.Name = "textBox_playerDamageRateDefense";
             // 
             // textBox_playerDamageRateAttack
             // 
-            resources.ApplyResources(this.textBox_playerDamageRateAttack, "textBox_playerDamageRateAttack");
-            this.textBox_playerDamageRateAttack.Name = "textBox_playerDamageRateAttack";
+            resources.ApplyResources(textBox_playerDamageRateAttack, "textBox_playerDamageRateAttack");
+            textBox_playerDamageRateAttack.Name = "textBox_playerDamageRateAttack";
             // 
             // textBox_palDamageRateDefense
             // 
-            resources.ApplyResources(this.textBox_palDamageRateDefense, "textBox_palDamageRateDefense");
-            this.textBox_palDamageRateDefense.Name = "textBox_palDamageRateDefense";
+            resources.ApplyResources(textBox_palDamageRateDefense, "textBox_palDamageRateDefense");
+            textBox_palDamageRateDefense.Name = "textBox_palDamageRateDefense";
             // 
             // textBox_palDamageRateAttack
             // 
-            resources.ApplyResources(this.textBox_palDamageRateAttack, "textBox_palDamageRateAttack");
-            this.textBox_palDamageRateAttack.Name = "textBox_palDamageRateAttack";
+            resources.ApplyResources(textBox_palDamageRateAttack, "textBox_palDamageRateAttack");
+            textBox_palDamageRateAttack.Name = "textBox_palDamageRateAttack";
             // 
             // textBox_palSpawnNumRate
             // 
-            resources.ApplyResources(this.textBox_palSpawnNumRate, "textBox_palSpawnNumRate");
-            this.textBox_palSpawnNumRate.Name = "textBox_palSpawnNumRate";
+            resources.ApplyResources(textBox_palSpawnNumRate, "textBox_palSpawnNumRate");
+            textBox_palSpawnNumRate.Name = "textBox_palSpawnNumRate";
             // 
             // textBox_palCaptureRate
             // 
-            resources.ApplyResources(this.textBox_palCaptureRate, "textBox_palCaptureRate");
-            this.textBox_palCaptureRate.Name = "textBox_palCaptureRate";
+            resources.ApplyResources(textBox_palCaptureRate, "textBox_palCaptureRate");
+            textBox_palCaptureRate.Name = "textBox_palCaptureRate";
             // 
             // textBox_expRate
             // 
-            resources.ApplyResources(this.textBox_expRate, "textBox_expRate");
-            this.textBox_expRate.Name = "textBox_expRate";
+            resources.ApplyResources(textBox_expRate, "textBox_expRate");
+            textBox_expRate.Name = "textBox_expRate";
             // 
             // textBox_nightTimeSpeedRate
             // 
-            resources.ApplyResources(this.textBox_nightTimeSpeedRate, "textBox_nightTimeSpeedRate");
-            this.textBox_nightTimeSpeedRate.Name = "textBox_nightTimeSpeedRate";
+            resources.ApplyResources(textBox_nightTimeSpeedRate, "textBox_nightTimeSpeedRate");
+            textBox_nightTimeSpeedRate.Name = "textBox_nightTimeSpeedRate";
             // 
             // textBox_dayTimeSpeedRate
             // 
-            resources.ApplyResources(this.textBox_dayTimeSpeedRate, "textBox_dayTimeSpeedRate");
-            this.textBox_dayTimeSpeedRate.Name = "textBox_dayTimeSpeedRate";
+            resources.ApplyResources(textBox_dayTimeSpeedRate, "textBox_dayTimeSpeedRate");
+            textBox_dayTimeSpeedRate.Name = "textBox_dayTimeSpeedRate";
             // 
             // textBox_rconPort
             // 
-            resources.ApplyResources(this.textBox_rconPort, "textBox_rconPort");
-            this.textBox_rconPort.Name = "textBox_rconPort";
+            resources.ApplyResources(textBox_rconPort, "textBox_rconPort");
+            textBox_rconPort.Name = "textBox_rconPort";
             // 
             // textBox_publicIP
             // 
-            resources.ApplyResources(this.textBox_publicIP, "textBox_publicIP");
-            this.textBox_publicIP.Name = "textBox_publicIP";
+            resources.ApplyResources(textBox_publicIP, "textBox_publicIP");
+            textBox_publicIP.Name = "textBox_publicIP";
             // 
             // textBox_publicPort
             // 
-            resources.ApplyResources(this.textBox_publicPort, "textBox_publicPort");
-            this.textBox_publicPort.Name = "textBox_publicPort";
+            resources.ApplyResources(textBox_publicPort, "textBox_publicPort");
+            textBox_publicPort.Name = "textBox_publicPort";
             // 
             // textBox_serverPassword
             // 
-            resources.ApplyResources(this.textBox_serverPassword, "textBox_serverPassword");
-            this.textBox_serverPassword.Name = "textBox_serverPassword";
+            resources.ApplyResources(textBox_serverPassword, "textBox_serverPassword");
+            textBox_serverPassword.Name = "textBox_serverPassword";
             // 
             // textBox_adminPassword
             // 
-            resources.ApplyResources(this.textBox_adminPassword, "textBox_adminPassword");
-            this.textBox_adminPassword.Name = "textBox_adminPassword";
+            resources.ApplyResources(textBox_adminPassword, "textBox_adminPassword");
+            textBox_adminPassword.Name = "textBox_adminPassword";
             // 
             // textBox_serverPlayerMaxNum
             // 
-            resources.ApplyResources(this.textBox_serverPlayerMaxNum, "textBox_serverPlayerMaxNum");
-            this.textBox_serverPlayerMaxNum.Name = "textBox_serverPlayerMaxNum";
+            resources.ApplyResources(textBox_serverPlayerMaxNum, "textBox_serverPlayerMaxNum");
+            textBox_serverPlayerMaxNum.Name = "textBox_serverPlayerMaxNum";
             // 
             // textBox_serverDescription
             // 
-            resources.ApplyResources(this.textBox_serverDescription, "textBox_serverDescription");
-            this.textBox_serverDescription.Name = "textBox_serverDescription";
+            resources.ApplyResources(textBox_serverDescription, "textBox_serverDescription");
+            textBox_serverDescription.Name = "textBox_serverDescription";
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            toolTip1.SetToolTip(label1, resources.GetString("label1.ToolTip"));
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
+            toolTip1.SetToolTip(label2, resources.GetString("label2.ToolTip"));
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            this.toolTip1.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            toolTip1.SetToolTip(label3, resources.GetString("label3.ToolTip"));
             // 
             // label4
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            toolTip1.SetToolTip(label4, resources.GetString("label4.ToolTip"));
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            this.toolTip1.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
+            toolTip1.SetToolTip(label5, resources.GetString("label5.ToolTip"));
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            this.toolTip1.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
+            toolTip1.SetToolTip(label6, resources.GetString("label6.ToolTip"));
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            this.toolTip1.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
+            toolTip1.SetToolTip(label7, resources.GetString("label7.ToolTip"));
             // 
             // label8
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            this.toolTip1.SetToolTip(this.label8, resources.GetString("label8.ToolTip"));
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
+            toolTip1.SetToolTip(label8, resources.GetString("label8.ToolTip"));
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            this.toolTip1.SetToolTip(this.label9, resources.GetString("label9.ToolTip"));
+            resources.ApplyResources(label9, "label9");
+            label9.Name = "label9";
+            toolTip1.SetToolTip(label9, resources.GetString("label9.ToolTip"));
             // 
             // label10
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            this.toolTip1.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
+            resources.ApplyResources(label10, "label10");
+            label10.Name = "label10";
+            toolTip1.SetToolTip(label10, resources.GetString("label10.ToolTip"));
             // 
             // label11
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            this.toolTip1.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
+            resources.ApplyResources(label11, "label11");
+            label11.Name = "label11";
+            toolTip1.SetToolTip(label11, resources.GetString("label11.ToolTip"));
             // 
             // label12
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            this.toolTip1.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
+            resources.ApplyResources(label12, "label12");
+            label12.Name = "label12";
+            toolTip1.SetToolTip(label12, resources.GetString("label12.ToolTip"));
             // 
             // label13
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
-            this.toolTip1.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
+            resources.ApplyResources(label13, "label13");
+            label13.Name = "label13";
+            toolTip1.SetToolTip(label13, resources.GetString("label13.ToolTip"));
             // 
             // label14
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            this.toolTip1.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
+            resources.ApplyResources(label14, "label14");
+            label14.Name = "label14";
+            toolTip1.SetToolTip(label14, resources.GetString("label14.ToolTip"));
             // 
             // label15
             // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            this.toolTip1.SetToolTip(this.label15, resources.GetString("label15.ToolTip"));
+            resources.ApplyResources(label15, "label15");
+            label15.Name = "label15";
+            toolTip1.SetToolTip(label15, resources.GetString("label15.ToolTip"));
             // 
             // label16
             // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
-            this.toolTip1.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
+            resources.ApplyResources(label16, "label16");
+            label16.Name = "label16";
+            toolTip1.SetToolTip(label16, resources.GetString("label16.ToolTip"));
             // 
             // label17
             // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            this.toolTip1.SetToolTip(this.label17, resources.GetString("label17.ToolTip"));
+            resources.ApplyResources(label17, "label17");
+            label17.Name = "label17";
+            toolTip1.SetToolTip(label17, resources.GetString("label17.ToolTip"));
             // 
             // label18
             // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            this.toolTip1.SetToolTip(this.label18, resources.GetString("label18.ToolTip"));
+            resources.ApplyResources(label18, "label18");
+            label18.Name = "label18";
+            toolTip1.SetToolTip(label18, resources.GetString("label18.ToolTip"));
             // 
             // label19
             // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            this.toolTip1.SetToolTip(this.label19, resources.GetString("label19.ToolTip"));
+            resources.ApplyResources(label19, "label19");
+            label19.Name = "label19";
+            toolTip1.SetToolTip(label19, resources.GetString("label19.ToolTip"));
             // 
             // label20
             // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            this.toolTip1.SetToolTip(this.label20, resources.GetString("label20.ToolTip"));
+            resources.ApplyResources(label20, "label20");
+            label20.Name = "label20";
+            toolTip1.SetToolTip(label20, resources.GetString("label20.ToolTip"));
             // 
             // label21
             // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            this.toolTip1.SetToolTip(this.label21, resources.GetString("label21.ToolTip"));
+            resources.ApplyResources(label21, "label21");
+            label21.Name = "label21";
+            toolTip1.SetToolTip(label21, resources.GetString("label21.ToolTip"));
             // 
             // label22
             // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
-            this.toolTip1.SetToolTip(this.label22, resources.GetString("label22.ToolTip"));
+            resources.ApplyResources(label22, "label22");
+            label22.Name = "label22";
+            toolTip1.SetToolTip(label22, resources.GetString("label22.ToolTip"));
             // 
             // label23
             // 
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            this.toolTip1.SetToolTip(this.label23, resources.GetString("label23.ToolTip"));
+            resources.ApplyResources(label23, "label23");
+            label23.Name = "label23";
+            toolTip1.SetToolTip(label23, resources.GetString("label23.ToolTip"));
             // 
             // label24
             // 
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.Name = "label24";
-            this.toolTip1.SetToolTip(this.label24, resources.GetString("label24.ToolTip"));
+            resources.ApplyResources(label24, "label24");
+            label24.Name = "label24";
+            toolTip1.SetToolTip(label24, resources.GetString("label24.ToolTip"));
             // 
             // label25
             // 
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.Name = "label25";
-            this.toolTip1.SetToolTip(this.label25, resources.GetString("label25.ToolTip"));
+            resources.ApplyResources(label25, "label25");
+            label25.Name = "label25";
+            toolTip1.SetToolTip(label25, resources.GetString("label25.ToolTip"));
             // 
             // label26
             // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            this.toolTip1.SetToolTip(this.label26, resources.GetString("label26.ToolTip"));
+            resources.ApplyResources(label26, "label26");
+            label26.Name = "label26";
+            toolTip1.SetToolTip(label26, resources.GetString("label26.ToolTip"));
             // 
             // label27
             // 
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.Name = "label27";
-            this.toolTip1.SetToolTip(this.label27, resources.GetString("label27.ToolTip"));
+            resources.ApplyResources(label27, "label27");
+            label27.Name = "label27";
+            toolTip1.SetToolTip(label27, resources.GetString("label27.ToolTip"));
             // 
             // label28
             // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.Name = "label28";
-            this.toolTip1.SetToolTip(this.label28, resources.GetString("label28.ToolTip"));
+            resources.ApplyResources(label28, "label28");
+            label28.Name = "label28";
+            toolTip1.SetToolTip(label28, resources.GetString("label28.ToolTip"));
             // 
             // label29
             // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            this.toolTip1.SetToolTip(this.label29, resources.GetString("label29.ToolTip"));
+            resources.ApplyResources(label29, "label29");
+            label29.Name = "label29";
+            toolTip1.SetToolTip(label29, resources.GetString("label29.ToolTip"));
             // 
             // label30
             // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            this.toolTip1.SetToolTip(this.label30, resources.GetString("label30.ToolTip"));
+            resources.ApplyResources(label30, "label30");
+            label30.Name = "label30";
+            toolTip1.SetToolTip(label30, resources.GetString("label30.ToolTip"));
             // 
             // label31
             // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
-            this.toolTip1.SetToolTip(this.label31, resources.GetString("label31.ToolTip"));
+            resources.ApplyResources(label31, "label31");
+            label31.Name = "label31";
+            toolTip1.SetToolTip(label31, resources.GetString("label31.ToolTip"));
             // 
             // label32
             // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            this.toolTip1.SetToolTip(this.label32, resources.GetString("label32.ToolTip"));
+            resources.ApplyResources(label32, "label32");
+            label32.Name = "label32";
+            toolTip1.SetToolTip(label32, resources.GetString("label32.ToolTip"));
             // 
             // label33
             // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            this.toolTip1.SetToolTip(this.label33, resources.GetString("label33.ToolTip"));
+            resources.ApplyResources(label33, "label33");
+            label33.Name = "label33";
+            toolTip1.SetToolTip(label33, resources.GetString("label33.ToolTip"));
             // 
             // label34
             // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            this.toolTip1.SetToolTip(this.label34, resources.GetString("label34.ToolTip"));
+            resources.ApplyResources(label34, "label34");
+            label34.Name = "label34";
+            toolTip1.SetToolTip(label34, resources.GetString("label34.ToolTip"));
             // 
             // label35
             // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
-            this.toolTip1.SetToolTip(this.label35, resources.GetString("label35.ToolTip"));
+            resources.ApplyResources(label35, "label35");
+            label35.Name = "label35";
+            toolTip1.SetToolTip(label35, resources.GetString("label35.ToolTip"));
             // 
             // label36
             // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            this.toolTip1.SetToolTip(this.label36, resources.GetString("label36.ToolTip"));
+            resources.ApplyResources(label36, "label36");
+            label36.Name = "label36";
+            toolTip1.SetToolTip(label36, resources.GetString("label36.ToolTip"));
             // 
             // label37
             // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
-            this.toolTip1.SetToolTip(this.label37, resources.GetString("label37.ToolTip"));
+            resources.ApplyResources(label37, "label37");
+            label37.Name = "label37";
+            toolTip1.SetToolTip(label37, resources.GetString("label37.ToolTip"));
             // 
             // label38
             // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.Name = "label38";
-            this.toolTip1.SetToolTip(this.label38, resources.GetString("label38.ToolTip"));
+            resources.ApplyResources(label38, "label38");
+            label38.Name = "label38";
+            toolTip1.SetToolTip(label38, resources.GetString("label38.ToolTip"));
             // 
             // label39
             // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            this.toolTip1.SetToolTip(this.label39, resources.GetString("label39.ToolTip"));
+            resources.ApplyResources(label39, "label39");
+            label39.Name = "label39";
+            toolTip1.SetToolTip(label39, resources.GetString("label39.ToolTip"));
             // 
             // label40
             // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            this.toolTip1.SetToolTip(this.label40, resources.GetString("label40.ToolTip"));
+            resources.ApplyResources(label40, "label40");
+            label40.Name = "label40";
+            toolTip1.SetToolTip(label40, resources.GetString("label40.ToolTip"));
             // 
             // label41
             // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            this.toolTip1.SetToolTip(this.label41, resources.GetString("label41.ToolTip"));
+            resources.ApplyResources(label41, "label41");
+            label41.Name = "label41";
+            toolTip1.SetToolTip(label41, resources.GetString("label41.ToolTip"));
             // 
             // label42
             // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            this.toolTip1.SetToolTip(this.label42, resources.GetString("label42.ToolTip"));
+            resources.ApplyResources(label42, "label42");
+            label42.Name = "label42";
+            toolTip1.SetToolTip(label42, resources.GetString("label42.ToolTip"));
             // 
             // label43
             // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
-            this.toolTip1.SetToolTip(this.label43, resources.GetString("label43.ToolTip"));
+            resources.ApplyResources(label43, "label43");
+            label43.Name = "label43";
+            toolTip1.SetToolTip(label43, resources.GetString("label43.ToolTip"));
             // 
             // label44
             // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
-            this.toolTip1.SetToolTip(this.label44, resources.GetString("label44.ToolTip"));
+            resources.ApplyResources(label44, "label44");
+            label44.Name = "label44";
+            toolTip1.SetToolTip(label44, resources.GetString("label44.ToolTip"));
             // 
             // label45
             // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
-            this.toolTip1.SetToolTip(this.label45, resources.GetString("label45.ToolTip"));
+            resources.ApplyResources(label45, "label45");
+            label45.Name = "label45";
+            toolTip1.SetToolTip(label45, resources.GetString("label45.ToolTip"));
             // 
             // label46
             // 
-            resources.ApplyResources(this.label46, "label46");
-            this.label46.Name = "label46";
-            this.toolTip1.SetToolTip(this.label46, resources.GetString("label46.ToolTip"));
+            resources.ApplyResources(label46, "label46");
+            label46.Name = "label46";
+            toolTip1.SetToolTip(label46, resources.GetString("label46.ToolTip"));
             // 
             // label47
             // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
-            this.toolTip1.SetToolTip(this.label47, resources.GetString("label47.ToolTip"));
+            resources.ApplyResources(label47, "label47");
+            label47.Name = "label47";
+            toolTip1.SetToolTip(label47, resources.GetString("label47.ToolTip"));
             // 
             // label48
             // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.Name = "label48";
-            this.toolTip1.SetToolTip(this.label48, resources.GetString("label48.ToolTip"));
+            resources.ApplyResources(label48, "label48");
+            label48.Name = "label48";
+            toolTip1.SetToolTip(label48, resources.GetString("label48.ToolTip"));
             // 
             // label49
             // 
-            resources.ApplyResources(this.label49, "label49");
-            this.label49.Name = "label49";
-            this.toolTip1.SetToolTip(this.label49, resources.GetString("label49.ToolTip"));
+            resources.ApplyResources(label49, "label49");
+            label49.Name = "label49";
+            toolTip1.SetToolTip(label49, resources.GetString("label49.ToolTip"));
             // 
             // label50
             // 
-            resources.ApplyResources(this.label50, "label50");
-            this.label50.Name = "label50";
-            this.toolTip1.SetToolTip(this.label50, resources.GetString("label50.ToolTip"));
+            resources.ApplyResources(label50, "label50");
+            label50.Name = "label50";
+            toolTip1.SetToolTip(label50, resources.GetString("label50.ToolTip"));
             // 
             // label51
             // 
-            resources.ApplyResources(this.label51, "label51");
-            this.label51.Name = "label51";
-            this.toolTip1.SetToolTip(this.label51, resources.GetString("label51.ToolTip"));
+            resources.ApplyResources(label51, "label51");
+            label51.Name = "label51";
+            toolTip1.SetToolTip(label51, resources.GetString("label51.ToolTip"));
             // 
             // label52
             // 
-            resources.ApplyResources(this.label52, "label52");
-            this.label52.Name = "label52";
-            this.toolTip1.SetToolTip(this.label52, resources.GetString("label52.ToolTip"));
+            resources.ApplyResources(label52, "label52");
+            label52.Name = "label52";
+            toolTip1.SetToolTip(label52, resources.GetString("label52.ToolTip"));
             // 
             // label53
             // 
-            resources.ApplyResources(this.label53, "label53");
-            this.label53.Name = "label53";
-            this.toolTip1.SetToolTip(this.label53, resources.GetString("label53.ToolTip"));
+            resources.ApplyResources(label53, "label53");
+            label53.Name = "label53";
+            toolTip1.SetToolTip(label53, resources.GetString("label53.ToolTip"));
             // 
             // label54
             // 
-            resources.ApplyResources(this.label54, "label54");
-            this.label54.Name = "label54";
-            this.toolTip1.SetToolTip(this.label54, resources.GetString("label54.ToolTip"));
+            resources.ApplyResources(label54, "label54");
+            label54.Name = "label54";
+            toolTip1.SetToolTip(label54, resources.GetString("label54.ToolTip"));
             // 
             // label55
             // 
-            resources.ApplyResources(this.label55, "label55");
-            this.label55.Name = "label55";
-            this.toolTip1.SetToolTip(this.label55, resources.GetString("label55.ToolTip"));
+            resources.ApplyResources(label55, "label55");
+            label55.Name = "label55";
+            toolTip1.SetToolTip(label55, resources.GetString("label55.ToolTip"));
             // 
             // label56
             // 
-            resources.ApplyResources(this.label56, "label56");
-            this.label56.Name = "label56";
-            this.toolTip1.SetToolTip(this.label56, resources.GetString("label56.ToolTip"));
+            resources.ApplyResources(label56, "label56");
+            label56.Name = "label56";
+            toolTip1.SetToolTip(label56, resources.GetString("label56.ToolTip"));
             // 
             // label57
             // 
-            resources.ApplyResources(this.label57, "label57");
-            this.label57.Name = "label57";
-            this.toolTip1.SetToolTip(this.label57, resources.GetString("label57.ToolTip"));
+            resources.ApplyResources(label57, "label57");
+            label57.Name = "label57";
+            toolTip1.SetToolTip(label57, resources.GetString("label57.ToolTip"));
             // 
             // label58
             // 
-            resources.ApplyResources(this.label58, "label58");
-            this.label58.Name = "label58";
-            this.toolTip1.SetToolTip(this.label58, resources.GetString("label58.ToolTip"));
+            resources.ApplyResources(label58, "label58");
+            label58.Name = "label58";
+            toolTip1.SetToolTip(label58, resources.GetString("label58.ToolTip"));
             // 
             // label59
             // 
-            resources.ApplyResources(this.label59, "label59");
-            this.label59.Name = "label59";
-            this.toolTip1.SetToolTip(this.label59, resources.GetString("label59.ToolTip"));
+            resources.ApplyResources(label59, "label59");
+            label59.Name = "label59";
+            toolTip1.SetToolTip(label59, resources.GetString("label59.ToolTip"));
             // 
             // label60
             // 
-            resources.ApplyResources(this.label60, "label60");
-            this.label60.Name = "label60";
-            this.toolTip1.SetToolTip(this.label60, resources.GetString("label60.ToolTip"));
+            resources.ApplyResources(label60, "label60");
+            label60.Name = "label60";
+            toolTip1.SetToolTip(label60, resources.GetString("label60.ToolTip"));
             // 
             // label61
             // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.Name = "label61";
-            this.toolTip1.SetToolTip(this.label61, resources.GetString("label61.ToolTip"));
+            resources.ApplyResources(label61, "label61");
+            label61.Name = "label61";
+            toolTip1.SetToolTip(label61, resources.GetString("label61.ToolTip"));
             // 
             // label62
             // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.Name = "label62";
-            this.toolTip1.SetToolTip(this.label62, resources.GetString("label62.ToolTip"));
+            resources.ApplyResources(label62, "label62");
+            label62.Name = "label62";
+            toolTip1.SetToolTip(label62, resources.GetString("label62.ToolTip"));
             // 
             // textBox_serverName
             // 
-            resources.ApplyResources(this.textBox_serverName, "textBox_serverName");
-            this.textBox_serverName.Name = "textBox_serverName";
+            resources.ApplyResources(textBox_serverName, "textBox_serverName");
+            textBox_serverName.Name = "textBox_serverName";
             // 
             // comboBox_rconEnabled
             // 
-            resources.ApplyResources(this.comboBox_rconEnabled, "comboBox_rconEnabled");
-            this.comboBox_rconEnabled.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_rconEnabled.FormattingEnabled = true;
-            this.comboBox_rconEnabled.Items.AddRange(new object[] {
-            resources.GetString("comboBox_rconEnabled.Items"),
-            resources.GetString("comboBox_rconEnabled.Items1")});
-            this.comboBox_rconEnabled.Name = "comboBox_rconEnabled";
+            resources.ApplyResources(comboBox_rconEnabled, "comboBox_rconEnabled");
+            comboBox_rconEnabled.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_rconEnabled.FormattingEnabled = true;
+            comboBox_rconEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_rconEnabled.Items"), resources.GetString("comboBox_rconEnabled.Items1") });
+            comboBox_rconEnabled.Name = "comboBox_rconEnabled";
             // 
             // Form_ServerSettings
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.button1);
-            this.Name = "Form_ServerSettings";
-            this.Load += new System.EventHandler(this.Form_ServerSettings_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Controls.Add(tableLayoutPanel1);
+            Controls.Add(button1);
+            Name = "Form_ServerSettings";
+            Load += Form_ServerSettings_Load;
+            tableLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            tableLayoutPanel2.ResumeLayout(false);
+            tableLayoutPanel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
