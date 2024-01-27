@@ -83,6 +83,15 @@ namespace PalworldServerManager
         private void LoadForm(Form formToLoad)
         {
             //FORMNAME NEWVARIABLENAME = new FORMNAME();
+            foreach (Control control in panel_chilForm.Controls)
+            {
+                if (control is Form form)
+                {
+                    //close the form
+                    form.Close();
+                }
+            }
+
             if (formToLoad != null)
             {
                 formToLoad.TopLevel = false;
@@ -423,10 +432,14 @@ namespace PalworldServerManager
 
         private void rCONToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form_RCON rconForm = new Form_RCON();
+            LoadForm(rconForm);
         }
 
         private void serverSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form_ServerSettings serverSettingsForm = new Form_ServerSettings();
+            LoadForm(serverSettingsForm);
         }
 
         private void baseDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
