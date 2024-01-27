@@ -138,18 +138,15 @@
   </data>
   <data name="richTextBox_output.Text" xml:space="preserve">
     <value>====================================================================
-Info - (show server information)
-Save - (save world data)
-Broadcast {MessageText} - (show message to all players on the server)
-ShowPlayers - (list all players on the server)
-TeleportToPlayer {Steam ID} - (teleport yourself to that player)
-TeleportToMe {Steam ID} - (teleport that player to you)
-KickPlayer {Steam ID} - (kick that player from the server)
-BanPlayer {Steam ID} - (ban that player from the server)
-Shutdown {Seconds} {MessageText} - (shutdown the server for everyone after a set time)
-DoExit - (immediately stop the server)
-====================================================================
-</value>
+Info - (Server Info)
+Save - (Save Game)
+Broadcast {MessageText} - (Send out messages to all players)
+ShowPlayers - (Show full list of server players)
+KickPlayer {Steam ID} - (Kick player off the server)
+BanPlayer {Steam ID} - (Ban the player from joining the server)
+Shutdown {Seconds} {MessageText} - (Alert players before shutdown)
+DoExit - (Stop server)
+====================================================================</value>
   </data>
   <data name="&gt;&gt;richTextBox_output.Name" xml:space="preserve">
     <value>richTextBox_output</value>
@@ -410,7 +407,7 @@ DoExit - (immediately stop the server)
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Name | PlayerUID | SteamID</value>
+    <value>IGN | PlayerUID | SteamID</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -527,7 +524,7 @@ DoExit - (immediately stop the server)
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_portRCON.PlaceholderText" xml:space="preserve">
-    <value>Palworld RCON Port</value>
+    <value>RCON Port</value>
   </data>
   <data name="textBox_portRCON.Size" type="System.Drawing.Size, System.Drawing">
     <value>406, 23</value>
@@ -623,7 +620,7 @@ DoExit - (immediately stop the server)
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_passwordRCON.PlaceholderText" xml:space="preserve">
-    <value>Palworld Admin Password</value>
+    <value>Admin Password</value>
   </data>
   <data name="textBox_passwordRCON.Size" type="System.Drawing.Size, System.Drawing">
     <value>406, 23</value>
