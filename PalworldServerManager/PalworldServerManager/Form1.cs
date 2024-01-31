@@ -382,15 +382,16 @@ namespace PalworldServerManager
                     // Start a new thread to run the batch file asynchronously
                     Thread thread = new Thread(new ThreadStart(RunStartServerBatchFile));
                     thread.Start();
+                    serverSettingsForm.SaveGameTimer_Start();
+                    isServerStarted = true;
+                    button_startServer.Enabled = false;
+                    button_stopServer.Enabled = true;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                serverSettingsForm.SaveGameTimer_Start();
-                isServerStarted = true;
-                button_startServer.Enabled = false;
-                button_stopServer.Enabled = true;
+                
                 
             }
             
