@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+  <!--
     Microsoft ResX Schema 
-    
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,12 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="button_stopServer.Text" xml:space="preserve">
+    <value>终止服务器</value>
+  </data>
+  <data name="button_stopServer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox_noSteam.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="checkBox_log.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 8.25pt</value>
   </data>
   <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 20</value>
+    <value>48, 20</value>
   </data>
   <data name="checkBox_log.Text" xml:space="preserve">
     <value>日志</value>
@@ -131,7 +140,7 @@
     <value>Microsoft YaHei, 8.25pt</value>
   </data>
   <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 20</value>
+    <value>103, 20</value>
   </data>
   <data name="checkBox_communityServer.Text" xml:space="preserve">
     <value>改为社区服务器</value>
@@ -154,6 +163,9 @@
   <data name="label1.Text" xml:space="preserve">
     <value>幻兽帕鲁服务器管理器</value>
   </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="button_startServer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
@@ -172,14 +184,23 @@
   <data name="button_downloadSteamCMD.Text" xml:space="preserve">
     <value>下载解压 Steam CMD</value>
   </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="panel_chilForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 163</value>
+    <value>0, 184</value>
   </data>
   <data name="panel_chilForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 548</value>
+    <value>856, 636</value>
+  </data>
+  <data name="panel_chilForm.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 25</value>
+    <value>856, 25</value>
+  </data>
+  <data name="menuStrip1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="serverSettingsToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -193,23 +214,20 @@
   <data name="rCONToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 21</value>
   </data>
-  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 21</value>
-  </data>
-  <data name="directoryToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="infoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
-  <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
   </data>
-  <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>目录</value>
+  <data name="infoToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助</value>
   </data>
-  <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+  <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>基层目录</value>
+  <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
+    <value>说明</value>
   </data>
   <data name="languageToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -221,25 +239,34 @@
     <value>语言</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>180, 22</value>
   </data>
-  <data name="infoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="directoryToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
-  <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
   </data>
-  <data name="infoToolStripMenuItem.Text" xml:space="preserve">
-    <value>帮助</value>
+  <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>目录</value>
   </data>
-  <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+  <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
-    <value>说明</value>
+  <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>基层目录</value>
+  </data>
+  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 21</value>
+  </data>
+  <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1084,5 +1111,8 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>幻兽帕鲁服务器管理器 v1</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
