@@ -145,10 +145,24 @@ namespace PalworldServerManager
                 richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
                 return;
             }
-            
+
+
+            int newIntPort;
+
+            if (int.TryParse(textBox_portRCON.Text, out newIntPort))
+            {
+                // Parsing successful, newMaxBackupInt now holds the parsed integer value
+                Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
+            }
+            else
+            {
+                // Parsing failed, serv_maxBackup does not contain a valid integer format
+                Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+            }
+
             //Store the values
             ipRCON = textBox_ipRCON.Text;
-            portRCON = int.Parse(textBox_portRCON.Text);
+            portRCON = newIntPort;
             passwordRCON = textBox_passwordRCON.Text;
             _rconClient = RconClient.Create(ipRCON, portRCON);
             ConnectRCON(ipRCON, portRCON, passwordRCON);

@@ -20,6 +20,7 @@ namespace PalworldServerManager
         // BACKUP INTERVAL
         private bool forceBackup = false;
         private string serv_backupInterval;
+        private string serv_maxBackup;
         private string serv_backupToDirectory;
 
 
@@ -214,6 +215,7 @@ namespace PalworldServerManager
         /// </summary>
         /// 
         private string dserv_backupInterval = "0";
+        private string dserv_maxBackup = "0";
         private string dserv_backupToDirectory;
 
         private string dserv_difficulty = "None";
@@ -321,6 +323,7 @@ namespace PalworldServerManager
             ReadSettingPreset();
             serv_backupInterval = textBox_backupInterval.Text;
             serv_backupToDirectory = textBox_backupTo.Text;
+            serv_maxBackup = textBox_maxBackup.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -420,6 +423,7 @@ namespace PalworldServerManager
         {
             //Backup settings
             textBox_backupInterval.Text = dserv_backupInterval;
+            textBox_maxBackup.Text = dserv_maxBackup;
             textBox_backupTo.Text = dserv_backupToDirectory;
 
             //Server Settings
@@ -491,6 +495,7 @@ namespace PalworldServerManager
         {
             //Backup settings
             serv_backupInterval = textBox_backupInterval.Text;
+            serv_maxBackup = textBox_maxBackup.Text;
             serv_backupToDirectory = textBox_backupTo.Text;
 
             //Server Settings
@@ -586,6 +591,7 @@ namespace PalworldServerManager
             {
                 //backup settings
                 sw.WriteLine(serv_backupInterval);
+                sw.WriteLine(serv_maxBackup);
                 sw.WriteLine(serv_backupToDirectory);
 
                 //Server settings
@@ -668,6 +674,7 @@ namespace PalworldServerManager
                 {
                     //backup settings
                     textBox_backupInterval.Text = sr.ReadLine();
+                    textBox_maxBackup.Text = sr.ReadLine();
                     textBox_backupTo.Text = sr.ReadLine();
 
                     //server settings
@@ -765,7 +772,20 @@ namespace PalworldServerManager
             {
                 try
                 {
-                    int actualTimer = (int.Parse(serv_backupInterval) * 1000);
+                    int newInt;
+
+                    if (int.TryParse(serv_backupInterval, out newInt))
+                    {
+                        // Parsing successful, newMaxBackupInt now holds the parsed integer value
+                        Console.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                    }
+                    else
+                    {
+                        // Parsing failed, serv_maxBackup does not contain a valid integer format
+                        Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                    }
+
+                    int actualTimer = (newInt * 1000);
                     timer1.Interval = actualTimer;
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
@@ -799,7 +819,7 @@ namespace PalworldServerManager
 
                             // Create the main folder in the destination directory
                             string mainFolderName = new DirectoryInfo(savePath).Name;
-                            string destinationMainFolderPath = Path.Combine(serv_backupToDirectory, $"GameSave_{currentDateTimeString}", mainFolderName);
+                            string destinationMainFolderPath = Path.Combine(serv_backupToDirectory,"SaveFiles", $"GameSave_{currentDateTimeString}", mainFolderName);
                             Directory.CreateDirectory(destinationMainFolderPath);
 
                             // Copy all files and subdirectories recursively
@@ -813,6 +833,7 @@ namespace PalworldServerManager
                                 File.Copy(newPath, newPath.Replace(savePath, destinationMainFolderPath), true);
                             }
 
+                            CheckMaxBackup();
                             forceBackup = false;
 
                             //MessageBox.Show("Backup completed successfully!", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -835,6 +856,58 @@ namespace PalworldServerManager
             }
             
 
+        }
+
+        private void CheckMaxBackup() //Check max backup and delete oldest until x left.
+        {
+
+            //MessageBox.Show(serv_backupToDirectory);
+
+
+            int newMaxBackupInt;
+            if (int.TryParse(serv_maxBackup, out newMaxBackupInt))
+            {
+                // Parsing successful, newMaxBackupInt now holds the parsed integer value
+                Console.WriteLine("Parsing successful. Parsed integer value: " + newMaxBackupInt);
+            }
+            else
+            {
+                // Parsing failed, serv_maxBackup does not contain a valid integer format
+                Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                return;
+            }
+
+
+            if (Directory.Exists(serv_backupToDirectory))
+            {
+                string saveFilePath = Path.Combine(serv_backupToDirectory, "SaveFiles");
+                string[] subdirectories = Directory.GetDirectories(saveFilePath);
+
+                while (subdirectories.Length > newMaxBackupInt)
+                {
+                    var oldestDirectory = subdirectories
+                        .Select(d => new DirectoryInfo(d))
+                        .OrderBy(d => d.CreationTime)
+                        .First();
+
+                    try
+                    {
+                        oldestDirectory.Delete(true);
+                        subdirectories = Directory.GetDirectories(saveFilePath); // Update subdirectories array
+                    }
+                    catch (Exception ex)
+                    {
+                        //MessageBox.Show($"Error deleting directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break; // Exit the loop if an error occurs
+                    }
+                }
+
+                //MessageBox.Show("Directory cleanup completed.", "Cleanup Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                //MessageBox.Show("Directory does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button_backupTo_Click(object sender, EventArgs e)

@@ -988,6 +988,15 @@ All全都掉</value>
   <data name="tableLayoutPanel3.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="textBox_maxBackup.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label67.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="label67.Text" xml:space="preserve">
+    <value>自动删除旧备份阈值 (0 = 不删除备份)</value>
+  </data>
   <data name="label65.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>

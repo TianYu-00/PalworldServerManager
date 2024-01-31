@@ -171,6 +171,8 @@ namespace PalworldServerManager
             textBox_backupTo = new System.Windows.Forms.TextBox();
             button_backupTo = new System.Windows.Forms.Button();
             tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            textBox_maxBackup = new System.Windows.Forms.TextBox();
+            label67 = new System.Windows.Forms.Label();
             label65 = new System.Windows.Forms.Label();
             textBox_backupInterval = new System.Windows.Forms.TextBox();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
@@ -1139,6 +1141,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(label66, "label66");
             label66.Name = "label66";
+            toolTip1.SetToolTip(label66, resources.GetString("label66.ToolTip"));
             // 
             // textBox_backupTo
             // 
@@ -1155,14 +1158,28 @@ namespace PalworldServerManager
             // tableLayoutPanel3
             // 
             resources.ApplyResources(tableLayoutPanel3, "tableLayoutPanel3");
+            tableLayoutPanel3.Controls.Add(textBox_maxBackup, 0, 1);
+            tableLayoutPanel3.Controls.Add(label67, 1, 0);
             tableLayoutPanel3.Controls.Add(label65, 0, 0);
             tableLayoutPanel3.Controls.Add(textBox_backupInterval, 1, 0);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // textBox_maxBackup
+            // 
+            resources.ApplyResources(textBox_maxBackup, "textBox_maxBackup");
+            textBox_maxBackup.Name = "textBox_maxBackup";
+            // 
+            // label67
+            // 
+            resources.ApplyResources(label67, "label67");
+            label67.Name = "label67";
+            toolTip1.SetToolTip(label67, resources.GetString("label67.ToolTip"));
             // 
             // label65
             // 
             resources.ApplyResources(label65, "label65");
             label65.Name = "label65";
+            toolTip1.SetToolTip(label65, resources.GetString("label65.ToolTip"));
             // 
             // textBox_backupInterval
             // 
@@ -1341,5 +1358,7 @@ namespace PalworldServerManager
         private System.Windows.Forms.TextBox textBox_backupTo;
         private System.Windows.Forms.Button button_backupTo;
         private System.Windows.Forms.Button button_manualSave;
+        private System.Windows.Forms.TextBox textBox_maxBackup;
+        private System.Windows.Forms.Label label67;
     }
 }

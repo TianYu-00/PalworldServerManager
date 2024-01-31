@@ -4841,7 +4841,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 58</value>
+    <value>0, 87</value>
   </data>
   <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -4902,6 +4902,9 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   </data>
   <data name="label66.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
+  </data>
+  <data name="label66.ToolTip" xml:space="preserve">
+    <value>Directory of where to backup the files to.</value>
   </data>
   <data name="&gt;&gt;label66.Name" xml:space="preserve">
     <value>label66</value>
@@ -5176,7 +5179,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 29</value>
+    <value>0, 58</value>
   </data>
   <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5208,6 +5211,72 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="textBox_maxBackup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="textBox_maxBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 32</value>
+  </data>
+  <data name="textBox_maxBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 23</value>
+  </data>
+  <data name="textBox_maxBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.Name" xml:space="preserve">
+    <value>textBox_maxBackup</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label67.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label67.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label67.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
+  </data>
+  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 29</value>
+  </data>
+  <data name="label67.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label67.Text" xml:space="preserve">
+    <value>Auto Delete Older Backup Threshold (0 = Dont delete backup)</value>
+  </data>
+  <data name="label67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label67.ToolTip" xml:space="preserve">
+    <value>If backup reaches threshold, it will delete the oldest backup. </value>
+  </data>
+  <data name="&gt;&gt;label67.Name" xml:space="preserve">
+    <value>label67</value>
+  </data>
+  <data name="&gt;&gt;label67.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label67.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label67.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="label65.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -5232,6 +5301,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="label65.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <data name="label65.ToolTip" xml:space="preserve">
+    <value>Automatically backup your world and player data in a set time
+</value>
+  </data>
   <data name="&gt;&gt;label65.Name" xml:space="preserve">
     <value>label65</value>
   </data>
@@ -5242,7 +5315,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="textBox_backupInterval.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -5266,7 +5339,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;textBox_backupInterval.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -5275,10 +5348,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0, 0</value>
   </data>
   <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 29</value>
+    <value>827, 58</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -5296,7 +5369,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>6</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_maxBackup" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
