@@ -17,6 +17,12 @@ namespace PalworldServerManager
         //
         //Palworld World Server Settings Parameter Description
         //
+        // BACKUP INTERVAL
+        private bool forceBackup = false;
+        private string serv_backupInterval;
+        private string serv_backupToDirectory;
+
+
         //Difficulty Adjusts the overall difficulty of the game.
         private string serv_difficulty;
 
@@ -206,8 +212,11 @@ namespace PalworldServerManager
         /// <summary>
         /// DEFAULT SERVER WORLD SETTINGS
         /// </summary>
-        private string dserv_difficulty = "None";
+        /// 
+        private string dserv_backupInterval = "0";
+        private string dserv_backupToDirectory;
 
+        private string dserv_difficulty = "None";
         private string dserv_dayTimeSpeedRate = "1.000000";
         private string dserv_nightTimeSpeedRate = "1.000000";
         private string dserv_expRate = "1.000000";
@@ -310,6 +319,8 @@ namespace PalworldServerManager
             ServerSettingsOnLoad();
             ReadWorldSettingsFile();
             ReadSettingPreset();
+            serv_backupInterval = textBox_backupInterval.Text;
+            serv_backupToDirectory = textBox_backupTo.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -407,6 +418,11 @@ namespace PalworldServerManager
 
         private void SetWorldSettingsDefault()
         {
+            //Backup settings
+            textBox_backupInterval.Text = dserv_backupInterval;
+            textBox_backupTo.Text = dserv_backupToDirectory;
+
+            //Server Settings
             textBox_serverName.Text = dserv_serverName;
             textBox_serverDescription.Text = dserv_serverDescription;
             textBox_serverPlayerMaxNum.Text = dserv_serverPlayerMaxNum;
@@ -473,6 +489,11 @@ namespace PalworldServerManager
 
         private void ReadManagerSettings()
         {
+            //Backup settings
+            serv_backupInterval = textBox_backupInterval.Text;
+            serv_backupToDirectory = textBox_backupTo.Text;
+
+            //Server Settings
             serv_serverName = textBox_serverName.Text;
             serv_serverDescription = textBox_serverDescription.Text;
             serv_serverPlayerMaxNum = textBox_serverPlayerMaxNum.Text;
@@ -536,6 +557,7 @@ namespace PalworldServerManager
             //serv_useAuth = textBox_useAuth.Text;
             serv_banListURL = textBox_banListURL.Text;
 
+            //Combo boxes
             serv_rconEnabled = comboBox_rconEnabled.Text;
             serv_difficulty = comboBox_difficulty.Text;
             serv_deathPenalty = comboBox_deathPenalty.Text;
@@ -562,6 +584,11 @@ namespace PalworldServerManager
             // Save TextBox values to a text file
             using (StreamWriter sw = new StreamWriter("serversettingpreset.txt"))
             {
+                //backup settings
+                sw.WriteLine(serv_backupInterval);
+                sw.WriteLine(serv_backupToDirectory);
+
+                //Server settings
                 sw.WriteLine(serv_serverName);
                 sw.WriteLine(serv_serverDescription);
                 sw.WriteLine(serv_serverPlayerMaxNum);
@@ -624,6 +651,9 @@ namespace PalworldServerManager
                 sw.WriteLine(serv_region);
                 sw.WriteLine(serv_useAuth);
                 sw.WriteLine(serv_banListURL);
+                // Backup
+                //sw.WriteLine(serv_banListURL);
+
             }
 
             //MessageBox.Show("Data saved successfully!");
@@ -636,6 +666,11 @@ namespace PalworldServerManager
             {
                 using (StreamReader sr = new StreamReader("serversettingpreset.txt"))
                 {
+                    //backup settings
+                    textBox_backupInterval.Text = sr.ReadLine();
+                    textBox_backupTo.Text = sr.ReadLine();
+
+                    //server settings
                     textBox_serverName.Text = sr.ReadLine();
                     textBox_serverDescription.Text = sr.ReadLine();
                     textBox_serverPlayerMaxNum.Text = sr.ReadLine();
@@ -723,7 +758,118 @@ namespace PalworldServerManager
                 MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void SaveGameTimer_Start()
+        {
+            if (serv_backupInterval != "0")
+            {
+                try
+                {
+                    int actualTimer = (int.Parse(serv_backupInterval) * 1000);
+                    timer1.Interval = actualTimer;
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+                timer1.Start();
+            }
+                
+        }
+
+        public void SaveGameTimer_Stop()
+        {
+            timer1.Stop();
+
+        }
+
+        private void SaveGame()
+        {
+            if (serv_backupInterval != "0" || forceBackup == true)
+            {
+                try
+                {
+                    string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                    string savePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "SaveGames");
+                    if (!string.IsNullOrWhiteSpace(savePath) && !string.IsNullOrWhiteSpace(serv_backupToDirectory))
+                    {
+                        try
+                        {
+                            // Get the current date and time
+                            DateTime currentDateTime = DateTime.Now;
+                            // Format the date and time as a string
+                            string currentDateTimeString = currentDateTime.ToString("yyyy_MM_dd_HH_mm_ss");
+
+                            // Create the main folder in the destination directory
+                            string mainFolderName = new DirectoryInfo(savePath).Name;
+                            string destinationMainFolderPath = Path.Combine(serv_backupToDirectory, $"GameSave_{currentDateTimeString}", mainFolderName);
+                            Directory.CreateDirectory(destinationMainFolderPath);
+
+                            // Copy all files and subdirectories recursively
+                            foreach (string dirPath in Directory.GetDirectories(savePath, "*", SearchOption.AllDirectories))
+                            {
+                                Directory.CreateDirectory(dirPath.Replace(savePath, destinationMainFolderPath));
+                            }
+
+                            foreach (string newPath in Directory.GetFiles(savePath, "*.*", SearchOption.AllDirectories))
+                            {
+                                File.Copy(newPath, newPath.Replace(savePath, destinationMainFolderPath), true);
+                            }
+
+                            forceBackup = false;
+
+                            //MessageBox.Show("Backup completed successfully!", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        catch (Exception ex)
+                        {
+                            //MessageBox.Show($"Error during backup: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                    else
+                    {
+                        //MessageBox.Show($"Failed To Saved");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
+
+        }
+
+        private void button_backupTo_Click(object sender, EventArgs e)
+        {
+            using (var folderBrowserDialog = new FolderBrowserDialog())
+            {
+                DialogResult result = folderBrowserDialog.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog.SelectedPath))
+                {
+                    // Display the selected folder path in a TextBox.
+                    textBox_backupTo.Text = folderBrowserDialog.SelectedPath;
+                    serv_backupToDirectory = folderBrowserDialog.SelectedPath;
+                }
+            }
+        }
+
+        private void button_manualSave_Click(object sender, EventArgs e)
+        {
+            forceBackup = true;
+            SaveGame();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveGame();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 
-    
+
 }

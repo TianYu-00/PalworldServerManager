@@ -33,6 +33,11 @@ namespace PalworldServerManager
         private string isUseMultithreadForDS;
         private string isLog;
         private string isNoSteam;
+        Form_ServerSettings serverSettingsForm;
+        Form_RCON rconForm;
+        bool isServerStarted = false;
+
+
 
         public Form1()
         {
@@ -77,21 +82,17 @@ namespace PalworldServerManager
             //textBox2.Text = localIP;
             ReadStartServerArg();
             //Load Form
-            Form_ServerSettings serverSettingsForm = new Form_ServerSettings();
+            rconForm = new Form_RCON();
+            serverSettingsForm = new Form_ServerSettings();
+            LoadForm(rconForm);
+            rconForm.Hide();
             LoadForm(serverSettingsForm);
+
+
         }
 
         private void LoadForm(Form formToLoad)
         {
-            //FORMNAME NEWVARIABLENAME = new FORMNAME();
-            foreach (Control control in panel_chilForm.Controls)
-            {
-                if (control is Form form)
-                {
-                    //close the form
-                    form.Close();
-                }
-            }
 
             if (formToLoad != null)
             {
@@ -100,6 +101,23 @@ namespace PalworldServerManager
                 formToLoad.FormBorderStyle = FormBorderStyle.None;
                 formToLoad.Dock = DockStyle.Fill;
                 formToLoad.Show();
+            }
+        }
+
+        private void ShowForm(Form formToShow)
+        {
+            foreach (Control control in panel_chilForm.Controls)
+            {
+                if (control is Form form)
+                {
+                    //hide the form
+                    form.Hide();
+                }
+            }
+
+            if (formToShow != null)
+            {
+                formToShow.Show();
             }
         }
 
@@ -235,7 +253,7 @@ namespace PalworldServerManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!CheckCMD())
+            if (!CheckSteamCMD())
             {
                 return;
             }
@@ -274,7 +292,7 @@ namespace PalworldServerManager
             try
             {
                 // Create a new process to run the batch file
-                Process process = new Process
+                Process serverProcess = new Process
                 {
                     StartInfo = new ProcessStartInfo
                     {
@@ -285,8 +303,12 @@ namespace PalworldServerManager
                 };
 
                 // Start the process
-                process.Start();
-                process.WaitForExit();
+                serverProcess.Start();
+                // Store the reference to the child process
+                serverProcess.WaitForExit();
+
+
+
             }
             catch (Exception ex)
             {
@@ -294,7 +316,7 @@ namespace PalworldServerManager
             }
         }
 
-        private bool CheckCMD()
+        private bool CheckSteamCMD()
         {
             if (File.Exists("steamcmd.exe"))
             {
@@ -327,7 +349,7 @@ namespace PalworldServerManager
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!CheckCMD())
+            if (!CheckSteamCMD())
             {
                 return;
             }
@@ -337,38 +359,67 @@ namespace PalworldServerManager
                 return;
             }
 
-            isCommunityserver = checkBox_communityServer.Checked ? " EpicApp=PalServer" : "";
-            isUseperfthreads = checkBox_useperfthreads.Checked ? " -useperfthreads" : "";
-            isNoAsyncLoadingThread = checkBox_noAsyncLoadingThread.Checked ? " -NoAsyncLoadingThread" : "";
-            isUseMultithreadForDS = checkBox_useMultithreadForDS.Checked ? " -UseMultithreadForDS" : "";
-            isLog = checkBox_log.Checked ? " -log" : "";
-            isNoSteam = checkBox_noSteam.Checked ? " -nosteam" : "";
-
-            WriteStartServerArg();
-
-            // Get the content from the TextBox
-            string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe{isCommunityserver}{isUseperfthreads}{isNoAsyncLoadingThread}{isUseMultithreadForDS}{isLog}{isNoSteam}";
-
-            // Get the executable directory
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-            // Specify the path for the bat file
-            string batFilePath = Path.Combine(exeDirectory, "RunServer.bat");
-
-            try
+            if (!isServerStarted)
             {
-                // Write the content to the bat file
-                File.WriteAllText(batFilePath, batContent);
+                isCommunityserver = checkBox_communityServer.Checked ? " EpicApp=PalServer" : "";
+                isUseperfthreads = checkBox_useperfthreads.Checked ? " -useperfthreads" : "";
+                isNoAsyncLoadingThread = checkBox_noAsyncLoadingThread.Checked ? " -NoAsyncLoadingThread" : "";
+                isUseMultithreadForDS = checkBox_useMultithreadForDS.Checked ? " -UseMultithreadForDS" : "";
+                isLog = checkBox_log.Checked ? " -log" : "";
+                isNoSteam = checkBox_noSteam.Checked ? " -nosteam" : "";
+                WriteStartServerArg();
+                // Get the content from the TextBox
+                string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe{isCommunityserver}{isUseperfthreads}{isNoAsyncLoadingThread}{isUseMultithreadForDS}{isLog}{isNoSteam}";
+                // Get the executable directory
+                string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                // Specify the path for the bat file
+                string batFilePath = Path.Combine(exeDirectory, "RunServer.bat");
+                try
+                {
+                    // Write the content to the bat file
+                    File.WriteAllText(batFilePath, batContent);
 
-                // Start a new thread to run the batch file asynchronously
-                Thread thread = new Thread(new ThreadStart(RunStartServerBatchFile));
-                thread.Start();
+                    // Start a new thread to run the batch file asynchronously
+                    Thread thread = new Thread(new ThreadStart(RunStartServerBatchFile));
+                    thread.Start();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                serverSettingsForm.SaveGameTimer_Start();
+                isServerStarted = true;
+                button_startServer.Enabled = false;
+                button_stopServer.Enabled = true;
+                
             }
-            catch (Exception ex)
+            
+
+        }
+
+        private void button_stopServer_Click(object sender, EventArgs e)
+        {
+            if (isServerStarted)
             {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                // Specify the name of the process without the .exe extension
+                string processName = "PalServer-Win64-Test-Cmd";
+
+                // Find and kill the process if it's running
+                Process[] processes = Process.GetProcessesByName(processName);
+                foreach (Process process in processes)
+                {
+                    process.Kill();
+                    Console.WriteLine("Process {0} has been terminated.", processName);
+                }
+                isServerStarted = false;
+                button_startServer.Enabled = true;
+                button_stopServer.Enabled = false;
+                serverSettingsForm.SaveGameTimer_Stop();
+
             }
         }
+
 
         private void WriteStartServerArg()
         {
@@ -433,14 +484,12 @@ namespace PalworldServerManager
 
         private void rCONToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_RCON rconForm = new Form_RCON();
-            LoadForm(rconForm);
+            ShowForm(rconForm);
         }
 
         private void serverSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_ServerSettings serverSettingsForm = new Form_ServerSettings();
-            LoadForm(serverSettingsForm);
+            ShowForm(serverSettingsForm);
         }
 
         private void baseDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -503,5 +552,7 @@ namespace PalworldServerManager
                 MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        
     }
 }

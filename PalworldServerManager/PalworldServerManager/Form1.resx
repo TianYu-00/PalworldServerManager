@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+  <!--
     Microsoft ResX Schema 
-    
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,23 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_stopServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 73</value>
+  </data>
+  <data name="button_stopServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 58</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_stopServer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="button_stopServer.Text" xml:space="preserve">
+    <value>Stop Server</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.Name" xml:space="preserve">
+    <value>button_stopServer</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="checkBox_noSteam.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="checkBox_noSteam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>620, 118</value>
+    <value>723, 136</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBox_noSteam.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBox_noSteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 17</value>
+    <value>75, 19</value>
   </data>
   <data name="checkBox_noSteam.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -145,17 +173,14 @@
     <value>checkBox_noSteam</value>
   </data>
   <data name="&gt;&gt;checkBox_noSteam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_noSteam.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_noSteam.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="checkBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -163,10 +188,13 @@
     <value>True</value>
   </data>
   <data name="checkBox_log.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 118</value>
+    <value>665, 136</value>
+  </data>
+  <data name="checkBox_log.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>46, 19</value>
   </data>
   <data name="checkBox_log.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -174,6 +202,9 @@
   <data name="checkBox_log.Text" xml:space="preserve">
     <value>Log</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="checkBox_log.ToolTip" xml:space="preserve">
     <value>Create a log file to capture information about the session, including any errors or important messages.</value>
   </data>
@@ -181,13 +212,13 @@
     <value>checkBox_log</value>
   </data>
   <data name="&gt;&gt;checkBox_log.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_log.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_log.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="checkBox_useMultithreadForDS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -196,10 +227,13 @@
     <value>True</value>
   </data>
   <data name="checkBox_useMultithreadForDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>437, 118</value>
+    <value>510, 136</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBox_useMultithreadForDS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 17</value>
+    <value>138, 19</value>
   </data>
   <data name="checkBox_useMultithreadForDS.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -216,13 +250,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>checkBox_useMultithreadForDS</value>
   </data>
   <data name="&gt;&gt;checkBox_useMultithreadForDS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_useMultithreadForDS.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -231,10 +265,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>True</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 118</value>
+    <value>338, 136</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 17</value>
+    <value>153, 19</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -251,13 +288,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>checkBox_noAsyncLoadingThread</value>
   </data>
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="checkBox_useperfthreads.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -266,10 +303,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>True</value>
   </data>
   <data name="checkBox_useperfthreads.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 118</value>
+    <value>219, 136</value>
+  </data>
+  <data name="checkBox_useperfthreads.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBox_useperfthreads.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
+    <value>104, 19</value>
   </data>
   <data name="checkBox_useperfthreads.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -285,13 +325,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>checkBox_useperfthreads</value>
   </data>
   <data name="&gt;&gt;checkBox_useperfthreads.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_useperfthreads.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_useperfthreads.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="checkBox_communityServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -300,10 +340,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>True</value>
   </data>
   <data name="checkBox_communityServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 118</value>
+    <value>30, 136</value>
+  </data>
+  <data name="checkBox_communityServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 17</value>
+    <value>173, 19</value>
   </data>
   <data name="checkBox_communityServer.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -318,13 +361,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>checkBox_communityServer</value>
   </data>
   <data name="&gt;&gt;checkBox_communityServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkBox_communityServer.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_communityServer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -333,10 +376,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 91</value>
+    <value>727, 105</value>
+  </data>
+  <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+    <value>117, 27</value>
   </data>
   <data name="button5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -351,13 +397,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>button5</value>
   </data>
   <data name="&gt;&gt;button5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button5.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -366,10 +412,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>500, 91</value>
+    <value>583, 105</value>
+  </data>
+  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -381,13 +430,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>textBox2</value>
   </data>
   <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -396,10 +445,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 62</value>
+    <value>727, 72</value>
+  </data>
+  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+    <value>117, 27</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -414,13 +466,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>button4</value>
   </data>
   <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button4.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -429,10 +481,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>500, 63</value>
+    <value>583, 73</value>
+  </data>
+  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -444,13 +499,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>textBox1</value>
   </data>
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -461,8 +516,11 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 59</value>
+    <value>856, 68</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -477,13 +535,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>label1</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="button_startServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -492,10 +550,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_startServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 63</value>
+    <value>285, 73</value>
+  </data>
+  <data name="button_startServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button_startServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 50</value>
+    <value>206, 58</value>
   </data>
   <data name="button_startServer.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -510,13 +571,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>button_startServer</value>
   </data>
   <data name="&gt;&gt;button_startServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_startServer.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="button_downloadServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -525,10 +586,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_downloadServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 90</value>
+    <value>14, 104</value>
+  </data>
+  <data name="button_downloadServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button_downloadServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 23</value>
+    <value>264, 27</value>
   </data>
   <data name="button_downloadServer.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -543,13 +607,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>button_downloadServer</value>
   </data>
   <data name="&gt;&gt;button_downloadServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_downloadServer.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_downloadServer.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="button_downloadSteamCMD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -558,10 +622,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_downloadSteamCMD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 63</value>
+    <value>14, 73</value>
+  </data>
+  <data name="button_downloadSteamCMD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="button_downloadSteamCMD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 23</value>
+    <value>264, 27</value>
   </data>
   <data name="button_downloadSteamCMD.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -576,13 +643,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>button_downloadSteamCMD</value>
   </data>
   <data name="&gt;&gt;button_downloadSteamCMD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_downloadSteamCMD.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -590,8 +657,11 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 138</value>
+    <value>856, 159</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -600,7 +670,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -612,10 +682,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Fill</value>
   </data>
   <data name="panel_chilForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 162</value>
+    <value>0, 183</value>
+  </data>
+  <data name="panel_chilForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panel_chilForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 549</value>
+    <value>856, 637</value>
   </data>
   <data name="panel_chilForm.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -624,7 +697,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel_chilForm</value>
   </data>
   <data name="&gt;&gt;panel_chilForm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel_chilForm.Parent" xml:space="preserve">
     <value>$this</value>
@@ -632,36 +705,9 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;panel_chilForm.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
   </metadata>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 138</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>734, 24</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="serverSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
   </data>
@@ -674,53 +720,11 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="rCONToolStripMenuItem.Text" xml:space="preserve">
     <value>RCON</value>
   </data>
-  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+  <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
   </data>
-  <data name="githubToolStripMenuItem.Text" xml:space="preserve">
-    <value>Github</value>
-  </data>
-  <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Github</value>
-  </data>
-  <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Repository</value>
-  </data>
-  <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Directory</value>
-  </data>
-  <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Base Directory</value>
-  </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="chineseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chinese</value>
+  <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instruction</value>
   </data>
   <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -728,20 +732,89 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="infoToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
-  <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
   </data>
-  <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Instruction</value>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="chineseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Base Directory</value>
+  </data>
+  <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Directory</value>
+  </data>
+  <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Github</value>
+  </data>
+  <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Repository</value>
+  </data>
+  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="githubToolStripMenuItem.Text" xml:space="preserve">
+    <value>Github</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 159</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 2, 0, 2</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>856, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>734, 711</value>
+    <value>856, 820</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1584,8 +1657,11 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
         +Q/+xvu2r6xvjn7c/wt/ILnbMV/tZgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>750, 750</value>
+    <value>872, 859</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1597,84 +1673,84 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>toolTip1</value>
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;serverSettingsToolStripMenuItem.Name" xml:space="preserve">
     <value>serverSettingsToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;serverSettingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rCONToolStripMenuItem.Name" xml:space="preserve">
     <value>rCONToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;rCONToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;githubToolStripMenuItem.Name" xml:space="preserve">
-    <value>githubToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;githubToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;githubToolStripMenuItem1.Name" xml:space="preserve">
-    <value>githubToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;githubToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;repoPageToolStripMenuItem.Name" xml:space="preserve">
-    <value>repoPageToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;repoPageToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;directoryToolStripMenuItem.Name" xml:space="preserve">
-    <value>directoryToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;directoryToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Name" xml:space="preserve">
-    <value>baseDirectoryToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
-    <value>languageToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
-    <value>englishToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chineseToolStripMenuItem.Name" xml:space="preserve">
-    <value>chineseToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;chineseToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;infoToolStripMenuItem.Name" xml:space="preserve">
     <value>infoToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;infoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;instructionToolStripMenuItem.Name" xml:space="preserve">
     <value>instructionToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;instructionToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chineseToolStripMenuItem.Name" xml:space="preserve">
+    <value>chineseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;chineseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;directoryToolStripMenuItem.Name" xml:space="preserve">
+    <value>directoryToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;directoryToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Name" xml:space="preserve">
+    <value>baseDirectoryToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem.Name" xml:space="preserve">
+    <value>githubToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem1.Name" xml:space="preserve">
+    <value>githubToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;repoPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>repoPageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;repoPageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

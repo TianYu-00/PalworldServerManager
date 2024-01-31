@@ -35,6 +35,7 @@ namespace PalworldServerManager
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
+            button_manualSave = new System.Windows.Forms.Button();
             panel1 = new System.Windows.Forms.Panel();
             label63 = new System.Windows.Forms.Label();
             richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -165,10 +166,20 @@ namespace PalworldServerManager
             label62 = new System.Windows.Forms.Label();
             textBox_serverName = new System.Windows.Forms.TextBox();
             comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
+            tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            label66 = new System.Windows.Forms.Label();
+            textBox_backupTo = new System.Windows.Forms.TextBox();
+            button_backupTo = new System.Windows.Forms.Button();
+            tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            label65 = new System.Windows.Forms.Label();
+            textBox_backupInterval = new System.Windows.Forms.TextBox();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
+            timer1 = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -185,6 +196,7 @@ namespace PalworldServerManager
             tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
             tableLayoutPanel1.Controls.Add(button2, 0, 0);
             tableLayoutPanel1.Controls.Add(button3, 1, 0);
+            tableLayoutPanel1.Controls.Add(button_manualSave, 2, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // button2
@@ -203,6 +215,13 @@ namespace PalworldServerManager
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button_manualSave
+            // 
+            resources.ApplyResources(button_manualSave, "button_manualSave");
+            button_manualSave.Name = "button_manualSave";
+            button_manualSave.UseVisualStyleBackColor = true;
+            button_manualSave.Click += button_manualSave_Click;
+            // 
             // panel1
             // 
             resources.ApplyResources(panel1, "panel1");
@@ -212,6 +231,8 @@ namespace PalworldServerManager
             panel1.Controls.Add(label64);
             panel1.Controls.Add(richTextBox1);
             panel1.Controls.Add(tableLayoutPanel2);
+            panel1.Controls.Add(tableLayoutPanel4);
+            panel1.Controls.Add(tableLayoutPanel3);
             panel1.Name = "panel1";
             // 
             // label63
@@ -1106,6 +1127,52 @@ namespace PalworldServerManager
             comboBox_rconEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_rconEnabled.Items"), resources.GetString("comboBox_rconEnabled.Items1") });
             comboBox_rconEnabled.Name = "comboBox_rconEnabled";
             // 
+            // tableLayoutPanel4
+            // 
+            resources.ApplyResources(tableLayoutPanel4, "tableLayoutPanel4");
+            tableLayoutPanel4.Controls.Add(label66, 0, 0);
+            tableLayoutPanel4.Controls.Add(textBox_backupTo, 1, 0);
+            tableLayoutPanel4.Controls.Add(button_backupTo, 2, 0);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // label66
+            // 
+            resources.ApplyResources(label66, "label66");
+            label66.Name = "label66";
+            // 
+            // textBox_backupTo
+            // 
+            resources.ApplyResources(textBox_backupTo, "textBox_backupTo");
+            textBox_backupTo.Name = "textBox_backupTo";
+            // 
+            // button_backupTo
+            // 
+            resources.ApplyResources(button_backupTo, "button_backupTo");
+            button_backupTo.Name = "button_backupTo";
+            button_backupTo.UseVisualStyleBackColor = true;
+            button_backupTo.Click += button_backupTo_Click;
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(tableLayoutPanel3, "tableLayoutPanel3");
+            tableLayoutPanel3.Controls.Add(label65, 0, 0);
+            tableLayoutPanel3.Controls.Add(textBox_backupInterval, 1, 0);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // label65
+            // 
+            resources.ApplyResources(label65, "label65");
+            label65.Name = "label65";
+            // 
+            // textBox_backupInterval
+            // 
+            resources.ApplyResources(textBox_backupInterval, "textBox_backupInterval");
+            textBox_backupInterval.Name = "textBox_backupInterval";
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Form_ServerSettings
             // 
             resources.ApplyResources(this, "$this");
@@ -1120,6 +1187,10 @@ namespace PalworldServerManager
             panel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            tableLayoutPanel4.PerformLayout();
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1261,5 +1332,14 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.TextBox textBox_backupInterval;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.TextBox textBox_backupTo;
+        private System.Windows.Forms.Button button_backupTo;
+        private System.Windows.Forms.Button button_manualSave;
     }
 }
