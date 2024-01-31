@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="panel2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="panel_playersSection.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel_topSection.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="richTextBox_output.Text" xml:space="preserve">
     <value>====================================================================
 Info - (显示服务器信息)
@@ -140,12 +128,12 @@ BanPlayer {Steam ID} - (封禁玩家)
 Shutdown {Seconds} {MessageText} - (通知服务器在线玩家n秒后服务器关闭)
 DoExit - (停止服务器)
 ====================================================================
+
+注意！
+RCON  是测试版功能，我仍在开发中，目前只能在本地 127.0.0.1 上运行。
 </value>
   </data>
   <data name="richTextBox_output.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel_sendSection.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="textBox_commandText.ToolTip" xml:space="preserve">
@@ -161,10 +149,13 @@ DoExit - (停止服务器)
   <data name="button_sendCommand.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="panel_playerListSection.ToolTip" xml:space="preserve">
+  <data name="tableLayoutPanel_sendSection.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel_playerListSection.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="button_kick.Font" type="System.Drawing.Font, System.Drawing">
@@ -185,7 +176,7 @@ DoExit - (停止服务器)
   <data name="button_ban.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="panel3.ToolTip" xml:space="preserve">
+  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
@@ -195,6 +186,12 @@ DoExit - (停止服务器)
     <value>名称 | 玩家UID | SteamID</value>
   </data>
   <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel_playersSection.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="textBox_ipRCON.ToolTip" xml:space="preserve">
@@ -231,6 +228,12 @@ DoExit - (停止服务器)
     <value />
   </data>
   <data name="button1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel_topSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="$this.ToolTip" xml:space="preserve">

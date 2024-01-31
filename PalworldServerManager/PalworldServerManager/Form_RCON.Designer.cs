@@ -64,24 +64,27 @@ namespace PalworldServerManager
             // 
             // panel1
             // 
+            resources.ApplyResources(panel1, "panel1");
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(panel_playersSection);
             panel1.Controls.Add(tableLayoutPanel_topSection);
-            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
+            toolTip1.SetToolTip(panel1, resources.GetString("panel1.ToolTip"));
             // 
             // panel2
             // 
+            resources.ApplyResources(panel2, "panel2");
             panel2.Controls.Add(richTextBox_output);
             panel2.Controls.Add(tableLayoutPanel_sendSection);
-            resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
+            toolTip1.SetToolTip(panel2, resources.GetString("panel2.ToolTip"));
             // 
             // richTextBox_output
             // 
             resources.ApplyResources(richTextBox_output, "richTextBox_output");
             richTextBox_output.Name = "richTextBox_output";
             richTextBox_output.ReadOnly = true;
+            toolTip1.SetToolTip(richTextBox_output, resources.GetString("richTextBox_output.ToolTip"));
             // 
             // tableLayoutPanel_sendSection
             // 
@@ -89,33 +92,38 @@ namespace PalworldServerManager
             tableLayoutPanel_sendSection.Controls.Add(textBox_commandText, 0, 0);
             tableLayoutPanel_sendSection.Controls.Add(button_sendCommand, 1, 0);
             tableLayoutPanel_sendSection.Name = "tableLayoutPanel_sendSection";
+            toolTip1.SetToolTip(tableLayoutPanel_sendSection, resources.GetString("tableLayoutPanel_sendSection.ToolTip"));
             // 
             // textBox_commandText
             // 
-            textBox_commandText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(textBox_commandText, "textBox_commandText");
+            textBox_commandText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             textBox_commandText.Name = "textBox_commandText";
+            toolTip1.SetToolTip(textBox_commandText, resources.GetString("textBox_commandText.ToolTip"));
             // 
             // button_sendCommand
             // 
             resources.ApplyResources(button_sendCommand, "button_sendCommand");
             button_sendCommand.Name = "button_sendCommand";
+            toolTip1.SetToolTip(button_sendCommand, resources.GetString("button_sendCommand.ToolTip"));
             button_sendCommand.UseVisualStyleBackColor = true;
             button_sendCommand.Click += button_sendCommand_Click;
             // 
             // panel_playersSection
             // 
+            resources.ApplyResources(panel_playersSection, "panel_playersSection");
             panel_playersSection.Controls.Add(panel_playerListSection);
             panel_playersSection.Controls.Add(tableLayoutPanel1);
             panel_playersSection.Controls.Add(panel3);
-            resources.ApplyResources(panel_playersSection, "panel_playersSection");
             panel_playersSection.Name = "panel_playersSection";
+            toolTip1.SetToolTip(panel_playersSection, resources.GetString("panel_playersSection.ToolTip"));
             // 
             // panel_playerListSection
             // 
             resources.ApplyResources(panel_playerListSection, "panel_playerListSection");
             panel_playerListSection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             panel_playerListSection.Name = "panel_playerListSection";
+            toolTip1.SetToolTip(panel_playerListSection, resources.GetString("panel_playerListSection.ToolTip"));
             // 
             // tableLayoutPanel1
             // 
@@ -123,11 +131,13 @@ namespace PalworldServerManager
             tableLayoutPanel1.Controls.Add(button_kick, 0, 0);
             tableLayoutPanel1.Controls.Add(button_ban, 1, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
+            toolTip1.SetToolTip(tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             // 
             // button_kick
             // 
             resources.ApplyResources(button_kick, "button_kick");
             button_kick.Name = "button_kick";
+            toolTip1.SetToolTip(button_kick, resources.GetString("button_kick.ToolTip"));
             button_kick.UseVisualStyleBackColor = true;
             button_kick.Click += button_kick_Click;
             // 
@@ -135,20 +145,23 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(button_ban, "button_ban");
             button_ban.Name = "button_ban";
+            toolTip1.SetToolTip(button_ban, resources.GetString("button_ban.ToolTip"));
             button_ban.UseVisualStyleBackColor = true;
             button_ban.Click += button_ban_Click;
             // 
             // panel3
             // 
-            panel3.Controls.Add(label1);
             resources.ApplyResources(panel3, "panel3");
+            panel3.Controls.Add(label1);
             panel3.Name = "panel3";
+            toolTip1.SetToolTip(panel3, resources.GetString("panel3.ToolTip"));
             // 
             // label1
             // 
-            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(label1, "label1");
+            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             label1.Name = "label1";
+            toolTip1.SetToolTip(label1, resources.GetString("label1.ToolTip"));
             // 
             // tableLayoutPanel_topSection
             // 
@@ -160,21 +173,25 @@ namespace PalworldServerManager
             tableLayoutPanel_topSection.Controls.Add(textBox_passwordRCON, 1, 2);
             tableLayoutPanel_topSection.Controls.Add(button1, 0, 2);
             tableLayoutPanel_topSection.Name = "tableLayoutPanel_topSection";
+            toolTip1.SetToolTip(tableLayoutPanel_topSection, resources.GetString("tableLayoutPanel_topSection.ToolTip"));
             // 
             // textBox_ipRCON
             // 
             resources.ApplyResources(textBox_ipRCON, "textBox_ipRCON");
             textBox_ipRCON.Name = "textBox_ipRCON";
+            toolTip1.SetToolTip(textBox_ipRCON, resources.GetString("textBox_ipRCON.ToolTip"));
             // 
             // textBox_portRCON
             // 
             resources.ApplyResources(textBox_portRCON, "textBox_portRCON");
             textBox_portRCON.Name = "textBox_portRCON";
+            toolTip1.SetToolTip(textBox_portRCON, resources.GetString("textBox_portRCON.ToolTip"));
             // 
             // button_connectRCON
             // 
             resources.ApplyResources(button_connectRCON, "button_connectRCON");
             button_connectRCON.Name = "button_connectRCON";
+            toolTip1.SetToolTip(button_connectRCON, resources.GetString("button_connectRCON.ToolTip"));
             button_connectRCON.UseVisualStyleBackColor = true;
             button_connectRCON.Click += button_connectRCON_Click;
             // 
@@ -182,6 +199,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(button_disconnectRCON, "button_disconnectRCON");
             button_disconnectRCON.Name = "button_disconnectRCON";
+            toolTip1.SetToolTip(button_disconnectRCON, resources.GetString("button_disconnectRCON.ToolTip"));
             button_disconnectRCON.UseVisualStyleBackColor = true;
             button_disconnectRCON.Click += button_disconnectRCON_Click;
             // 
@@ -189,11 +207,13 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(textBox_passwordRCON, "textBox_passwordRCON");
             textBox_passwordRCON.Name = "textBox_passwordRCON";
+            toolTip1.SetToolTip(textBox_passwordRCON, resources.GetString("textBox_passwordRCON.ToolTip"));
             // 
             // button1
             // 
             resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
+            toolTip1.SetToolTip(button1, resources.GetString("button1.ToolTip"));
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -208,6 +228,7 @@ namespace PalworldServerManager
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(panel1);
             Name = "Form_RCON";
+            toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             Load += Form_RCON_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
