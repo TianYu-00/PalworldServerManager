@@ -147,6 +147,10 @@ BanPlayer {Steam ID} - (Ban the player from joining the server)
 Shutdown {Seconds} {MessageText} - (Alert players before shutdown)
 DoExit - (Stop server)
 ====================================================================
+
+NOTICE!
+RCON IS A BETA FEATURE AND IM STILL WORKING ON IT, CURRENTLY ITLL ONLY WORK LOCALLY ON 127.0.0.1
+
 </value>
   </data>
   <data name="&gt;&gt;richTextBox_output.Name" xml:space="preserve">
