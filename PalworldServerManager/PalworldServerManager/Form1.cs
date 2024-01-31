@@ -10,6 +10,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -444,18 +445,8 @@ namespace PalworldServerManager
 
         private void baseDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Get the base directory of the application
-                string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-                // Open the base directory using the default file explorer
-                Process.Start(baseDirectory);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening base directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            OpenFileDirectoryGiven(baseDirectory);
         }
 
         private void instructionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -475,29 +466,41 @@ namespace PalworldServerManager
 
         private void githubToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            string githubUrl = "https://github.com/Tianyu-00";
+            string githubUrl = @"https://github.com/Tianyu-00";
 
-            try
-            {
-                Process.Start(githubUrl);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            OpenURLGiven(githubUrl);
         }
 
         private void repoPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string githubRepoUrl = "https://github.com/TianYu-00/PalworldServerManager";
+            OpenURLGiven(githubRepoUrl);
 
+        }
+
+        private void OpenURLGiven(string URL)
+        {
             try
             {
-                Process.Start(githubRepoUrl);
+                //Process.Start(githubRepoUrl); //Wont work on .net core
+                Process.Start(new ProcessStartInfo { FileName = URL, UseShellExecute = true }); //turns useshellexecute on which is defaulted to off after vs update.
+                //System.Diagnostics.Process.Start("explorer.exe", URL); //Works
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error opening GitHub: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error opening Link: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void OpenFileDirectoryGiven(string directory)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo { FileName = directory, UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

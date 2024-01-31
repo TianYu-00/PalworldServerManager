@@ -704,14 +704,19 @@ namespace PalworldServerManager
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // Get the base directory of the application
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string iniFilePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
+            OpenFileDirectoryGiven(iniFilePath);
+
+
+        }
+
+        private void OpenFileDirectoryGiven(string directory)
+        {
             try
             {
-                // Get the base directory of the application
-                string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string iniFilePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
-
-                // Open the base directory using the default file explorer
-                Process.Start(iniFilePath);
+                Process.Start(new ProcessStartInfo { FileName = directory, UseShellExecute = true });
             }
             catch (Exception ex)
             {
@@ -719,4 +724,6 @@ namespace PalworldServerManager
             }
         }
     }
+
+    
 }
