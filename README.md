@@ -29,7 +29,7 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 
 
 
-**`v1.0.3 RCON preview`**  
+**`v1.0.3 RCON preview`**  `CURRENTLY FIXING RCON CANT CONNECT REMOTELY ISSUE`
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/d413651f-4c54-4f88-b0d8-5d10539b48dd" alt="Image1" style="width: 100%; height: auto;">   
 
 **`v1.0.2 preview`**  
