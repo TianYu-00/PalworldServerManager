@@ -761,7 +761,7 @@ namespace PalworldServerManager
 
         public void SaveGameTimer_Start()
         {
-            if (serv_backupInterval != "0")
+            if (serv_backupInterval != "0" && serv_backupInterval != "")
             {
                 try
                 {
