@@ -4885,6 +4885,9 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="label66.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="label66.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
   <data name="label66.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
@@ -5210,6 +5213,9 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   </data>
   <data name="label65.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="label65.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
