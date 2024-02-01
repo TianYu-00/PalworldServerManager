@@ -320,7 +320,7 @@ namespace PalworldServerManager
             //READ GAMEWORLDSETTINGS
             ServerSettingsOnLoad();
             ReadWorldSettingsFile();
-            ReadSettingPreset();
+            ReadSettingPresetFromSaved();
             serv_backupInterval = textBox_backupInterval.Text;
             serv_backupToDirectory = textBox_backupTo.Text;
             serv_maxBackup = textBox_maxBackup.Text;
@@ -332,7 +332,7 @@ namespace PalworldServerManager
 
             if (askBeforeSave == DialogResult.Yes)
             {
-                ReadManagerSettings(); //Read All Textbox/ComboBox texts
+                ReadSettingControlsToVariables(); //Read All Textbox/ComboBox texts
                 bool writeSuccess = WriteWorldSettingsFile(); //Write the texts into world settings ini
 
                 if (writeSuccess)
@@ -491,7 +491,7 @@ namespace PalworldServerManager
             textBox_banListURL.Text = dserv_banListURL;
         }
 
-        private void ReadManagerSettings()
+        private void ReadSettingControlsToVariables()
         {
             //Backup settings
             serv_backupInterval = textBox_backupInterval.Text;
@@ -586,162 +586,169 @@ namespace PalworldServerManager
 
         private void SaveSettingPreset()
         {
-            // Save TextBox values to a text file
-            using (StreamWriter sw = new StreamWriter("serversettingpreset.txt"))
-            {
-                //backup settings
-                sw.WriteLine(serv_backupInterval);
-                sw.WriteLine(serv_maxBackup);
-                sw.WriteLine(serv_backupToDirectory);
+            //Properties.Settings.Default.Saved_backupInterval = serv_backupInterval;
+            //Properties.Settings.Default.Saved_maxBackup = serv_maxBackup;
+            //Properties.Settings.Default.Saved_backupTo = serv_backupToDirectory;
+            //Properties.Settings.Default.Saved_serverName = serv_serverName;
+            //Properties.Settings.Default.Saved_serverDescription = serv_serverDescription;
+            //Properties.Settings.Default.Saved_serverPlayerMaxNum = serv_serverPlayerMaxNum;
+            //Properties.Settings.Default.Saved_adminPassword = serv_adminPassword;
+            //Properties.Settings.Default.Saved_serverPassword = serv_serverPassword;
+            //Properties.Settings.Default.Saved_publicPort = serv_publicPort;
+            //Properties.Settings.Default.Saved_publicIP = serv_publicIP;
+            //Properties.Settings.Default.Saved_rconEnabled = serv_rconEnabled;
+            //Properties.Settings.Default.Saved_RconPort = serv_rconPort;
+            //Properties.Settings.Default.Saved_difficulty = serv_difficulty;
+            //Properties.Settings.Default.Saved_dayTimeSpeedRate = serv_dayTimeSpeedRate;
+            //Properties.Settings.Default.Saved_nightTimeSpeedRate = serv_nightTimeSpeedRate;
+            //Properties.Settings.Default.Saved_expRate = serv_expRate;
 
-                //Server settings
-                sw.WriteLine(serv_serverName);
-                sw.WriteLine(serv_serverDescription);
-                sw.WriteLine(serv_serverPlayerMaxNum);
-                sw.WriteLine(serv_adminPassword);
-                sw.WriteLine(serv_serverPassword);
-                sw.WriteLine(serv_publicPort);
-                sw.WriteLine(serv_publicIP);
-                sw.WriteLine(serv_rconEnabled);
-                sw.WriteLine(serv_rconPort);
-                sw.WriteLine(serv_difficulty);
-                sw.WriteLine(serv_dayTimeSpeedRate);
-                sw.WriteLine(serv_nightTimeSpeedRate);
-                sw.WriteLine(serv_expRate);
-                sw.WriteLine(serv_palCaptureRate);
-                sw.WriteLine(serv_palSpawnNumRate);
-                sw.WriteLine(serv_palDamageRateAttack);
-                sw.WriteLine(serv_palDamageRateDefense);
-                sw.WriteLine(serv_playerDamageRateAttack);
-                sw.WriteLine(serv_playerDamageRateDefense);
-                sw.WriteLine(serv_playerStomachDecreaseRate);
-                sw.WriteLine(serv_playerStaminaDecreaseRate);
-                sw.WriteLine(serv_playerAutoHpRegenRate);
-                sw.WriteLine(serv_playerAutoHpRegenRateInSleep);
-                sw.WriteLine(serv_palStomachDecreaseRate);
-                sw.WriteLine(serv_palStaminaDecreaseRate);
-                sw.WriteLine(serv_palAutoHpRegeneRate);
-                sw.WriteLine(serv_palAutoHpRegeneRateInSleep);
-                sw.WriteLine(serv_buildObjectDamageRate);
-                sw.WriteLine(serv_buildObjectDeteriorationDamageRate);
-                sw.WriteLine(serv_collectionDropRate);
-                sw.WriteLine(serv_collectionObjectHpRate);
-                sw.WriteLine(serv_collectionObjectRespawnSpeedRate);
-                sw.WriteLine(serv_enemyDropItemRate);
-                sw.WriteLine(serv_deathPenalty);
-                sw.WriteLine(serv_enablePlayerToPlayerDamage);
-                sw.WriteLine(serv_enableFriendlyFire);
-                sw.WriteLine(serv_enableInvaderEnemy);
-                sw.WriteLine(serv_activeUNKO);
-                sw.WriteLine(serv_enableAimAssistPad);
-                sw.WriteLine(serv_enableAimAssistKeyboard);
-                sw.WriteLine(serv_dropItemMaxNum);
-                sw.WriteLine(serv_dropItemMaxNum_UNKO);
-                sw.WriteLine(serv_baseCampMaxNum);
-                sw.WriteLine(serv_baseCampWorkerMaxNum);
-                sw.WriteLine(serv_dropItemAliveMaxHours);
-                sw.WriteLine(serv_autoResetGuildNoOnlinePlayers);
-                sw.WriteLine(serv_autoResetGuildTimeNoOnlinePlayers);
-                sw.WriteLine(serv_guildPlayerMaxNum);
-                sw.WriteLine(serv_palEggDefaultHatchingTime);
-                sw.WriteLine(serv_workSpeedRate);
-                sw.WriteLine(serv_isMultiplay);
-                sw.WriteLine(serv_isPvP);
-                sw.WriteLine(serv_canPickupOtherGuildDeathPenaltyDrop);
-                sw.WriteLine(serv_enableNonLoginPenalty);
-                sw.WriteLine(serv_enableFastTravel);
-                sw.WriteLine(serv_isStartLocationSelectByMap);
-                sw.WriteLine(serv_existPlayerAfterLogout);
-                sw.WriteLine(serv_enableDefenseOtherGuildPlayer);
-                sw.WriteLine(serv_coopPlayerMaxNum);
-                sw.WriteLine(serv_region);
-                sw.WriteLine(serv_useAuth);
-                sw.WriteLine(serv_banListURL);
-                // Backup
-                //sw.WriteLine(serv_banListURL);
+            //Backup Settings
+            Properties.Settings.Default.Saved_backupInterval = serv_backupInterval;
+            Properties.Settings.Default.Saved_maxBackup = serv_maxBackup;
+            Properties.Settings.Default.Saved_backupTo = serv_backupToDirectory;
 
-            }
+            //Server Settings
+            Properties.Settings.Default.Saved_difficulty = serv_difficulty;
+            Properties.Settings.Default.Saved_dayTimeSpeedRate = serv_dayTimeSpeedRate;
+            Properties.Settings.Default.Saved_nightTimeSpeedRate = serv_nightTimeSpeedRate;
+            Properties.Settings.Default.Saved_expRate = serv_expRate;
+            Properties.Settings.Default.Saved_palCaptureRate = serv_palCaptureRate;
+            Properties.Settings.Default.Saved_palSpawnNumRate = serv_palSpawnNumRate;
+            Properties.Settings.Default.Saved_palDamageRateAttack = serv_palDamageRateAttack;
+            Properties.Settings.Default.Saved_palDamageRateDefense = serv_palDamageRateDefense;
+            Properties.Settings.Default.Saved_playerDamageRateAttack = serv_playerDamageRateAttack;
+            Properties.Settings.Default.Saved_playerDamageRateDefense = serv_playerDamageRateDefense;
+            Properties.Settings.Default.Saved_playerStomachDecreaseRate = serv_playerStomachDecreaseRate;
+            Properties.Settings.Default.Saved_playerStaminaDecreaseRate = serv_playerStaminaDecreaseRate;
+            Properties.Settings.Default.Saved_playerAutoHpRegeneRate = serv_playerAutoHpRegenRate;
+            Properties.Settings.Default.Saved_playerAutoHpRegeneRateInSleep = serv_playerAutoHpRegenRateInSleep;
+            Properties.Settings.Default.Saved_palStomachDecreaseRate = serv_palStomachDecreaseRate;
+            Properties.Settings.Default.Saved_palStaminaDecreaseRate = serv_palStaminaDecreaseRate;
+            Properties.Settings.Default.Saved_palAutoHpRegeneRate = serv_palAutoHpRegeneRate;
+            Properties.Settings.Default.Saved_palAutoHpRegeneRateInSleep = serv_palAutoHpRegeneRateInSleep;
+            Properties.Settings.Default.Saved_buildObjectDamageRate = serv_buildObjectDamageRate;
+            Properties.Settings.Default.Saved_buildObjectDeteriorationDamageRate = serv_buildObjectDeteriorationDamageRate;
+            Properties.Settings.Default.Saved_collectionDropRate = serv_collectionDropRate;
+            Properties.Settings.Default.Saved_collectionObjectHpRate = serv_collectionObjectHpRate;
+            Properties.Settings.Default.Saved_collectionObjectRespawnSpeedRate = serv_collectionObjectRespawnSpeedRate;
+            Properties.Settings.Default.Saved_enemyDropItemRate = serv_enemyDropItemRate;
+            Properties.Settings.Default.Saved_deathPenalty = serv_deathPenalty;
+            Properties.Settings.Default.Saved_enablePlayerToPlayerDamage = serv_enablePlayerToPlayerDamage;
+            Properties.Settings.Default.Saved_enableFriendlyFire = serv_enableFriendlyFire;
+            Properties.Settings.Default.Saved_enableInvaderEnemy = serv_enableInvaderEnemy;
+            Properties.Settings.Default.Saved_activeUNKO = serv_activeUNKO;
+            Properties.Settings.Default.Saved_enableAimAssistPad = serv_enableAimAssistPad;
+            Properties.Settings.Default.Saved_enableAimAssistKeyboard = serv_enableAimAssistKeyboard;
+            Properties.Settings.Default.Saved_dropItemMaxNum = serv_dropItemMaxNum;
+            Properties.Settings.Default.Saved_dropItemMaxNum_UNKO = serv_dropItemMaxNum_UNKO;
+            Properties.Settings.Default.Saved_baseCampMaxNum = serv_baseCampMaxNum;
+            Properties.Settings.Default.Saved_baseCampWorkerMaxNum = serv_baseCampWorkerMaxNum;
+            Properties.Settings.Default.Saved_dropItemAliveMaxHours = serv_dropItemAliveMaxHours;
+            Properties.Settings.Default.Saved_autoResetGuildNoOnlinePlayers = serv_autoResetGuildNoOnlinePlayers;
+            Properties.Settings.Default.Saved_autoResetGuildTimeNoOnlinePlayers = serv_autoResetGuildTimeNoOnlinePlayers;
+            Properties.Settings.Default.Saved_guildPlayerMaxNum = serv_guildPlayerMaxNum;
+            Properties.Settings.Default.Saved_palEggDefaultHatchingTime = serv_palEggDefaultHatchingTime;
+            Properties.Settings.Default.Saved_workSpeedRate = serv_workSpeedRate;
+            Properties.Settings.Default.Saved_isMultiplay = serv_isMultiplay;
+            Properties.Settings.Default.Saved_isPvP = serv_isPvP;
+            Properties.Settings.Default.Saved_canPickupOtherGuildDeathPenaltyDrop = serv_canPickupOtherGuildDeathPenaltyDrop;
+            Properties.Settings.Default.Saved_enableNonLoginPenalty = serv_enableNonLoginPenalty;
+            Properties.Settings.Default.Saved_enableFastTravel = serv_enableFastTravel;
+            Properties.Settings.Default.Saved_isStartLocationSelectByMap = serv_isStartLocationSelectByMap;
+            Properties.Settings.Default.Saved_existPlayerAfterLogout = serv_existPlayerAfterLogout;
+            Properties.Settings.Default.Saved_enableDefenseOtherGuildPlayer = serv_enableDefenseOtherGuildPlayer;
+            Properties.Settings.Default.Saved_coopPlayerMaxNum = serv_coopPlayerMaxNum;
+            Properties.Settings.Default.Saved_region = serv_region;
+            Properties.Settings.Default.Saved_useAuth = serv_useAuth;
+            Properties.Settings.Default.Saved_banListURL = serv_banListURL;
+            Properties.Settings.Default.Saved_serverPlayerMaxNum = serv_serverPlayerMaxNum;
+            Properties.Settings.Default.Saved_serverName = serv_serverName;
+            Properties.Settings.Default.Saved_serverDescription = serv_serverDescription;
+            Properties.Settings.Default.Saved_adminPassword = serv_adminPassword;
+            Properties.Settings.Default.Saved_serverPassword = serv_serverPassword;
+            Properties.Settings.Default.Saved_publicPort = serv_publicPort;
+            Properties.Settings.Default.Saved_publicIP = serv_publicIP;
+            Properties.Settings.Default.Saved_rconEnabled = serv_rconEnabled;
+            Properties.Settings.Default.Saved_rconPort = serv_rconPort;
 
-            //MessageBox.Show("Data saved successfully!");
+
+            // Save the settings
+            Properties.Settings.Default.Save();
+
         }
 
-        private void ReadSettingPreset()
+        private void ReadSettingPresetFromSaved()
         {
-            // Read values from the text file and set them to TextBoxes on form load
-            if (File.Exists("serversettingpreset.txt"))
-            {
-                using (StreamReader sr = new StreamReader("serversettingpreset.txt"))
-                {
                     //backup settings
-                    textBox_backupInterval.Text = sr.ReadLine();
-                    textBox_maxBackup.Text = sr.ReadLine();
-                    textBox_backupTo.Text = sr.ReadLine();
+                    textBox_backupInterval.Text = Properties.Settings.Default.Saved_backupInterval;
+                    textBox_maxBackup.Text = Properties.Settings.Default.Saved_maxBackup;
+                    textBox_backupTo.Text = Properties.Settings.Default.Saved_backupTo;
 
                     //server settings
-                    textBox_serverName.Text = sr.ReadLine();
-                    textBox_serverDescription.Text = sr.ReadLine();
-                    textBox_serverPlayerMaxNum.Text = sr.ReadLine();
-                    textBox_adminPassword.Text = sr.ReadLine();
-                    textBox_serverPassword.Text = sr.ReadLine();
-                    textBox_publicPort.Text = sr.ReadLine();
-                    textBox_publicIP.Text = sr.ReadLine();
-                    comboBox_rconEnabled.Text = sr.ReadLine();
-                    textBox_rconPort.Text = sr.ReadLine();
-                    comboBox_difficulty.Text = sr.ReadLine();
-                    textBox_dayTimeSpeedRate.Text = sr.ReadLine();
-                    textBox_nightTimeSpeedRate.Text = sr.ReadLine();
-                    textBox_expRate.Text = sr.ReadLine();
-                    textBox_palCaptureRate.Text = sr.ReadLine();
-                    textBox_palSpawnNumRate.Text = sr.ReadLine();
-                    textBox_palDamageRateAttack.Text = sr.ReadLine();
-                    textBox_palDamageRateDefense.Text = sr.ReadLine();
-                    textBox_playerDamageRateAttack.Text = sr.ReadLine();
-                    textBox_playerDamageRateDefense.Text = sr.ReadLine();
-                    textBox_playerStomachDecreaceRate.Text = sr.ReadLine();
-                    textBox_playerStaminaDecreaceRate.Text = sr.ReadLine();
-                    textBox_playerAutoHpRegeneRate.Text = sr.ReadLine();
-                    textBox_playerAutoHpRegeneRateInSleep.Text = sr.ReadLine();
-                    textBox_palStomachDecreaceRate.Text = sr.ReadLine();
-                    textBox_palStaminaDecreaceRate.Text = sr.ReadLine();
-                    textBox_palAutoHpRegeneRate.Text = sr.ReadLine();
-                    textBox_palAutoHpRegeneRateInSleep.Text = sr.ReadLine();
-                    textBox_buildObjectDamageRate.Text = sr.ReadLine();
-                    textBox_buildObjectDeteriorationDamageRate.Text = sr.ReadLine();
-                    textBox_collectionDropRate.Text = sr.ReadLine();
-                    textBox_collectionObjectHpRate.Text = sr.ReadLine();
-                    textBox_collectionObjectRespawnSpeedRate.Text = sr.ReadLine();
-                    textBox_enemyDropItemRate.Text = sr.ReadLine();
-                    comboBox_deathPenalty.Text = sr.ReadLine();
-                    comboBox_enablePlayerToPlayerDamage.Text = sr.ReadLine();
-                    comboBox_enableFriendlyFire.Text = sr.ReadLine();
-                    comboBox_enableInvaderEnemy.Text = sr.ReadLine();
-                    comboBox_activeUNKO.Text = sr.ReadLine();
-                    comboBox_enableAimAssistPad.Text = sr.ReadLine();
-                    comboBox_enableAimAssistKeyboard.Text = sr.ReadLine();
-                    textBox_dropItemMaxNum.Text = sr.ReadLine();
-                    textBox_dropItemMaxNum_UNKO.Text = sr.ReadLine();
-                    textBox_baseCampMaxNum.Text = sr.ReadLine();
-                    textBox_baseCampWorkerMaxNum.Text = sr.ReadLine();
-                    textBox_dropItemAliveMaxHours.Text = sr.ReadLine();
-                    comboBox_autoResetGuildNoOnlinePlayers.Text = sr.ReadLine();
-                    textBox_autoResetGuildTimeNoOnlinePlayers.Text = sr.ReadLine();
-                    textBox_guildPlayerMaxNum.Text = sr.ReadLine();
-                    textBox_palEggDefaultHatchingTime.Text = sr.ReadLine();
-                    textBox_workSpeedRate.Text = sr.ReadLine();
-                    comboBox_isMultiplay.Text = sr.ReadLine();
-                    comboBox_isPvP.Text = sr.ReadLine();
-                    comboBox_canPickupOtherGuildDeathPenaltyDrop.Text = sr.ReadLine();
-                    comboBox_enableNonLoginPenalty.Text = sr.ReadLine();
-                    comboBox_enableFastTravel.Text = sr.ReadLine();
-                    comboBox_isStartLocationSelectByMap.Text = sr.ReadLine();
-                    comboBox_existPlayerAfterLogout.Text = sr.ReadLine();
-                    comboBox_enableDefenseOtherGuildPlayer.Text = sr.ReadLine();
-                    textBox_coopPlayerMaxNum.Text = sr.ReadLine();
-                    textBox_region.Text = sr.ReadLine();
-                    comboBox_useAuth.Text = sr.ReadLine();
-                    textBox_banListURL.Text = sr.ReadLine();
-                }
-            }
+                    textBox_serverName.Text = Properties.Settings.Default.Saved_serverName;
+                    textBox_serverDescription.Text = Properties.Settings.Default.Saved_serverDescription;
+                    textBox_serverPlayerMaxNum.Text = Properties.Settings.Default.Saved_serverPlayerMaxNum;
+                    textBox_adminPassword.Text = Properties.Settings.Default.Saved_adminPassword;
+                    textBox_serverPassword.Text = Properties.Settings.Default.Saved_serverPassword;
+                    textBox_publicPort.Text = Properties.Settings.Default.Saved_publicPort;
+                    textBox_publicIP.Text = Properties.Settings.Default.Saved_publicIP;
+                    comboBox_rconEnabled.Text = Properties.Settings.Default.Saved_rconEnabled;
+                    textBox_rconPort.Text = Properties.Settings.Default.Saved_rconPort;
+                    comboBox_difficulty.Text = Properties.Settings.Default.Saved_difficulty;
+                    textBox_dayTimeSpeedRate.Text = Properties.Settings.Default.Saved_dayTimeSpeedRate;
+                    textBox_nightTimeSpeedRate.Text = Properties.Settings.Default.Saved_nightTimeSpeedRate;
+                    textBox_expRate.Text = Properties.Settings.Default.Saved_expRate;
+                    textBox_palCaptureRate.Text = Properties.Settings.Default.Saved_palCaptureRate;
+                    textBox_palSpawnNumRate.Text = Properties.Settings.Default.Saved_palSpawnNumRate;
+                    textBox_palDamageRateAttack.Text = Properties.Settings.Default.Saved_palDamageRateAttack;
+                    textBox_palDamageRateDefense.Text = Properties.Settings.Default.Saved_palDamageRateDefense;
+                    textBox_playerDamageRateAttack.Text = Properties.Settings.Default.Saved_playerDamageRateAttack;
+                    textBox_playerDamageRateDefense.Text = Properties.Settings.Default.Saved_playerDamageRateDefense;
+                    textBox_playerStomachDecreaceRate.Text = Properties.Settings.Default.Saved_playerStomachDecreaseRate;
+                    textBox_playerStaminaDecreaceRate.Text = Properties.Settings.Default.Saved_playerStaminaDecreaseRate;
+                    textBox_playerAutoHpRegeneRate.Text = Properties.Settings.Default.Saved_playerAutoHpRegeneRate;
+                    textBox_playerAutoHpRegeneRateInSleep.Text = Properties.Settings.Default.Saved_playerAutoHpRegeneRateInSleep;
+                    textBox_palStomachDecreaceRate.Text = Properties.Settings.Default.Saved_palStomachDecreaseRate;
+                    textBox_palStaminaDecreaceRate.Text = Properties.Settings.Default.Saved_palStaminaDecreaseRate;
+                    textBox_palAutoHpRegeneRate.Text = Properties.Settings.Default.Saved_palAutoHpRegeneRate;
+                    textBox_palAutoHpRegeneRateInSleep.Text = Properties.Settings.Default.Saved_palAutoHpRegeneRateInSleep;
+                    textBox_buildObjectDamageRate.Text = Properties.Settings.Default.Saved_buildObjectDamageRate;
+                    textBox_buildObjectDeteriorationDamageRate.Text = Properties.Settings.Default.Saved_buildObjectDeteriorationDamageRate;
+                    textBox_collectionDropRate.Text = Properties.Settings.Default.Saved_collectionDropRate;
+                    textBox_collectionObjectHpRate.Text = Properties.Settings.Default.Saved_collectionObjectHpRate;
+                    textBox_collectionObjectRespawnSpeedRate.Text = Properties.Settings.Default.Saved_collectionObjectRespawnSpeedRate;
+                    textBox_enemyDropItemRate.Text = Properties.Settings.Default.Saved_enemyDropItemRate;
+                    comboBox_deathPenalty.Text = Properties.Settings.Default.Saved_deathPenalty;
+                    comboBox_enablePlayerToPlayerDamage.Text = Properties.Settings.Default.Saved_enablePlayerToPlayerDamage;
+                    comboBox_enableFriendlyFire.Text = Properties.Settings.Default.Saved_enableFriendlyFire;
+                    comboBox_enableInvaderEnemy.Text = Properties.Settings.Default.Saved_enableInvaderEnemy;
+                    comboBox_activeUNKO.Text = Properties.Settings.Default.Saved_activeUNKO;
+                    comboBox_enableAimAssistPad.Text = Properties.Settings.Default.Saved_enableAimAssistPad;
+                    comboBox_enableAimAssistKeyboard.Text = Properties.Settings.Default.Saved_enableAimAssistKeyboard;
+                    textBox_dropItemMaxNum.Text = Properties.Settings.Default.Saved_dropItemMaxNum;
+                    textBox_dropItemMaxNum_UNKO.Text = Properties.Settings.Default.Saved_dropItemMaxNum_UNKO;
+                    textBox_baseCampMaxNum.Text = Properties.Settings.Default.Saved_baseCampMaxNum;
+                    textBox_baseCampWorkerMaxNum.Text = Properties.Settings.Default.Saved_baseCampWorkerMaxNum;
+                    textBox_dropItemAliveMaxHours.Text = Properties.Settings.Default.Saved_dropItemAliveMaxHours;
+                    comboBox_autoResetGuildNoOnlinePlayers.Text = Properties.Settings.Default.Saved_autoResetGuildNoOnlinePlayers;
+                    textBox_autoResetGuildTimeNoOnlinePlayers.Text = Properties.Settings.Default.Saved_autoResetGuildTimeNoOnlinePlayers;
+                    textBox_guildPlayerMaxNum.Text = Properties.Settings.Default.Saved_guildPlayerMaxNum;
+                    textBox_palEggDefaultHatchingTime.Text = Properties.Settings.Default.Saved_palEggDefaultHatchingTime;
+                    textBox_workSpeedRate.Text = Properties.Settings.Default.Saved_workSpeedRate;
+                    comboBox_isMultiplay.Text = Properties.Settings.Default.Saved_isMultiplay;
+                    comboBox_isPvP.Text = Properties.Settings.Default.Saved_isPvP;
+                    comboBox_canPickupOtherGuildDeathPenaltyDrop.Text = Properties.Settings.Default.Saved_canPickupOtherGuildDeathPenaltyDrop;
+                    comboBox_enableNonLoginPenalty.Text = Properties.Settings.Default.Saved_enableNonLoginPenalty;
+                    comboBox_enableFastTravel.Text = Properties.Settings.Default.Saved_enableFastTravel;
+                    comboBox_isStartLocationSelectByMap.Text = Properties.Settings.Default.Saved_isStartLocationSelectByMap;
+                    comboBox_existPlayerAfterLogout.Text = Properties.Settings.Default.Saved_existPlayerAfterLogout;
+                    comboBox_enableDefenseOtherGuildPlayer.Text = Properties.Settings.Default.Saved_enableDefenseOtherGuildPlayer;
+                    textBox_coopPlayerMaxNum.Text = Properties.Settings.Default.Saved_coopPlayerMaxNum;
+                    textBox_region.Text = Properties.Settings.Default.Saved_region;
+                    comboBox_useAuth.Text = Properties.Settings.Default.Saved_useAuth;
+                    textBox_banListURL.Text = Properties.Settings.Default.Saved_banListURL;
+
         }
 
         private void button3_Click(object sender, EventArgs e)

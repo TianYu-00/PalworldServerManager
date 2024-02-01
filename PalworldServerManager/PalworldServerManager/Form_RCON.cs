@@ -49,9 +49,9 @@ namespace PalworldServerManager
 
         private void OnLoad()
         { 
-            textBox_ipRCON.Text = Properties.Settings.Default.Saved_RconIP;
-            textBox_portRCON.Text = Properties.Settings.Default.Saved_RconPort;
-            textBox_passwordRCON.Text = Properties.Settings.Default.Saved_RconPassword;
+            textBox_ipRCON.Text = Properties.Settings.Default.Saved_rconIP;
+            textBox_portRCON.Text = Properties.Settings.Default.Saved_rconPort;
+            textBox_passwordRCON.Text = Properties.Settings.Default.Saved_rconPassword;
         }
 
         private async void ConnectRCON(string ipRcon, int portRcon, string passwordRcon)
@@ -135,9 +135,9 @@ namespace PalworldServerManager
         private async void button_connectRCON_Click(object sender, EventArgs e)
         {
             //Save the settings
-            Properties.Settings.Default.Saved_RconIP = textBox_ipRCON.Text;
-            Properties.Settings.Default.Saved_RconPort = textBox_portRCON.Text;
-            Properties.Settings.Default.Saved_RconPassword = textBox_passwordRCON.Text;
+            Properties.Settings.Default.Saved_rconIP = textBox_ipRCON.Text;
+            Properties.Settings.Default.Saved_rconPort = textBox_portRCON.Text;
+            Properties.Settings.Default.Saved_rconPassword = textBox_passwordRCON.Text;
             Properties.Settings.Default.Save();
             //Check for empty
             if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")

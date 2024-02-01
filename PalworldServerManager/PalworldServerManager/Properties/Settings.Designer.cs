@@ -38,36 +38,804 @@ namespace PalworldServerManager.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1")]
-        public string Saved_RconIP {
+        public string Saved_rconIP {
             get {
-                return ((string)(this["Saved_RconIP"]));
+                return ((string)(this["Saved_rconIP"]));
             }
             set {
-                this["Saved_RconIP"] = value;
+                this["Saved_rconIP"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("25575")]
-        public string Saved_RconPort {
+        public string Saved_rconPort {
             get {
-                return ((string)(this["Saved_RconPort"]));
+                return ((string)(this["Saved_rconPort"]));
             }
             set {
-                this["Saved_RconPort"] = value;
+                this["Saved_rconPort"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Saved_RconPassword {
+        public string Saved_rconPassword {
             get {
-                return ((string)(this["Saved_RconPassword"]));
+                return ((string)(this["Saved_rconPassword"]));
             }
             set {
-                this["Saved_RconPassword"] = value;
+                this["Saved_rconPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_serverName {
+            get {
+                return ((string)(this["Saved_serverName"]));
+            }
+            set {
+                this["Saved_serverName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_serverDescription {
+            get {
+                return ((string)(this["Saved_serverDescription"]));
+            }
+            set {
+                this["Saved_serverDescription"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_serverPlayerMaxNum {
+            get {
+                return ((string)(this["Saved_serverPlayerMaxNum"]));
+            }
+            set {
+                this["Saved_serverPlayerMaxNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_adminPassword {
+            get {
+                return ((string)(this["Saved_adminPassword"]));
+            }
+            set {
+                this["Saved_adminPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_serverPassword {
+            get {
+                return ((string)(this["Saved_serverPassword"]));
+            }
+            set {
+                this["Saved_serverPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_publicPort {
+            get {
+                return ((string)(this["Saved_publicPort"]));
+            }
+            set {
+                this["Saved_publicPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_publicIP {
+            get {
+                return ((string)(this["Saved_publicIP"]));
+            }
+            set {
+                this["Saved_publicIP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_rconEnabled {
+            get {
+                return ((string)(this["Saved_rconEnabled"]));
+            }
+            set {
+                this["Saved_rconEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_difficulty {
+            get {
+                return ((string)(this["Saved_difficulty"]));
+            }
+            set {
+                this["Saved_difficulty"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_dayTimeSpeedRate {
+            get {
+                return ((string)(this["Saved_dayTimeSpeedRate"]));
+            }
+            set {
+                this["Saved_dayTimeSpeedRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_nightTimeSpeedRate {
+            get {
+                return ((string)(this["Saved_nightTimeSpeedRate"]));
+            }
+            set {
+                this["Saved_nightTimeSpeedRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_expRate {
+            get {
+                return ((string)(this["Saved_expRate"]));
+            }
+            set {
+                this["Saved_expRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palCaptureRate {
+            get {
+                return ((string)(this["Saved_palCaptureRate"]));
+            }
+            set {
+                this["Saved_palCaptureRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palSpawnNumRate {
+            get {
+                return ((string)(this["Saved_palSpawnNumRate"]));
+            }
+            set {
+                this["Saved_palSpawnNumRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palDamageRateAttack {
+            get {
+                return ((string)(this["Saved_palDamageRateAttack"]));
+            }
+            set {
+                this["Saved_palDamageRateAttack"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palDamageRateDefense {
+            get {
+                return ((string)(this["Saved_palDamageRateDefense"]));
+            }
+            set {
+                this["Saved_palDamageRateDefense"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_playerDamageRateAttack {
+            get {
+                return ((string)(this["Saved_playerDamageRateAttack"]));
+            }
+            set {
+                this["Saved_playerDamageRateAttack"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_playerDamageRateDefense {
+            get {
+                return ((string)(this["Saved_playerDamageRateDefense"]));
+            }
+            set {
+                this["Saved_playerDamageRateDefense"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_playerStomachDecreaseRate {
+            get {
+                return ((string)(this["Saved_playerStomachDecreaseRate"]));
+            }
+            set {
+                this["Saved_playerStomachDecreaseRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_playerStaminaDecreaseRate {
+            get {
+                return ((string)(this["Saved_playerStaminaDecreaseRate"]));
+            }
+            set {
+                this["Saved_playerStaminaDecreaseRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_playerAutoHpRegeneRate {
+            get {
+                return ((string)(this["Saved_playerAutoHpRegeneRate"]));
+            }
+            set {
+                this["Saved_playerAutoHpRegeneRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_playerAutoHpRegeneRateInSleep {
+            get {
+                return ((string)(this["Saved_playerAutoHpRegeneRateInSleep"]));
+            }
+            set {
+                this["Saved_playerAutoHpRegeneRateInSleep"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palStomachDecreaseRate {
+            get {
+                return ((string)(this["Saved_palStomachDecreaseRate"]));
+            }
+            set {
+                this["Saved_palStomachDecreaseRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palStaminaDecreaseRate {
+            get {
+                return ((string)(this["Saved_palStaminaDecreaseRate"]));
+            }
+            set {
+                this["Saved_palStaminaDecreaseRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palAutoHpRegeneRate {
+            get {
+                return ((string)(this["Saved_palAutoHpRegeneRate"]));
+            }
+            set {
+                this["Saved_palAutoHpRegeneRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palAutoHpRegeneRateInSleep {
+            get {
+                return ((string)(this["Saved_palAutoHpRegeneRateInSleep"]));
+            }
+            set {
+                this["Saved_palAutoHpRegeneRateInSleep"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_buildObjectDamageRate {
+            get {
+                return ((string)(this["Saved_buildObjectDamageRate"]));
+            }
+            set {
+                this["Saved_buildObjectDamageRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_buildObjectDeteriorationDamageRate {
+            get {
+                return ((string)(this["Saved_buildObjectDeteriorationDamageRate"]));
+            }
+            set {
+                this["Saved_buildObjectDeteriorationDamageRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_collectionDropRate {
+            get {
+                return ((string)(this["Saved_collectionDropRate"]));
+            }
+            set {
+                this["Saved_collectionDropRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_collectionObjectHpRate {
+            get {
+                return ((string)(this["Saved_collectionObjectHpRate"]));
+            }
+            set {
+                this["Saved_collectionObjectHpRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_collectionObjectRespawnSpeedRate {
+            get {
+                return ((string)(this["Saved_collectionObjectRespawnSpeedRate"]));
+            }
+            set {
+                this["Saved_collectionObjectRespawnSpeedRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enemyDropItemRate {
+            get {
+                return ((string)(this["Saved_enemyDropItemRate"]));
+            }
+            set {
+                this["Saved_enemyDropItemRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_deathPenalty {
+            get {
+                return ((string)(this["Saved_deathPenalty"]));
+            }
+            set {
+                this["Saved_deathPenalty"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enablePlayerToPlayerDamage {
+            get {
+                return ((string)(this["Saved_enablePlayerToPlayerDamage"]));
+            }
+            set {
+                this["Saved_enablePlayerToPlayerDamage"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableFriendlyFire {
+            get {
+                return ((string)(this["Saved_enableFriendlyFire"]));
+            }
+            set {
+                this["Saved_enableFriendlyFire"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableInvaderEnemy {
+            get {
+                return ((string)(this["Saved_enableInvaderEnemy"]));
+            }
+            set {
+                this["Saved_enableInvaderEnemy"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_activeUNKO {
+            get {
+                return ((string)(this["Saved_activeUNKO"]));
+            }
+            set {
+                this["Saved_activeUNKO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableAimAssistPad {
+            get {
+                return ((string)(this["Saved_enableAimAssistPad"]));
+            }
+            set {
+                this["Saved_enableAimAssistPad"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableAimAssistKeyboard {
+            get {
+                return ((string)(this["Saved_enableAimAssistKeyboard"]));
+            }
+            set {
+                this["Saved_enableAimAssistKeyboard"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_dropItemMaxNum {
+            get {
+                return ((string)(this["Saved_dropItemMaxNum"]));
+            }
+            set {
+                this["Saved_dropItemMaxNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_dropItemMaxNum_UNKO {
+            get {
+                return ((string)(this["Saved_dropItemMaxNum_UNKO"]));
+            }
+            set {
+                this["Saved_dropItemMaxNum_UNKO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_baseCampMaxNum {
+            get {
+                return ((string)(this["Saved_baseCampMaxNum"]));
+            }
+            set {
+                this["Saved_baseCampMaxNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_baseCampWorkerMaxNum {
+            get {
+                return ((string)(this["Saved_baseCampWorkerMaxNum"]));
+            }
+            set {
+                this["Saved_baseCampWorkerMaxNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_dropItemAliveMaxHours {
+            get {
+                return ((string)(this["Saved_dropItemAliveMaxHours"]));
+            }
+            set {
+                this["Saved_dropItemAliveMaxHours"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_autoResetGuildNoOnlinePlayers {
+            get {
+                return ((string)(this["Saved_autoResetGuildNoOnlinePlayers"]));
+            }
+            set {
+                this["Saved_autoResetGuildNoOnlinePlayers"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_autoResetGuildTimeNoOnlinePlayers {
+            get {
+                return ((string)(this["Saved_autoResetGuildTimeNoOnlinePlayers"]));
+            }
+            set {
+                this["Saved_autoResetGuildTimeNoOnlinePlayers"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_guildPlayerMaxNum {
+            get {
+                return ((string)(this["Saved_guildPlayerMaxNum"]));
+            }
+            set {
+                this["Saved_guildPlayerMaxNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_palEggDefaultHatchingTime {
+            get {
+                return ((string)(this["Saved_palEggDefaultHatchingTime"]));
+            }
+            set {
+                this["Saved_palEggDefaultHatchingTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_workSpeedRate {
+            get {
+                return ((string)(this["Saved_workSpeedRate"]));
+            }
+            set {
+                this["Saved_workSpeedRate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_isMultiplay {
+            get {
+                return ((string)(this["Saved_isMultiplay"]));
+            }
+            set {
+                this["Saved_isMultiplay"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_isPvP {
+            get {
+                return ((string)(this["Saved_isPvP"]));
+            }
+            set {
+                this["Saved_isPvP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_canPickupOtherGuildDeathPenaltyDrop {
+            get {
+                return ((string)(this["Saved_canPickupOtherGuildDeathPenaltyDrop"]));
+            }
+            set {
+                this["Saved_canPickupOtherGuildDeathPenaltyDrop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableNonLoginPenalty {
+            get {
+                return ((string)(this["Saved_enableNonLoginPenalty"]));
+            }
+            set {
+                this["Saved_enableNonLoginPenalty"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableFastTravel {
+            get {
+                return ((string)(this["Saved_enableFastTravel"]));
+            }
+            set {
+                this["Saved_enableFastTravel"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_isStartLocationSelectByMap {
+            get {
+                return ((string)(this["Saved_isStartLocationSelectByMap"]));
+            }
+            set {
+                this["Saved_isStartLocationSelectByMap"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_existPlayerAfterLogout {
+            get {
+                return ((string)(this["Saved_existPlayerAfterLogout"]));
+            }
+            set {
+                this["Saved_existPlayerAfterLogout"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_enableDefenseOtherGuildPlayer {
+            get {
+                return ((string)(this["Saved_enableDefenseOtherGuildPlayer"]));
+            }
+            set {
+                this["Saved_enableDefenseOtherGuildPlayer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_coopPlayerMaxNum {
+            get {
+                return ((string)(this["Saved_coopPlayerMaxNum"]));
+            }
+            set {
+                this["Saved_coopPlayerMaxNum"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_region {
+            get {
+                return ((string)(this["Saved_region"]));
+            }
+            set {
+                this["Saved_region"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_useAuth {
+            get {
+                return ((string)(this["Saved_useAuth"]));
+            }
+            set {
+                this["Saved_useAuth"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_banListURL {
+            get {
+                return ((string)(this["Saved_banListURL"]));
+            }
+            set {
+                this["Saved_banListURL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_backupInterval {
+            get {
+                return ((string)(this["Saved_backupInterval"]));
+            }
+            set {
+                this["Saved_backupInterval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_maxBackup {
+            get {
+                return ((string)(this["Saved_maxBackup"]));
+            }
+            set {
+                this["Saved_maxBackup"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Saved_backupTo {
+            get {
+                return ((string)(this["Saved_backupTo"]));
+            }
+            set {
+                this["Saved_backupTo"] = value;
             }
         }
     }
