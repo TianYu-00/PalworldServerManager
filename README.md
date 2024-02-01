@@ -29,8 +29,8 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Outbound -LocalPor
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Outbound -LocalPort 8211,27015,27016,25575 -Protocol UDP -Action Allow
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort 8211,27015,27016,25575 -Protocol UDP -Action Allow
 ```
-
-
+_IMPORTANT:_    
+It is recommended that you use the backup feature I implemented in update `v1.0.4` and beyond to backup your save files just in case updating your game server causes a reset to your save file. This is not a bug from my side but a bug from Palworld's side, so do remember to use the backup feature just incase. 
 
 **`v1.0.3 RCON preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/d413651f-4c54-4f88-b0d8-5d10539b48dd" alt="Image1" style="width: 100%; height: auto;">   
