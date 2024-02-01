@@ -5,7 +5,7 @@
 PalworldServerManager - Simple Server Creation And Managing Tool.   
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
 
-Last Tested Game Version: **`v0.1.3.0`** using PSM: **`v1.0.4`**   
+Last Tested Game Version: **`v0.1.3.0`** using PSM: **`v1.0.5`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**    
 
 To allow others to join your server and use the rcon feature remotely, you'll need to configure your firewall to open specific ports and set up port forwarding for those ports.   
