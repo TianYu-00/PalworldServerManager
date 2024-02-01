@@ -5,6 +5,7 @@
 PalworldServerManager - Simple Server Creation And Managing Tool.   
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
 
+> [!NOTE]
 Last Tested Game Version: **`v0.1.3.0`** using PSM: **`v1.0.5`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**    
 
@@ -29,7 +30,7 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Outbound -LocalPor
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Outbound -LocalPort 8211,27015,27016,25575 -Protocol UDP -Action Allow
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort 8211,27015,27016,25575 -Protocol UDP -Action Allow
 ```
-_IMPORTANT:_    
+> [!IMPORTANT]
 It is recommended that you use the backup feature I implemented in update `v1.0.4` and beyond to backup your saved files just in case updating your game server causes a loss of player progression. This is not a bug from my side but a bug from Palworld's side, so do remember to use the backup feature just in case. 
 
 **`v1.0.3 RCON preview`**  
