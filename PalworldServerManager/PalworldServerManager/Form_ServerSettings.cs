@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,10 @@ namespace PalworldServerManager
         //
         //Palworld World Server Settings Parameter Description
         //
+
+        private const string serverSettingsFileName = "ServerSettingsPreset.json";
+
+
         // BACKUP INTERVAL
         private bool forceBackup = false;
         private string serv_backupInterval;
@@ -281,6 +286,77 @@ namespace PalworldServerManager
         private string dserv_useAuth = "True";
         private string dserv_banListURL = "https://api.palworldgame.com/api/banlist.txt";
 
+        public class ServerSettingsPreset
+        {
+            // BACKUP INTERVAL
+            public string json_backupInterval { get; set; }
+            public string json_maxBackup { get; set; }
+            public string json_backupToDirectory { get; set; }
+            public string json_difficulty { get; set; }
+            public string json_dayTimeSpeedRate { get; set; }
+            public string json_nightTimeSpeedRate { get; set; }
+            public string json_expRate { get; set; }
+            public string json_palCaptureRate { get; set; }
+            public string json_palSpawnNumRate { get; set; }
+            public string json_palDamageRateAttack { get; set; }
+            public string json_palDamageRateDefense { get; set; }
+            public string json_playerDamageRateAttack { get; set; }
+            public string json_playerDamageRateDefense { get; set; }
+            public string json_playerStomachDecreaseRate { get; set; }
+            public string json_playerStaminaDecreaseRate { get; set; }
+            public string json_playerAutoHpRegeneRate { get; set; }
+            public string json_playerAutoHpRegeneRateInSleep { get; set; }
+            public string json_palStomachDecreaseRate { get; set; }
+            public string json_palStaminaDecreaseRate { get; set; }
+            public string json_palAutoHpRegeneRate { get; set; }
+            public string json_palAutoHpRegeneRateInSleep { get; set; }
+            public string json_buildObjectDamageRate { get; set; }
+            public string json_buildObjectDeteriorationDamageRate { get; set; }
+            public string json_collectionDropRate { get; set; }
+            public string json_collectionObjectHpRate { get; set; }
+            public string json_collectionObjectRespawnSpeedRate { get; set; }
+            public string json_enemyDropItemRate { get; set; }
+            public string json_deathPenalty { get; set; }
+            public string json_enablePlayerToPlayerDamage { get; set; }
+            public string json_enableFriendlyFire { get; set; }
+            public string json_enableInvaderEnemy { get; set; }
+            public string json_activeUNKO { get; set; }
+            public string json_enableAimAssistPad { get; set; }
+            public string json_enableAimAssistKeyboard { get; set; }
+            public string json_dropItemMaxNum { get; set; }
+            public string json_dropItemMaxNum_UNKO { get; set; }
+            public string json_baseCampMaxNum { get; set; }
+            public string json_baseCampWorkerMaxNum { get; set; }
+            public string json_dropItemAliveMaxHours { get; set; }
+            public string json_autoResetGuildNoOnlinePlayers { get; set; }
+            public string json_autoResetGuildTimeNoOnlinePlayers { get; set; }
+            public string json_guildPlayerMaxNum { get; set; }
+            public string json_palEggDefaultHatchingTime { get; set; }
+            public string json_workSpeedRate { get; set; }
+            public string json_isMultiplay { get; set; }
+            public string json_isPvP { get; set; }
+            public string json_canPickupOtherGuildDeathPenaltyDrop { get; set; }
+            public string json_enableNonLoginPenalty { get; set; }
+            public string json_enableFastTravel { get; set; }
+            public string json_isStartLocationSelectByMap { get; set; }
+            public string json_existPlayerAfterLogout { get; set; }
+            public string json_enableDefenseOtherGuildPlayer { get; set; }
+            public string json_coopPlayerMaxNum { get; set; }
+            public string json_serverPlayerMaxNum { get; set; }
+            public string json_serverName { get; set; }
+            public string json_serverDescription { get; set; }
+            public string json_adminPassword { get; set; }
+            public string json_serverPassword { get; set; }
+            public string json_publicPort { get; set; }
+            public string json_publicIP { get; set; }
+            public string json_rconEnabled { get; set; }
+            public string json_rconPort { get; set; }
+            public string json_region { get; set; }
+            public string json_useAuth { get; set; }
+            public string json_banListURL { get; set; }
+        }
+
+
         public Form_ServerSettings()
         {
             InitializeComponent();
@@ -319,8 +395,9 @@ namespace PalworldServerManager
         {
             //READ GAMEWORLDSETTINGS
             ServerSettingsOnLoad();
+            CreateServerSettingsJSON();
             ReadWorldSettingsFile();
-            ReadSettingPresetFromSaved();
+            LoadServerSettingsJSON();
             serv_backupInterval = textBox_backupInterval.Text;
             serv_backupToDirectory = textBox_backupTo.Text;
             serv_maxBackup = textBox_maxBackup.Text;
@@ -337,9 +414,9 @@ namespace PalworldServerManager
 
                 if (writeSuccess)
                 {
-                    SaveSettingPreset(); // Save the settings to a txt file to be loaded on start.
+                    WriteServerSettingsJSON(); // Save the settings to a txt file to be loaded on start.
                     ReadWorldSettingsFile(); // Read the world setting ini and set it to display on my richtextbox
-                    MessageBox.Show("Server World Settings Saved");
+                    MessageBox.Show("Server & World Settings Saved");
                 }
             }
             else
@@ -350,8 +427,7 @@ namespace PalworldServerManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SetWorldSettingsDefault();
-            //MessageBox.Show("Default Server World Settings Loaded. Remember to save it if youre happy with it.");
+            LoadDefaultWorldSettings();
         }
 
         private void ReadWorldSettingsFile()
@@ -419,7 +495,7 @@ namespace PalworldServerManager
             }
         }
 
-        private void SetWorldSettingsDefault()
+        private void LoadDefaultWorldSettings()
         {
             //Backup settings
             textBox_backupInterval.Text = dserv_backupInterval;
@@ -584,171 +660,268 @@ namespace PalworldServerManager
             serv_useAuth = comboBox_useAuth.Text;
         }
 
-        private void SaveSettingPreset()
+
+
+        private void WriteServerSettingsJSON()
         {
-            //Properties.Settings.Default.Saved_backupInterval = serv_backupInterval;
-            //Properties.Settings.Default.Saved_maxBackup = serv_maxBackup;
-            //Properties.Settings.Default.Saved_backupTo = serv_backupToDirectory;
-            //Properties.Settings.Default.Saved_serverName = serv_serverName;
-            //Properties.Settings.Default.Saved_serverDescription = serv_serverDescription;
-            //Properties.Settings.Default.Saved_serverPlayerMaxNum = serv_serverPlayerMaxNum;
-            //Properties.Settings.Default.Saved_adminPassword = serv_adminPassword;
-            //Properties.Settings.Default.Saved_serverPassword = serv_serverPassword;
-            //Properties.Settings.Default.Saved_publicPort = serv_publicPort;
-            //Properties.Settings.Default.Saved_publicIP = serv_publicIP;
-            //Properties.Settings.Default.Saved_rconEnabled = serv_rconEnabled;
-            //Properties.Settings.Default.Saved_RconPort = serv_rconPort;
-            //Properties.Settings.Default.Saved_difficulty = serv_difficulty;
-            //Properties.Settings.Default.Saved_dayTimeSpeedRate = serv_dayTimeSpeedRate;
-            //Properties.Settings.Default.Saved_nightTimeSpeedRate = serv_nightTimeSpeedRate;
-            //Properties.Settings.Default.Saved_expRate = serv_expRate;
 
-            //Backup Settings
-            Properties.Settings.Default.Saved_backupInterval = serv_backupInterval;
-            Properties.Settings.Default.Saved_maxBackup = serv_maxBackup;
-            Properties.Settings.Default.Saved_backupTo = serv_backupToDirectory;
+            // Create settings object
+            var settings = new ServerSettingsPreset
+            {
+                //Backup settings
+                json_backupInterval = textBox_backupInterval.Text,
+                json_maxBackup = textBox_maxBackup.Text,
+                json_backupToDirectory = textBox_backupTo.Text,
+                // Server settings
+                json_serverName = textBox_serverName.Text,
+                json_serverDescription = textBox_serverDescription.Text,
+                json_serverPlayerMaxNum = textBox_serverPlayerMaxNum.Text,
+                json_adminPassword = textBox_adminPassword.Text,
+                json_serverPassword = textBox_serverPassword.Text,
+                json_publicPort = textBox_publicPort.Text,
+                json_publicIP = textBox_publicIP.Text,
+                json_rconEnabled = comboBox_rconEnabled.Text,
+                json_rconPort = textBox_rconPort.Text,
+                json_difficulty = comboBox_difficulty.Text,
+                json_dayTimeSpeedRate = textBox_dayTimeSpeedRate.Text,
+                json_nightTimeSpeedRate = textBox_nightTimeSpeedRate.Text,
+                json_expRate = textBox_expRate.Text,
+                json_palCaptureRate = textBox_palCaptureRate.Text,
+                json_palSpawnNumRate = textBox_palSpawnNumRate.Text,
+                json_palDamageRateAttack = textBox_palDamageRateAttack.Text,
+                json_palDamageRateDefense = textBox_palDamageRateDefense.Text,
+                json_playerDamageRateAttack = textBox_playerDamageRateAttack.Text,
+                json_playerDamageRateDefense = textBox_playerDamageRateDefense.Text,
+                json_playerStomachDecreaseRate = textBox_playerStomachDecreaceRate.Text,
+                json_playerStaminaDecreaseRate = textBox_playerStaminaDecreaceRate.Text,
+                json_playerAutoHpRegeneRate = textBox_playerAutoHpRegeneRate.Text,
+                json_playerAutoHpRegeneRateInSleep = textBox_playerAutoHpRegeneRateInSleep.Text,
+                json_palStomachDecreaseRate = textBox_palStomachDecreaceRate.Text,
+                json_palStaminaDecreaseRate = textBox_palStaminaDecreaceRate.Text,
+                json_palAutoHpRegeneRate = textBox_palAutoHpRegeneRate.Text,
+                json_palAutoHpRegeneRateInSleep = textBox_palAutoHpRegeneRateInSleep.Text,
+                json_buildObjectDamageRate = textBox_buildObjectDamageRate.Text,
+                json_buildObjectDeteriorationDamageRate = textBox_buildObjectDeteriorationDamageRate.Text,
+                json_collectionDropRate = textBox_collectionDropRate.Text,
+                json_collectionObjectHpRate = textBox_collectionObjectHpRate.Text,
+                json_collectionObjectRespawnSpeedRate = textBox_collectionObjectRespawnSpeedRate.Text,
+                json_enemyDropItemRate = textBox_enemyDropItemRate.Text,
+                json_deathPenalty = comboBox_deathPenalty.Text,
+                json_enablePlayerToPlayerDamage = comboBox_enablePlayerToPlayerDamage.Text,
+                json_enableFriendlyFire = comboBox_enableFriendlyFire.Text,
+                json_enableInvaderEnemy = comboBox_enableInvaderEnemy.Text,
+                json_activeUNKO = comboBox_activeUNKO.Text,
+                json_enableAimAssistPad = comboBox_enableAimAssistPad.Text,
+                json_enableAimAssistKeyboard = comboBox_enableAimAssistKeyboard.Text,
+                json_dropItemMaxNum = textBox_dropItemMaxNum.Text,
+                json_dropItemMaxNum_UNKO = textBox_dropItemMaxNum_UNKO.Text,
+                json_baseCampMaxNum = textBox_baseCampMaxNum.Text,
+                json_baseCampWorkerMaxNum = textBox_baseCampWorkerMaxNum.Text,
+                json_dropItemAliveMaxHours = textBox_dropItemAliveMaxHours.Text,
+                json_autoResetGuildNoOnlinePlayers = comboBox_autoResetGuildNoOnlinePlayers.Text,
+                json_autoResetGuildTimeNoOnlinePlayers = textBox_autoResetGuildTimeNoOnlinePlayers.Text,
+                json_guildPlayerMaxNum = textBox_guildPlayerMaxNum.Text,
+                json_palEggDefaultHatchingTime = textBox_palEggDefaultHatchingTime.Text,
+                json_workSpeedRate = textBox_workSpeedRate.Text,
+                json_isMultiplay = comboBox_isMultiplay.Text,
+                json_isPvP = comboBox_isPvP.Text,
+                json_canPickupOtherGuildDeathPenaltyDrop = comboBox_canPickupOtherGuildDeathPenaltyDrop.Text,
+                json_enableNonLoginPenalty = comboBox_enableNonLoginPenalty.Text,
+                json_enableFastTravel = comboBox_enableFastTravel.Text,
+                json_isStartLocationSelectByMap = comboBox_isStartLocationSelectByMap.Text,
+                json_existPlayerAfterLogout = comboBox_existPlayerAfterLogout.Text,
+                json_enableDefenseOtherGuildPlayer = comboBox_enableDefenseOtherGuildPlayer.Text,
+                json_coopPlayerMaxNum = textBox_coopPlayerMaxNum.Text,
+                json_region = textBox_region.Text,
+                json_useAuth = comboBox_useAuth.Text,
+                json_banListURL = textBox_banListURL.Text
 
-            //Server Settings
-            Properties.Settings.Default.Saved_difficulty = serv_difficulty;
-            Properties.Settings.Default.Saved_dayTimeSpeedRate = serv_dayTimeSpeedRate;
-            Properties.Settings.Default.Saved_nightTimeSpeedRate = serv_nightTimeSpeedRate;
-            Properties.Settings.Default.Saved_expRate = serv_expRate;
-            Properties.Settings.Default.Saved_palCaptureRate = serv_palCaptureRate;
-            Properties.Settings.Default.Saved_palSpawnNumRate = serv_palSpawnNumRate;
-            Properties.Settings.Default.Saved_palDamageRateAttack = serv_palDamageRateAttack;
-            Properties.Settings.Default.Saved_palDamageRateDefense = serv_palDamageRateDefense;
-            Properties.Settings.Default.Saved_playerDamageRateAttack = serv_playerDamageRateAttack;
-            Properties.Settings.Default.Saved_playerDamageRateDefense = serv_playerDamageRateDefense;
-            Properties.Settings.Default.Saved_playerStomachDecreaseRate = serv_playerStomachDecreaseRate;
-            Properties.Settings.Default.Saved_playerStaminaDecreaseRate = serv_playerStaminaDecreaseRate;
-            Properties.Settings.Default.Saved_playerAutoHpRegeneRate = serv_playerAutoHpRegenRate;
-            Properties.Settings.Default.Saved_playerAutoHpRegeneRateInSleep = serv_playerAutoHpRegenRateInSleep;
-            Properties.Settings.Default.Saved_palStomachDecreaseRate = serv_palStomachDecreaseRate;
-            Properties.Settings.Default.Saved_palStaminaDecreaseRate = serv_palStaminaDecreaseRate;
-            Properties.Settings.Default.Saved_palAutoHpRegeneRate = serv_palAutoHpRegeneRate;
-            Properties.Settings.Default.Saved_palAutoHpRegeneRateInSleep = serv_palAutoHpRegeneRateInSleep;
-            Properties.Settings.Default.Saved_buildObjectDamageRate = serv_buildObjectDamageRate;
-            Properties.Settings.Default.Saved_buildObjectDeteriorationDamageRate = serv_buildObjectDeteriorationDamageRate;
-            Properties.Settings.Default.Saved_collectionDropRate = serv_collectionDropRate;
-            Properties.Settings.Default.Saved_collectionObjectHpRate = serv_collectionObjectHpRate;
-            Properties.Settings.Default.Saved_collectionObjectRespawnSpeedRate = serv_collectionObjectRespawnSpeedRate;
-            Properties.Settings.Default.Saved_enemyDropItemRate = serv_enemyDropItemRate;
-            Properties.Settings.Default.Saved_deathPenalty = serv_deathPenalty;
-            Properties.Settings.Default.Saved_enablePlayerToPlayerDamage = serv_enablePlayerToPlayerDamage;
-            Properties.Settings.Default.Saved_enableFriendlyFire = serv_enableFriendlyFire;
-            Properties.Settings.Default.Saved_enableInvaderEnemy = serv_enableInvaderEnemy;
-            Properties.Settings.Default.Saved_activeUNKO = serv_activeUNKO;
-            Properties.Settings.Default.Saved_enableAimAssistPad = serv_enableAimAssistPad;
-            Properties.Settings.Default.Saved_enableAimAssistKeyboard = serv_enableAimAssistKeyboard;
-            Properties.Settings.Default.Saved_dropItemMaxNum = serv_dropItemMaxNum;
-            Properties.Settings.Default.Saved_dropItemMaxNum_UNKO = serv_dropItemMaxNum_UNKO;
-            Properties.Settings.Default.Saved_baseCampMaxNum = serv_baseCampMaxNum;
-            Properties.Settings.Default.Saved_baseCampWorkerMaxNum = serv_baseCampWorkerMaxNum;
-            Properties.Settings.Default.Saved_dropItemAliveMaxHours = serv_dropItemAliveMaxHours;
-            Properties.Settings.Default.Saved_autoResetGuildNoOnlinePlayers = serv_autoResetGuildNoOnlinePlayers;
-            Properties.Settings.Default.Saved_autoResetGuildTimeNoOnlinePlayers = serv_autoResetGuildTimeNoOnlinePlayers;
-            Properties.Settings.Default.Saved_guildPlayerMaxNum = serv_guildPlayerMaxNum;
-            Properties.Settings.Default.Saved_palEggDefaultHatchingTime = serv_palEggDefaultHatchingTime;
-            Properties.Settings.Default.Saved_workSpeedRate = serv_workSpeedRate;
-            Properties.Settings.Default.Saved_isMultiplay = serv_isMultiplay;
-            Properties.Settings.Default.Saved_isPvP = serv_isPvP;
-            Properties.Settings.Default.Saved_canPickupOtherGuildDeathPenaltyDrop = serv_canPickupOtherGuildDeathPenaltyDrop;
-            Properties.Settings.Default.Saved_enableNonLoginPenalty = serv_enableNonLoginPenalty;
-            Properties.Settings.Default.Saved_enableFastTravel = serv_enableFastTravel;
-            Properties.Settings.Default.Saved_isStartLocationSelectByMap = serv_isStartLocationSelectByMap;
-            Properties.Settings.Default.Saved_existPlayerAfterLogout = serv_existPlayerAfterLogout;
-            Properties.Settings.Default.Saved_enableDefenseOtherGuildPlayer = serv_enableDefenseOtherGuildPlayer;
-            Properties.Settings.Default.Saved_coopPlayerMaxNum = serv_coopPlayerMaxNum;
-            Properties.Settings.Default.Saved_region = serv_region;
-            Properties.Settings.Default.Saved_useAuth = serv_useAuth;
-            Properties.Settings.Default.Saved_banListURL = serv_banListURL;
-            Properties.Settings.Default.Saved_serverPlayerMaxNum = serv_serverPlayerMaxNum;
-            Properties.Settings.Default.Saved_serverName = serv_serverName;
-            Properties.Settings.Default.Saved_serverDescription = serv_serverDescription;
-            Properties.Settings.Default.Saved_adminPassword = serv_adminPassword;
-            Properties.Settings.Default.Saved_serverPassword = serv_serverPassword;
-            Properties.Settings.Default.Saved_publicPort = serv_publicPort;
-            Properties.Settings.Default.Saved_publicIP = serv_publicIP;
-            Properties.Settings.Default.Saved_rconEnabled = serv_rconEnabled;
-            Properties.Settings.Default.Saved_rconPort = serv_rconPort;
+            };
 
+            // Serialize settings to JSON
+            string json = JsonSerializer.Serialize(settings);
 
-            // Save the settings
-            Properties.Settings.Default.Save();
+            // Save JSON to file
+            File.WriteAllText(serverSettingsFileName, json);
+
+            //MessageBox.Show("Settings saved successfully.");
 
         }
 
-        private void ReadSettingPresetFromSaved()
+        private void LoadServerSettingsJSON()
         {
-                    //backup settings
-                    textBox_backupInterval.Text = Properties.Settings.Default.Saved_backupInterval;
-                    textBox_maxBackup.Text = Properties.Settings.Default.Saved_maxBackup;
-                    textBox_backupTo.Text = Properties.Settings.Default.Saved_backupTo;
+            if (File.Exists(serverSettingsFileName))
+            {
+                // Read JSON from file
+                string json = File.ReadAllText(serverSettingsFileName);
 
-                    //server settings
-                    textBox_serverName.Text = Properties.Settings.Default.Saved_serverName;
-                    textBox_serverDescription.Text = Properties.Settings.Default.Saved_serverDescription;
-                    textBox_serverPlayerMaxNum.Text = Properties.Settings.Default.Saved_serverPlayerMaxNum;
-                    textBox_adminPassword.Text = Properties.Settings.Default.Saved_adminPassword;
-                    textBox_serverPassword.Text = Properties.Settings.Default.Saved_serverPassword;
-                    textBox_publicPort.Text = Properties.Settings.Default.Saved_publicPort;
-                    textBox_publicIP.Text = Properties.Settings.Default.Saved_publicIP;
-                    comboBox_rconEnabled.Text = Properties.Settings.Default.Saved_rconEnabled;
-                    textBox_rconPort.Text = Properties.Settings.Default.Saved_rconPort;
-                    comboBox_difficulty.Text = Properties.Settings.Default.Saved_difficulty;
-                    textBox_dayTimeSpeedRate.Text = Properties.Settings.Default.Saved_dayTimeSpeedRate;
-                    textBox_nightTimeSpeedRate.Text = Properties.Settings.Default.Saved_nightTimeSpeedRate;
-                    textBox_expRate.Text = Properties.Settings.Default.Saved_expRate;
-                    textBox_palCaptureRate.Text = Properties.Settings.Default.Saved_palCaptureRate;
-                    textBox_palSpawnNumRate.Text = Properties.Settings.Default.Saved_palSpawnNumRate;
-                    textBox_palDamageRateAttack.Text = Properties.Settings.Default.Saved_palDamageRateAttack;
-                    textBox_palDamageRateDefense.Text = Properties.Settings.Default.Saved_palDamageRateDefense;
-                    textBox_playerDamageRateAttack.Text = Properties.Settings.Default.Saved_playerDamageRateAttack;
-                    textBox_playerDamageRateDefense.Text = Properties.Settings.Default.Saved_playerDamageRateDefense;
-                    textBox_playerStomachDecreaceRate.Text = Properties.Settings.Default.Saved_playerStomachDecreaseRate;
-                    textBox_playerStaminaDecreaceRate.Text = Properties.Settings.Default.Saved_playerStaminaDecreaseRate;
-                    textBox_playerAutoHpRegeneRate.Text = Properties.Settings.Default.Saved_playerAutoHpRegeneRate;
-                    textBox_playerAutoHpRegeneRateInSleep.Text = Properties.Settings.Default.Saved_playerAutoHpRegeneRateInSleep;
-                    textBox_palStomachDecreaceRate.Text = Properties.Settings.Default.Saved_palStomachDecreaseRate;
-                    textBox_palStaminaDecreaceRate.Text = Properties.Settings.Default.Saved_palStaminaDecreaseRate;
-                    textBox_palAutoHpRegeneRate.Text = Properties.Settings.Default.Saved_palAutoHpRegeneRate;
-                    textBox_palAutoHpRegeneRateInSleep.Text = Properties.Settings.Default.Saved_palAutoHpRegeneRateInSleep;
-                    textBox_buildObjectDamageRate.Text = Properties.Settings.Default.Saved_buildObjectDamageRate;
-                    textBox_buildObjectDeteriorationDamageRate.Text = Properties.Settings.Default.Saved_buildObjectDeteriorationDamageRate;
-                    textBox_collectionDropRate.Text = Properties.Settings.Default.Saved_collectionDropRate;
-                    textBox_collectionObjectHpRate.Text = Properties.Settings.Default.Saved_collectionObjectHpRate;
-                    textBox_collectionObjectRespawnSpeedRate.Text = Properties.Settings.Default.Saved_collectionObjectRespawnSpeedRate;
-                    textBox_enemyDropItemRate.Text = Properties.Settings.Default.Saved_enemyDropItemRate;
-                    comboBox_deathPenalty.Text = Properties.Settings.Default.Saved_deathPenalty;
-                    comboBox_enablePlayerToPlayerDamage.Text = Properties.Settings.Default.Saved_enablePlayerToPlayerDamage;
-                    comboBox_enableFriendlyFire.Text = Properties.Settings.Default.Saved_enableFriendlyFire;
-                    comboBox_enableInvaderEnemy.Text = Properties.Settings.Default.Saved_enableInvaderEnemy;
-                    comboBox_activeUNKO.Text = Properties.Settings.Default.Saved_activeUNKO;
-                    comboBox_enableAimAssistPad.Text = Properties.Settings.Default.Saved_enableAimAssistPad;
-                    comboBox_enableAimAssistKeyboard.Text = Properties.Settings.Default.Saved_enableAimAssistKeyboard;
-                    textBox_dropItemMaxNum.Text = Properties.Settings.Default.Saved_dropItemMaxNum;
-                    textBox_dropItemMaxNum_UNKO.Text = Properties.Settings.Default.Saved_dropItemMaxNum_UNKO;
-                    textBox_baseCampMaxNum.Text = Properties.Settings.Default.Saved_baseCampMaxNum;
-                    textBox_baseCampWorkerMaxNum.Text = Properties.Settings.Default.Saved_baseCampWorkerMaxNum;
-                    textBox_dropItemAliveMaxHours.Text = Properties.Settings.Default.Saved_dropItemAliveMaxHours;
-                    comboBox_autoResetGuildNoOnlinePlayers.Text = Properties.Settings.Default.Saved_autoResetGuildNoOnlinePlayers;
-                    textBox_autoResetGuildTimeNoOnlinePlayers.Text = Properties.Settings.Default.Saved_autoResetGuildTimeNoOnlinePlayers;
-                    textBox_guildPlayerMaxNum.Text = Properties.Settings.Default.Saved_guildPlayerMaxNum;
-                    textBox_palEggDefaultHatchingTime.Text = Properties.Settings.Default.Saved_palEggDefaultHatchingTime;
-                    textBox_workSpeedRate.Text = Properties.Settings.Default.Saved_workSpeedRate;
-                    comboBox_isMultiplay.Text = Properties.Settings.Default.Saved_isMultiplay;
-                    comboBox_isPvP.Text = Properties.Settings.Default.Saved_isPvP;
-                    comboBox_canPickupOtherGuildDeathPenaltyDrop.Text = Properties.Settings.Default.Saved_canPickupOtherGuildDeathPenaltyDrop;
-                    comboBox_enableNonLoginPenalty.Text = Properties.Settings.Default.Saved_enableNonLoginPenalty;
-                    comboBox_enableFastTravel.Text = Properties.Settings.Default.Saved_enableFastTravel;
-                    comboBox_isStartLocationSelectByMap.Text = Properties.Settings.Default.Saved_isStartLocationSelectByMap;
-                    comboBox_existPlayerAfterLogout.Text = Properties.Settings.Default.Saved_existPlayerAfterLogout;
-                    comboBox_enableDefenseOtherGuildPlayer.Text = Properties.Settings.Default.Saved_enableDefenseOtherGuildPlayer;
-                    textBox_coopPlayerMaxNum.Text = Properties.Settings.Default.Saved_coopPlayerMaxNum;
-                    textBox_region.Text = Properties.Settings.Default.Saved_region;
-                    comboBox_useAuth.Text = Properties.Settings.Default.Saved_useAuth;
-                    textBox_banListURL.Text = Properties.Settings.Default.Saved_banListURL;
+                // Deserialize JSON to settings object
+                var settings = JsonSerializer.Deserialize<ServerSettingsPreset>(json);
 
+                // Update UI with loaded settings
+                ////backup settings
+                textBox_backupInterval.Text = settings.json_backupInterval;
+                textBox_maxBackup.Text = settings.json_maxBackup;
+                textBox_backupTo.Text = settings.json_backupToDirectory;
+
+                ////server settings
+                textBox_serverName.Text = settings.json_serverName;
+                textBox_serverDescription.Text = settings.json_serverDescription;
+                textBox_serverPlayerMaxNum.Text = settings.json_serverPlayerMaxNum;
+                textBox_adminPassword.Text = settings.json_adminPassword;
+                textBox_serverPassword.Text = settings.json_serverPassword;
+                textBox_publicPort.Text = settings.json_publicPort;
+                textBox_publicIP.Text = settings.json_publicIP;
+                comboBox_rconEnabled.Text = settings.json_rconEnabled;
+                textBox_rconPort.Text = settings.json_rconPort;
+                comboBox_difficulty.Text = settings.json_difficulty;
+                textBox_dayTimeSpeedRate.Text = settings.json_dayTimeSpeedRate;
+                textBox_nightTimeSpeedRate.Text = settings.json_nightTimeSpeedRate;
+                textBox_expRate.Text = settings.json_expRate;
+                textBox_palCaptureRate.Text = settings.json_palCaptureRate;
+                textBox_palSpawnNumRate.Text = settings.json_palSpawnNumRate;
+                textBox_palDamageRateAttack.Text = settings.json_palDamageRateAttack;
+                textBox_palDamageRateDefense.Text = settings.json_palDamageRateDefense;
+                textBox_playerDamageRateAttack.Text = settings.json_playerDamageRateAttack;
+                textBox_playerDamageRateDefense.Text = settings.json_playerDamageRateDefense;
+                textBox_playerStomachDecreaceRate.Text = settings.json_playerStomachDecreaseRate;
+                textBox_playerStaminaDecreaceRate.Text = settings.json_playerStaminaDecreaseRate;
+                textBox_playerAutoHpRegeneRate.Text = settings.json_playerAutoHpRegeneRate;
+                textBox_playerAutoHpRegeneRateInSleep.Text = settings.json_playerAutoHpRegeneRateInSleep;
+                textBox_palStomachDecreaceRate.Text = settings.json_palStomachDecreaseRate;
+                textBox_palStaminaDecreaceRate.Text = settings.json_palStaminaDecreaseRate;
+                textBox_palAutoHpRegeneRate.Text = settings.json_palAutoHpRegeneRate;
+                textBox_palAutoHpRegeneRateInSleep.Text = settings.json_palAutoHpRegeneRateInSleep;
+                textBox_buildObjectDamageRate.Text = settings.json_buildObjectDamageRate;
+                textBox_buildObjectDeteriorationDamageRate.Text = settings.json_buildObjectDeteriorationDamageRate;
+                textBox_collectionDropRate.Text = settings.json_collectionDropRate;
+                textBox_collectionObjectHpRate.Text = settings.json_collectionObjectHpRate;
+                textBox_collectionObjectRespawnSpeedRate.Text = settings.json_collectionObjectRespawnSpeedRate;
+                textBox_enemyDropItemRate.Text = settings.json_enemyDropItemRate;
+                comboBox_deathPenalty.Text = settings.json_deathPenalty;
+                comboBox_enablePlayerToPlayerDamage.Text = settings.json_enablePlayerToPlayerDamage;
+                comboBox_enableFriendlyFire.Text = settings.json_enableFriendlyFire;
+                comboBox_enableInvaderEnemy.Text = settings.json_enableInvaderEnemy;
+                comboBox_activeUNKO.Text = settings.json_activeUNKO;
+                comboBox_enableAimAssistPad.Text = settings.json_enableAimAssistPad;
+                comboBox_enableAimAssistKeyboard.Text = settings.json_enableAimAssistKeyboard;
+                textBox_dropItemMaxNum.Text = settings.json_dropItemMaxNum;
+                textBox_dropItemMaxNum_UNKO.Text = settings.json_dropItemMaxNum_UNKO;
+                textBox_baseCampMaxNum.Text = settings.json_baseCampMaxNum;
+                textBox_baseCampWorkerMaxNum.Text = settings.json_baseCampWorkerMaxNum;
+                textBox_dropItemAliveMaxHours.Text = settings.json_dropItemAliveMaxHours;
+                comboBox_autoResetGuildNoOnlinePlayers.Text = settings.json_autoResetGuildNoOnlinePlayers;
+                textBox_autoResetGuildTimeNoOnlinePlayers.Text = settings.json_autoResetGuildTimeNoOnlinePlayers;
+                textBox_guildPlayerMaxNum.Text = settings.json_guildPlayerMaxNum;
+                textBox_palEggDefaultHatchingTime.Text = settings.json_palEggDefaultHatchingTime;
+                textBox_workSpeedRate.Text = settings.json_workSpeedRate;
+                comboBox_isMultiplay.Text = settings.json_isMultiplay;
+                comboBox_isPvP.Text = settings.json_isPvP;
+                comboBox_canPickupOtherGuildDeathPenaltyDrop.Text = settings.json_canPickupOtherGuildDeathPenaltyDrop;
+                comboBox_enableNonLoginPenalty.Text = settings.json_enableNonLoginPenalty;
+                comboBox_enableFastTravel.Text = settings.json_enableFastTravel;
+                comboBox_isStartLocationSelectByMap.Text = settings.json_isStartLocationSelectByMap;
+                comboBox_existPlayerAfterLogout.Text = settings.json_existPlayerAfterLogout;
+                comboBox_enableDefenseOtherGuildPlayer.Text = settings.json_enableDefenseOtherGuildPlayer;
+                textBox_coopPlayerMaxNum.Text = settings.json_coopPlayerMaxNum;
+                textBox_region.Text = settings.json_region;
+                comboBox_useAuth.Text = settings.json_useAuth;
+                textBox_banListURL.Text = settings.json_banListURL;
+
+
+                //MessageBox.Show("Settings loaded successfully.");
+            }
+            else
+            {
+                // Create default settings
+            }
+
+        }
+
+        private void CreateServerSettingsJSON()
+        {
+            //CHECK TO SEE IF IT EXISTS IF NOT THEN CREATE DEFAULT VALUES FOR IT.
+            if (!File.Exists(serverSettingsFileName))
+            {
+                // Create default settings
+                var defaultSettings = new ServerSettingsPreset
+                {
+                    json_backupInterval = dserv_backupInterval,
+                    json_maxBackup = dserv_maxBackup,
+                    json_backupToDirectory = dserv_backupToDirectory,
+                    json_difficulty = dserv_difficulty,
+                    json_dayTimeSpeedRate = dserv_dayTimeSpeedRate,
+                    json_nightTimeSpeedRate = dserv_nightTimeSpeedRate,
+                    json_expRate = dserv_expRate,
+                    json_palCaptureRate = dserv_palCaptureRate,
+                    json_palSpawnNumRate = dserv_palSpawnNumRate,
+                    json_palDamageRateAttack = dserv_palDamageRateAttack,
+                    json_palDamageRateDefense = dserv_palDamageRateDefense,
+                    json_playerDamageRateAttack = dserv_playerDamageRateAttack,
+                    json_playerDamageRateDefense = dserv_playerDamageRateDefense,
+                    json_playerStomachDecreaseRate = dserv_playerStomachDecreaseRate,
+                    json_playerStaminaDecreaseRate = dserv_playerStaminaDecreaseRate,
+                    json_playerAutoHpRegeneRate = dserv_playerAutoHpRegenRate,
+                    json_playerAutoHpRegeneRateInSleep = dserv_playerAutoHpRegenRateInSleep,
+                    json_palStomachDecreaseRate = dserv_palStomachDecreaseRate,
+                    json_palStaminaDecreaseRate = dserv_palStaminaDecreaseRate,
+                    json_palAutoHpRegeneRate = dserv_palAutoHpRegeneRate,
+                    json_palAutoHpRegeneRateInSleep = dserv_palAutoHpRegeneRateInSleep,
+                    json_buildObjectDamageRate = dserv_buildObjectDamageRate,
+                    json_buildObjectDeteriorationDamageRate = dserv_buildObjectDeteriorationDamageRate,
+                    json_collectionDropRate = dserv_collectionDropRate,
+                    json_collectionObjectHpRate = dserv_collectionObjectHpRate,
+                    json_collectionObjectRespawnSpeedRate = dserv_collectionObjectRespawnSpeedRate,
+                    json_enemyDropItemRate = dserv_enemyDropItemRate,
+                    json_deathPenalty = dserv_deathPenalty,
+                    json_enablePlayerToPlayerDamage = dserv_enablePlayerToPlayerDamage,
+                    json_enableFriendlyFire = dserv_enableFriendlyFire,
+                    json_enableInvaderEnemy = dserv_enableInvaderEnemy,
+                    json_activeUNKO = dserv_activeUNKO,
+                    json_enableAimAssistPad = dserv_enableAimAssistPad,
+                    json_enableAimAssistKeyboard = dserv_enableAimAssistKeyboard,
+                    json_dropItemMaxNum = dserv_dropItemMaxNum,
+                    json_dropItemMaxNum_UNKO = dserv_dropItemMaxNum_UNKO,
+                    json_baseCampMaxNum = dserv_baseCampMaxNum,
+                    json_baseCampWorkerMaxNum = dserv_baseCampWorkerMaxNum,
+                    json_dropItemAliveMaxHours = dserv_dropItemAliveMaxHours,
+                    json_autoResetGuildNoOnlinePlayers = dserv_autoResetGuildNoOnlinePlayers,
+                    json_autoResetGuildTimeNoOnlinePlayers = dserv_autoResetGuildTimeNoOnlinePlayers,
+                    json_guildPlayerMaxNum = dserv_guildPlayerMaxNum,
+                    json_palEggDefaultHatchingTime = dserv_palEggDefaultHatchingTime,
+                    json_workSpeedRate = dserv_workSpeedRate,
+                    json_isMultiplay = dserv_isMultiplay,
+                    json_isPvP = dserv_isPvP,
+                    json_canPickupOtherGuildDeathPenaltyDrop = dserv_canPickupOtherGuildDeathPenaltyDrop,
+                    json_enableNonLoginPenalty = dserv_enableNonLoginPenalty,
+                    json_enableFastTravel = dserv_enableFastTravel,
+                    json_isStartLocationSelectByMap = dserv_isStartLocationSelectByMap,
+                    json_existPlayerAfterLogout = dserv_existPlayerAfterLogout,
+                    json_enableDefenseOtherGuildPlayer = dserv_enableDefenseOtherGuildPlayer,
+                    json_coopPlayerMaxNum = dserv_coopPlayerMaxNum,
+                    json_serverPlayerMaxNum = dserv_serverPlayerMaxNum,
+                    json_serverName = dserv_serverName,
+                    json_serverDescription = dserv_serverDescription,
+                    json_adminPassword = dserv_adminPassword,
+                    json_serverPassword = dserv_serverPassword,
+                    json_publicPort = dserv_publicPort,
+                    json_publicIP = dserv_publicIP,
+                    json_rconEnabled = dserv_rconEnabled,
+                    json_rconPort = dserv_rconPort,
+                    json_region = dserv_region,
+                    json_useAuth = dserv_useAuth,
+                    json_banListURL = dserv_banListURL
+
+                };
+
+                // Serialize default settings to JSON
+                string defaultJson = JsonSerializer.Serialize(defaultSettings);
+
+                // Save JSON to file
+                File.WriteAllText(serverSettingsFileName, defaultJson);
+
+                //MessageBox.Show("Default settings created and saved.");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

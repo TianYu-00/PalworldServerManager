@@ -122,7 +122,7 @@
     <value>Microsoft YaHei, 9.75pt</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>保存当前服务器世界设置到文件</value>
+    <value>保存</value>
   </data>
   <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
     <value />
@@ -131,13 +131,13 @@
     <value>Microsoft YaHei, 9.75pt</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>加载默认服务器世界设置</value>
+    <value>加载默认服务器设置</value>
   </data>
   <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9.75pt</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
-    <value>打开服务器世界设置INI文件</value>
+    <value>打开世界设置INI文件</value>
   </data>
   <data name="button_manualSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9.75pt</value>
