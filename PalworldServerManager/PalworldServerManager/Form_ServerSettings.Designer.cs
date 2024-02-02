@@ -36,6 +36,7 @@ namespace PalworldServerManager
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
             button_manualSave = new System.Windows.Forms.Button();
+            button_openManualAutoSaveDirectory = new System.Windows.Forms.Button();
             panel1 = new System.Windows.Forms.Panel();
             label63 = new System.Windows.Forms.Label();
             richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -199,6 +200,7 @@ namespace PalworldServerManager
             tableLayoutPanel1.Controls.Add(button2, 0, 0);
             tableLayoutPanel1.Controls.Add(button3, 1, 0);
             tableLayoutPanel1.Controls.Add(button_manualSave, 2, 0);
+            tableLayoutPanel1.Controls.Add(button_openManualAutoSaveDirectory, 3, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // button2
@@ -223,6 +225,13 @@ namespace PalworldServerManager
             button_manualSave.Name = "button_manualSave";
             button_manualSave.UseVisualStyleBackColor = true;
             button_manualSave.Click += button_manualSave_Click;
+            // 
+            // button_openManualAutoSaveDirectory
+            // 
+            resources.ApplyResources(button_openManualAutoSaveDirectory, "button_openManualAutoSaveDirectory");
+            button_openManualAutoSaveDirectory.Name = "button_openManualAutoSaveDirectory";
+            button_openManualAutoSaveDirectory.UseVisualStyleBackColor = true;
+            button_openManualAutoSaveDirectory.Click += button_openManualAutoSaveDirectory_Click;
             // 
             // panel1
             // 
@@ -1360,5 +1369,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button_manualSave;
         private System.Windows.Forms.TextBox textBox_maxBackup;
         private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Button button_openManualAutoSaveDirectory;
     }
 }

@@ -124,9 +124,6 @@
   <data name="button1.Text" xml:space="preserve">
     <value>保存</value>
   </data>
-  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9.75pt</value>
   </data>
@@ -145,11 +142,11 @@
   <data name="button_manualSave.Text" xml:space="preserve">
     <value>手动备份游戏</value>
   </data>
-  <data name="button_manualSave.ToolTip" xml:space="preserve">
-    <value />
+  <data name="button_openManualAutoSaveDirectory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9.75pt</value>
   </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="button_openManualAutoSaveDirectory.Text" xml:space="preserve">
+    <value>打开手动/自动保存目录</value>
   </data>
   <data name="label63.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 2304</value>
@@ -160,14 +157,8 @@
   <data name="label63.Text" xml:space="preserve">
     <value>当前服务器世界设置</value>
   </data>
-  <data name="label63.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 2319</value>
-  </data>
-  <data name="richTextBox2.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label64.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 8.25pt</value>
@@ -181,201 +172,12 @@
   <data name="label64.Text" xml:space="preserve">
     <value>默认服务器世界设置</value>
   </data>
-  <data name="label64.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>; This configuration file is a sample of the default server settings.
 ; Changes to this file will NOT be reflected on the server.
 ; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
 [/Script/Pal.PalGameWorldSettings]
 OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
-  </data>
-  <data name="richTextBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_useAuth.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableDefenseOtherGuildPlayer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_existPlayerAfterLogout.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_isStartLocationSelectByMap.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableFastTravel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableNonLoginPenalty.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_canPickupOtherGuildDeathPenaltyDrop.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_isPvP.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_isMultiplay.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_autoResetGuildNoOnlinePlayers.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableAimAssistKeyboard.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableAimAssistPad.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_activeUNKO.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableInvaderEnemy.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enableFriendlyFire.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_enablePlayerToPlayerDamage.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_deathPenalty.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_difficulty.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_banListURL.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_region.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_coopPlayerMaxNum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_workSpeedRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palEggDefaultHatchingTime.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_guildPlayerMaxNum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_autoResetGuildTimeNoOnlinePlayers.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_dropItemAliveMaxHours.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_baseCampWorkerMaxNum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_baseCampMaxNum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_dropItemMaxNum_UNKO.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_dropItemMaxNum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_enemyDropItemRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_collectionObjectRespawnSpeedRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_collectionObjectHpRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_collectionDropRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_buildObjectDeteriorationDamageRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_buildObjectDamageRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palAutoHpRegeneRateInSleep.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palAutoHpRegeneRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palStaminaDecreaceRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palStomachDecreaceRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_playerAutoHpRegeneRateInSleep.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_playerAutoHpRegeneRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_playerStaminaDecreaceRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_playerStomachDecreaceRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_playerDamageRateDefense.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_playerDamageRateAttack.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palDamageRateDefense.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palDamageRateAttack.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palSpawnNumRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_palCaptureRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_expRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_nightTimeSpeedRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_dayTimeSpeedRate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_rconPort.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_publicIP.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_publicPort.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_serverPassword.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_adminPassword.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_serverPlayerMaxNum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_serverDescription.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -752,15 +554,6 @@ All全都掉</value>
   <data name="label62.Text" xml:space="preserve">
     <value>封禁名单URL</value>
   </data>
-  <data name="textBox_serverName.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox_rconEnabled.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label66.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
@@ -768,9 +561,6 @@ All全都掉</value>
     <value>备份到</value>
   </data>
   <data name="label66.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_backupTo.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="button_backupTo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -982,15 +772,6 @@ All全都掉</value>
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button_backupTo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_maxBackup.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label67.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
@@ -1004,12 +785,6 @@ All全都掉</value>
     <value>自动备份游戏文件间隔 (秒 (0 = 不自动保存))</value>
   </data>
   <data name="label65.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_backupInterval.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

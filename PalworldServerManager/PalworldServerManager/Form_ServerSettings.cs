@@ -971,7 +971,7 @@ namespace PalworldServerManager
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
                 timer1.Start();
             }
-                
+
         }
 
         public void SaveGameTimer_Stop()
@@ -996,24 +996,44 @@ namespace PalworldServerManager
                             DateTime currentDateTime = DateTime.Now;
                             // Format the date and time as a string
                             string currentDateTimeString = currentDateTime.ToString("yyyy_MM_dd_HH_mm_ss");
-
-                            // Create the main folder in the destination directory
                             string mainFolderName = new DirectoryInfo(savePath).Name;
-                            string destinationMainFolderPath = Path.Combine(serv_backupToDirectory,"SaveFiles", $"GameSave_{currentDateTimeString}", mainFolderName);
-                            Directory.CreateDirectory(destinationMainFolderPath);
-
-                            // Copy all files and subdirectories recursively
-                            foreach (string dirPath in Directory.GetDirectories(savePath, "*", SearchOption.AllDirectories))
+                            if (!forceBackup)
                             {
-                                Directory.CreateDirectory(dirPath.Replace(savePath, destinationMainFolderPath));
+                                // THIS IS AUTO SAVE
+                                string autoSaveDestinationMainFolderPath = Path.Combine(serv_backupToDirectory, "SaveFiles", "AutoSave", $"GameSave_{currentDateTimeString}", mainFolderName);
+                                Directory.CreateDirectory(autoSaveDestinationMainFolderPath);
+
+                                // Copy all files and subdirectories recursively
+                                foreach (string dirPath in Directory.GetDirectories(savePath, "*", SearchOption.AllDirectories))
+                                {
+                                    Directory.CreateDirectory(dirPath.Replace(savePath, autoSaveDestinationMainFolderPath));
+                                }
+
+                                foreach (string newPath in Directory.GetFiles(savePath, "*.*", SearchOption.AllDirectories))
+                                {
+                                    File.Copy(newPath, newPath.Replace(savePath, autoSaveDestinationMainFolderPath), true);
+                                }
+
+                                CheckMaxBackup();
+                            }
+                            else if (forceBackup)
+                            {
+                                // THIS IS MANUAL SAVE
+                                string manualSaveDestinationMainFolderPath = Path.Combine(serv_backupToDirectory, "SaveFiles", "ManualSave", $"GameSave_{currentDateTimeString}", mainFolderName);
+                                Directory.CreateDirectory(manualSaveDestinationMainFolderPath);
+
+                                // Copy all files and subdirectories recursively
+                                foreach (string dirPath in Directory.GetDirectories(savePath, "*", SearchOption.AllDirectories))
+                                {
+                                    Directory.CreateDirectory(dirPath.Replace(savePath, manualSaveDestinationMainFolderPath));
+                                }
+
+                                foreach (string newPath in Directory.GetFiles(savePath, "*.*", SearchOption.AllDirectories))
+                                {
+                                    File.Copy(newPath, newPath.Replace(savePath, manualSaveDestinationMainFolderPath), true);
+                                }
                             }
 
-                            foreach (string newPath in Directory.GetFiles(savePath, "*.*", SearchOption.AllDirectories))
-                            {
-                                File.Copy(newPath, newPath.Replace(savePath, destinationMainFolderPath), true);
-                            }
-
-                            CheckMaxBackup();
                             forceBackup = false;
 
                             //MessageBox.Show("Backup completed successfully!", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1034,7 +1054,6 @@ namespace PalworldServerManager
                     //MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
 
         }
 
@@ -1060,7 +1079,7 @@ namespace PalworldServerManager
 
             if (Directory.Exists(serv_backupToDirectory))
             {
-                string saveFilePath = Path.Combine(serv_backupToDirectory, "SaveFiles");
+                string saveFilePath = Path.Combine(serv_backupToDirectory, "SaveFiles", "AutoSave");
                 string[] subdirectories = Directory.GetDirectories(saveFilePath);
 
                 while (subdirectories.Length > newMaxBackupInt)
@@ -1120,6 +1139,20 @@ namespace PalworldServerManager
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void button_openManualAutoSaveDirectory_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                string savedDirectory = Path.Combine(serv_backupToDirectory, "SaveFiles");
+                Process.Start(new ProcessStartInfo { FileName = savedDirectory, UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
