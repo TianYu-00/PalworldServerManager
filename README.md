@@ -1,10 +1,6 @@
-# PalworldServerManager
+# PSM - Simple Server Creation And Managing Tool.   
 
-`#CURRENTLY FIXING RCON CANT CONNECT REMOTELY ISSUE`
-
-PalworldServerManager - Simple Server Creation And Managing Tool.   
-Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
-
+`#CURRENTLY FIXING RCON CANT CONNECT REMOTELY ISSUE`    
 > [!NOTE]
 Last Tested Game Version: **`v0.1.3.0`** using PSM: **`v1.0.5`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**
@@ -43,3 +39,4 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 
 **`v1.0.4 preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/cdbefcc1-2803-4e51-bfef-86a141fac506" alt="Image1" style="width: 100%; height: auto;">   
+Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
