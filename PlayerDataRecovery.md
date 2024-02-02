@@ -10,12 +10,12 @@ What you will need:
 3）Visual studio code: https://code.visualstudio.com/ (Or whatever modern texteditor you would like to use but i will be using this.)
 
 _Just some references_
-OldName: Tian
-NewName: Test123
-OldId: 3de02178-0000-0000-0000-000000000000
-NewId: 31f9c2ce-0000-0000-0000-000000000000
-Old player .sav: 3DE02178000000000000000000000000.sav   
-New player .sav: 31F9C2CE000000000000000000000000.sav
+OldName: Tian     
+NewName: Test123     
+OldId: 3de02178-0000-0000-0000-000000000000     
+NewId: 31f9c2ce-0000-0000-0000-000000000000     
+Old player .sav: 3DE02178000000000000000000000000.sav        
+New player .sav: 31F9C2CE000000000000000000000000.sav     
 
 Steps:   
 1) Download and install Python
