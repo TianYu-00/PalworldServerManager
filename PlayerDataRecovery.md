@@ -1,7 +1,7 @@
 # Player Data Recovery For Dedicated Server 
-Palworld SteamCMD flags set by the developers will have some files be wiped by SteamCMD during update, which has led to a player data wipe for my server.
+Palworld SteamCMD flags set by the developers will have some files be wiped by SteamCMD during update, which has led to a player data wipe for my server. 
 
-And here is how I recovered my player data from a data wipe after updating the game from `v0.1.3.0` to `v0.1.4.0`.   
+And here is how I recovered ALL of my player data from a data wipe after updating the game from `v0.1.3.0` to `v0.1.4.0`.   
 It will be great if you have a backup of your `SaveGames` folder prior to the new update. If you dont and youre in a situation where you JUST updated and found out that the data got wiped, shut down the server and make a `SaveGames` backup right now. 
 
 What you will need:   
