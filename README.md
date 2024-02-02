@@ -14,9 +14,6 @@ Current PSM Language Options Available: **`English`** **`Chinese`**
 
 
 
-
-
-
 To allow others to join your server and use the rcon feature remotely, you'll need to configure your firewall to open specific ports and set up port forwarding for those ports.   
 Basically:   
 `Add RCON port to firewall`   
