@@ -3,7 +3,7 @@
 _DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager/releases/latest)
 
 > [!NOTE]
-Last Tested Game Version: **`v0.1.4.0`** using PSM: **`v1.0.5`**   
+Last Tested Game Version: **`v0.1.4.0`** using PSM: **`v1.0.6`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**
 
 > [!IMPORTANT]
@@ -40,6 +40,6 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 **`v1.0.3 RCON preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/d413651f-4c54-4f88-b0d8-5d10539b48dd" alt="Image1" style="width: 100%; height: auto;">   
 
-**`v1.0.4 preview`**  
-<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/cdbefcc1-2803-4e51-bfef-86a141fac506" alt="Image1" style="width: 100%; height: auto;">   
+**`v1.0.6 preview`**  
+<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/6f95d48f-5d0a-4649-a4e5-bdbb90a25c75" alt="Image1" style="width: 100%; height: auto;">   
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
