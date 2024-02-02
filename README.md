@@ -2,7 +2,7 @@
 
 `#CURRENTLY FIXING RCON CANT CONNECT REMOTELY ISSUE`    
 > [!NOTE]
-Last Tested Game Version: **`v0.1.3.0`** using PSM: **`v1.0.5`**   
+Last Tested Game Version: **`v0.1.4.0`** using PSM: **`v1.0.5`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**
 
 > [!IMPORTANT]
