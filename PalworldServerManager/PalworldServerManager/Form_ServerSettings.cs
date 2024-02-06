@@ -20,6 +20,7 @@ namespace PalworldServerManager
         //
 
         private const string serverSettingsFileName = "ServerSettingsPreset.json";
+        private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
 
         // BACKUP INTERVAL
@@ -433,9 +434,8 @@ namespace PalworldServerManager
         private void ReadWorldSettingsFile()
         {
             // Get the executable directory
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
             // Combine the executable directory with the relative path to the INI file
-            string iniFilePath = Path.Combine(exeDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
+            string iniFilePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
 
             try
             {
@@ -462,9 +462,8 @@ namespace PalworldServerManager
         private bool WriteWorldSettingsFile()
         {
             // Get the executable directory
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
             // Combine the executable directory with the relative path to the INI file
-            string iniFilePath = Path.Combine(exeDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
+            string iniFilePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
 
             try
             {
@@ -927,7 +926,7 @@ namespace PalworldServerManager
         private void button3_Click(object sender, EventArgs e)
         {
             // Get the base directory of the application
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
             string iniFilePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "Config", "WindowsServer", "PalWorldSettings.ini");
             OpenFileDirectoryGiven(iniFilePath);
 
@@ -986,7 +985,6 @@ namespace PalworldServerManager
             {
                 try
                 {
-                    string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
                     string savePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "SaveGames");
                     if (!string.IsNullOrWhiteSpace(savePath) && !string.IsNullOrWhiteSpace(serv_backupToDirectory))
                     {

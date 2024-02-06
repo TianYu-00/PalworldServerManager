@@ -27,6 +27,8 @@ namespace PalworldServerManager
         // steamcmd +login anonymous +app_update 2394010 validate +quit
         //
 
+        private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
         private string isCommunityserver;
         private string isUseperfthreads;
         private string isNoAsyncLoadingThread;
@@ -184,8 +186,8 @@ namespace PalworldServerManager
         {
             string zipUrl = "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip";
             string fileName = "steamcmd.zip";
-            string savePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
-            string extractPath = AppDomain.CurrentDomain.BaseDirectory;
+            string savePath = Path.Combine(baseDirectory, fileName);
+            string extractPath = baseDirectory;
 
             using (WebClient webClient = new WebClient())
             {
@@ -213,10 +215,9 @@ namespace PalworldServerManager
         private void RunDownloadServerBatchFile()
         {
             // Get the executable directory
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
             // Specify the path for the bat file
-            string batFilePath = Path.Combine(exeDirectory, "DownloadUpdateVerifyServer.bat");
+            string batFilePath = Path.Combine(baseDirectory, "DownloadUpdateVerifyServer.bat");
             try
             {
                 //Run bat file
@@ -261,11 +262,8 @@ namespace PalworldServerManager
             // Get the content from the TextBox
             string batContent = "steamcmd +login anonymous +app_update 2394010 validate +quit";
 
-            // Get the executable directory
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
             // Specify the path for the bat file
-            string batFilePath = Path.Combine(exeDirectory, "DownloadUpdateVerifyServer.bat");
+            string batFilePath = Path.Combine(baseDirectory, "DownloadUpdateVerifyServer.bat");
 
             try
             {
@@ -284,11 +282,9 @@ namespace PalworldServerManager
 
         private void RunStartServerBatchFile()
         {
-            // Get the executable directory
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
             // Specify the path for the bat file
-            string batFilePath = Path.Combine(exeDirectory, "RunServer.bat");
+            string batFilePath = Path.Combine(baseDirectory, "RunServer.bat");
             try
             {
                 // Create a new process to run the batch file
@@ -332,9 +328,8 @@ namespace PalworldServerManager
 
         private bool CheckPalServer()
         {
-            string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
             // Combine the executable directory with the relative path to the INI file
-            string palServerEXEPath = Path.Combine(exeDirectory, "steamapps", "common", "PalServer", "PalServer.exe");
+            string palServerEXEPath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "PalServer.exe");
             if (File.Exists(palServerEXEPath))
             {
                 //MessageBox.Show("palServerEXEPath is there");
@@ -370,10 +365,8 @@ namespace PalworldServerManager
                 WriteStartServerArg();
                 // Get the content from the TextBox
                 string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe{isCommunityserver}{isUseperfthreads}{isNoAsyncLoadingThread}{isUseMultithreadForDS}{isLog}{isNoSteam}";
-                // Get the executable directory
-                string exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
                 // Specify the path for the bat file
-                string batFilePath = Path.Combine(exeDirectory, "RunServer.bat");
+                string batFilePath = Path.Combine(baseDirectory, "RunServer.bat");
                 try
                 {
                     // Write the content to the bat file
@@ -495,7 +488,6 @@ namespace PalworldServerManager
 
         private void baseDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             OpenFileDirectoryGiven(baseDirectory);
         }
 
