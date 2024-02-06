@@ -42,6 +42,9 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 *By: [TroubleChute](https://hub.tcno.co/games/palworld/dedicated_server/)*
 
 
+_Previews_
+-----------------------
+
 **`v1.0.3 RCON preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/d413651f-4c54-4f88-b0d8-5d10539b48dd" alt="Image1" style="width: 100%; height: auto;">   
 
