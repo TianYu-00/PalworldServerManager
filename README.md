@@ -12,7 +12,12 @@ Current PSM Language Options Available: **`English`** **`Chinese`**
 > [!IMPORTANT]
 > If you got data wiped after updating the game, check out my guide on how to recover it. It might or might not help but there arent many options out there. [Guide](https://github.com/TianYu-00/PalworldServerManager/blob/897b7ab60dd4125ab35e4f76af7af772d16e0819/PlayerDataRecovery.md)
 
-
+_Installation_
+-----------------------
+1) Download    
+2) Create a new folder    
+3) Copy the exe to the new folder    
+4) Run the exe    
 
 To allow others to join your server and use the rcon feature remotely, you'll need to configure your firewall to open specific ports and set up port forwarding for those ports.   
 Basically:   
