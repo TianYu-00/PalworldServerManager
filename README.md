@@ -1,6 +1,7 @@
 # PSM - Simple Server Creation And Managing Tool.   
 `#CURRENTLY FIXING RCON CANT CONNECT REMOTELY ISSUE`    
-_DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager/releases/latest)
+_DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager/releases/latest)    
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I1U729N)
 
 > [!NOTE]
 Last Tested Game Version: **`v0.1.4.0`** using PSM: **`v1.0.6`**   
