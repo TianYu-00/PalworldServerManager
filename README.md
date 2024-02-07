@@ -52,3 +52,7 @@ _Previews_
 **`v1.0.6 preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/6f95d48f-5d0a-4649-a4e5-bdbb90a25c75" alt="Image1" style="width: 100%; height: auto;">   
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
+
+_Credits_
+---------------
+[RCONSharp](https://github.com/stefanodriussi/rconsharp)
