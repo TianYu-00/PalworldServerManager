@@ -32,7 +32,6 @@ Basically:
 | 25575 |RCON Port  |
 
    
-   
 Could also open ur firewall ports with script: 
 ```
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort 27015,27016,25575 -Protocol TCP -Action Allow
@@ -40,7 +39,6 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Outbound -LocalPor
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Outbound -LocalPort 8211,27015,27016,25575 -Protocol UDP -Action Allow
 New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort 8211,27015,27016,25575 -Protocol UDP -Action Allow
 ```
-*By: [TroubleChute](https://hub.tcno.co/games/palworld/dedicated_server/)*
 
 
 _Previews_
@@ -55,4 +53,5 @@ Official way to create dedicated server: https://tech.palworldgame.com/dedicated
 
 _Credits_
 ---------------
-[RCONSharp](https://github.com/stefanodriussi/rconsharp)
+[RCONSharp](https://github.com/stefanodriussi/rconsharp)    
+[TroubleChute](https://hub.tcno.co/games/palworld/dedicated_server/)
