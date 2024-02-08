@@ -43,9 +43,8 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 _Previews_
 -----------------------
 
-**`v1.0.3 RCON preview`**  
-<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/d413651f-4c54-4f88-b0d8-5d10539b48dd" alt="Image1" style="width: 100%; height: auto;">   
-
+**`v1.0.7 RCON preview`**  
+<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/944f0858-d44f-4d62-90e4-28eee6d8ed4c" alt="Image1" style="width: 100%; height: auto;">   
 **`v1.0.6 preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/6f95d48f-5d0a-4649-a4e5-bdbb90a25c75" alt="Image1" style="width: 100%; height: auto;">   
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
