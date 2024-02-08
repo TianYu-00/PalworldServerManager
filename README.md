@@ -53,5 +53,5 @@ Official way to create dedicated server: https://tech.palworldgame.com/dedicated
 
 _Credits_
 ---------------
-[RCONSharp](https://github.com/stefanodriussi/rconsharp)    
+[Palworld-Rcon-Sharp](https://github.com/calico-crusade/palworld-rcon-sharp)    
 [TroubleChute](https://hub.tcno.co/games/palworld/dedicated_server/)
