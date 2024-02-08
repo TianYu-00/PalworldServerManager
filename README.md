@@ -1,4 +1,4 @@
-# PSM - Simple Server Creation And Managing Tool.   
+# PalworldServerManager - Simple server creating and managing tool.  
 `#CURRENTLY FIXING RCON CANT CONNECT REMOTELY ISSUE`    
 _DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager/releases/latest)    
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I1U729N)
