@@ -117,11 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 658</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="button1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBox_output.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="richTextBox_output.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -132,7 +160,6 @@
   <data name="richTextBox_output.Size" type="System.Drawing.Size, System.Drawing">
     <value>554, 692</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBox_output.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -147,10 +174,10 @@ BanPlayer {Steam ID} - (Ban the player from joining the server)
 Shutdown {Seconds} {MessageText} - (Alert players before shutdown)
 DoExit - (Stop server)
 ====================================================================
-
-NOTICE!
-RCON IS A BETA FEATURE AND IM STILL WORKING ON IT, CURRENTLY ITLL ONLY WORK LOCALLY ON 127.0.0.1
-
+NOTICE:
+RCON only supports ASCII printable characters
+If your comand, server name, or player names contain non ascii printable characters the task would be timed out
+====================================================================
 </value>
   </data>
   <data name="&gt;&gt;richTextBox_output.Name" xml:space="preserve">
@@ -163,7 +190,7 @@ RCON IS A BETA FEATURE AND IM STILL WORKING ON IT, CURRENTLY ITLL ONLY WORK LOCA
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;richTextBox_output.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel_sendSection.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -256,7 +283,7 @@ RCON IS A BETA FEATURE AND IM STILL WORKING ON IT, CURRENTLY ITLL ONLY WORK LOCA
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel_sendSection.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tableLayoutPanel_sendSection.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_commandText" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button_sendCommand" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,81.38223,Percent,18.61777" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -645,34 +672,34 @@ RCON IS A BETA FEATURE AND IM STILL WORKING ON IT, CURRENTLY ITLL ONLY WORK LOCA
   <data name="&gt;&gt;textBox_passwordRCON.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="checkBox_autoUpdatePlayerList.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_autoUpdatePlayerList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="checkBox_autoUpdatePlayerList.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 101</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="checkBox_autoUpdatePlayerList.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 34</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox_autoUpdatePlayerList.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Test</value>
+  <data name="checkBox_autoUpdatePlayerList.Text" xml:space="preserve">
+    <value>Auto Update Player List</value>
   </data>
-  <data name="button1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;checkBox_autoUpdatePlayerList.Name" xml:space="preserve">
+    <value>checkBox_autoUpdatePlayerList</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;checkBox_autoUpdatePlayerList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_autoUpdatePlayerList.Parent" xml:space="preserve">
     <value>tableLayoutPanel_topSection</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_autoUpdatePlayerList.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="tableLayoutPanel_topSection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -706,7 +733,7 @@ RCON IS A BETA FEATURE AND IM STILL WORKING ON IT, CURRENTLY ITLL ONLY WORK LOCA
     <value>2</value>
   </data>
   <data name="tableLayoutPanel_topSection.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_ipRCON" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_portRCON" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_connectRCON" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button_disconnectRCON" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_passwordRCON" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,65.88235,Percent,34.11765,Absolute,39,Absolute,23" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_ipRCON" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_portRCON" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_connectRCON" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button_disconnectRCON" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_passwordRCON" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBox_autoUpdatePlayerList" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,65.88235,Percent,34.11765,Absolute,39,Absolute,23" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

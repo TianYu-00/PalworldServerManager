@@ -70,5 +70,17 @@ namespace PalworldServerManager.Properties {
                 this["Saved_rconPassword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Saved_rconAutpUpdatePlayerList {
+            get {
+                return ((bool)(this["Saved_rconAutpUpdatePlayerList"]));
+            }
+            set {
+                this["Saved_rconAutpUpdatePlayerList"] = value;
+            }
+        }
     }
 }

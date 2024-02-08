@@ -33,6 +33,7 @@ namespace PalworldServerManager
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_RCON));
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
+            button1 = new System.Windows.Forms.Button();
             richTextBox_output = new System.Windows.Forms.RichTextBox();
             tableLayoutPanel_sendSection = new System.Windows.Forms.TableLayoutPanel();
             textBox_commandText = new System.Windows.Forms.TextBox();
@@ -50,7 +51,7 @@ namespace PalworldServerManager
             button_connectRCON = new System.Windows.Forms.Button();
             button_disconnectRCON = new System.Windows.Forms.Button();
             textBox_passwordRCON = new System.Windows.Forms.TextBox();
-            button1 = new System.Windows.Forms.Button();
+            checkBox_autoUpdatePlayerList = new System.Windows.Forms.CheckBox();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
             timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
@@ -72,10 +73,18 @@ namespace PalworldServerManager
             // 
             // panel2
             // 
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(richTextBox_output);
             panel2.Controls.Add(tableLayoutPanel_sendSection);
             resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // richTextBox_output
             // 
@@ -158,7 +167,7 @@ namespace PalworldServerManager
             tableLayoutPanel_topSection.Controls.Add(button_connectRCON, 0, 0);
             tableLayoutPanel_topSection.Controls.Add(button_disconnectRCON, 1, 0);
             tableLayoutPanel_topSection.Controls.Add(textBox_passwordRCON, 1, 2);
-            tableLayoutPanel_topSection.Controls.Add(button1, 0, 2);
+            tableLayoutPanel_topSection.Controls.Add(checkBox_autoUpdatePlayerList, 0, 2);
             tableLayoutPanel_topSection.Name = "tableLayoutPanel_topSection";
             // 
             // textBox_ipRCON
@@ -190,12 +199,11 @@ namespace PalworldServerManager
             resources.ApplyResources(textBox_passwordRCON, "textBox_passwordRCON");
             textBox_passwordRCON.Name = "textBox_passwordRCON";
             // 
-            // button1
+            // checkBox_autoUpdatePlayerList
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            resources.ApplyResources(checkBox_autoUpdatePlayerList, "checkBox_autoUpdatePlayerList");
+            checkBox_autoUpdatePlayerList.Name = "checkBox_autoUpdatePlayerList";
+            checkBox_autoUpdatePlayerList.UseVisualStyleBackColor = true;
             // 
             // timer1
             // 
@@ -244,5 +252,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button_ban;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.CheckBox checkBox_autoUpdatePlayerList;
     }
 }
