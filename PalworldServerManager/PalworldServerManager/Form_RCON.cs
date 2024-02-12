@@ -136,7 +136,7 @@ namespace PalworldServerManager
 
         }
 
-        private async void DisconnectRCON()
+        private void DisconnectRCON()
         {
             try
             {
@@ -301,7 +301,7 @@ namespace PalworldServerManager
 
         }
 
-        private async void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             try
             {
