@@ -18,11 +18,13 @@ namespace PalworldServerManager
 
         private List<Tuple<CheckBox, DateTimePicker, DateTimePicker, Button>> settingsList;
         private Timer timer;
+        private Form1 mainForm;
 
 
-        public Form_ServerRestart()
+        public Form_ServerRestart(Form1 form)
         {
             InitializeComponent();
+            mainForm = form;
         }
 
         private void Form_ServerRestart_Load(object sender, EventArgs e)
@@ -51,10 +53,11 @@ namespace PalworldServerManager
             DateTimePicker timePicker = new DateTimePicker();
             Button deleteButton = new Button();
 
-            // Create a new row in tableLayoutPanel1
             int rowCount = tableLayoutPanel1.RowCount;
             tableLayoutPanel1.RowCount = rowCount + 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+
+
 
             // Add controls to the tableLayoutPanel
             tableLayoutPanel1.Controls.Add(checkBox, 0, rowCount);
@@ -116,47 +119,59 @@ namespace PalworldServerManager
 
         private void CheckSettings()
         {
-            //Current time
-            DateTime currentDateTime = DateTime.Now;
-            Debug.WriteLine($"Current Time: {currentDateTime}");
-            string currentDateString = currentDateTime.ToString("yyyy/MM/dd");
-            string currentTimeString = currentDateTime.ToString("HH:mm:ss");
-
-            foreach (var setting in settingsList)
+            if (mainForm.isServerStarted)
             {
-                if (setting.Item1.Checked)
+                //Current time
+                DateTime currentDateTime = DateTime.Now;
+                Debug.WriteLine($"Current Time: {currentDateTime}");
+                string currentDateString = currentDateTime.ToString("yyyy/MM/dd");
+                string currentTimeString = currentDateTime.ToString("HH:mm:ss");
+                foreach (var setting in settingsList)
                 {
-                    // Get the index of the current tuple in settingsList
-                    int rowIndex = settingsList.IndexOf(setting);
-
-                    //Item Time
-                    DateTime itemsDateTime = setting.Item2.Value.Date + setting.Item3.Value.TimeOfDay;
-
-                    string itemDateString = itemsDateTime.ToString("yyyy/MM/dd");
-                    string itemTimeString = itemsDateTime.ToString("HH:mm:ss");
-                    //Using time
-                    string usingDate;
-                    string usingTime = itemTimeString;
-
-
-                    //If date checkbox is checked, it will set using date as today
-                    if (setting.Item2.Checked)
+                    if (setting.Item1.Checked)
                     {
-                        usingDate = itemDateString;
-                    }
-                    else
-                    {
-                        usingDate = currentDateString;
-                    }
+                        // Get the index of the current tuple in settingsList
+                        int rowIndex = settingsList.IndexOf(setting);
 
-                    Debug.WriteLine($"ROWINDEX & Date: {rowIndex}, {usingDate},{usingTime}");
-                    //When matched
-                    if (usingDate == currentDateString && usingTime == currentTimeString)
-                    {
-                        //MessageBox.Show("Matched");
+                        //Item Time
+                        DateTime itemsDateTime = setting.Item2.Value.Date + setting.Item3.Value.TimeOfDay;
+
+                        string itemDateString = itemsDateTime.ToString("yyyy/MM/dd");
+                        string itemTimeString = itemsDateTime.ToString("HH:mm:ss");
+                        //Using time
+                        string usingDate;
+                        string usingTime = itemTimeString;
+
+
+                        //If date checkbox is checked, it will set using date as today
+                        if (setting.Item2.Checked)
+                        {
+                            usingDate = itemDateString;
+                        }
+                        else
+                        {
+                            usingDate = currentDateString;
+                        }
+
+                        Debug.WriteLine($"ROWINDEX & Date: {rowIndex}, {usingDate},{usingTime}");
+                        //When matched
+                        if (usingDate == currentDateString && usingTime == currentTimeString)
+                        {
+                            //MessageBox.Show("Matched");
+                            if (mainForm != null)
+                            {
+                                mainForm.StopServer();
+                                mainForm.StartServer();
+                            }
+                            else
+                            {
+                                Debug.WriteLine("mainForm is null");
+                            }
+                        }
                     }
                 }
             }
+            
         }
 
         private void LoadSettings()
@@ -194,7 +209,6 @@ namespace PalworldServerManager
                     deleteButton.Text = "Delete";
                     deleteButton.Click += (deleteSender, deleteArgs) => DeleteRow(deleteButton);
 
-                    // Add controls to the tableLayoutPanel
                     int rowCount = tableLayoutPanel1.RowCount;
                     tableLayoutPanel1.RowCount = rowCount + 1;
                     tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
@@ -227,13 +241,6 @@ namespace PalworldServerManager
 
             string json = JsonSerializer.Serialize(settings);
             File.WriteAllText("ServerRestartSettings.json", json);
-        }
-
-
-
-        private void button_test_Click(object sender, EventArgs e)
-        {
-            CheckSettings();
         }
 
         // ScheduleSettings class

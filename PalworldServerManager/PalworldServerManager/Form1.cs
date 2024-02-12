@@ -38,7 +38,7 @@ namespace PalworldServerManager
         Form_ServerSettings serverSettingsForm;
         Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
-        bool isServerStarted = false;
+        public bool isServerStarted = false;
 
 
 
@@ -86,11 +86,11 @@ namespace PalworldServerManager
             ReadStartServerArg();
             //Load Form
             rconForm = new Form_RCON();
-            serverRestartForm = new Form_ServerRestart();
+            serverRestartForm = new Form_ServerRestart(this);
             serverSettingsForm = new Form_ServerSettings();
             LoadForm(rconForm,false);
-            LoadForm(serverRestartForm, false);
             LoadForm(serverSettingsForm, true);
+            LoadForm(serverRestartForm, true);
 
 
         }
