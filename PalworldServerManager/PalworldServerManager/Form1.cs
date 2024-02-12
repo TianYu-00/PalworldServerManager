@@ -37,6 +37,7 @@ namespace PalworldServerManager
         private string isNoSteam;
         Form_ServerSettings serverSettingsForm;
         Form_RCON rconForm;
+        Form_ServerRestart serverRestartForm;
         bool isServerStarted = false;
 
 
@@ -85,15 +86,16 @@ namespace PalworldServerManager
             ReadStartServerArg();
             //Load Form
             rconForm = new Form_RCON();
+            serverRestartForm = new Form_ServerRestart();
             serverSettingsForm = new Form_ServerSettings();
-            LoadForm(rconForm);
-            rconForm.Hide();
-            LoadForm(serverSettingsForm);
+            LoadForm(rconForm,false);
+            LoadForm(serverRestartForm, false);
+            LoadForm(serverSettingsForm, true);
 
 
         }
 
-        private void LoadForm(Form formToLoad)
+        private void LoadForm(Form formToLoad, bool isShow)
         {
 
             if (formToLoad != null)
@@ -102,7 +104,15 @@ namespace PalworldServerManager
                 panel_chilForm.Controls.Add(formToLoad);
                 formToLoad.FormBorderStyle = FormBorderStyle.None;
                 formToLoad.Dock = DockStyle.Fill;
-                formToLoad.Show();
+                if (isShow)
+                {
+                    formToLoad.Show();
+                }
+                else
+                {
+                    formToLoad.Hide();
+                }
+                
             }
         }
 
@@ -384,10 +394,10 @@ namespace PalworldServerManager
                 {
                     MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
-                
+
+
             }
-            
+
 
         }
 
@@ -483,7 +493,7 @@ namespace PalworldServerManager
 
         private void serverSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowForm(serverSettingsForm);
+
         }
 
         private void baseDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -546,6 +556,14 @@ namespace PalworldServerManager
             }
         }
 
-        
+        private void serverSettingsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ShowForm(serverSettingsForm);
+        }
+
+        private void serverRestartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm(serverRestartForm);
+        }
     }
 }

@@ -51,6 +51,8 @@ namespace PalworldServerManager
             toolTip1 = new System.Windows.Forms.ToolTip(components);
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             serverSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            serverSettingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            serverRestartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             rCONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             instructionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -214,9 +216,22 @@ namespace PalworldServerManager
             // 
             // serverSettingsToolStripMenuItem
             // 
+            serverSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { serverSettingsToolStripMenuItem1, serverRestartToolStripMenuItem });
             serverSettingsToolStripMenuItem.Name = "serverSettingsToolStripMenuItem";
             resources.ApplyResources(serverSettingsToolStripMenuItem, "serverSettingsToolStripMenuItem");
             serverSettingsToolStripMenuItem.Click += serverSettingsToolStripMenuItem_Click;
+            // 
+            // serverSettingsToolStripMenuItem1
+            // 
+            serverSettingsToolStripMenuItem1.Name = "serverSettingsToolStripMenuItem1";
+            resources.ApplyResources(serverSettingsToolStripMenuItem1, "serverSettingsToolStripMenuItem1");
+            serverSettingsToolStripMenuItem1.Click += serverSettingsToolStripMenuItem1_Click;
+            // 
+            // serverRestartToolStripMenuItem
+            // 
+            serverRestartToolStripMenuItem.Name = "serverRestartToolStripMenuItem";
+            resources.ApplyResources(serverRestartToolStripMenuItem, "serverRestartToolStripMenuItem");
+            serverRestartToolStripMenuItem.Click += serverRestartToolStripMenuItem_Click;
             // 
             // rCONToolStripMenuItem
             // 
@@ -339,6 +354,8 @@ namespace PalworldServerManager
         private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem repoPageToolStripMenuItem;
         private System.Windows.Forms.Button button_stopServer;
+        private System.Windows.Forms.ToolStripMenuItem serverSettingsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem serverRestartToolStripMenuItem;
     }
 }
 
