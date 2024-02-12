@@ -176,9 +176,9 @@ namespace PalworldServerManager
 
         private void LoadSettings()
         {
-            if (File.Exists("ServerRestartSettings.json"))
+            if (File.Exists("ServerRestartScheduleSettings.json"))
             {
-                string json = File.ReadAllText("ServerRestartSettings.json");
+                string json = File.ReadAllText("ServerRestartScheduleSettings.json");
                 var settings = JsonSerializer.Deserialize<List<ScheduleSettings>>(json);
 
                 foreach (var setting in settings)
@@ -240,7 +240,7 @@ namespace PalworldServerManager
             }
 
             string json = JsonSerializer.Serialize(settings);
-            File.WriteAllText("ServerRestartSettings.json", json);
+            File.WriteAllText("ServerRestartScheduleSettings.json", json);
             MessageBox.Show("Server Restart Schedule Saved");
         }
 

@@ -1164,6 +1164,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(label68, "label68");
             label68.Name = "label68";
+            toolTip1.SetToolTip(label68, resources.GetString("label68.ToolTip"));
             // 
             // textBox_autoRestartEvery
             // 

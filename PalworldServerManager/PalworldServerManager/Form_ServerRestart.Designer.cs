@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ServerRestart));
             button1 = new System.Windows.Forms.Button();
             panel1 = new System.Windows.Forms.Panel();
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -42,114 +43,61 @@
             // 
             // button1
             // 
-            button1.Dock = System.Windows.Forms.DockStyle.Top;
-            button1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(827, 70);
-            button1.TabIndex = 0;
-            button1.Text = "Save";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // panel1
             // 
-            panel1.AutoScroll = true;
+            resources.ApplyResources(panel1, "panel1");
             panel1.Controls.Add(tableLayoutPanel1);
-            panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel1.Location = new System.Drawing.Point(0, 130);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(827, 603);
-            panel1.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            resources.ApplyResources(tableLayoutPanel1, "tableLayoutPanel1");
             tableLayoutPanel1.Controls.Add(label1, 0, 0);
             tableLayoutPanel1.Controls.Add(label2, 1, 0);
             tableLayoutPanel1.Controls.Add(label3, 2, 0);
             tableLayoutPanel1.Controls.Add(label4, 3, 0);
-            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(827, 30);
-            tableLayoutPanel1.TabIndex = 1;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            label1.Location = new System.Drawing.Point(3, 0);
-            label1.MinimumSize = new System.Drawing.Size(242, 30);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(242, 30);
-            label1.TabIndex = 0;
-            label1.Text = "Enable/Disable";
-            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            label2.Location = new System.Drawing.Point(251, 0);
-            label2.MinimumSize = new System.Drawing.Size(242, 30);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(242, 30);
-            label2.TabIndex = 1;
-            label2.Text = "Date (Unchecked = Everyday)";
-            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            label3.Location = new System.Drawing.Point(499, 0);
-            label3.MinimumSize = new System.Drawing.Size(242, 30);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(242, 30);
-            label3.TabIndex = 2;
-            label3.Text = "Time";
-            label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            label4.Location = new System.Drawing.Point(747, 0);
-            label4.MinimumSize = new System.Drawing.Size(77, 30);
+            resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(77, 30);
-            label4.TabIndex = 3;
-            label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_addSchedule
             // 
-            button_addSchedule.Dock = System.Windows.Forms.DockStyle.Top;
-            button_addSchedule.Location = new System.Drawing.Point(0, 70);
+            resources.ApplyResources(button_addSchedule, "button_addSchedule");
             button_addSchedule.Name = "button_addSchedule";
-            button_addSchedule.Size = new System.Drawing.Size(827, 60);
-            button_addSchedule.TabIndex = 2;
-            button_addSchedule.Text = "Add Schedule";
             button_addSchedule.UseVisualStyleBackColor = true;
             button_addSchedule.Click += button_addSchedule_Click;
             // 
             // Form_ServerRestart
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(827, 733);
             Controls.Add(panel1);
             Controls.Add(button_addSchedule);
             Controls.Add(button1);
-            MinimumSize = new System.Drawing.Size(843, 39);
             Name = "Form_ServerRestart";
-            Text = "Form_ServerRestart";
             Load += Form_ServerRestart_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -4951,6 +4951,9 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
   <data name="label68.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <data name="label68.ToolTip" xml:space="preserve">
+    <value>Automatically shut down and restart the server every x seconds</value>
+  </data>
   <data name="&gt;&gt;label68.Name" xml:space="preserve">
     <value>label68</value>
   </data>
@@ -5449,7 +5452,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>MiddleRight</value>
   </data>
   <data name="label65.ToolTip" xml:space="preserve">
-    <value>Automatically backup your world and player data in a set time
+    <value>Automatically backup your world and player data every x seconds
 </value>
   </data>
   <data name="&gt;&gt;label65.Name" xml:space="preserve">
