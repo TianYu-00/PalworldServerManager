@@ -117,722 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="button_stopServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button_stopServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="button_stopServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 73</value>
-  </data>
-  <data name="button_stopServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 58</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button_stopServer.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="button_stopServer.Text" xml:space="preserve">
-    <value>Stop Server</value>
-  </data>
-  <data name="&gt;&gt;button_stopServer.Name" xml:space="preserve">
-    <value>button_stopServer</value>
-  </data>
-  <data name="&gt;&gt;button_stopServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_stopServer.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button_stopServer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_noSteam.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_noSteam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 136</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBox_noSteam.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_noSteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 19</value>
-  </data>
-  <data name="checkBox_noSteam.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="checkBox_noSteam.Text" xml:space="preserve">
-    <value>NoSteam</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.Name" xml:space="preserve">
-    <value>checkBox_noSteam</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="checkBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_log.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_log.Location" type="System.Drawing.Point, System.Drawing">
-    <value>665, 136</value>
-  </data>
-  <data name="checkBox_log.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 19</value>
-  </data>
-  <data name="checkBox_log.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="checkBox_useperfthreads.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 19</value>
   </data>
   <data name="checkBox_log.Text" xml:space="preserve">
     <value>Log</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="checkBox_log.ToolTip" xml:space="preserve">
-    <value>Create a log file to capture information about the session, including any errors or important messages.</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.Name" xml:space="preserve">
-    <value>checkBox_log</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 136</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 19</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Text" xml:space="preserve">
-    <value>UseMultithreadForDS</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.ToolTip" xml:space="preserve">
-    <value>Improves performance in multi-threaded CPU environments.
-It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
-</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Name" xml:space="preserve">
-    <value>checkBox_useMultithreadForDS</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 136</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 19</value>
   </data>
-  <data name="checkBox_noAsyncLoadingThread.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Text" xml:space="preserve">
-    <value>NoAsyncLoadingThread</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.ToolTip" xml:space="preserve">
-    <value>Improves performance in multi-threaded CPU environments.
-It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
-</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Name" xml:space="preserve">
-    <value>checkBox_noAsyncLoadingThread</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="checkBox_useperfthreads.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_useperfthreads.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_useperfthreads.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 136</value>
-  </data>
-  <data name="checkBox_useperfthreads.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_useperfthreads.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 19</value>
-  </data>
-  <data name="checkBox_useperfthreads.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="checkBox_useperfthreads.Text" xml:space="preserve">
-    <value>useperfthreads</value>
-  </data>
-  <data name="checkBox_useperfthreads.ToolTip" xml:space="preserve">
-    <value>Improves performance in multi-threaded CPU environments.
-It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Name" xml:space="preserve">
-    <value>checkBox_useperfthreads</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="checkBox_communityServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_communityServer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_communityServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 136</value>
-  </data>
-  <data name="checkBox_communityServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 19</value>
-  </data>
-  <data name="checkBox_communityServer.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="checkBox_communityServer.Text" xml:space="preserve">
-    <value>Make As Community Server</value>
-  </data>
   <data name="checkBox_communityServer.ToolTip" xml:space="preserve">
     <value>Enabling this will allow your server to be in community server list.</value>
   </data>
-  <data name="&gt;&gt;checkBox_communityServer.Name" xml:space="preserve">
-    <value>checkBox_communityServer</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_log.Parent" xml:space="preserve">
     <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>727, 105</value>
-  </data>
-  <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 27</value>
-  </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button5.Text" xml:space="preserve">
-    <value>Get Local IP</value>
-  </data>
-  <data name="button5.ToolTip" xml:space="preserve">
-    <value>Get your local IP locally</value>
-  </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
-  </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 105</value>
-  </data>
-  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="textBox2.ToolTip" xml:space="preserve">
-    <value>Your Local IP</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>727, 72</value>
-  </data>
-  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 27</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>Get Public IP</value>
-  </data>
-  <data name="button4.ToolTip" xml:space="preserve">
-    <value>Get your public IP from api.ipify.org</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 73</value>
-  </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="textBox1.ToolTip" xml:space="preserve">
-    <value>Your Public IP</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 68</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Palworld Server Manager</value>
-  </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="button_startServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button_startServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="button_startServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 73</value>
-  </data>
-  <data name="button_startServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="button_startServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 58</value>
-  </data>
-  <data name="button_startServer.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button_startServer.Text" xml:space="preserve">
-    <value>Start Server</value>
-  </data>
-  <data name="button_startServer.ToolTip" xml:space="preserve">
-    <value>Startup the server.</value>
-  </data>
-  <data name="&gt;&gt;button_startServer.Name" xml:space="preserve">
-    <value>button_startServer</value>
-  </data>
-  <data name="&gt;&gt;button_startServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_startServer.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="button_downloadServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button_downloadServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="button_downloadServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 104</value>
-  </data>
-  <data name="button_downloadServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="button_downloadServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 27</value>
-  </data>
-  <data name="button_downloadServer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button_downloadServer.Text" xml:space="preserve">
-    <value>Download/Update/Verify Server</value>
-  </data>
-  <data name="button_downloadServer.ToolTip" xml:space="preserve">
-    <value>Download/Update/Verify your palworld server. Could be used to validate your files if there is an issue with your server.</value>
-  </data>
-  <data name="&gt;&gt;button_downloadServer.Name" xml:space="preserve">
-    <value>button_downloadServer</value>
-  </data>
-  <data name="&gt;&gt;button_downloadServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_downloadServer.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button_downloadServer.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="button_downloadSteamCMD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="button_downloadSteamCMD.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="button_downloadSteamCMD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 73</value>
-  </data>
-  <data name="button_downloadSteamCMD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="button_downloadSteamCMD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 27</value>
-  </data>
-  <data name="button_downloadSteamCMD.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button_downloadSteamCMD.Text" xml:space="preserve">
-    <value>Download and Extract Steam CMD</value>
-  </data>
-  <data name="button_downloadSteamCMD.ToolTip" xml:space="preserve">
-    <value>Download &amp; Extract SteamCMD from official site.</value>
-  </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.Name" xml:space="preserve">
-    <value>button_downloadSteamCMD</value>
-  </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 159</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel_chilForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel_chilForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 183</value>
-  </data>
-  <data name="panel_chilForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="panel_chilForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 637</value>
-  </data>
-  <data name="panel_chilForm.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_chilForm.Name" xml:space="preserve">
-    <value>panel_chilForm</value>
-  </data>
-  <data name="&gt;&gt;panel_chilForm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_chilForm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_chilForm.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>114, 17</value>
-  </metadata>
-  <data name="serverSettingsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
-  </data>
-  <data name="serverSettingsToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Server Settings</value>
-  </data>
-  <data name="serverRestartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
-  </data>
-  <data name="serverRestartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Server Restart Schedule</value>
-  </data>
-  <data name="serverSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 20</value>
-  </data>
-  <data name="serverSettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Server Settings</value>
-  </data>
-  <data name="rCONToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 20</value>
-  </data>
-  <data name="rCONToolStripMenuItem.Text" xml:space="preserve">
-    <value>RCON</value>
-  </data>
-  <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 22</value>
-  </data>
-  <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Instruction</value>
-  </data>
-  <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
-  </data>
-  <data name="infoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="chineseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chinese</value>
-  </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Base Directory</value>
-  </data>
-  <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Directory</value>
-  </data>
-  <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Github</value>
-  </data>
-  <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Repository</value>
-  </data>
-  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
-  </data>
-  <data name="githubToolStripMenuItem.Text" xml:space="preserve">
-    <value>Github</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 159</value>
-  </data>
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 2, 0, 2</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>856, 24</value>
   </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>856, 820</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1675,112 +984,824 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
         +Q/+xvu2r6xvjn7c/wt/ILnbMV/tZgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_stopServer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBox_useMultithreadForDS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="serverSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_startServer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>856, 159</value>
+  </data>
+  <data name="githubToolStripMenuItem.Text" xml:space="preserve">
+    <value>Github</value>
+  </data>
+  <data name="&gt;&gt;panel_chilForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chineseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.Text" xml:space="preserve">
+    <value>NoAsyncLoadingThread</value>
+  </data>
+  <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="button_downloadServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useMultithreadForDS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_downloadSteamCMD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 27</value>
+  </data>
+  <data name="button_downloadServer.Text" xml:space="preserve">
+    <value>Download/Update/Verify Server</value>
+  </data>
+  <data name="serverSettingsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="&gt;&gt;button_downloadServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_downloadSteamCMD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>872, 859</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Palworld Server Manager v1</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverSettingsToolStripMenuItem.Name" xml:space="preserve">
-    <value>serverSettingsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;serverSettingsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serverSettingsToolStripMenuItem1.Name" xml:space="preserve">
-    <value>serverSettingsToolStripMenuItem1</value>
+  <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Repository</value>
   </data>
   <data name="&gt;&gt;serverSettingsToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>727, 105</value>
+  </data>
+  <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instruction</value>
+  </data>
+  <data name="button_downloadServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;button_downloadServer.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;chineseToolStripMenuItem.Name" xml:space="preserve">
+    <value>chineseToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;repoPageToolStripMenuItem.Name" xml:space="preserve">
+    <value>repoPageToolStripMenuItem</value>
+  </data>
   <data name="&gt;&gt;serverRestartToolStripMenuItem.Name" xml:space="preserve">
     <value>serverRestartToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;serverRestartToolStripMenuItem.Type" xml:space="preserve">
+  <data name="checkBox_useperfthreads.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useperfthreads.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="checkBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Palworld Server Manager v1</value>
+  </data>
+  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="checkBox_communityServer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 159</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noSteam.Name" xml:space="preserve">
+    <value>checkBox_noSteam</value>
+  </data>
+  <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="textBox1.ToolTip" xml:space="preserve">
+    <value>Your Public IP</value>
+  </data>
+  <data name="button_downloadSteamCMD.Text" xml:space="preserve">
+    <value>Download and Extract Steam CMD</value>
+  </data>
+  <data name="rCONToolStripMenuItem.Text" xml:space="preserve">
+    <value>RCON</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.Text" xml:space="preserve">
+    <value>UseMultithreadForDS</value>
+  </data>
+  <data name="button_stopServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 73</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useMultithreadForDS.Name" xml:space="preserve">
+    <value>checkBox_useMultithreadForDS</value>
+  </data>
+  <data name="checkBox_log.Location" type="System.Drawing.Point, System.Drawing">
+    <value>665, 136</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_startServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;serverSettingsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>serverSettingsToolStripMenuItem1</value>
+  </data>
+  <data name="button_downloadServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_log.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_useperfthreads.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="button_startServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 58</value>
+  </data>
+  <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 27</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;chineseToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_downloadSteamCMD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 73</value>
+  </data>
+  <data name="serverSettingsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Server Settings</value>
+  </data>
+  <data name="button4.ToolTip" xml:space="preserve">
+    <value>Get your public IP from api.ipify.org</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noSteam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Get Public IP</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_stopServer.Text" xml:space="preserve">
+    <value>Stop Server</value>
+  </data>
+  <data name="&gt;&gt;checkBox_log.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>727, 72</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>856, 68</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 19</value>
+  </data>
+  <data name="checkBox_log.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.Name" xml:space="preserve">
+    <value>button_stopServer</value>
   </data>
   <data name="&gt;&gt;rCONToolStripMenuItem.Name" xml:space="preserve">
     <value>rCONToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;rCONToolStripMenuItem.Type" xml:space="preserve">
+  <data name="checkBox_useMultithreadForDS.ToolTip" xml:space="preserve">
+    <value>Improves performance in multi-threaded CPU environments.
+It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
+</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Directory</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noSteam.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="checkBox_noSteam.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="checkBox_log.ToolTip" xml:space="preserve">
+    <value>Create a log file to capture information about the session, including any errors or important messages.</value>
+  </data>
+  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="&gt;&gt;panel_chilForm.Name" xml:space="preserve">
+    <value>panel_chilForm</value>
+  </data>
+  <data name="checkBox_noSteam.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button_startServer.ToolTip" xml:space="preserve">
+    <value>Startup the server.</value>
+  </data>
+  <data name="panel_chilForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;directoryToolStripMenuItem.Name" xml:space="preserve">
+    <value>directoryToolStripMenuItem</value>
+  </data>
+  <data name="panel_chilForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>856, 637</value>
+  </data>
+  <data name="panel_chilForm.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button_stopServer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Name" xml:space="preserve">
+    <value>checkBox_noAsyncLoadingThread</value>
+  </data>
+  <data name="button_downloadSteamCMD.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 136</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;instructionToolStripMenuItem.Name" xml:space="preserve">
+    <value>instructionToolStripMenuItem</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="serverSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Server Settings</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 105</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.ToolTip" xml:space="preserve">
+    <value>Improves performance in multi-threaded CPU environments.
+It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
+</value>
+  </data>
+  <data name="&gt;&gt;button_stopServer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="button_startServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 73</value>
+  </data>
+  <data name="infoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button_startServer.Text" xml:space="preserve">
+    <value>Start Server</value>
+  </data>
+  <data name="&gt;&gt;button_downloadSteamCMD.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="button_stopServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;serverSettingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>serverSettingsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 2, 0, 2</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Base Directory</value>
+  </data>
+  <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;directoryToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 19</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Name" xml:space="preserve">
+    <value>baseDirectoryToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Github</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 19</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 27</value>
+  </data>
+  <data name="checkBox_noSteam.Text" xml:space="preserve">
+    <value>NoSteam</value>
+  </data>
+  <data name="button_startServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;button_startServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="button_downloadSteamCMD.ToolTip" xml:space="preserve">
+    <value>Download &amp; Extract SteamCMD from official site.</value>
+  </data>
+  <data name="&gt;&gt;button_startServer.Name" xml:space="preserve">
+    <value>button_startServer</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
+  </data>
+  <data name="&gt;&gt;checkBox_communityServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;button_downloadSteamCMD.Name" xml:space="preserve">
+    <value>button_downloadSteamCMD</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useperfthreads.Name" xml:space="preserve">
+    <value>checkBox_useperfthreads</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem1.Name" xml:space="preserve">
+    <value>githubToolStripMenuItem1</value>
+  </data>
+  <data name="button5.Text" xml:space="preserve">
+    <value>Get Local IP</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useMultithreadForDS.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="checkBox_communityServer.Text" xml:space="preserve">
+    <value>Make As Community Server</value>
+  </data>
+  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="menuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;checkBox_communityServer.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="checkBox_communityServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel_chilForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="rCONToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;button_startServer.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="checkBox_communityServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 136</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel_chilForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;infoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_downloadServer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panel_chilForm.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_downloadServer.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="button_downloadServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 104</value>
+  </data>
+  <data name="checkBox_useperfthreads.ToolTip" xml:space="preserve">
+    <value>Improves performance in multi-threaded CPU environments.
+It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.</value>
+  </data>
+  <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button_downloadSteamCMD.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="checkBox_useperfthreads.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 136</value>
+  </data>
+  <data name="&gt;&gt;serverRestartToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instructionToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;infoToolStripMenuItem.Name" xml:space="preserve">
     <value>infoToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;infoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button_downloadServer.Name" xml:space="preserve">
+    <value>button_downloadServer</value>
   </data>
-  <data name="&gt;&gt;instructionToolStripMenuItem.Name" xml:space="preserve">
-    <value>instructionToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;instructionToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
-    <value>languageToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
-    <value>englishToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chineseToolStripMenuItem.Name" xml:space="preserve">
-    <value>chineseToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;chineseToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;directoryToolStripMenuItem.Name" xml:space="preserve">
-    <value>directoryToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;directoryToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Name" xml:space="preserve">
-    <value>baseDirectoryToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;baseDirectoryToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
   </data>
   <data name="&gt;&gt;githubToolStripMenuItem.Name" xml:space="preserve">
     <value>githubToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;githubToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel_chilForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="button_downloadServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 27</value>
+  </data>
+  <data name="&gt;&gt;rCONToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;githubToolStripMenuItem1.Name" xml:space="preserve">
-    <value>githubToolStripMenuItem1</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 73</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;githubToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;repoPageToolStripMenuItem.Name" xml:space="preserve">
-    <value>repoPageToolStripMenuItem</value>
+  <data name="button_startServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="&gt;&gt;checkBox_communityServer.Name" xml:space="preserve">
+    <value>checkBox_communityServer</value>
+  </data>
+  <data name="&gt;&gt;checkBox_communityServer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkBox_useperfthreads.Text" xml:space="preserve">
+    <value>useperfthreads</value>
+  </data>
+  <data name="button_downloadSteamCMD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_noSteam.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="panel_chilForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 183</value>
+  </data>
+  <data name="checkBox_log.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="checkBox_noAsyncLoadingThread.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 136</value>
+  </data>
+  <data name="&gt;&gt;button_downloadSteamCMD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useperfthreads.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="&gt;&gt;repoPageToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+  <data name="serverRestartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="serverRestartToolStripMenuItem.Text" xml:space="preserve">
+    <value>Server Restart Schedule</value>
   </data>
+  <data name="button5.ToolTip" xml:space="preserve">
+    <value>Get your local IP locally</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Palworld Server Manager</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>872, 859</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>856, 820</value>
+  </data>
+  <data name="&gt;&gt;checkBox_noSteam.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="checkBox_useMultithreadForDS.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;serverSettingsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox2.ToolTip" xml:space="preserve">
+    <value>Your Local IP</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBox_noSteam.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_noSteam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="button_stopServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_communityServer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_useperfthreads.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button_stopServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 58</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useperfthreads.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox_log.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
+  </data>
+  <data name="checkBox_communityServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="checkBox_noSteam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>723, 136</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_downloadServer.ToolTip" xml:space="preserve">
+    <value>Download/Update/Verify your palworld server. Could be used to validate your files if there is an issue with your server.</value>
+  </data>
+  <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_log.Name" xml:space="preserve">
+    <value>checkBox_log</value>
+  </data>
+  <data name="checkBox_useperfthreads.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>114, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
