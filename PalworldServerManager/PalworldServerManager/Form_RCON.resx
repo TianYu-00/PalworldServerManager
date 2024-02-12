@@ -176,7 +176,7 @@ DoExit - (Stop server)
 ====================================================================
 NOTICE:
 RCON only supports ASCII printable characters
-If your comand, server name, or player names contain non ascii printable characters the task would be timed out
+If your command, server name, or player names contain non-ascii printable characters the task will be timed out.
 ====================================================================
 </value>
   </data>
