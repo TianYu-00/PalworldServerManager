@@ -45,20 +45,6 @@ namespace PalworldServerManager
             DateTimePicker timePicker = new DateTimePicker();
             Button deleteButton = new Button();
 
-            // Set properties for the controls
-            checkBox.Text = "Enable";
-            checkBox.Dock = DockStyle.Fill;
-            datePicker.Format = DateTimePickerFormat.Long;
-            datePicker.ShowCheckBox = true;
-            datePicker.Checked = false;
-            datePicker.Dock = DockStyle.Fill;
-            timePicker.Format = DateTimePickerFormat.Time;
-            timePicker.Dock = DockStyle.Fill;
-            timePicker.ShowUpDown = true;
-            deleteButton.Dock= DockStyle.Fill;
-            deleteButton.Text = "Delete";
-            deleteButton.Click += (deleteSender, deleteArgs) => DeleteRow(deleteButton);
-
             // Create a new row in tableLayoutPanel1
             int rowCount = tableLayoutPanel1.RowCount;
             tableLayoutPanel1.RowCount = rowCount + 1;
@@ -69,6 +55,21 @@ namespace PalworldServerManager
             tableLayoutPanel1.Controls.Add(datePicker, 1, rowCount);
             tableLayoutPanel1.Controls.Add(timePicker, 2, rowCount);
             tableLayoutPanel1.Controls.Add(deleteButton, 3, rowCount);
+
+            // Set properties for the controls
+            checkBox.Text = "Enable";
+            checkBox.Dock = DockStyle.Fill;
+            datePicker.Format = DateTimePickerFormat.Long;
+            datePicker.ShowCheckBox = true;
+            datePicker.Checked = false;
+            datePicker.Dock = DockStyle.Fill;
+            timePicker.Format = DateTimePickerFormat.Time;
+            timePicker.Dock = DockStyle.Fill;
+            timePicker.ShowUpDown = true;
+            deleteButton.Dock = DockStyle.Fill;
+            deleteButton.Text = "Delete";
+            deleteButton.Click += (deleteSender, deleteArgs) => DeleteRow(deleteButton);
+
 
 
             // Add controls to the settings list
