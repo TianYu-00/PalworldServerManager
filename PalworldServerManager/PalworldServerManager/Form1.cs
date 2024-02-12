@@ -354,6 +354,11 @@ namespace PalworldServerManager
 
         private void button3_Click(object sender, EventArgs e)
         {
+            StartServer();
+        }
+
+        public void StartServer()
+        {
             if (!CheckSteamCMD())
             {
                 return;
@@ -394,14 +399,15 @@ namespace PalworldServerManager
                 {
                     MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-
             }
-
-
         }
 
         private void button_stopServer_Click(object sender, EventArgs e)
+        {
+            StopServer();
+        }
+
+        public void StopServer()
         {
             if (isServerStarted)
             {
@@ -414,7 +420,6 @@ namespace PalworldServerManager
                 foreach (Process process in processes)
                 {
                     process.Kill();
-                    Console.WriteLine("Process {0} has been terminated.", processName);
                 }
                 isServerStarted = false;
                 button_startServer.Enabled = true;

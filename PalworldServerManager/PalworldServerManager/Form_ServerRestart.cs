@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +19,7 @@ namespace PalworldServerManager
         private List<Tuple<CheckBox, DateTimePicker, DateTimePicker, Button>> settingsList;
         private Timer timer;
 
+
         public Form_ServerRestart()
         {
             InitializeComponent();
@@ -25,6 +28,9 @@ namespace PalworldServerManager
         private void Form_ServerRestart_Load(object sender, EventArgs e)
         {
             settingsList = new List<Tuple<CheckBox, DateTimePicker, DateTimePicker, Button>>();
+
+            // Load settings from file
+            LoadSettings();
 
             // Create and configure the timer
             timer = new Timer();
@@ -59,13 +65,16 @@ namespace PalworldServerManager
             // Set properties for the controls
             checkBox.Text = "Enable";
             checkBox.Dock = DockStyle.Fill;
+
             datePicker.Format = DateTimePickerFormat.Long;
             datePicker.ShowCheckBox = true;
             datePicker.Checked = false;
             datePicker.Dock = DockStyle.Fill;
+
             timePicker.Format = DateTimePickerFormat.Time;
             timePicker.Dock = DockStyle.Fill;
             timePicker.ShowUpDown = true;
+
             deleteButton.Dock = DockStyle.Fill;
             deleteButton.Text = "Delete";
             deleteButton.Click += (deleteSender, deleteArgs) => DeleteRow(deleteButton);
@@ -74,6 +83,8 @@ namespace PalworldServerManager
 
             // Add controls to the settings list
             settingsList.Add(new Tuple<CheckBox, DateTimePicker, DateTimePicker, Button>(checkBox, datePicker, timePicker, deleteButton));
+            // Save settings to file
+
 
         }
 
@@ -120,13 +131,13 @@ namespace PalworldServerManager
 
                     //Item Time
                     DateTime itemsDateTime = setting.Item2.Value.Date + setting.Item3.Value.TimeOfDay;
-                    
+
                     string itemDateString = itemsDateTime.ToString("yyyy/MM/dd");
                     string itemTimeString = itemsDateTime.ToString("HH:mm:ss");
                     //Using time
                     string usingDate;
                     string usingTime = itemTimeString;
-                    
+
 
                     //If date checkbox is checked, it will set using date as today
                     if (setting.Item2.Checked)
@@ -142,16 +153,102 @@ namespace PalworldServerManager
                     //When matched
                     if (usingDate == currentDateString && usingTime == currentTimeString)
                     {
-                        MessageBox.Show("Matched");
+                        //MessageBox.Show("Matched");
                     }
                 }
             }
         }
+
+        private void LoadSettings()
+        {
+            if (File.Exists("ServerRestartSettings.json"))
+            {
+                string json = File.ReadAllText("ServerRestartSettings.json");
+                var settings = JsonSerializer.Deserialize<List<ScheduleSettings>>(json);
+
+                foreach (var setting in settings)
+                {
+                    // Create controls
+                    CheckBox checkBox = new CheckBox();
+                    DateTimePicker datePicker = new DateTimePicker();
+                    DateTimePicker timePicker = new DateTimePicker();
+                    Button deleteButton = new Button();
+
+                    // Set control properties
+                    checkBox.Text = "Enable";
+                    checkBox.Dock = DockStyle.Fill;
+                    checkBox.Checked = setting.Enabled;
+
+                    datePicker.Value = setting.Date;
+                    datePicker.Format = DateTimePickerFormat.Long;
+                    datePicker.ShowCheckBox = true;
+                    datePicker.Checked = setting.DateEnabled; // Set the Checked property based on setting
+                    datePicker.Dock = DockStyle.Fill;
+
+                    timePicker.Value = DateTime.Today + setting.Time;
+                    timePicker.Format = DateTimePickerFormat.Time;
+                    timePicker.Dock = DockStyle.Fill;
+                    timePicker.ShowUpDown = true;
+
+                    deleteButton.Dock = DockStyle.Fill;
+                    deleteButton.Text = "Delete";
+                    deleteButton.Click += (deleteSender, deleteArgs) => DeleteRow(deleteButton);
+
+                    // Add controls to the tableLayoutPanel
+                    int rowCount = tableLayoutPanel1.RowCount;
+                    tableLayoutPanel1.RowCount = rowCount + 1;
+                    tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+
+                    tableLayoutPanel1.Controls.Add(checkBox, 0, rowCount);
+                    tableLayoutPanel1.Controls.Add(datePicker, 1, rowCount);
+                    tableLayoutPanel1.Controls.Add(timePicker, 2, rowCount);
+                    tableLayoutPanel1.Controls.Add(deleteButton, 3, rowCount);
+
+                    // Add controls to the settings list
+                    settingsList.Add(new Tuple<CheckBox, DateTimePicker, DateTimePicker, Button>(checkBox, datePicker, timePicker, deleteButton));
+                }
+            }
+        }
+
+        private void SaveSettings()
+        {
+            var settings = new List<ScheduleSettings>();
+
+            foreach (var setting in settingsList)
+            {
+                settings.Add(new ScheduleSettings
+                {
+                    Enabled = setting.Item1.Checked,
+                    Date = setting.Item2.Value,
+                    DateEnabled = setting.Item2.Checked, // Save the checked state of the DatePicker
+                    Time = setting.Item3.Value.TimeOfDay
+                });
+            }
+
+            string json = JsonSerializer.Serialize(settings);
+            File.WriteAllText("ServerRestartSettings.json", json);
+        }
+
+
 
         private void button_test_Click(object sender, EventArgs e)
         {
             CheckSettings();
         }
 
+        // ScheduleSettings class
+        [Serializable]
+        public class ScheduleSettings
+        {
+            public bool Enabled { get; set; }
+            public bool DateEnabled { get; set; }
+            public DateTime Date { get; set; }
+            public TimeSpan Time { get; set; }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SaveSettings();
+        }
     }
 }
