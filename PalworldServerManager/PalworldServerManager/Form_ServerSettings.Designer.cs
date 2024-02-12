@@ -38,11 +38,12 @@ namespace PalworldServerManager
             button_manualSave = new System.Windows.Forms.Button();
             button_openManualAutoSaveDirectory = new System.Windows.Forms.Button();
             panel1 = new System.Windows.Forms.Panel();
-            label63 = new System.Windows.Forms.Label();
-            richTextBox2 = new System.Windows.Forms.RichTextBox();
-            label64 = new System.Windows.Forms.Label();
+            panel2 = new System.Windows.Forms.Panel();
             richTextBox1 = new System.Windows.Forms.RichTextBox();
-            tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            label64 = new System.Windows.Forms.Label();
+            richTextBox2 = new System.Windows.Forms.RichTextBox();
+            label63 = new System.Windows.Forms.Label();
+            tableLayoutPanel_worldsettings = new System.Windows.Forms.TableLayoutPanel();
             comboBox_useAuth = new System.Windows.Forms.ComboBox();
             comboBox_enableDefenseOtherGuildPlayer = new System.Windows.Forms.ComboBox();
             comboBox_existPlayerAfterLogout = new System.Windows.Forms.ComboBox();
@@ -167,22 +168,29 @@ namespace PalworldServerManager
             label62 = new System.Windows.Forms.Label();
             textBox_serverName = new System.Windows.Forms.TextBox();
             comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
-            tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            label66 = new System.Windows.Forms.Label();
-            textBox_backupTo = new System.Windows.Forms.TextBox();
-            button_backupTo = new System.Windows.Forms.Button();
+            panel_backup = new System.Windows.Forms.Panel();
             tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             textBox_maxBackup = new System.Windows.Forms.TextBox();
             label67 = new System.Windows.Forms.Label();
             label65 = new System.Windows.Forms.Label();
             textBox_backupInterval = new System.Windows.Forms.TextBox();
+            tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            label66 = new System.Windows.Forms.Label();
+            textBox_backupTo = new System.Windows.Forms.TextBox();
+            button_backupTo = new System.Windows.Forms.Button();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
             timer1 = new System.Windows.Forms.Timer(components);
+            tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            label68 = new System.Windows.Forms.Label();
+            textBox1 = new System.Windows.Forms.TextBox();
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
-            tableLayoutPanel2.SuspendLayout();
-            tableLayoutPanel4.SuspendLayout();
+            panel2.SuspendLayout();
+            tableLayoutPanel_worldsettings.SuspendLayout();
+            panel_backup.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -237,31 +245,20 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            panel1.Controls.Add(label63);
-            panel1.Controls.Add(richTextBox2);
-            panel1.Controls.Add(label64);
-            panel1.Controls.Add(richTextBox1);
+            panel1.Controls.Add(tableLayoutPanel_worldsettings);
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(tableLayoutPanel2);
-            panel1.Controls.Add(tableLayoutPanel4);
-            panel1.Controls.Add(tableLayoutPanel3);
+            panel1.Controls.Add(panel_backup);
             panel1.Name = "panel1";
             // 
-            // label63
+            // panel2
             // 
-            resources.ApplyResources(label63, "label63");
-            label63.Name = "label63";
-            // 
-            // richTextBox2
-            // 
-            richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(richTextBox2, "richTextBox2");
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.ReadOnly = true;
-            // 
-            // label64
-            // 
-            resources.ApplyResources(label64, "label64");
-            label64.Name = "label64";
+            panel2.Controls.Add(richTextBox1);
+            panel2.Controls.Add(label64);
+            panel2.Controls.Add(richTextBox2);
+            panel2.Controls.Add(label63);
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Name = "panel2";
             // 
             // richTextBox1
             // 
@@ -270,134 +267,151 @@ namespace PalworldServerManager
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             // 
-            // tableLayoutPanel2
+            // label64
             // 
-            resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
-            tableLayoutPanel2.Controls.Add(comboBox_useAuth, 1, 60);
-            tableLayoutPanel2.Controls.Add(comboBox_enableDefenseOtherGuildPlayer, 1, 57);
-            tableLayoutPanel2.Controls.Add(comboBox_existPlayerAfterLogout, 1, 56);
-            tableLayoutPanel2.Controls.Add(comboBox_isStartLocationSelectByMap, 1, 55);
-            tableLayoutPanel2.Controls.Add(comboBox_enableFastTravel, 1, 54);
-            tableLayoutPanel2.Controls.Add(comboBox_enableNonLoginPenalty, 1, 53);
-            tableLayoutPanel2.Controls.Add(comboBox_canPickupOtherGuildDeathPenaltyDrop, 1, 52);
-            tableLayoutPanel2.Controls.Add(comboBox_isPvP, 1, 51);
-            tableLayoutPanel2.Controls.Add(comboBox_isMultiplay, 1, 50);
-            tableLayoutPanel2.Controls.Add(comboBox_autoResetGuildNoOnlinePlayers, 1, 45);
-            tableLayoutPanel2.Controls.Add(comboBox_enableAimAssistKeyboard, 1, 39);
-            tableLayoutPanel2.Controls.Add(comboBox_enableAimAssistPad, 1, 38);
-            tableLayoutPanel2.Controls.Add(comboBox_activeUNKO, 1, 37);
-            tableLayoutPanel2.Controls.Add(comboBox_enableInvaderEnemy, 1, 36);
-            tableLayoutPanel2.Controls.Add(comboBox_enableFriendlyFire, 1, 35);
-            tableLayoutPanel2.Controls.Add(comboBox_enablePlayerToPlayerDamage, 1, 34);
-            tableLayoutPanel2.Controls.Add(comboBox_deathPenalty, 1, 33);
-            tableLayoutPanel2.Controls.Add(comboBox_difficulty, 1, 9);
-            tableLayoutPanel2.Controls.Add(textBox_banListURL, 1, 61);
-            tableLayoutPanel2.Controls.Add(textBox_region, 1, 59);
-            tableLayoutPanel2.Controls.Add(textBox_coopPlayerMaxNum, 1, 58);
-            tableLayoutPanel2.Controls.Add(textBox_workSpeedRate, 1, 49);
-            tableLayoutPanel2.Controls.Add(textBox_palEggDefaultHatchingTime, 1, 48);
-            tableLayoutPanel2.Controls.Add(textBox_guildPlayerMaxNum, 1, 47);
-            tableLayoutPanel2.Controls.Add(textBox_autoResetGuildTimeNoOnlinePlayers, 1, 46);
-            tableLayoutPanel2.Controls.Add(textBox_dropItemAliveMaxHours, 1, 44);
-            tableLayoutPanel2.Controls.Add(textBox_baseCampWorkerMaxNum, 1, 43);
-            tableLayoutPanel2.Controls.Add(textBox_baseCampMaxNum, 1, 42);
-            tableLayoutPanel2.Controls.Add(textBox_dropItemMaxNum_UNKO, 1, 41);
-            tableLayoutPanel2.Controls.Add(textBox_dropItemMaxNum, 1, 40);
-            tableLayoutPanel2.Controls.Add(textBox_enemyDropItemRate, 1, 32);
-            tableLayoutPanel2.Controls.Add(textBox_collectionObjectRespawnSpeedRate, 1, 31);
-            tableLayoutPanel2.Controls.Add(textBox_collectionObjectHpRate, 1, 30);
-            tableLayoutPanel2.Controls.Add(textBox_collectionDropRate, 1, 29);
-            tableLayoutPanel2.Controls.Add(textBox_buildObjectDeteriorationDamageRate, 1, 28);
-            tableLayoutPanel2.Controls.Add(textBox_buildObjectDamageRate, 1, 27);
-            tableLayoutPanel2.Controls.Add(textBox_palAutoHpRegeneRateInSleep, 1, 26);
-            tableLayoutPanel2.Controls.Add(textBox_palAutoHpRegeneRate, 1, 25);
-            tableLayoutPanel2.Controls.Add(textBox_palStaminaDecreaceRate, 1, 24);
-            tableLayoutPanel2.Controls.Add(textBox_palStomachDecreaceRate, 1, 23);
-            tableLayoutPanel2.Controls.Add(textBox_playerAutoHpRegeneRateInSleep, 1, 22);
-            tableLayoutPanel2.Controls.Add(textBox_playerAutoHpRegeneRate, 1, 21);
-            tableLayoutPanel2.Controls.Add(textBox_playerStaminaDecreaceRate, 1, 20);
-            tableLayoutPanel2.Controls.Add(textBox_playerStomachDecreaceRate, 1, 19);
-            tableLayoutPanel2.Controls.Add(textBox_playerDamageRateDefense, 1, 18);
-            tableLayoutPanel2.Controls.Add(textBox_playerDamageRateAttack, 1, 17);
-            tableLayoutPanel2.Controls.Add(textBox_palDamageRateDefense, 1, 16);
-            tableLayoutPanel2.Controls.Add(textBox_palDamageRateAttack, 1, 15);
-            tableLayoutPanel2.Controls.Add(textBox_palSpawnNumRate, 1, 14);
-            tableLayoutPanel2.Controls.Add(textBox_palCaptureRate, 1, 13);
-            tableLayoutPanel2.Controls.Add(textBox_expRate, 1, 12);
-            tableLayoutPanel2.Controls.Add(textBox_nightTimeSpeedRate, 1, 11);
-            tableLayoutPanel2.Controls.Add(textBox_dayTimeSpeedRate, 1, 10);
-            tableLayoutPanel2.Controls.Add(textBox_rconPort, 1, 8);
-            tableLayoutPanel2.Controls.Add(textBox_publicIP, 1, 6);
-            tableLayoutPanel2.Controls.Add(textBox_publicPort, 1, 5);
-            tableLayoutPanel2.Controls.Add(textBox_serverPassword, 1, 4);
-            tableLayoutPanel2.Controls.Add(textBox_adminPassword, 1, 3);
-            tableLayoutPanel2.Controls.Add(textBox_serverPlayerMaxNum, 1, 2);
-            tableLayoutPanel2.Controls.Add(textBox_serverDescription, 1, 1);
-            tableLayoutPanel2.Controls.Add(label1, 0, 0);
-            tableLayoutPanel2.Controls.Add(label2, 0, 1);
-            tableLayoutPanel2.Controls.Add(label3, 0, 2);
-            tableLayoutPanel2.Controls.Add(label4, 0, 3);
-            tableLayoutPanel2.Controls.Add(label5, 0, 4);
-            tableLayoutPanel2.Controls.Add(label6, 0, 5);
-            tableLayoutPanel2.Controls.Add(label7, 0, 6);
-            tableLayoutPanel2.Controls.Add(label8, 0, 7);
-            tableLayoutPanel2.Controls.Add(label9, 0, 8);
-            tableLayoutPanel2.Controls.Add(label10, 0, 9);
-            tableLayoutPanel2.Controls.Add(label11, 0, 10);
-            tableLayoutPanel2.Controls.Add(label12, 0, 11);
-            tableLayoutPanel2.Controls.Add(label13, 0, 12);
-            tableLayoutPanel2.Controls.Add(label14, 0, 13);
-            tableLayoutPanel2.Controls.Add(label15, 0, 14);
-            tableLayoutPanel2.Controls.Add(label16, 0, 15);
-            tableLayoutPanel2.Controls.Add(label17, 0, 16);
-            tableLayoutPanel2.Controls.Add(label18, 0, 17);
-            tableLayoutPanel2.Controls.Add(label19, 0, 18);
-            tableLayoutPanel2.Controls.Add(label20, 0, 19);
-            tableLayoutPanel2.Controls.Add(label21, 0, 20);
-            tableLayoutPanel2.Controls.Add(label22, 0, 21);
-            tableLayoutPanel2.Controls.Add(label23, 0, 22);
-            tableLayoutPanel2.Controls.Add(label24, 0, 23);
-            tableLayoutPanel2.Controls.Add(label25, 0, 24);
-            tableLayoutPanel2.Controls.Add(label26, 0, 25);
-            tableLayoutPanel2.Controls.Add(label27, 0, 26);
-            tableLayoutPanel2.Controls.Add(label28, 0, 27);
-            tableLayoutPanel2.Controls.Add(label29, 0, 28);
-            tableLayoutPanel2.Controls.Add(label30, 0, 29);
-            tableLayoutPanel2.Controls.Add(label31, 0, 30);
-            tableLayoutPanel2.Controls.Add(label32, 0, 31);
-            tableLayoutPanel2.Controls.Add(label33, 0, 32);
-            tableLayoutPanel2.Controls.Add(label34, 0, 33);
-            tableLayoutPanel2.Controls.Add(label35, 0, 34);
-            tableLayoutPanel2.Controls.Add(label36, 0, 35);
-            tableLayoutPanel2.Controls.Add(label37, 0, 36);
-            tableLayoutPanel2.Controls.Add(label38, 0, 37);
-            tableLayoutPanel2.Controls.Add(label39, 0, 38);
-            tableLayoutPanel2.Controls.Add(label40, 0, 39);
-            tableLayoutPanel2.Controls.Add(label41, 0, 40);
-            tableLayoutPanel2.Controls.Add(label42, 0, 41);
-            tableLayoutPanel2.Controls.Add(label43, 0, 42);
-            tableLayoutPanel2.Controls.Add(label44, 0, 43);
-            tableLayoutPanel2.Controls.Add(label45, 0, 44);
-            tableLayoutPanel2.Controls.Add(label46, 0, 45);
-            tableLayoutPanel2.Controls.Add(label47, 0, 46);
-            tableLayoutPanel2.Controls.Add(label48, 0, 47);
-            tableLayoutPanel2.Controls.Add(label49, 0, 48);
-            tableLayoutPanel2.Controls.Add(label50, 0, 49);
-            tableLayoutPanel2.Controls.Add(label51, 0, 50);
-            tableLayoutPanel2.Controls.Add(label52, 0, 51);
-            tableLayoutPanel2.Controls.Add(label53, 0, 52);
-            tableLayoutPanel2.Controls.Add(label54, 0, 53);
-            tableLayoutPanel2.Controls.Add(label55, 0, 54);
-            tableLayoutPanel2.Controls.Add(label56, 0, 55);
-            tableLayoutPanel2.Controls.Add(label57, 0, 56);
-            tableLayoutPanel2.Controls.Add(label58, 0, 57);
-            tableLayoutPanel2.Controls.Add(label59, 0, 58);
-            tableLayoutPanel2.Controls.Add(label60, 0, 59);
-            tableLayoutPanel2.Controls.Add(label61, 0, 60);
-            tableLayoutPanel2.Controls.Add(label62, 0, 61);
-            tableLayoutPanel2.Controls.Add(textBox_serverName, 1, 0);
-            tableLayoutPanel2.Controls.Add(comboBox_rconEnabled, 1, 7);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            resources.ApplyResources(label64, "label64");
+            label64.Name = "label64";
+            // 
+            // richTextBox2
+            // 
+            richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(richTextBox2, "richTextBox2");
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.ReadOnly = true;
+            // 
+            // label63
+            // 
+            resources.ApplyResources(label63, "label63");
+            label63.Name = "label63";
+            // 
+            // tableLayoutPanel_worldsettings
+            // 
+            resources.ApplyResources(tableLayoutPanel_worldsettings, "tableLayoutPanel_worldsettings");
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_useAuth, 1, 60);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableDefenseOtherGuildPlayer, 1, 57);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_existPlayerAfterLogout, 1, 56);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_isStartLocationSelectByMap, 1, 55);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableFastTravel, 1, 54);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableNonLoginPenalty, 1, 53);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_canPickupOtherGuildDeathPenaltyDrop, 1, 52);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_isPvP, 1, 51);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_isMultiplay, 1, 50);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_autoResetGuildNoOnlinePlayers, 1, 45);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableAimAssistKeyboard, 1, 39);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableAimAssistPad, 1, 38);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_activeUNKO, 1, 37);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableInvaderEnemy, 1, 36);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enableFriendlyFire, 1, 35);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_enablePlayerToPlayerDamage, 1, 34);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_deathPenalty, 1, 33);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_difficulty, 1, 9);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_banListURL, 1, 61);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_region, 1, 59);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_coopPlayerMaxNum, 1, 58);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_workSpeedRate, 1, 49);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palEggDefaultHatchingTime, 1, 48);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_guildPlayerMaxNum, 1, 47);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_autoResetGuildTimeNoOnlinePlayers, 1, 46);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_dropItemAliveMaxHours, 1, 44);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_baseCampWorkerMaxNum, 1, 43);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_baseCampMaxNum, 1, 42);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_dropItemMaxNum_UNKO, 1, 41);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_dropItemMaxNum, 1, 40);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_enemyDropItemRate, 1, 32);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_collectionObjectRespawnSpeedRate, 1, 31);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_collectionObjectHpRate, 1, 30);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_collectionDropRate, 1, 29);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_buildObjectDeteriorationDamageRate, 1, 28);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_buildObjectDamageRate, 1, 27);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palAutoHpRegeneRateInSleep, 1, 26);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palAutoHpRegeneRate, 1, 25);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palStaminaDecreaceRate, 1, 24);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palStomachDecreaceRate, 1, 23);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_playerAutoHpRegeneRateInSleep, 1, 22);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_playerAutoHpRegeneRate, 1, 21);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_playerStaminaDecreaceRate, 1, 20);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_playerStomachDecreaceRate, 1, 19);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_playerDamageRateDefense, 1, 18);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_playerDamageRateAttack, 1, 17);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palDamageRateDefense, 1, 16);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palDamageRateAttack, 1, 15);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palSpawnNumRate, 1, 14);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_palCaptureRate, 1, 13);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_expRate, 1, 12);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_nightTimeSpeedRate, 1, 11);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_dayTimeSpeedRate, 1, 10);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_rconPort, 1, 8);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_publicIP, 1, 6);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_publicPort, 1, 5);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_serverPassword, 1, 4);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_adminPassword, 1, 3);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_serverPlayerMaxNum, 1, 2);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_serverDescription, 1, 1);
+            tableLayoutPanel_worldsettings.Controls.Add(label1, 0, 0);
+            tableLayoutPanel_worldsettings.Controls.Add(label2, 0, 1);
+            tableLayoutPanel_worldsettings.Controls.Add(label3, 0, 2);
+            tableLayoutPanel_worldsettings.Controls.Add(label4, 0, 3);
+            tableLayoutPanel_worldsettings.Controls.Add(label5, 0, 4);
+            tableLayoutPanel_worldsettings.Controls.Add(label6, 0, 5);
+            tableLayoutPanel_worldsettings.Controls.Add(label7, 0, 6);
+            tableLayoutPanel_worldsettings.Controls.Add(label8, 0, 7);
+            tableLayoutPanel_worldsettings.Controls.Add(label9, 0, 8);
+            tableLayoutPanel_worldsettings.Controls.Add(label10, 0, 9);
+            tableLayoutPanel_worldsettings.Controls.Add(label11, 0, 10);
+            tableLayoutPanel_worldsettings.Controls.Add(label12, 0, 11);
+            tableLayoutPanel_worldsettings.Controls.Add(label13, 0, 12);
+            tableLayoutPanel_worldsettings.Controls.Add(label14, 0, 13);
+            tableLayoutPanel_worldsettings.Controls.Add(label15, 0, 14);
+            tableLayoutPanel_worldsettings.Controls.Add(label16, 0, 15);
+            tableLayoutPanel_worldsettings.Controls.Add(label17, 0, 16);
+            tableLayoutPanel_worldsettings.Controls.Add(label18, 0, 17);
+            tableLayoutPanel_worldsettings.Controls.Add(label19, 0, 18);
+            tableLayoutPanel_worldsettings.Controls.Add(label20, 0, 19);
+            tableLayoutPanel_worldsettings.Controls.Add(label21, 0, 20);
+            tableLayoutPanel_worldsettings.Controls.Add(label22, 0, 21);
+            tableLayoutPanel_worldsettings.Controls.Add(label23, 0, 22);
+            tableLayoutPanel_worldsettings.Controls.Add(label24, 0, 23);
+            tableLayoutPanel_worldsettings.Controls.Add(label25, 0, 24);
+            tableLayoutPanel_worldsettings.Controls.Add(label26, 0, 25);
+            tableLayoutPanel_worldsettings.Controls.Add(label27, 0, 26);
+            tableLayoutPanel_worldsettings.Controls.Add(label28, 0, 27);
+            tableLayoutPanel_worldsettings.Controls.Add(label29, 0, 28);
+            tableLayoutPanel_worldsettings.Controls.Add(label30, 0, 29);
+            tableLayoutPanel_worldsettings.Controls.Add(label31, 0, 30);
+            tableLayoutPanel_worldsettings.Controls.Add(label32, 0, 31);
+            tableLayoutPanel_worldsettings.Controls.Add(label33, 0, 32);
+            tableLayoutPanel_worldsettings.Controls.Add(label34, 0, 33);
+            tableLayoutPanel_worldsettings.Controls.Add(label35, 0, 34);
+            tableLayoutPanel_worldsettings.Controls.Add(label36, 0, 35);
+            tableLayoutPanel_worldsettings.Controls.Add(label37, 0, 36);
+            tableLayoutPanel_worldsettings.Controls.Add(label38, 0, 37);
+            tableLayoutPanel_worldsettings.Controls.Add(label39, 0, 38);
+            tableLayoutPanel_worldsettings.Controls.Add(label40, 0, 39);
+            tableLayoutPanel_worldsettings.Controls.Add(label41, 0, 40);
+            tableLayoutPanel_worldsettings.Controls.Add(label42, 0, 41);
+            tableLayoutPanel_worldsettings.Controls.Add(label43, 0, 42);
+            tableLayoutPanel_worldsettings.Controls.Add(label44, 0, 43);
+            tableLayoutPanel_worldsettings.Controls.Add(label45, 0, 44);
+            tableLayoutPanel_worldsettings.Controls.Add(label46, 0, 45);
+            tableLayoutPanel_worldsettings.Controls.Add(label47, 0, 46);
+            tableLayoutPanel_worldsettings.Controls.Add(label48, 0, 47);
+            tableLayoutPanel_worldsettings.Controls.Add(label49, 0, 48);
+            tableLayoutPanel_worldsettings.Controls.Add(label50, 0, 49);
+            tableLayoutPanel_worldsettings.Controls.Add(label51, 0, 50);
+            tableLayoutPanel_worldsettings.Controls.Add(label52, 0, 51);
+            tableLayoutPanel_worldsettings.Controls.Add(label53, 0, 52);
+            tableLayoutPanel_worldsettings.Controls.Add(label54, 0, 53);
+            tableLayoutPanel_worldsettings.Controls.Add(label55, 0, 54);
+            tableLayoutPanel_worldsettings.Controls.Add(label56, 0, 55);
+            tableLayoutPanel_worldsettings.Controls.Add(label57, 0, 56);
+            tableLayoutPanel_worldsettings.Controls.Add(label58, 0, 57);
+            tableLayoutPanel_worldsettings.Controls.Add(label59, 0, 58);
+            tableLayoutPanel_worldsettings.Controls.Add(label60, 0, 59);
+            tableLayoutPanel_worldsettings.Controls.Add(label61, 0, 60);
+            tableLayoutPanel_worldsettings.Controls.Add(label62, 0, 61);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_serverName, 1, 0);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_rconEnabled, 1, 7);
+            tableLayoutPanel_worldsettings.Name = "tableLayoutPanel_worldsettings";
             // 
             // comboBox_useAuth
             // 
@@ -1138,31 +1152,12 @@ namespace PalworldServerManager
             comboBox_rconEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_rconEnabled.Items"), resources.GetString("comboBox_rconEnabled.Items1") });
             comboBox_rconEnabled.Name = "comboBox_rconEnabled";
             // 
-            // tableLayoutPanel4
+            // panel_backup
             // 
-            resources.ApplyResources(tableLayoutPanel4, "tableLayoutPanel4");
-            tableLayoutPanel4.Controls.Add(label66, 0, 0);
-            tableLayoutPanel4.Controls.Add(textBox_backupTo, 1, 0);
-            tableLayoutPanel4.Controls.Add(button_backupTo, 2, 0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            // 
-            // label66
-            // 
-            resources.ApplyResources(label66, "label66");
-            label66.Name = "label66";
-            toolTip1.SetToolTip(label66, resources.GetString("label66.ToolTip"));
-            // 
-            // textBox_backupTo
-            // 
-            resources.ApplyResources(textBox_backupTo, "textBox_backupTo");
-            textBox_backupTo.Name = "textBox_backupTo";
-            // 
-            // button_backupTo
-            // 
-            resources.ApplyResources(button_backupTo, "button_backupTo");
-            button_backupTo.Name = "button_backupTo";
-            button_backupTo.UseVisualStyleBackColor = true;
-            button_backupTo.Click += button_backupTo_Click;
+            resources.ApplyResources(panel_backup, "panel_backup");
+            panel_backup.Controls.Add(tableLayoutPanel4);
+            panel_backup.Controls.Add(tableLayoutPanel3);
+            panel_backup.Name = "panel_backup";
             // 
             // tableLayoutPanel3
             // 
@@ -1195,9 +1190,52 @@ namespace PalworldServerManager
             resources.ApplyResources(textBox_backupInterval, "textBox_backupInterval");
             textBox_backupInterval.Name = "textBox_backupInterval";
             // 
+            // tableLayoutPanel4
+            // 
+            resources.ApplyResources(tableLayoutPanel4, "tableLayoutPanel4");
+            tableLayoutPanel4.Controls.Add(label66, 0, 0);
+            tableLayoutPanel4.Controls.Add(textBox_backupTo, 1, 0);
+            tableLayoutPanel4.Controls.Add(button_backupTo, 2, 0);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // label66
+            // 
+            resources.ApplyResources(label66, "label66");
+            label66.Name = "label66";
+            toolTip1.SetToolTip(label66, resources.GetString("label66.ToolTip"));
+            // 
+            // textBox_backupTo
+            // 
+            resources.ApplyResources(textBox_backupTo, "textBox_backupTo");
+            textBox_backupTo.Name = "textBox_backupTo";
+            // 
+            // button_backupTo
+            // 
+            resources.ApplyResources(button_backupTo, "button_backupTo");
+            button_backupTo.Name = "button_backupTo";
+            button_backupTo.UseVisualStyleBackColor = true;
+            button_backupTo.Click += button_backupTo_Click;
+            // 
             // timer1
             // 
             timer1.Tick += timer1_Tick;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
+            tableLayoutPanel2.Controls.Add(label68, 0, 0);
+            tableLayoutPanel2.Controls.Add(textBox1, 1, 0);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // label68
+            // 
+            resources.ApplyResources(label68, "label68");
+            label68.Name = "label68";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(textBox1, "textBox1");
+            textBox1.Name = "textBox1";
             // 
             // Form_ServerSettings
             // 
@@ -1211,12 +1249,18 @@ namespace PalworldServerManager
             tableLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            tableLayoutPanel2.ResumeLayout(false);
-            tableLayoutPanel2.PerformLayout();
-            tableLayoutPanel4.ResumeLayout(false);
-            tableLayoutPanel4.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            tableLayoutPanel_worldsettings.ResumeLayout(false);
+            tableLayoutPanel_worldsettings.PerformLayout();
+            panel_backup.ResumeLayout(false);
+            panel_backup.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            tableLayoutPanel4.PerformLayout();
+            tableLayoutPanel2.ResumeLayout(false);
+            tableLayoutPanel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1228,7 +1272,7 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_worldsettings;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -1370,5 +1414,10 @@ namespace PalworldServerManager
         private System.Windows.Forms.TextBox textBox_maxBackup;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Button button_openManualAutoSaveDirectory;
+        private System.Windows.Forms.Panel panel_backup;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

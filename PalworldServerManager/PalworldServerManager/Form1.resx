@@ -715,16 +715,16 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>114, 17</value>
   </metadata>
   <data name="serverSettingsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>196, 22</value>
   </data>
   <data name="serverSettingsToolStripMenuItem1.Text" xml:space="preserve">
     <value>Server Settings</value>
   </data>
   <data name="serverRestartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>196, 22</value>
   </data>
   <data name="serverRestartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Server Restart</value>
+    <value>Server Restart Schedule</value>
   </data>
   <data name="serverSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>

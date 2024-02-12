@@ -231,7 +231,7 @@ namespace PalworldServerManager
             // 
             serverRestartToolStripMenuItem.Name = "serverRestartToolStripMenuItem";
             resources.ApplyResources(serverRestartToolStripMenuItem, "serverRestartToolStripMenuItem");
-            serverRestartToolStripMenuItem.Click += serverRestartToolStripMenuItem_Click;
+            serverRestartToolStripMenuItem.Click += serverRestartScheduleToolStripMenuItem_Click;
             // 
             // rCONToolStripMenuItem
             // 

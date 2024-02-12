@@ -566,7 +566,7 @@ namespace PalworldServerManager
             ShowForm(serverSettingsForm);
         }
 
-        private void serverRestartToolStripMenuItem_Click(object sender, EventArgs e)
+        private void serverRestartScheduleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowForm(serverRestartForm);
         }

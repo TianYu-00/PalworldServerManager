@@ -102,7 +102,7 @@
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(242, 30);
             label2.TabIndex = 1;
-            label2.Text = "Date";
+            label2.Text = "Date (Unchecked = Everyday)";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3

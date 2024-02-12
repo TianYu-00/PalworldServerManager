@@ -241,6 +241,7 @@ namespace PalworldServerManager
 
             string json = JsonSerializer.Serialize(settings);
             File.WriteAllText("ServerRestartSettings.json", json);
+            MessageBox.Show("Server Restart Schedule Saved");
         }
 
         // ScheduleSettings class
