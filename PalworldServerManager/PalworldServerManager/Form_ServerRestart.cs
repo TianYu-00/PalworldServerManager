@@ -120,7 +120,7 @@ namespace PalworldServerManager
 
                     //Item Time
                     DateTime itemsDateTime = setting.Item2.Value.Date + setting.Item3.Value.TimeOfDay;
-                    Debug.WriteLine($"ROWINDEX & Date: {rowIndex}, {itemsDateTime}");
+                    
                     string itemDateString = itemsDateTime.ToString("yyyy/MM/dd");
                     string itemTimeString = itemsDateTime.ToString("HH:mm:ss");
                     //Using time
@@ -138,6 +138,7 @@ namespace PalworldServerManager
                         usingDate = currentDateString;
                     }
 
+                    Debug.WriteLine($"ROWINDEX & Date: {rowIndex}, {usingDate},{usingTime}");
                     //When matched
                     if (usingDate == currentDateString && usingTime == currentTimeString)
                     {
