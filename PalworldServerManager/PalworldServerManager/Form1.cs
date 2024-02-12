@@ -281,6 +281,30 @@ namespace PalworldServerManager
                 return;
             }
 
+            bool isFirstTime = false;
+
+            if (!CheckPalServer())
+            {
+                isFirstTime = true;
+            }
+
+
+            if (!isFirstTime)
+            {
+                DialogResult askBeforeDownloadUpdateVerify = MessageBox.Show("Please create a manual backup before proceeding \npress Yes to continue, press no to cancel the download/update/verify process", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (askBeforeDownloadUpdateVerify == DialogResult.Yes)
+                {
+                    //What to do
+                }
+                else
+                {
+                    return;
+                }
+            }
+
+            
+
             // Get the content from the TextBox
             string batContent = "steamcmd +login anonymous +app_update 2394010 validate +quit";
 
