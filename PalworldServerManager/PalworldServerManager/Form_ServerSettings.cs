@@ -977,22 +977,30 @@ namespace PalworldServerManager
                 try
                 {
                     int newInt;
+                    bool isSuccessParse;
 
                     if (int.TryParse(serv_backupInterval, out newInt))
                     {
                         // Parsing successful, newMaxBackupInt now holds the parsed integer value
-                        Console.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                        Debug.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                        isSuccessParse = true;
                     }
                     else
                     {
                         // Parsing failed, serv_maxBackup does not contain a valid integer format
-                        Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                        Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                        isSuccessParse = false;
                     }
 
                     int actualTimer = (newInt * 1000);
+                    if (actualTimer < 0 || isSuccessParse == false)
+                    {
+                        MessageBox.Show($"save game interval value: {serv_backupInterval} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        return;
+                    }
                     timer1.Interval = actualTimer;
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message); }
+                catch (Exception ex) { MessageBox.Show(ex.Message); return; }
                 timer1.Start();
             }
 
@@ -1087,15 +1095,23 @@ namespace PalworldServerManager
 
 
             int newMaxBackupInt;
+            bool isSuccessParse;
             if (int.TryParse(serv_maxBackup, out newMaxBackupInt))
             {
                 // Parsing successful, newMaxBackupInt now holds the parsed integer value
-                Console.WriteLine("Parsing successful. Parsed integer value: " + newMaxBackupInt);
+                Debug.WriteLine("Parsing successful. Parsed integer value: " + newMaxBackupInt);
+                isSuccessParse = true;
             }
             else
             {
                 // Parsing failed, serv_maxBackup does not contain a valid integer format
-                Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                isSuccessParse = false;
+            }
+
+            if (newMaxBackupInt < 0 || isSuccessParse == false)
+            {
+                MessageBox.Show($"Backup threshold value: {serv_maxBackup} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
                 return;
             }
 
@@ -1188,22 +1204,31 @@ namespace PalworldServerManager
                 try
                 {
                     int newInt;
+                    bool isSuccessParse;
 
                     if (int.TryParse(serv_autoRestartEvery, out newInt))
                     {
                         // Parsing successful, newMaxBackupInt now holds the parsed integer value
                         Debug.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                        isSuccessParse = true;
                     }
                     else
                     {
                         // Parsing failed, serv_maxBackup does not contain a valid integer format
                         Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                        isSuccessParse = false;
                     }
 
                     int actualTimer = (newInt * 1000);
+
+                    if (actualTimer < 0 || isSuccessParse == false)
+                    {
+                        MessageBox.Show($"server restart interval value: {serv_autoRestartEvery} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        return;
+                    }
                     timer2.Interval = actualTimer;
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message); }
+                catch (Exception ex) { MessageBox.Show($"{ ex.Message}\n\n Check your server restart intervals, makesure they are a integer value without mistypes"); return; }
                 timer2.Start();
             }
         }
