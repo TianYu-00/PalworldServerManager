@@ -219,11 +219,11 @@ namespace PalworldServerManager
                     // Unzip the downloaded file
                     ZipFile.ExtractToDirectory(savePath, extractPath);
 
-                    MessageBox.Show("Download and extraction completed!");
+                    serverSettingsForm.SendMessageToConsole("Download and extraction of steamcmd completed!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error downloading or extracting file: {ex.Message}");
+                    serverSettingsForm.SendMessageToConsole($"Download steamcmd catched error: {ex.Message}");
                 }
                 finally
                 {
@@ -258,18 +258,19 @@ namespace PalworldServerManager
                     // Start the process
                     process.Start();
                     process.WaitForExit();
-                    MessageBox.Show("Completed Download/Verify/Update");
+                    MessageBox.Show("Finished Download/Verify/Update Server");
+
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error running batch file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"RunDownloadServerBatFile catched error: {ex.Message}");
                 }
 
                 //MessageBox.Show("Batch file generated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"RunDownloadServerBatFile catched error: {ex.Message}");
             }
         }
 
@@ -294,10 +295,11 @@ namespace PalworldServerManager
                 // Start a new thread to run the batch file asynchronously
                 Thread thread = new Thread(new ThreadStart(RunDownloadServerBatchFile));
                 thread.Start();
+                serverSettingsForm.SendMessageToConsole("Started Download/Verify/Update Server");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                serverSettingsForm.SendMessageToConsole($"Download/Update/Verify button catched error: {ex.Message}");
             }
         }
 
@@ -329,7 +331,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error running batch file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Run server start bat catched error: {ex.Message}");
             }
         }
 
@@ -342,7 +344,7 @@ namespace PalworldServerManager
             }
             else
             {
-                MessageBox.Show("Missing steamcmd.exe \nPress download steamcmd");
+                serverSettingsForm.SendMessageToConsole("Missing steamcmd.exe \nPress download steamcmd");
                 return false;
             }
         }
@@ -358,7 +360,7 @@ namespace PalworldServerManager
             }
             else
             {
-                MessageBox.Show($"Missing {palServerEXEPath} \nPress the download/update/verify server button to validate your files.");
+                serverSettingsForm.SendMessageToConsole($"Missing PalServer.exe \nPress the download/update/verify server button to validate your files.");
                 return false;
             }
         }
@@ -395,6 +397,7 @@ namespace PalworldServerManager
                 string batFilePath = Path.Combine(baseDirectory, "RunServer.bat");
                 try
                 {
+                    serverSettingsForm.SendMessageToConsole("Server Started");
                     // Write the content to the bat file
                     File.WriteAllText(batFilePath, batContent);
 
@@ -406,10 +409,11 @@ namespace PalworldServerManager
                     isServerStarted = true;
                     button_startServer.Enabled = false;
                     button_stopServer.Enabled = true;
+                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    serverSettingsForm.SendMessageToConsole($"Server start catched error: {ex.Message}");
                 }
             }
         }
@@ -438,6 +442,7 @@ namespace PalworldServerManager
                 button_stopServer.Enabled = false;
                 serverSettingsForm.SaveGameTimer_Stop();
                 serverSettingsForm.AutoRestartServerTimer_Stop();
+                serverSettingsForm.SendMessageToConsole("Server Stopped");
 
             }
         }
@@ -558,7 +563,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error opening Link: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                serverSettingsForm.SendMessageToConsole($"Repo page open catched error: {ex.Message}");
             }
         }
 
@@ -570,7 +575,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                serverSettingsForm.SendMessageToConsole($"Open file directory given catched error: {ex.Message}");
             }
         }
 

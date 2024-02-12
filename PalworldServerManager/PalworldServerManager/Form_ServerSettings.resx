@@ -4738,7 +4738,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 116</value>
+    <value>0, 232</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -4769,160 +4769,6 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   </data>
   <data name="tableLayoutPanel_worldsettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="comboBox_useAuth" Row="60" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableDefenseOtherGuildPlayer" Row="57" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_existPlayerAfterLogout" Row="56" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isStartLocationSelectByMap" Row="55" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFastTravel" Row="54" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableNonLoginPenalty" Row="53" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_canPickupOtherGuildDeathPenaltyDrop" Row="52" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isPvP" Row="51" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isMultiplay" Row="50" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_autoResetGuildNoOnlinePlayers" Row="45" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistKeyboard" Row="39" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistPad" Row="38" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_activeUNKO" Row="37" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableInvaderEnemy" Row="36" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFriendlyFire" Row="35" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enablePlayerToPlayerDamage" Row="34" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_deathPenalty" Row="33" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_difficulty" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_banListURL" Row="61" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_region" Row="59" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_coopPlayerMaxNum" Row="58" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_workSpeedRate" Row="49" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palEggDefaultHatchingTime" Row="48" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_guildPlayerMaxNum" Row="47" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoResetGuildTimeNoOnlinePlayers" Row="46" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemAliveMaxHours" Row="44" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampWorkerMaxNum" Row="43" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampMaxNum" Row="42" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum_UNKO" Row="41" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum" Row="40" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_enemyDropItemRate" Row="32" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectRespawnSpeedRate" Row="31" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectHpRate" Row="30" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionDropRate" Row="29" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDeteriorationDamageRate" Row="28" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDamageRate" Row="27" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRateInSleep" Row="26" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRate" Row="25" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStaminaDecreaceRate" Row="24" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStomachDecreaceRate" Row="23" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRateInSleep" Row="22" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRate" Row="21" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStaminaDecreaceRate" Row="20" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStomachDecreaceRate" Row="19" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateDefense" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateAttack" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateDefense" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateAttack" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palSpawnNumRate" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palCaptureRate" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_expRate" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_nightTimeSpeedRate" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dayTimeSpeedRate" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_rconPort" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicIP" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicPort" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_adminPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPlayerMaxNum" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="19" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="20" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="21" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="22" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="23" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="24" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="25" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="26" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="27" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="28" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="29" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="30" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="31" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="32" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="33" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="34" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="35" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="36" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="37" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="38" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="39" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="40" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="41" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="42" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="43" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="44" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="45" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="46" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="47" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="48" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="49" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="50" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="51" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="52" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="53" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="54" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="55" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="56" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="57" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="58" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="59" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="60" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="61" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_rconEnabled" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="richTextBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 202</value>
-  </data>
-  <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 172</value>
-  </data>
-  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>; This configuration file is a sample of the default server settings.
-; Changes to this file will NOT be reflected on the server.
-; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
-[/Script/Pal.PalGameWorldSettings]
-OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
-    <value>richTextBox1</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label64.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 187</value>
-  </data>
-  <data name="label64.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 15</value>
-  </data>
-  <data name="label64.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label64.Text" xml:space="preserve">
-    <value>Default Server World Settings</value>
-  </data>
-  <data name="&gt;&gt;label64.Name" xml:space="preserve">
-    <value>label64</value>
-  </data>
-  <data name="&gt;&gt;label64.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="richTextBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 15</value>
-  </data>
-  <data name="richTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 172</value>
-  </data>
-  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
-    <value>richTextBox2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label63.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label63.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label63.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label63.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 15</value>
-  </data>
-  <data name="label63.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label63.Text" xml:space="preserve">
-    <value>Current Server World Settings</value>
-  </data>
-  <data name="&gt;&gt;label63.Name" xml:space="preserve">
-    <value>label63</value>
-  </data>
-  <data name="&gt;&gt;label63.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label63.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2319</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 360</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4994,7 +4840,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 87</value>
+    <value>0, 203</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5015,7 +4861,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoRestartEvery" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -5525,7 +5371,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>Top</value>
   </data>
   <data name="panel_backup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 116</value>
   </data>
   <data name="panel_backup.Size" type="System.Drawing.Size, System.Drawing">
     <value>827, 87</value>
@@ -5543,7 +5389,190 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel_backup.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="richTextBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 202</value>
+  </data>
+  <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 172</value>
+  </data>
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>; This configuration file is a sample of the default server settings.
+; Changes to this file will NOT be reflected on the server.
+; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
+[/Script/Pal.PalGameWorldSettings]
+OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label64.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 187</value>
+  </data>
+  <data name="label64.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 15</value>
+  </data>
+  <data name="label64.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label64.Text" xml:space="preserve">
+    <value>Default Server World Settings</value>
+  </data>
+  <data name="&gt;&gt;label64.Name" xml:space="preserve">
+    <value>label64</value>
+  </data>
+  <data name="&gt;&gt;label64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="richTextBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="richTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 172</value>
+  </data>
+  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
+    <value>richTextBox2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label63.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label63.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label63.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label63.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 15</value>
+  </data>
+  <data name="label63.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="label63.Text" xml:space="preserve">
+    <value>Current Server World Settings</value>
+  </data>
+  <data name="&gt;&gt;label63.Name" xml:space="preserve">
+    <value>label63</value>
+  </data>
+  <data name="&gt;&gt;label63.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label63.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 2319</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 360</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="richTextBox_alert.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="richTextBox_alert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="richTextBox_alert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 116</value>
+  </data>
+  <data name="richTextBox_alert.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="richTextBox_alert.Text" xml:space="preserve">
+    <value>======================================================================================================
+Message
+======================================================================================================</value>
+  </data>
+  <data name="&gt;&gt;richTextBox_alert.Name" xml:space="preserve">
+    <value>richTextBox_alert</value>
+  </data>
+  <data name="&gt;&gt;richTextBox_alert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox_alert.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox_alert.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

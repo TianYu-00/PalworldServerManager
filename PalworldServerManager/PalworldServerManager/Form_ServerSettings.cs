@@ -24,6 +24,8 @@ namespace PalworldServerManager
         private const string serverSettingsFileName = "ServerSettingsPreset.json";
         private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
+        private const int MaxLines = 100;
+
 
         // BACKUP INTERVAL
         private bool forceBackup = false;
@@ -413,6 +415,7 @@ namespace PalworldServerManager
             serv_backupToDirectory = textBox_backupTo.Text;
             serv_maxBackup = textBox_maxBackup.Text;
             serv_autoRestartEvery = textBox_autoRestartEvery.Text;
+            SendMessageToConsole("");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -428,7 +431,7 @@ namespace PalworldServerManager
                 {
                     WriteServerSettingsJSON(); // Save the settings to a txt file to be loaded on start.
                     ReadWorldSettingsFile(); // Read the world setting ini and set it to display on my richtextbox
-                    MessageBox.Show("Server & World Settings Saved");
+                    SendMessageToConsole("Server & World Settings Saved");
                 }
             }
             else
@@ -462,11 +465,12 @@ namespace PalworldServerManager
                 else
                 {
                     //MessageBox.Show("INI file not found.");
+                    SendMessageToConsole("WorldSetting file not found");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                SendMessageToConsole($"Read World Setting File Catched Error: {ex.Message}");
             }
         }
 
@@ -494,13 +498,13 @@ namespace PalworldServerManager
                 }
                 else
                 {
-                    MessageBox.Show("INI file missing, need to run the server once in order to generate the file.");
+                    SendMessageToConsole("Wirte world setting file error: INI file missing, try running the server once in order to generate the file.");
                     return false;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                SendMessageToConsole($"Write world Setting file Catched Error: {ex.Message}");
                 return false;
             }
         }
@@ -966,7 +970,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SendMessageToConsole($"Open file directory given catched Error: {ex.Message}");
             }
         }
 
@@ -982,25 +986,25 @@ namespace PalworldServerManager
                     if (int.TryParse(serv_backupInterval, out newInt))
                     {
                         // Parsing successful, newMaxBackupInt now holds the parsed integer value
-                        Debug.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                        //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
                         isSuccessParse = true;
                     }
                     else
                     {
                         // Parsing failed, serv_maxBackup does not contain a valid integer format
-                        Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                         isSuccessParse = false;
                     }
 
                     int actualTimer = (newInt * 1000);
                     if (actualTimer < 0 || isSuccessParse == false)
                     {
-                        MessageBox.Show($"save game interval value: {serv_backupInterval} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        SendMessageToConsole($"save game interval value: {serv_backupInterval} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
                         return;
                     }
                     timer1.Interval = actualTimer;
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message); return; }
+                catch (Exception ex) { SendMessageToConsole($"SaveGameTimer catched error: " + ex.Message); return; }
                 timer1.Start();
             }
 
@@ -1046,6 +1050,7 @@ namespace PalworldServerManager
                                 }
 
                                 CheckMaxBackup();
+                                SendMessageToConsole("Auto Backup completed successfully!");
                             }
                             else if (forceBackup)
                             {
@@ -1063,26 +1068,31 @@ namespace PalworldServerManager
                                 {
                                     File.Copy(newPath, newPath.Replace(savePath, manualSaveDestinationMainFolderPath), true);
                                 }
+
+                                SendMessageToConsole("Manual Backup completed successfully!");
                             }
 
                             forceBackup = false;
 
-                            //MessageBox.Show("Backup completed successfully!", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            
                         }
                         catch (Exception ex)
                         {
                             //MessageBox.Show($"Error during backup: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            SendMessageToConsole($"Save game error catched: {ex.Message}");
                         }
 
                     }
                     else
                     {
                         //MessageBox.Show($"Failed To Saved");
+                        SendMessageToConsole($"Failed To Saved, path is null or not found");
                     }
                 }
                 catch (Exception ex)
                 {
                     //MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    SendMessageToConsole($"Save game catched error: {ex.Message}");
                 }
             }
 
@@ -1099,19 +1109,19 @@ namespace PalworldServerManager
             if (int.TryParse(serv_maxBackup, out newMaxBackupInt))
             {
                 // Parsing successful, newMaxBackupInt now holds the parsed integer value
-                Debug.WriteLine("Parsing successful. Parsed integer value: " + newMaxBackupInt);
+                //SendMessageToConsole("Parsing successful. Parsed integer value: " + newMaxBackupInt);
                 isSuccessParse = true;
             }
             else
             {
                 // Parsing failed, serv_maxBackup does not contain a valid integer format
-                Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                 isSuccessParse = false;
             }
 
             if (newMaxBackupInt < 0 || isSuccessParse == false)
             {
-                MessageBox.Show($"Backup threshold value: {serv_maxBackup} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                SendMessageToConsole($"Backup threshold value: {serv_maxBackup} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
                 return;
             }
 
@@ -1136,15 +1146,18 @@ namespace PalworldServerManager
                     catch (Exception ex)
                     {
                         //MessageBox.Show($"Error deleting directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        SendMessageToConsole($"Delete old auto backup catched error: {ex.Message}");
                         break; // Exit the loop if an error occurs
                     }
                 }
 
                 //MessageBox.Show("Directory cleanup completed.", "Cleanup Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SendMessageToConsole("Older auto backup deleted");
             }
             else
             {
                 //MessageBox.Show("Directory does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SendMessageToConsole("Older backup Directory does not exist.");
             }
         }
 
@@ -1177,7 +1190,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                SendMessageToConsole($"timer1 catched error: " + ex.Message);
             }
         }
 
@@ -1191,7 +1204,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SendMessageToConsole($"Open manual save catched error: {ex.Message}");
             }
         }
 
@@ -1200,7 +1213,7 @@ namespace PalworldServerManager
         {
             if (serv_autoRestartEvery != "0" && serv_autoRestartEvery != "")
             {
-                Debug.WriteLine(serv_autoRestartEvery);
+                SendMessageToConsole($"Restart timer set to {serv_autoRestartEvery}");
                 try
                 {
                     int newInt;
@@ -1209,13 +1222,13 @@ namespace PalworldServerManager
                     if (int.TryParse(serv_autoRestartEvery, out newInt))
                     {
                         // Parsing successful, newMaxBackupInt now holds the parsed integer value
-                        Debug.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                        //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
                         isSuccessParse = true;
                     }
                     else
                     {
                         // Parsing failed, serv_maxBackup does not contain a valid integer format
-                        Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                         isSuccessParse = false;
                     }
 
@@ -1223,12 +1236,12 @@ namespace PalworldServerManager
 
                     if (actualTimer < 0 || isSuccessParse == false)
                     {
-                        MessageBox.Show($"server restart interval value: {serv_autoRestartEvery} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        SendMessageToConsole($"server restart interval value: {serv_autoRestartEvery} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
                         return;
                     }
                     timer2.Interval = actualTimer;
                 }
-                catch (Exception ex) { MessageBox.Show($"{ ex.Message}\n\n Check your server restart intervals, makesure they are a integer value without mistypes"); return; }
+                catch (Exception ex) { SendMessageToConsole($"Restart server timer start catched error{ ex.Message}\n Check your server restart intervals, makesure they are a integer value without mistypes"); return; }
                 timer2.Start();
             }
         }
@@ -1250,15 +1263,43 @@ namespace PalworldServerManager
                 }
                 else
                 {
-                    Debug.WriteLine("Server not started");
+                    SendMessageToConsole("timer2 error: server not started");
                 }
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                SendMessageToConsole($"timer2 catched errror: "+ex.Message);
             }
         }
+
+        public void SendMessageToConsole(string message)
+        {
+            
+            //Check max lines first
+            if (richTextBox_alert.Lines.Length > MaxLines)
+            {
+                // Calculate how many lines to remove
+                int linesToRemove = richTextBox_alert.Lines.Length - MaxLines;
+
+                // Remove the oldest lines
+                for (int i = 0; i < linesToRemove; i++)
+                {
+                    int indexToRemove = richTextBox_alert.GetFirstCharIndexFromLine(i);
+                    int lengthToRemove = richTextBox_alert.GetFirstCharIndexFromLine(i + 1) - indexToRemove;
+
+                    richTextBox_alert.Text = richTextBox_alert.Text.Remove(indexToRemove, lengthToRemove);
+                }
+            }
+
+            //Now append the message
+            DateTime currentTime = DateTime.Now;
+            richTextBox_alert.AppendText($"[{currentTime}] " + message + Environment.NewLine);
+            richTextBox_alert.SelectionStart = richTextBox_alert.Text.Length;
+            richTextBox_alert.ScrollToCaret();
+        }
+        
+
+
+
     }
-
-
 }

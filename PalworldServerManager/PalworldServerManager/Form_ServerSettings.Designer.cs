@@ -163,11 +163,6 @@ namespace PalworldServerManager
             label62 = new System.Windows.Forms.Label();
             textBox_serverName = new System.Windows.Forms.TextBox();
             comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
-            panel2 = new System.Windows.Forms.Panel();
-            richTextBox1 = new System.Windows.Forms.RichTextBox();
-            label64 = new System.Windows.Forms.Label();
-            richTextBox2 = new System.Windows.Forms.RichTextBox();
-            label63 = new System.Windows.Forms.Label();
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             label68 = new System.Windows.Forms.Label();
             textBox_autoRestartEvery = new System.Windows.Forms.TextBox();
@@ -181,17 +176,23 @@ namespace PalworldServerManager
             label67 = new System.Windows.Forms.Label();
             label65 = new System.Windows.Forms.Label();
             textBox_backupInterval = new System.Windows.Forms.TextBox();
+            panel2 = new System.Windows.Forms.Panel();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            label64 = new System.Windows.Forms.Label();
+            richTextBox2 = new System.Windows.Forms.RichTextBox();
+            label63 = new System.Windows.Forms.Label();
+            richTextBox_alert = new System.Windows.Forms.RichTextBox();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel_worldsettings.SuspendLayout();
-            panel2.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel_backup.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -247,9 +248,10 @@ namespace PalworldServerManager
             resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             panel1.Controls.Add(tableLayoutPanel_worldsettings);
-            panel1.Controls.Add(panel2);
             panel1.Controls.Add(tableLayoutPanel2);
             panel1.Controls.Add(panel_backup);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(richTextBox_alert);
             panel1.Name = "panel1";
             // 
             // tableLayoutPanel_worldsettings
@@ -1120,39 +1122,6 @@ namespace PalworldServerManager
             comboBox_rconEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_rconEnabled.Items"), resources.GetString("comboBox_rconEnabled.Items1") });
             comboBox_rconEnabled.Name = "comboBox_rconEnabled";
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(richTextBox1);
-            panel2.Controls.Add(label64);
-            panel2.Controls.Add(richTextBox2);
-            panel2.Controls.Add(label63);
-            resources.ApplyResources(panel2, "panel2");
-            panel2.Name = "panel2";
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(richTextBox1, "richTextBox1");
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ReadOnly = true;
-            // 
-            // label64
-            // 
-            resources.ApplyResources(label64, "label64");
-            label64.Name = "label64";
-            // 
-            // richTextBox2
-            // 
-            richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(richTextBox2, "richTextBox2");
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.ReadOnly = true;
-            // 
-            // label63
-            // 
-            resources.ApplyResources(label63, "label63");
-            label63.Name = "label63";
-            // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
@@ -1235,6 +1204,44 @@ namespace PalworldServerManager
             resources.ApplyResources(textBox_backupInterval, "textBox_backupInterval");
             textBox_backupInterval.Name = "textBox_backupInterval";
             // 
+            // panel2
+            // 
+            panel2.Controls.Add(richTextBox1);
+            panel2.Controls.Add(label64);
+            panel2.Controls.Add(richTextBox2);
+            panel2.Controls.Add(label63);
+            resources.ApplyResources(panel2, "panel2");
+            panel2.Name = "panel2";
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(richTextBox1, "richTextBox1");
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            // 
+            // label64
+            // 
+            resources.ApplyResources(label64, "label64");
+            label64.Name = "label64";
+            // 
+            // richTextBox2
+            // 
+            richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(richTextBox2, "richTextBox2");
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.ReadOnly = true;
+            // 
+            // label63
+            // 
+            resources.ApplyResources(label63, "label63");
+            label63.Name = "label63";
+            // 
+            // richTextBox_alert
+            // 
+            resources.ApplyResources(richTextBox_alert, "richTextBox_alert");
+            richTextBox_alert.Name = "richTextBox_alert";
+            // 
             // timer1
             // 
             timer1.Tick += timer1_Tick;
@@ -1257,8 +1264,6 @@ namespace PalworldServerManager
             panel1.PerformLayout();
             tableLayoutPanel_worldsettings.ResumeLayout(false);
             tableLayoutPanel_worldsettings.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
             panel_backup.ResumeLayout(false);
@@ -1267,6 +1272,8 @@ namespace PalworldServerManager
             tableLayoutPanel4.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1426,5 +1433,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.TextBox textBox_autoRestartEvery;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.RichTextBox richTextBox_alert;
     }
 }

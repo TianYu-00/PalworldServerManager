@@ -22,10 +22,10 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>T_ChickenPal_icon_normal.ico</ApplicationIcon>
+    <ApplicationIcon>chikipi-image.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="T_ChickenPal_icon_normal.ico" />
+    <Content Include="chikipi-image.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
