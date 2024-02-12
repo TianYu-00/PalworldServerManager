@@ -166,87 +166,6 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_manualSave.Name" xml:space="preserve">
-    <value>button_manualSave</value>
-  </data>
-  <data name="&gt;&gt;button_manualSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_manualSave.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button_manualSave.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button_openManualAutoSaveDirectory.Name" xml:space="preserve">
-    <value>button_openManualAutoSaveDirectory</value>
-  </data>
-  <data name="&gt;&gt;button_openManualAutoSaveDirectory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_openManualAutoSaveDirectory.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;button_openManualAutoSaveDirectory.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 68</value>
-  </data>
-  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 93</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_manualSave" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button_openManualAutoSaveDirectory" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <data name="button2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -373,6 +292,39 @@
   <data name="&gt;&gt;button_openManualAutoSaveDirectory.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 68</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 93</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_manualSave" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button_openManualAutoSaveDirectory" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -381,1909 +333,6 @@
   </data>
   <data name="tableLayoutPanel_worldsettings.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboBox_useAuth.Name" xml:space="preserve">
-    <value>comboBox_useAuth</value>
-  </data>
-  <data name="&gt;&gt;comboBox_useAuth.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_useAuth.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_useAuth.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableDefenseOtherGuildPlayer.Name" xml:space="preserve">
-    <value>comboBox_enableDefenseOtherGuildPlayer</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableDefenseOtherGuildPlayer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableDefenseOtherGuildPlayer.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableDefenseOtherGuildPlayer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;comboBox_existPlayerAfterLogout.Name" xml:space="preserve">
-    <value>comboBox_existPlayerAfterLogout</value>
-  </data>
-  <data name="&gt;&gt;comboBox_existPlayerAfterLogout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_existPlayerAfterLogout.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_existPlayerAfterLogout.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isStartLocationSelectByMap.Name" xml:space="preserve">
-    <value>comboBox_isStartLocationSelectByMap</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isStartLocationSelectByMap.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isStartLocationSelectByMap.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isStartLocationSelectByMap.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFastTravel.Name" xml:space="preserve">
-    <value>comboBox_enableFastTravel</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFastTravel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFastTravel.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFastTravel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableNonLoginPenalty.Name" xml:space="preserve">
-    <value>comboBox_enableNonLoginPenalty</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableNonLoginPenalty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableNonLoginPenalty.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableNonLoginPenalty.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;comboBox_canPickupOtherGuildDeathPenaltyDrop.Name" xml:space="preserve">
-    <value>comboBox_canPickupOtherGuildDeathPenaltyDrop</value>
-  </data>
-  <data name="&gt;&gt;comboBox_canPickupOtherGuildDeathPenaltyDrop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_canPickupOtherGuildDeathPenaltyDrop.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_canPickupOtherGuildDeathPenaltyDrop.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isPvP.Name" xml:space="preserve">
-    <value>comboBox_isPvP</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isPvP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isPvP.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isPvP.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isMultiplay.Name" xml:space="preserve">
-    <value>comboBox_isMultiplay</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isMultiplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isMultiplay.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_isMultiplay.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;comboBox_autoResetGuildNoOnlinePlayers.Name" xml:space="preserve">
-    <value>comboBox_autoResetGuildNoOnlinePlayers</value>
-  </data>
-  <data name="&gt;&gt;comboBox_autoResetGuildNoOnlinePlayers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_autoResetGuildNoOnlinePlayers.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_autoResetGuildNoOnlinePlayers.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistKeyboard.Name" xml:space="preserve">
-    <value>comboBox_enableAimAssistKeyboard</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistKeyboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistKeyboard.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistKeyboard.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistPad.Name" xml:space="preserve">
-    <value>comboBox_enableAimAssistPad</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistPad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistPad.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableAimAssistPad.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;comboBox_activeUNKO.Name" xml:space="preserve">
-    <value>comboBox_activeUNKO</value>
-  </data>
-  <data name="&gt;&gt;comboBox_activeUNKO.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_activeUNKO.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_activeUNKO.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableInvaderEnemy.Name" xml:space="preserve">
-    <value>comboBox_enableInvaderEnemy</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableInvaderEnemy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableInvaderEnemy.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableInvaderEnemy.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFriendlyFire.Name" xml:space="preserve">
-    <value>comboBox_enableFriendlyFire</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFriendlyFire.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFriendlyFire.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enableFriendlyFire.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enablePlayerToPlayerDamage.Name" xml:space="preserve">
-    <value>comboBox_enablePlayerToPlayerDamage</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enablePlayerToPlayerDamage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enablePlayerToPlayerDamage.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_enablePlayerToPlayerDamage.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;comboBox_deathPenalty.Name" xml:space="preserve">
-    <value>comboBox_deathPenalty</value>
-  </data>
-  <data name="&gt;&gt;comboBox_deathPenalty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_deathPenalty.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_deathPenalty.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;comboBox_difficulty.Name" xml:space="preserve">
-    <value>comboBox_difficulty</value>
-  </data>
-  <data name="&gt;&gt;comboBox_difficulty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_difficulty.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_difficulty.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;textBox_banListURL.Name" xml:space="preserve">
-    <value>textBox_banListURL</value>
-  </data>
-  <data name="&gt;&gt;textBox_banListURL.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_banListURL.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_banListURL.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;textBox_region.Name" xml:space="preserve">
-    <value>textBox_region</value>
-  </data>
-  <data name="&gt;&gt;textBox_region.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_region.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_region.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;textBox_coopPlayerMaxNum.Name" xml:space="preserve">
-    <value>textBox_coopPlayerMaxNum</value>
-  </data>
-  <data name="&gt;&gt;textBox_coopPlayerMaxNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_coopPlayerMaxNum.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_coopPlayerMaxNum.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;textBox_workSpeedRate.Name" xml:space="preserve">
-    <value>textBox_workSpeedRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_workSpeedRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_workSpeedRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_workSpeedRate.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;textBox_palEggDefaultHatchingTime.Name" xml:space="preserve">
-    <value>textBox_palEggDefaultHatchingTime</value>
-  </data>
-  <data name="&gt;&gt;textBox_palEggDefaultHatchingTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palEggDefaultHatchingTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palEggDefaultHatchingTime.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;textBox_guildPlayerMaxNum.Name" xml:space="preserve">
-    <value>textBox_guildPlayerMaxNum</value>
-  </data>
-  <data name="&gt;&gt;textBox_guildPlayerMaxNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_guildPlayerMaxNum.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_guildPlayerMaxNum.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;textBox_autoResetGuildTimeNoOnlinePlayers.Name" xml:space="preserve">
-    <value>textBox_autoResetGuildTimeNoOnlinePlayers</value>
-  </data>
-  <data name="&gt;&gt;textBox_autoResetGuildTimeNoOnlinePlayers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_autoResetGuildTimeNoOnlinePlayers.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_autoResetGuildTimeNoOnlinePlayers.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemAliveMaxHours.Name" xml:space="preserve">
-    <value>textBox_dropItemAliveMaxHours</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemAliveMaxHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemAliveMaxHours.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemAliveMaxHours.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampWorkerMaxNum.Name" xml:space="preserve">
-    <value>textBox_baseCampWorkerMaxNum</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampWorkerMaxNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampWorkerMaxNum.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampWorkerMaxNum.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampMaxNum.Name" xml:space="preserve">
-    <value>textBox_baseCampMaxNum</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampMaxNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampMaxNum.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_baseCampMaxNum.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum_UNKO.Name" xml:space="preserve">
-    <value>textBox_dropItemMaxNum_UNKO</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum_UNKO.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum_UNKO.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum_UNKO.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum.Name" xml:space="preserve">
-    <value>textBox_dropItemMaxNum</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_dropItemMaxNum.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;textBox_enemyDropItemRate.Name" xml:space="preserve">
-    <value>textBox_enemyDropItemRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_enemyDropItemRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_enemyDropItemRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_enemyDropItemRate.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectRespawnSpeedRate.Name" xml:space="preserve">
-    <value>textBox_collectionObjectRespawnSpeedRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectRespawnSpeedRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectRespawnSpeedRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectRespawnSpeedRate.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectHpRate.Name" xml:space="preserve">
-    <value>textBox_collectionObjectHpRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectHpRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectHpRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionObjectHpRate.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionDropRate.Name" xml:space="preserve">
-    <value>textBox_collectionDropRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionDropRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionDropRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_collectionDropRate.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDeteriorationDamageRate.Name" xml:space="preserve">
-    <value>textBox_buildObjectDeteriorationDamageRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDeteriorationDamageRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDeteriorationDamageRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDeteriorationDamageRate.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDamageRate.Name" xml:space="preserve">
-    <value>textBox_buildObjectDamageRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDamageRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDamageRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_buildObjectDamageRate.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRateInSleep.Name" xml:space="preserve">
-    <value>textBox_palAutoHpRegeneRateInSleep</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRateInSleep.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRateInSleep.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRateInSleep.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRate.Name" xml:space="preserve">
-    <value>textBox_palAutoHpRegeneRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palAutoHpRegeneRate.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStaminaDecreaceRate.Name" xml:space="preserve">
-    <value>textBox_palStaminaDecreaceRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStaminaDecreaceRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStaminaDecreaceRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStaminaDecreaceRate.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStomachDecreaceRate.Name" xml:space="preserve">
-    <value>textBox_palStomachDecreaceRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStomachDecreaceRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStomachDecreaceRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palStomachDecreaceRate.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRateInSleep.Name" xml:space="preserve">
-    <value>textBox_playerAutoHpRegeneRateInSleep</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRateInSleep.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRateInSleep.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRateInSleep.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRate.Name" xml:space="preserve">
-    <value>textBox_playerAutoHpRegeneRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerAutoHpRegeneRate.ZOrder" xml:space="preserve">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStaminaDecreaceRate.Name" xml:space="preserve">
-    <value>textBox_playerStaminaDecreaceRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStaminaDecreaceRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStaminaDecreaceRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStaminaDecreaceRate.ZOrder" xml:space="preserve">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStomachDecreaceRate.Name" xml:space="preserve">
-    <value>textBox_playerStomachDecreaceRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStomachDecreaceRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStomachDecreaceRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerStomachDecreaceRate.ZOrder" xml:space="preserve">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateDefense.Name" xml:space="preserve">
-    <value>textBox_playerDamageRateDefense</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateDefense.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateDefense.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateDefense.ZOrder" xml:space="preserve">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateAttack.Name" xml:space="preserve">
-    <value>textBox_playerDamageRateAttack</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateAttack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateAttack.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_playerDamageRateAttack.ZOrder" xml:space="preserve">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateDefense.Name" xml:space="preserve">
-    <value>textBox_palDamageRateDefense</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateDefense.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateDefense.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateDefense.ZOrder" xml:space="preserve">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateAttack.Name" xml:space="preserve">
-    <value>textBox_palDamageRateAttack</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateAttack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateAttack.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palDamageRateAttack.ZOrder" xml:space="preserve">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;textBox_palSpawnNumRate.Name" xml:space="preserve">
-    <value>textBox_palSpawnNumRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_palSpawnNumRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palSpawnNumRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palSpawnNumRate.ZOrder" xml:space="preserve">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;textBox_palCaptureRate.Name" xml:space="preserve">
-    <value>textBox_palCaptureRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_palCaptureRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_palCaptureRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_palCaptureRate.ZOrder" xml:space="preserve">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;textBox_expRate.Name" xml:space="preserve">
-    <value>textBox_expRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_expRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_expRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_expRate.ZOrder" xml:space="preserve">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;textBox_nightTimeSpeedRate.Name" xml:space="preserve">
-    <value>textBox_nightTimeSpeedRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_nightTimeSpeedRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_nightTimeSpeedRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_nightTimeSpeedRate.ZOrder" xml:space="preserve">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;textBox_dayTimeSpeedRate.Name" xml:space="preserve">
-    <value>textBox_dayTimeSpeedRate</value>
-  </data>
-  <data name="&gt;&gt;textBox_dayTimeSpeedRate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_dayTimeSpeedRate.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_dayTimeSpeedRate.ZOrder" xml:space="preserve">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;textBox_rconPort.Name" xml:space="preserve">
-    <value>textBox_rconPort</value>
-  </data>
-  <data name="&gt;&gt;textBox_rconPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_rconPort.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_rconPort.ZOrder" xml:space="preserve">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicIP.Name" xml:space="preserve">
-    <value>textBox_publicIP</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicIP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicIP.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicIP.ZOrder" xml:space="preserve">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicPort.Name" xml:space="preserve">
-    <value>textBox_publicPort</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicPort.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_publicPort.ZOrder" xml:space="preserve">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPassword.Name" xml:space="preserve">
-    <value>textBox_serverPassword</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPassword.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPassword.ZOrder" xml:space="preserve">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;textBox_adminPassword.Name" xml:space="preserve">
-    <value>textBox_adminPassword</value>
-  </data>
-  <data name="&gt;&gt;textBox_adminPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_adminPassword.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_adminPassword.ZOrder" xml:space="preserve">
-    <value>57</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPlayerMaxNum.Name" xml:space="preserve">
-    <value>textBox_serverPlayerMaxNum</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPlayerMaxNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPlayerMaxNum.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverPlayerMaxNum.ZOrder" xml:space="preserve">
-    <value>58</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverDescription.Name" xml:space="preserve">
-    <value>textBox_serverDescription</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverDescription.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverDescription.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverDescription.ZOrder" xml:space="preserve">
-    <value>59</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>61</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>62</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>65</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>66</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>67</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>68</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>70</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>71</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>72</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>73</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>74</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>75</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>77</value>
-  </data>
-  <data name="&gt;&gt;label19.Name" xml:space="preserve">
-    <value>label19</value>
-  </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>78</value>
-  </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
-  </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>79</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>82</value>
-  </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>83</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>84</value>
-  </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
-  </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>85</value>
-  </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
-  </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>86</value>
-  </data>
-  <data name="&gt;&gt;label28.Name" xml:space="preserve">
-    <value>label28</value>
-  </data>
-  <data name="&gt;&gt;label28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>87</value>
-  </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
-  </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>88</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>89</value>
-  </data>
-  <data name="&gt;&gt;label31.Name" xml:space="preserve">
-    <value>label31</value>
-  </data>
-  <data name="&gt;&gt;label31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>90</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>91</value>
-  </data>
-  <data name="&gt;&gt;label33.Name" xml:space="preserve">
-    <value>label33</value>
-  </data>
-  <data name="&gt;&gt;label33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;label34.Name" xml:space="preserve">
-    <value>label34</value>
-  </data>
-  <data name="&gt;&gt;label34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
-    <value>93</value>
-  </data>
-  <data name="&gt;&gt;label35.Name" xml:space="preserve">
-    <value>label35</value>
-  </data>
-  <data name="&gt;&gt;label35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>94</value>
-  </data>
-  <data name="&gt;&gt;label36.Name" xml:space="preserve">
-    <value>label36</value>
-  </data>
-  <data name="&gt;&gt;label36.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>95</value>
-  </data>
-  <data name="&gt;&gt;label37.Name" xml:space="preserve">
-    <value>label37</value>
-  </data>
-  <data name="&gt;&gt;label37.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
-    <value>96</value>
-  </data>
-  <data name="&gt;&gt;label38.Name" xml:space="preserve">
-    <value>label38</value>
-  </data>
-  <data name="&gt;&gt;label38.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
-    <value>97</value>
-  </data>
-  <data name="&gt;&gt;label39.Name" xml:space="preserve">
-    <value>label39</value>
-  </data>
-  <data name="&gt;&gt;label39.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
-    <value>98</value>
-  </data>
-  <data name="&gt;&gt;label40.Name" xml:space="preserve">
-    <value>label40</value>
-  </data>
-  <data name="&gt;&gt;label40.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
-    <value>99</value>
-  </data>
-  <data name="&gt;&gt;label41.Name" xml:space="preserve">
-    <value>label41</value>
-  </data>
-  <data name="&gt;&gt;label41.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;label42.Name" xml:space="preserve">
-    <value>label42</value>
-  </data>
-  <data name="&gt;&gt;label42.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
-    <value>101</value>
-  </data>
-  <data name="&gt;&gt;label43.Name" xml:space="preserve">
-    <value>label43</value>
-  </data>
-  <data name="&gt;&gt;label43.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
-    <value>102</value>
-  </data>
-  <data name="&gt;&gt;label44.Name" xml:space="preserve">
-    <value>label44</value>
-  </data>
-  <data name="&gt;&gt;label44.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
-    <value>103</value>
-  </data>
-  <data name="&gt;&gt;label45.Name" xml:space="preserve">
-    <value>label45</value>
-  </data>
-  <data name="&gt;&gt;label45.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label45.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
-    <value>104</value>
-  </data>
-  <data name="&gt;&gt;label46.Name" xml:space="preserve">
-    <value>label46</value>
-  </data>
-  <data name="&gt;&gt;label46.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label46.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
-    <value>105</value>
-  </data>
-  <data name="&gt;&gt;label47.Name" xml:space="preserve">
-    <value>label47</value>
-  </data>
-  <data name="&gt;&gt;label47.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label47.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
-    <value>106</value>
-  </data>
-  <data name="&gt;&gt;label48.Name" xml:space="preserve">
-    <value>label48</value>
-  </data>
-  <data name="&gt;&gt;label48.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label48.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
-    <value>107</value>
-  </data>
-  <data name="&gt;&gt;label49.Name" xml:space="preserve">
-    <value>label49</value>
-  </data>
-  <data name="&gt;&gt;label49.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label49.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
-    <value>108</value>
-  </data>
-  <data name="&gt;&gt;label50.Name" xml:space="preserve">
-    <value>label50</value>
-  </data>
-  <data name="&gt;&gt;label50.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
-    <value>109</value>
-  </data>
-  <data name="&gt;&gt;label51.Name" xml:space="preserve">
-    <value>label51</value>
-  </data>
-  <data name="&gt;&gt;label51.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label51.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label51.ZOrder" xml:space="preserve">
-    <value>110</value>
-  </data>
-  <data name="&gt;&gt;label52.Name" xml:space="preserve">
-    <value>label52</value>
-  </data>
-  <data name="&gt;&gt;label52.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label52.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label52.ZOrder" xml:space="preserve">
-    <value>111</value>
-  </data>
-  <data name="&gt;&gt;label53.Name" xml:space="preserve">
-    <value>label53</value>
-  </data>
-  <data name="&gt;&gt;label53.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label53.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
-    <value>112</value>
-  </data>
-  <data name="&gt;&gt;label54.Name" xml:space="preserve">
-    <value>label54</value>
-  </data>
-  <data name="&gt;&gt;label54.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label54.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
-    <value>113</value>
-  </data>
-  <data name="&gt;&gt;label55.Name" xml:space="preserve">
-    <value>label55</value>
-  </data>
-  <data name="&gt;&gt;label55.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label55.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label55.ZOrder" xml:space="preserve">
-    <value>114</value>
-  </data>
-  <data name="&gt;&gt;label56.Name" xml:space="preserve">
-    <value>label56</value>
-  </data>
-  <data name="&gt;&gt;label56.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label56.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label56.ZOrder" xml:space="preserve">
-    <value>115</value>
-  </data>
-  <data name="&gt;&gt;label57.Name" xml:space="preserve">
-    <value>label57</value>
-  </data>
-  <data name="&gt;&gt;label57.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label57.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
-    <value>116</value>
-  </data>
-  <data name="&gt;&gt;label58.Name" xml:space="preserve">
-    <value>label58</value>
-  </data>
-  <data name="&gt;&gt;label58.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label58.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label58.ZOrder" xml:space="preserve">
-    <value>117</value>
-  </data>
-  <data name="&gt;&gt;label59.Name" xml:space="preserve">
-    <value>label59</value>
-  </data>
-  <data name="&gt;&gt;label59.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
-    <value>118</value>
-  </data>
-  <data name="&gt;&gt;label60.Name" xml:space="preserve">
-    <value>label60</value>
-  </data>
-  <data name="&gt;&gt;label60.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label60.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
-    <value>119</value>
-  </data>
-  <data name="&gt;&gt;label61.Name" xml:space="preserve">
-    <value>label61</value>
-  </data>
-  <data name="&gt;&gt;label61.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label61.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label61.ZOrder" xml:space="preserve">
-    <value>120</value>
-  </data>
-  <data name="&gt;&gt;label62.Name" xml:space="preserve">
-    <value>label62</value>
-  </data>
-  <data name="&gt;&gt;label62.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label62.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;label62.ZOrder" xml:space="preserve">
-    <value>121</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverName.Name" xml:space="preserve">
-    <value>textBox_serverName</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverName.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;textBox_serverName.ZOrder" xml:space="preserve">
-    <value>122</value>
-  </data>
-  <data name="&gt;&gt;comboBox_rconEnabled.Name" xml:space="preserve">
-    <value>comboBox_rconEnabled</value>
-  </data>
-  <data name="&gt;&gt;comboBox_rconEnabled.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_rconEnabled.Parent" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;comboBox_rconEnabled.ZOrder" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 145</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.RowCount" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 1810</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel_worldsettings.Name" xml:space="preserve">
-    <value>tableLayoutPanel_worldsettings</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel_worldsettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel_worldsettings.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel_worldsettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel_worldsettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="comboBox_useAuth" Row="60" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableDefenseOtherGuildPlayer" Row="57" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_existPlayerAfterLogout" Row="56" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isStartLocationSelectByMap" Row="55" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFastTravel" Row="54" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableNonLoginPenalty" Row="53" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_canPickupOtherGuildDeathPenaltyDrop" Row="52" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isPvP" Row="51" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isMultiplay" Row="50" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_autoResetGuildNoOnlinePlayers" Row="45" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistKeyboard" Row="39" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistPad" Row="38" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_activeUNKO" Row="37" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableInvaderEnemy" Row="36" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFriendlyFire" Row="35" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enablePlayerToPlayerDamage" Row="34" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_deathPenalty" Row="33" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_difficulty" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_banListURL" Row="61" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_region" Row="59" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_coopPlayerMaxNum" Row="58" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_workSpeedRate" Row="49" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palEggDefaultHatchingTime" Row="48" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_guildPlayerMaxNum" Row="47" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoResetGuildTimeNoOnlinePlayers" Row="46" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemAliveMaxHours" Row="44" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampWorkerMaxNum" Row="43" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampMaxNum" Row="42" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum_UNKO" Row="41" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum" Row="40" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_enemyDropItemRate" Row="32" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectRespawnSpeedRate" Row="31" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectHpRate" Row="30" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionDropRate" Row="29" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDeteriorationDamageRate" Row="28" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDamageRate" Row="27" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRateInSleep" Row="26" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRate" Row="25" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStaminaDecreaceRate" Row="24" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStomachDecreaceRate" Row="23" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRateInSleep" Row="22" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRate" Row="21" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStaminaDecreaceRate" Row="20" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStomachDecreaceRate" Row="19" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateDefense" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateAttack" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateDefense" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateAttack" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palSpawnNumRate" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palCaptureRate" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_expRate" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_nightTimeSpeedRate" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dayTimeSpeedRate" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_rconPort" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicIP" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicPort" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_adminPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPlayerMaxNum" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="19" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="20" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="21" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="22" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="23" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="24" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="25" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="26" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="27" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="28" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="29" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="30" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="31" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="32" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="33" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="34" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="35" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="36" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="37" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="38" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="39" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="40" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="41" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="42" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="43" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="44" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="45" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="46" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="47" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="48" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="49" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="50" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="51" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="52" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="53" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="54" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="55" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="56" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="57" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="58" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="59" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="60" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="61" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_rconEnabled" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
-    <value>richTextBox1</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label64.Name" xml:space="preserve">
-    <value>label64</value>
-  </data>
-  <data name="&gt;&gt;label64.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
-    <value>richTextBox2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label63.Name" xml:space="preserve">
-    <value>label63</value>
-  </data>
-  <data name="&gt;&gt;label63.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label63.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2319</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 360</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label68.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label68.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="label68.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 29</value>
-  </data>
-  <data name="label68.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label68.Text" xml:space="preserve">
-    <value>Auto Restart Server Every (In Seconds (0 = Dont restart))</value>
-  </data>
-  <data name="label68.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label68.Name" xml:space="preserve">
-    <value>label68</value>
-  </data>
-  <data name="&gt;&gt;label68.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label68.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;label68.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 3</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 23</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 87</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 58</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="panel_backup.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
-    <value>panel_backup</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label66" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupTo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_backupTo" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,46,Percent,4" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>panel_backup</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_maxBackup" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="panel_backup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel_backup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_backup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 87</value>
-  </data>
-  <data name="panel_backup.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panel_backup.Name" xml:space="preserve">
-    <value>panel_backup</value>
-  </data>
-  <data name="&gt;&gt;panel_backup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_backup.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel_backup.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 161</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 2679</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="richTextBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 202</value>
-  </data>
-  <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 172</value>
-  </data>
-  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>; This configuration file is a sample of the default server settings.
-; Changes to this file will NOT be reflected on the server.
-; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
-[/Script/Pal.PalGameWorldSettings]
-OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
-    <value>richTextBox1</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label64.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 187</value>
-  </data>
-  <data name="label64.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 15</value>
-  </data>
-  <data name="label64.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label64.Text" xml:space="preserve">
-    <value>Default Server World Settings</value>
-  </data>
-  <data name="&gt;&gt;label64.Name" xml:space="preserve">
-    <value>label64</value>
-  </data>
-  <data name="&gt;&gt;label64.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="richTextBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 15</value>
-  </data>
-  <data name="richTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 172</value>
-  </data>
-  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
-    <value>richTextBox2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label63.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label63.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label63.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label63.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 15</value>
-  </data>
-  <data name="label63.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label63.Text" xml:space="preserve">
-    <value>Current Server World Settings</value>
-  </data>
-  <data name="&gt;&gt;label63.Name" xml:space="preserve">
-    <value>label63</value>
-  </data>
-  <data name="&gt;&gt;label63.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label63.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="comboBox_useAuth.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -6685,291 +4734,297 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="&gt;&gt;comboBox_rconEnabled.ZOrder" xml:space="preserve">
     <value>123</value>
   </data>
-  <data name="tableLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.Name" xml:space="preserve">
-    <value>textBox_maxBackup</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label67.Name" xml:space="preserve">
-    <value>label67</value>
-  </data>
-  <data name="&gt;&gt;label67.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label67.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;label67.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label65.Name" xml:space="preserve">
-    <value>label65</value>
-  </data>
-  <data name="&gt;&gt;label65.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupInterval.Name" xml:space="preserve">
-    <value>textBox_backupInterval</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupInterval.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupInterval.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="tableLayoutPanel_worldsettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="tableLayoutPanel_worldsettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 145</value>
   </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tableLayoutPanel_worldsettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 58</value>
+  <data name="tableLayoutPanel_worldsettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
   </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="tableLayoutPanel_worldsettings.RowCount" type="System.Int32, mscorlib">
+    <value>62</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="tableLayoutPanel_worldsettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 1810</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>panel_backup</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_maxBackup" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="textBox_maxBackup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="textBox_maxBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 32</value>
-  </data>
-  <data name="textBox_maxBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 23</value>
-  </data>
-  <data name="textBox_maxBackup.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.Name" xml:space="preserve">
-    <value>textBox_maxBackup</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;textBox_maxBackup.ZOrder" xml:space="preserve">
+  <data name="tableLayoutPanel_worldsettings.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label67.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;tableLayoutPanel_worldsettings.Name" xml:space="preserve">
+    <value>tableLayoutPanel_worldsettings</value>
   </data>
-  <data name="label67.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;tableLayoutPanel_worldsettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label67.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+  <data name="&gt;&gt;tableLayoutPanel_worldsettings.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="label67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;tableLayoutPanel_worldsettings.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 29</value>
+  <data name="tableLayoutPanel_worldsettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="comboBox_useAuth" Row="60" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableDefenseOtherGuildPlayer" Row="57" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_existPlayerAfterLogout" Row="56" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isStartLocationSelectByMap" Row="55" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFastTravel" Row="54" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableNonLoginPenalty" Row="53" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_canPickupOtherGuildDeathPenaltyDrop" Row="52" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isPvP" Row="51" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isMultiplay" Row="50" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_autoResetGuildNoOnlinePlayers" Row="45" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistKeyboard" Row="39" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistPad" Row="38" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_activeUNKO" Row="37" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableInvaderEnemy" Row="36" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFriendlyFire" Row="35" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enablePlayerToPlayerDamage" Row="34" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_deathPenalty" Row="33" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_difficulty" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_banListURL" Row="61" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_region" Row="59" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_coopPlayerMaxNum" Row="58" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_workSpeedRate" Row="49" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palEggDefaultHatchingTime" Row="48" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_guildPlayerMaxNum" Row="47" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoResetGuildTimeNoOnlinePlayers" Row="46" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemAliveMaxHours" Row="44" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampWorkerMaxNum" Row="43" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampMaxNum" Row="42" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum_UNKO" Row="41" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum" Row="40" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_enemyDropItemRate" Row="32" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectRespawnSpeedRate" Row="31" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectHpRate" Row="30" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionDropRate" Row="29" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDeteriorationDamageRate" Row="28" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDamageRate" Row="27" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRateInSleep" Row="26" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRate" Row="25" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStaminaDecreaceRate" Row="24" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStomachDecreaceRate" Row="23" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRateInSleep" Row="22" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRate" Row="21" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStaminaDecreaceRate" Row="20" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStomachDecreaceRate" Row="19" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateDefense" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateAttack" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateDefense" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateAttack" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palSpawnNumRate" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palCaptureRate" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_expRate" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_nightTimeSpeedRate" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dayTimeSpeedRate" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_rconPort" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicIP" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicPort" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_adminPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPlayerMaxNum" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="19" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="20" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="21" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="22" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="23" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="24" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="25" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="26" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="27" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="28" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="29" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="30" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="31" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="32" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="33" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="34" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="35" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="36" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="37" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="38" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="39" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="40" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="41" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="42" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="43" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="44" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="45" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="46" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="47" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="48" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="49" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="50" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="51" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="52" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="53" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="54" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="55" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="56" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="57" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="58" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="59" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="60" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="61" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_rconEnabled" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 29</value>
+  <data name="richTextBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="label67.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 202</value>
   </data>
-  <data name="label67.Text" xml:space="preserve">
-    <value>Auto Delete Older Backup Threshold (0 = Dont delete backup)</value>
+  <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
-  <data name="label67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 172</value>
   </data>
-  <data name="label67.ToolTip" xml:space="preserve">
-    <value>If backup reaches threshold, it will delete the oldest backup. </value>
-  </data>
-  <data name="&gt;&gt;label67.Name" xml:space="preserve">
-    <value>label67</value>
-  </data>
-  <data name="&gt;&gt;label67.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label67.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;label67.ZOrder" xml:space="preserve">
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>; This configuration file is a sample of the default server settings.
+; Changes to this file will NOT be reflected on the server.
+; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
+[/Script/Pal.PalGameWorldSettings]
+OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label65.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="label64.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 187</value>
+  </data>
+  <data name="label64.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 15</value>
+  </data>
+  <data name="label64.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label64.Text" xml:space="preserve">
+    <value>Default Server World Settings</value>
+  </data>
+  <data name="&gt;&gt;label64.Name" xml:space="preserve">
+    <value>label64</value>
+  </data>
+  <data name="&gt;&gt;label64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label64.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label64.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="richTextBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="richTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 172</value>
+  </data>
+  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
+    <value>richTextBox2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label63.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label63.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label63.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label63.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 15</value>
+  </data>
+  <data name="label63.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label63.Text" xml:space="preserve">
+    <value>Current Server World Settings</value>
+  </data>
+  <data name="&gt;&gt;label63.Name" xml:space="preserve">
+    <value>label63</value>
+  </data>
+  <data name="&gt;&gt;label63.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label63.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label63.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 2319</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 360</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label68.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label68.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="label65.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="label68.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
-  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 29</value>
   </data>
-  <data name="label65.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label68.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="label65.Text" xml:space="preserve">
-    <value>Auto Backup Save File Interval (In Seconds (0 = Dont auto save))</value>
+  <data name="label68.Text" xml:space="preserve">
+    <value>Auto Restart Server Every (In Seconds (0 = Dont restart))</value>
   </data>
-  <data name="label65.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="label68.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="label65.ToolTip" xml:space="preserve">
-    <value>Automatically backup your world and player data in a set time
-</value>
+  <data name="&gt;&gt;label68.Name" xml:space="preserve">
+    <value>label68</value>
   </data>
-  <data name="&gt;&gt;label65.Name" xml:space="preserve">
-    <value>label65</value>
-  </data>
-  <data name="&gt;&gt;label65.Type" xml:space="preserve">
+  <data name="&gt;&gt;label68.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="&gt;&gt;label68.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label68.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="textBox_backupInterval.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="textBox_autoRestartEvery.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="textBox_backupInterval.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textBox_autoRestartEvery.Location" type="System.Drawing.Point, System.Drawing">
     <value>416, 3</value>
   </data>
-  <data name="textBox_backupInterval.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textBox_autoRestartEvery.Size" type="System.Drawing.Size, System.Drawing">
     <value>408, 23</value>
   </data>
-  <data name="textBox_backupInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="textBox_autoRestartEvery.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox_backupInterval.Name" xml:space="preserve">
-    <value>textBox_backupInterval</value>
+  <data name="&gt;&gt;textBox_autoRestartEvery.Name" xml:space="preserve">
+    <value>textBox_autoRestartEvery</value>
   </data>
-  <data name="&gt;&gt;textBox_backupInterval.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBox_autoRestartEvery.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox_backupInterval.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
+  <data name="&gt;&gt;textBox_autoRestartEvery.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;textBox_backupInterval.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;textBox_autoRestartEvery.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 87</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 58</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoRestartEvery" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panel_backup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="tableLayoutPanel4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;label66.Name" xml:space="preserve">
-    <value>label66</value>
-  </data>
-  <data name="&gt;&gt;label66.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label66.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;label66.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupTo.Name" xml:space="preserve">
-    <value>textBox_backupTo</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupTo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupTo.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;textBox_backupTo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_backupTo.Name" xml:space="preserve">
-    <value>button_backupTo</value>
-  </data>
-  <data name="&gt;&gt;button_backupTo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_backupTo.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;button_backupTo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 58</value>
-  </data>
-  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 29</value>
-  </data>
-  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
-    <value>panel_backup</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label66" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupTo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_backupTo" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,46,Percent,4" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="label66.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7267,8 +5322,258 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="&gt;&gt;button_backupTo.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 58</value>
+  </data>
+  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 29</value>
+  </data>
+  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>panel_backup</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label66" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupTo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_backupTo" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,46,Percent,4" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBox_maxBackup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="textBox_maxBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 32</value>
+  </data>
+  <data name="textBox_maxBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 23</value>
+  </data>
+  <data name="textBox_maxBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.Name" xml:space="preserve">
+    <value>textBox_maxBackup</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;textBox_maxBackup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label67.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label67.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label67.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
+  </data>
+  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 29</value>
+  </data>
+  <data name="label67.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label67.Text" xml:space="preserve">
+    <value>Auto Delete Older Backup Threshold (0 = Dont delete backup)</value>
+  </data>
+  <data name="label67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label67.ToolTip" xml:space="preserve">
+    <value>If backup reaches threshold, it will delete the oldest backup. </value>
+  </data>
+  <data name="&gt;&gt;label67.Name" xml:space="preserve">
+    <value>label67</value>
+  </data>
+  <data name="&gt;&gt;label67.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label67.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label67.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label65.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label65.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 29</value>
+  </data>
+  <data name="label65.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label65.Text" xml:space="preserve">
+    <value>Auto Backup Save File Interval (In Seconds (0 = Dont auto save))</value>
+  </data>
+  <data name="label65.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label65.ToolTip" xml:space="preserve">
+    <value>Automatically backup your world and player data in a set time
+</value>
+  </data>
+  <data name="&gt;&gt;label65.Name" xml:space="preserve">
+    <value>label65</value>
+  </data>
+  <data name="&gt;&gt;label65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox_backupInterval.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="textBox_backupInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 3</value>
+  </data>
+  <data name="textBox_backupInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 23</value>
+  </data>
+  <data name="textBox_backupInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox_backupInterval.Name" xml:space="preserve">
+    <value>textBox_backupInterval</value>
+  </data>
+  <data name="&gt;&gt;textBox_backupInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_backupInterval.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;textBox_backupInterval.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 58</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>panel_backup</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_maxBackup" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panel_backup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel_backup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_backup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 87</value>
+  </data>
+  <data name="panel_backup.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel_backup.Name" xml:space="preserve">
+    <value>panel_backup</value>
+  </data>
+  <data name="&gt;&gt;panel_backup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_backup.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel_backup.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 161</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 2679</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
+  </metadata>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -7298,6 +5603,12 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>timer1</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer2.Name" xml:space="preserve">
+    <value>timer2</value>
+  </data>
+  <data name="&gt;&gt;timer2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

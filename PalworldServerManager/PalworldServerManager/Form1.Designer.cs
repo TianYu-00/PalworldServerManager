@@ -312,6 +312,7 @@ namespace PalworldServerManager
             Controls.Add(panel1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

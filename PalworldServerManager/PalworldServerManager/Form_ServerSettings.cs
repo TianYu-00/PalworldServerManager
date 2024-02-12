@@ -19,6 +19,8 @@ namespace PalworldServerManager
         //Palworld World Server Settings Parameter Description
         //
 
+        private Form1 mainForm;
+
         private const string serverSettingsFileName = "ServerSettingsPreset.json";
         private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
@@ -28,6 +30,8 @@ namespace PalworldServerManager
         private string serv_backupInterval;
         private string serv_maxBackup;
         private string serv_backupToDirectory;
+
+        private string serv_autoRestartEvery;
 
 
         //Difficulty Adjusts the overall difficulty of the game.
@@ -224,6 +228,8 @@ namespace PalworldServerManager
         private string dserv_maxBackup = "0";
         private string dserv_backupToDirectory;
 
+        private string dserv_autoRestartEvery = "0";
+
         private string dserv_difficulty = "None";
         private string dserv_dayTimeSpeedRate = "1.000000";
         private string dserv_nightTimeSpeedRate = "1.000000";
@@ -293,6 +299,9 @@ namespace PalworldServerManager
             public string json_backupInterval { get; set; }
             public string json_maxBackup { get; set; }
             public string json_backupToDirectory { get; set; }
+
+            public string json_autoRestartEvery { get; set; }
+
             public string json_difficulty { get; set; }
             public string json_dayTimeSpeedRate { get; set; }
             public string json_nightTimeSpeedRate { get; set; }
@@ -358,9 +367,10 @@ namespace PalworldServerManager
         }
 
 
-        public Form_ServerSettings()
+        public Form_ServerSettings(Form1 form)
         {
             InitializeComponent();
+            mainForm = form;
         }
 
         public void ServerSettingsOnLoad()
@@ -402,6 +412,7 @@ namespace PalworldServerManager
             serv_backupInterval = textBox_backupInterval.Text;
             serv_backupToDirectory = textBox_backupTo.Text;
             serv_maxBackup = textBox_maxBackup.Text;
+            serv_autoRestartEvery = textBox_autoRestartEvery.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -501,6 +512,9 @@ namespace PalworldServerManager
             textBox_maxBackup.Text = dserv_maxBackup;
             textBox_backupTo.Text = dserv_backupToDirectory;
 
+            //Auto restart
+            textBox_autoRestartEvery.Text = dserv_autoRestartEvery;
+
             //Server Settings
             textBox_serverName.Text = dserv_serverName;
             textBox_serverDescription.Text = dserv_serverDescription;
@@ -572,6 +586,9 @@ namespace PalworldServerManager
             serv_backupInterval = textBox_backupInterval.Text;
             serv_maxBackup = textBox_maxBackup.Text;
             serv_backupToDirectory = textBox_backupTo.Text;
+
+            //Auto restart
+            serv_autoRestartEvery = textBox_autoRestartEvery.Text;
 
             //Server Settings
             serv_serverName = textBox_serverName.Text;
@@ -671,6 +688,10 @@ namespace PalworldServerManager
                 json_backupInterval = textBox_backupInterval.Text,
                 json_maxBackup = textBox_maxBackup.Text,
                 json_backupToDirectory = textBox_backupTo.Text,
+
+                //Auto restart
+                json_autoRestartEvery = textBox_autoRestartEvery.Text,
+
                 // Server settings
                 json_serverName = textBox_serverName.Text,
                 json_serverDescription = textBox_serverDescription.Text,
@@ -763,6 +784,9 @@ namespace PalworldServerManager
                 textBox_maxBackup.Text = settings.json_maxBackup;
                 textBox_backupTo.Text = settings.json_backupToDirectory;
 
+                //Auto restart
+                textBox_autoRestartEvery.Text = settings.json_autoRestartEvery;
+
                 ////server settings
                 textBox_serverName.Text = settings.json_serverName;
                 textBox_serverDescription.Text = settings.json_serverDescription;
@@ -848,6 +872,7 @@ namespace PalworldServerManager
                     json_backupInterval = dserv_backupInterval,
                     json_maxBackup = dserv_maxBackup,
                     json_backupToDirectory = dserv_backupToDirectory,
+                    json_autoRestartEvery = dserv_autoRestartEvery,
                     json_difficulty = dserv_difficulty,
                     json_dayTimeSpeedRate = dserv_dayTimeSpeedRate,
                     json_nightTimeSpeedRate = dserv_nightTimeSpeedRate,
@@ -1151,6 +1176,61 @@ namespace PalworldServerManager
             catch (Exception ex)
             {
                 MessageBox.Show($"Error opening directory: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        public void AutoRestartServerTimer_Start()
+        {
+            if (serv_autoRestartEvery != "0" && serv_autoRestartEvery != "")
+            {
+                Debug.WriteLine(serv_autoRestartEvery);
+                try
+                {
+                    int newInt;
+
+                    if (int.TryParse(serv_autoRestartEvery, out newInt))
+                    {
+                        // Parsing successful, newMaxBackupInt now holds the parsed integer value
+                        Debug.WriteLine("Parsing successful. Parsed integer value: " + newInt);
+                    }
+                    else
+                    {
+                        // Parsing failed, serv_maxBackup does not contain a valid integer format
+                        Debug.WriteLine("Parsing failed. The input string is not in a correct format.");
+                    }
+
+                    int actualTimer = (newInt * 1000);
+                    timer2.Interval = actualTimer;
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+                timer2.Start();
+            }
+        }
+
+        public void AutoRestartServerTimer_Stop()
+        {
+            timer2.Stop();
+        }
+
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (mainForm.isServerStarted)
+                {
+                    mainForm.StopServer();
+                    mainForm.StartServer();
+                }
+                else
+                {
+                    Debug.WriteLine("Server not started");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
             }
         }
     }

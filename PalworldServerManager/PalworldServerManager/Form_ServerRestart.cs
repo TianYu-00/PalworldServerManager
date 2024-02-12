@@ -123,7 +123,7 @@ namespace PalworldServerManager
             {
                 //Current time
                 DateTime currentDateTime = DateTime.Now;
-                Debug.WriteLine($"Current Time: {currentDateTime}");
+                //Debug.WriteLine($"Current Time: {currentDateTime}");
                 string currentDateString = currentDateTime.ToString("yyyy/MM/dd");
                 string currentTimeString = currentDateTime.ToString("HH:mm:ss");
                 foreach (var setting in settingsList)

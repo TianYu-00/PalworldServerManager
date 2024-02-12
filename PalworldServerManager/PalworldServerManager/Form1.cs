@@ -87,8 +87,8 @@ namespace PalworldServerManager
             //Load Form
             rconForm = new Form_RCON();
             serverRestartForm = new Form_ServerRestart(this);
-            serverSettingsForm = new Form_ServerSettings();
-            LoadForm(rconForm,false);
+            serverSettingsForm = new Form_ServerSettings(this);
+            LoadForm(rconForm, false);
             LoadForm(serverSettingsForm, true);
             LoadForm(serverRestartForm, true);
 
@@ -112,7 +112,7 @@ namespace PalworldServerManager
                 {
                     formToLoad.Hide();
                 }
-                
+
             }
         }
 
@@ -391,6 +391,7 @@ namespace PalworldServerManager
                     Thread thread = new Thread(new ThreadStart(RunStartServerBatchFile));
                     thread.Start();
                     serverSettingsForm.SaveGameTimer_Start();
+                    serverSettingsForm.AutoRestartServerTimer_Start();
                     isServerStarted = true;
                     button_startServer.Enabled = false;
                     button_stopServer.Enabled = true;
@@ -425,6 +426,7 @@ namespace PalworldServerManager
                 button_startServer.Enabled = true;
                 button_stopServer.Enabled = false;
                 serverSettingsForm.SaveGameTimer_Stop();
+                serverSettingsForm.AutoRestartServerTimer_Stop();
 
             }
         }
@@ -569,6 +571,11 @@ namespace PalworldServerManager
         private void serverRestartScheduleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowForm(serverRestartForm);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopServer();
         }
     }
 }
