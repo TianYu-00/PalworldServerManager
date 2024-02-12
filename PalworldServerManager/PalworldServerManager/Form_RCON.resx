@@ -178,6 +178,7 @@ NOTICE:
 RCON only supports ASCII printable characters
 If your command, server name, or player names contain non-ascii printable characters the task will be timed out.
 ====================================================================
+
 </value>
   </data>
   <data name="&gt;&gt;richTextBox_output.Name" xml:space="preserve">
