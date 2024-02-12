@@ -525,7 +525,7 @@ namespace PalworldServerManager
             string message = "1)Click Download Steam CMD\n" +
                 "2)Click Download/Update/Verify Server\n" +
                 "3)Start the server\n" +
-                "4)Let the server loadup to generate more server files\n" +
+                "4)Let the server loadup to generate more server files then shutdown the server\n" +
                 "5)Edit any server world settings/startup settings you want\n" +
                 "6)Save it\n" +
                 "7)Done. LocalHostIP is 127.0.0.1\n\n" +
