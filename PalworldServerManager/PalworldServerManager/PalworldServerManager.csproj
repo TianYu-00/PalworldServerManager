@@ -22,11 +22,9 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>chikipi-image.ico</ApplicationIcon>
+    <ApplicationIcon>chickenimage (1).ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="chikipi-image.ico" />
-  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
@@ -38,6 +36,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chickenimage (1).ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="PalWorld.Networking" Version="1.0.2" />
