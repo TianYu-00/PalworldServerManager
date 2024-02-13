@@ -3,7 +3,7 @@ _DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I1U729N)
 
 > [!NOTE]
-Last Tested Game Version: **`v0.1.4.1`** using PSM: **`v1.0.9`**   
+Last Tested Game Version: **`v0.1.4.1`** using PSM: **`v1.1.0`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**
 
 > [!IMPORTANT]
@@ -45,8 +45,10 @@ _Previews_
 
 **`v1.0.7 RCON preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/944f0858-d44f-4d62-90e4-28eee6d8ed4c" alt="Image1" style="width: 100%; height: auto;">   
-**`v1.0.6 preview`**  
-<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/6f95d48f-5d0a-4649-a4e5-bdbb90a25c75" alt="Image1" style="width: 100%; height: auto;">   
+**`v1.1.0 preview`**  
+<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/5448c663-69ce-467d-bf7c-aea35b0f6fa7" alt="Image1" style="width: 100%; height: auto;">   
+
+
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
 
 _Credits_
