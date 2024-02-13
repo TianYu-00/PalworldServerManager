@@ -5560,7 +5560,8 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
   <data name="richTextBox_alert.Text" xml:space="preserve">
     <value>======================================================================================================
 Message
-======================================================================================================</value>
+======================================================================================================
+</value>
   </data>
   <data name="&gt;&gt;richTextBox_alert.Name" xml:space="preserve">
     <value>richTextBox_alert</value>

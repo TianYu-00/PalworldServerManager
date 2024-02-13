@@ -415,7 +415,7 @@ namespace PalworldServerManager
             serv_backupToDirectory = textBox_backupTo.Text;
             serv_maxBackup = textBox_maxBackup.Text;
             serv_autoRestartEvery = textBox_autoRestartEvery.Text;
-            SendMessageToConsole("");
+            richTextBox_alert.AppendText(""+Environment.NewLine); //To add a newline just incase.
         }
 
         private void button1_Click(object sender, EventArgs e)
