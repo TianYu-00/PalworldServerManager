@@ -24,7 +24,7 @@ namespace PalworldServerManager
         string selectedIGN;
         string selectedUID;
         string selectedSteamID;
-        bool isAutoUpdatePlayers;
+        bool isAutoUpdatePlayers; //Never used but ill leave it here for later.
 
         public Form_RCON()
 

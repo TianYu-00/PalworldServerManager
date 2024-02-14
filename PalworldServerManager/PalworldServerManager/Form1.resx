@@ -121,10 +121,38 @@
   <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBox_onCrashRestart.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBox_onCrashRestart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="checkBox_onCrashRestart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 19</value>
+  </data>
+  <data name="checkBox_onCrashRestart.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="checkBox_onCrashRestart.Text" xml:space="preserve">
+    <value>On Crash Restart</value>
+  </data>
+  <data name="&gt;&gt;checkBox_onCrashRestart.Name" xml:space="preserve">
+    <value>checkBox_onCrashRestart</value>
+  </data>
+  <data name="&gt;&gt;checkBox_onCrashRestart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_onCrashRestart.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_onCrashRestart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="button_stopServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button_stopServer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
@@ -134,7 +162,6 @@
   <data name="button_stopServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 58</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button_stopServer.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
@@ -151,7 +178,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_stopServer.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -185,7 +212,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_noSteam.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="checkBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -224,7 +251,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_log.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="checkBox_useMultithreadForDS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -262,7 +289,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="checkBox_noAsyncLoadingThread.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -300,7 +327,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_noAsyncLoadingThread.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="checkBox_useperfthreads.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -337,7 +364,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_useperfthreads.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="checkBox_communityServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -373,7 +400,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;checkBox_communityServer.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -409,7 +436,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -442,7 +469,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -478,7 +505,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -511,7 +538,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -547,7 +574,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="button_startServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -583,7 +610,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="button_downloadServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -619,7 +646,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_downloadServer.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="button_downloadSteamCMD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -655,7 +682,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -825,6 +852,9 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="timer_checkServerCrash.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>229, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1011,6 +1041,12 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   </data>
   <data name="&gt;&gt;repoPageToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer_checkServerCrash.Name" xml:space="preserve">
+    <value>timer_checkServerCrash</value>
+  </data>
+  <data name="&gt;&gt;timer_checkServerCrash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

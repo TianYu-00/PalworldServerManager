@@ -32,6 +32,7 @@ namespace PalworldServerManager
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new System.Windows.Forms.Panel();
+            checkBox_onCrashRestart = new System.Windows.Forms.CheckBox();
             button_stopServer = new System.Windows.Forms.Button();
             checkBox_noSteam = new System.Windows.Forms.CheckBox();
             checkBox_log = new System.Windows.Forms.CheckBox();
@@ -64,6 +65,7 @@ namespace PalworldServerManager
             githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             githubToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             repoPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            timer_checkServerCrash = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -72,6 +74,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            panel1.Controls.Add(checkBox_onCrashRestart);
             panel1.Controls.Add(button_stopServer);
             panel1.Controls.Add(checkBox_noSteam);
             panel1.Controls.Add(checkBox_log);
@@ -88,6 +91,13 @@ namespace PalworldServerManager
             panel1.Controls.Add(button_downloadServer);
             panel1.Controls.Add(button_downloadSteamCMD);
             panel1.Name = "panel1";
+            // 
+            // checkBox_onCrashRestart
+            // 
+            resources.ApplyResources(checkBox_onCrashRestart, "checkBox_onCrashRestart");
+            checkBox_onCrashRestart.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            checkBox_onCrashRestart.Name = "checkBox_onCrashRestart";
+            checkBox_onCrashRestart.UseVisualStyleBackColor = true;
             // 
             // button_stopServer
             // 
@@ -303,6 +313,10 @@ namespace PalworldServerManager
             resources.ApplyResources(repoPageToolStripMenuItem, "repoPageToolStripMenuItem");
             repoPageToolStripMenuItem.Click += repoPageToolStripMenuItem_Click;
             // 
+            // timer_checkServerCrash
+            // 
+            timer_checkServerCrash.Tick += timer_checkServerCrash_Tick;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -357,6 +371,8 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button_stopServer;
         private System.Windows.Forms.ToolStripMenuItem serverSettingsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem serverRestartToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBox_onCrashRestart;
+        private System.Windows.Forms.Timer timer_checkServerCrash;
     }
 }
 
