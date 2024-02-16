@@ -104,6 +104,7 @@ namespace PalworldServerManager
 
             timer_checkServerCrash.Interval = 1000;
             checkBox_onCMDCrashRestart.Checked = Properties.Settings.Default.Saved_OnCMDCrashRestart;
+            checkBox_onCMDCrashRestart.CheckedChanged += OnServerCMDCrashRestart_OnChange;
 
 
         }
@@ -168,6 +169,13 @@ namespace PalworldServerManager
             {
                 return "Error getting public IP address: " + ex.Message;
             }
+        }
+
+        private void OnServerCMDCrashRestart_OnChange (object sender, EventArgs e)
+        {
+
+            Properties.Settings.Default.Saved_OnCMDCrashRestart = checkBox_onCMDCrashRestart.Checked;
+            Properties.Settings.Default.Save();
         }
 
         private string GetLocalAddress()
@@ -408,8 +416,7 @@ namespace PalworldServerManager
                 return;
             }
 
-            Properties.Settings.Default.Saved_OnCMDCrashRestart = checkBox_onCMDCrashRestart.Checked;
-            Properties.Settings.Default.Save();
+            
 
             if (!isServerStarted)
             {
@@ -650,6 +657,7 @@ namespace PalworldServerManager
             if (isServerStarted && palServerProcess == null)
             {
                 serverSettingsForm.SendMessageToConsole($"Detected server is started but process is not found, attempting to restart server...");
+                serverSettingsForm.SendMessageToConsole($"Use 'Stop Server' Button instead if you want to shutdown your server.");
                 StopServer();
                 StartServer();
                 
