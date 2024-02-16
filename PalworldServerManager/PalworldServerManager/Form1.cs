@@ -103,6 +103,7 @@ namespace PalworldServerManager
             LoadForm(serverRestartForm, true);
 
             timer_checkServerCrash.Interval = 1000;
+            checkBox_onCMDCrashRestart.Checked = Properties.Settings.Default.Saved_OnCMDCrashRestart;
 
 
         }
@@ -407,6 +408,9 @@ namespace PalworldServerManager
                 return;
             }
 
+            Properties.Settings.Default.Saved_OnCMDCrashRestart = checkBox_onCMDCrashRestart.Checked;
+            Properties.Settings.Default.Save();
+
             if (!isServerStarted)
             {
                 isCommunityserver = checkBox_communityServer.Checked ? " EpicApp=PalServer" : "";
@@ -431,7 +435,7 @@ namespace PalworldServerManager
                     thread.Start();
                     serverSettingsForm.SaveGameTimer_Start();
                     serverSettingsForm.AutoRestartServerTimer_Start();
-                    if (checkBox_onCrashRestart.Checked == true)
+                    if (checkBox_onCMDCrashRestart.Checked == true)
                     {
                         timer_checkServerCrash.Start();
                     }

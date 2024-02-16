@@ -122,32 +122,32 @@
     <value>GrowAndShrink</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBox_onCrashRestart.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox_onCMDCrashRestart.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox_onCrashRestart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="checkBox_onCMDCrashRestart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>665, 47</value>
   </data>
-  <data name="checkBox_onCrashRestart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 19</value>
+  <data name="checkBox_onCMDCrashRestart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 19</value>
   </data>
-  <data name="checkBox_onCrashRestart.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox_onCMDCrashRestart.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="checkBox_onCrashRestart.Text" xml:space="preserve">
-    <value>On Crash Restart</value>
+  <data name="checkBox_onCMDCrashRestart.Text" xml:space="preserve">
+    <value>On Server CMD Crash Restart</value>
   </data>
-  <data name="&gt;&gt;checkBox_onCrashRestart.Name" xml:space="preserve">
-    <value>checkBox_onCrashRestart</value>
+  <data name="&gt;&gt;checkBox_onCMDCrashRestart.Name" xml:space="preserve">
+    <value>checkBox_onCMDCrashRestart</value>
   </data>
-  <data name="&gt;&gt;checkBox_onCrashRestart.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_onCMDCrashRestart.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox_onCrashRestart.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_onCMDCrashRestart.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;checkBox_onCrashRestart.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_onCMDCrashRestart.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="button_stopServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
