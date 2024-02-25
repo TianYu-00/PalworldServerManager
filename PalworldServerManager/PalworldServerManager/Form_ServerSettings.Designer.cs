@@ -166,6 +166,8 @@ namespace PalworldServerManager
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             label68 = new System.Windows.Forms.Label();
             textBox_autoRestartEvery = new System.Windows.Forms.TextBox();
+            label69 = new System.Windows.Forms.Label();
+            textBox_onServerCmdCrashRestartInterval = new System.Windows.Forms.TextBox();
             panel_backup = new System.Windows.Forms.Panel();
             tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             label66 = new System.Windows.Forms.Label();
@@ -185,6 +187,7 @@ namespace PalworldServerManager
             toolTip1 = new System.Windows.Forms.ToolTip(components);
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
+            timer_onCMDCrashRestart = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel_worldsettings.SuspendLayout();
@@ -1127,6 +1130,8 @@ namespace PalworldServerManager
             resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
             tableLayoutPanel2.Controls.Add(label68, 0, 0);
             tableLayoutPanel2.Controls.Add(textBox_autoRestartEvery, 1, 0);
+            tableLayoutPanel2.Controls.Add(label69, 0, 1);
+            tableLayoutPanel2.Controls.Add(textBox_onServerCmdCrashRestartInterval, 1, 1);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // label68
@@ -1139,6 +1144,16 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(textBox_autoRestartEvery, "textBox_autoRestartEvery");
             textBox_autoRestartEvery.Name = "textBox_autoRestartEvery";
+            // 
+            // label69
+            // 
+            resources.ApplyResources(label69, "label69");
+            label69.Name = "label69";
+            // 
+            // textBox_onServerCmdCrashRestartInterval
+            // 
+            resources.ApplyResources(textBox_onServerCmdCrashRestartInterval, "textBox_onServerCmdCrashRestartInterval");
+            textBox_onServerCmdCrashRestartInterval.Name = "textBox_onServerCmdCrashRestartInterval";
             // 
             // panel_backup
             // 
@@ -1249,6 +1264,10 @@ namespace PalworldServerManager
             // timer2
             // 
             timer2.Tick += timer2_Tick;
+            // 
+            // timer_onCMDCrashRestart
+            // 
+            timer_onCMDCrashRestart.Tick += timer_onCMDCrashRestart_Tick;
             // 
             // Form_ServerSettings
             // 
@@ -1434,5 +1453,8 @@ namespace PalworldServerManager
         private System.Windows.Forms.TextBox textBox_autoRestartEvery;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.RichTextBox richTextBox_alert;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.TextBox textBox_onServerCmdCrashRestartInterval;
+        private System.Windows.Forms.Timer timer_onCMDCrashRestart;
     }
 }

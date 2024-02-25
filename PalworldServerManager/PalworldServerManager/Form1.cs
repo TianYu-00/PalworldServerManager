@@ -50,7 +50,6 @@ namespace PalworldServerManager
         Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
         public bool isServerStarted = false;
-        private bool isOnCrashRestart = false;
 
         public Form1()
         {
@@ -101,10 +100,6 @@ namespace PalworldServerManager
             LoadForm(rconForm, false);
             LoadForm(serverSettingsForm, true);
             LoadForm(serverRestartForm, true);
-
-            timer_checkServerCrash.Interval = 1000;
-            checkBox_onCMDCrashRestart.Checked = Properties.Settings.Default.Saved_OnCMDCrashRestart;
-            checkBox_onCMDCrashRestart.CheckedChanged += OnServerCMDCrashRestart_OnChange;
 
 
         }
@@ -169,13 +164,6 @@ namespace PalworldServerManager
             {
                 return "Error getting public IP address: " + ex.Message;
             }
-        }
-
-        private void OnServerCMDCrashRestart_OnChange (object sender, EventArgs e)
-        {
-
-            Properties.Settings.Default.Saved_OnCMDCrashRestart = checkBox_onCMDCrashRestart.Checked;
-            Properties.Settings.Default.Save();
         }
 
         private string GetLocalAddress()
@@ -442,10 +430,7 @@ namespace PalworldServerManager
                     thread.Start();
                     serverSettingsForm.SaveGameTimer_Start();
                     serverSettingsForm.AutoRestartServerTimer_Start();
-                    if (checkBox_onCMDCrashRestart.Checked == true)
-                    {
-                        timer_checkServerCrash.Start();
-                    }
+                    serverSettingsForm.Start_OnCMDCrashRestartTimer();
                     isServerStarted = true;
                     button_startServer.Enabled = false;
                     button_stopServer.Enabled = true;
@@ -482,7 +467,7 @@ namespace PalworldServerManager
                 button_stopServer.Enabled = false;
                 serverSettingsForm.SaveGameTimer_Stop();
                 serverSettingsForm.AutoRestartServerTimer_Stop();
-                timer_checkServerCrash.Stop();
+                serverSettingsForm.Stop_OnCMDCrashRestartTimer();
                 serverSettingsForm.SendMessageToConsole("Server Stopped");
 
             }
@@ -635,43 +620,5 @@ namespace PalworldServerManager
             StopServer();
         }
 
-
-
-        private void OnCrashRestart()
-        {
-            //PalServer-Win64-Test-Cmd.exe
-
-            // ProcessName
-            string processName = "PalServer-Win64-Test-Cmd";
-            Process palServerProcess = null;
-
-            //Find the process
-            Process[] processes = Process.GetProcessesByName(processName);
-            foreach (Process process in processes)
-            {
-                //process.Kill();
-                // Process Found
-                palServerProcess = process;
-            }
-
-            if (isServerStarted && palServerProcess == null)
-            {
-                serverSettingsForm.SendMessageToConsole($"Detected server is started but process is not found, attempting to restart server...");
-                serverSettingsForm.SendMessageToConsole($"Use 'Stop Server' Button instead if you want to shutdown your server.");
-                StopServer();
-                StartServer();
-                
-            }
-            else 
-            {
-                // Dont do anything
-            }
-
-        }
-
-        private void timer_checkServerCrash_Tick(object sender, EventArgs e)
-        {
-            OnCrashRestart();
-        }
     }
 }

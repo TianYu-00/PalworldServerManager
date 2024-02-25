@@ -34,6 +34,7 @@ namespace PalworldServerManager
         private string serv_backupToDirectory;
 
         private string serv_autoRestartEvery;
+        private string serv_onCMDCrashRestartInterval;
 
 
         //Difficulty Adjusts the overall difficulty of the game.
@@ -231,6 +232,7 @@ namespace PalworldServerManager
         private string dserv_backupToDirectory;
 
         private string dserv_autoRestartEvery = "0";
+        private string dserv_onCMDCrashRestartInterval = "0";
 
         private string dserv_difficulty = "None";
         private string dserv_dayTimeSpeedRate = "1.000000";
@@ -303,6 +305,7 @@ namespace PalworldServerManager
             public string json_backupToDirectory { get; set; }
 
             public string json_autoRestartEvery { get; set; }
+            public string json_onCMDCraftRestartInterval { get; set; }
 
             public string json_difficulty { get; set; }
             public string json_dayTimeSpeedRate { get; set; }
@@ -415,7 +418,8 @@ namespace PalworldServerManager
             serv_backupToDirectory = textBox_backupTo.Text;
             serv_maxBackup = textBox_maxBackup.Text;
             serv_autoRestartEvery = textBox_autoRestartEvery.Text;
-            richTextBox_alert.AppendText(""+Environment.NewLine); //To add a newline just incase.
+            serv_onCMDCrashRestartInterval = textBox_onServerCmdCrashRestartInterval.Text;
+            richTextBox_alert.AppendText("" + Environment.NewLine); //To add a newline just incase.
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -518,6 +522,7 @@ namespace PalworldServerManager
 
             //Auto restart
             textBox_autoRestartEvery.Text = dserv_autoRestartEvery;
+            textBox_onServerCmdCrashRestartInterval.Text = dserv_onCMDCrashRestartInterval;
 
             //Server Settings
             textBox_serverName.Text = dserv_serverName;
@@ -593,6 +598,7 @@ namespace PalworldServerManager
 
             //Auto restart
             serv_autoRestartEvery = textBox_autoRestartEvery.Text;
+            serv_onCMDCrashRestartInterval = textBox_onServerCmdCrashRestartInterval.Text;
 
             //Server Settings
             serv_serverName = textBox_serverName.Text;
@@ -695,6 +701,7 @@ namespace PalworldServerManager
 
                 //Auto restart
                 json_autoRestartEvery = textBox_autoRestartEvery.Text,
+                json_onCMDCraftRestartInterval = textBox_onServerCmdCrashRestartInterval.Text,
 
                 // Server settings
                 json_serverName = textBox_serverName.Text,
@@ -790,6 +797,7 @@ namespace PalworldServerManager
 
                 //Auto restart
                 textBox_autoRestartEvery.Text = settings.json_autoRestartEvery;
+                textBox_onServerCmdCrashRestartInterval.Text = settings.json_onCMDCraftRestartInterval;
 
                 ////server settings
                 textBox_serverName.Text = settings.json_serverName;
@@ -877,6 +885,7 @@ namespace PalworldServerManager
                     json_maxBackup = dserv_maxBackup,
                     json_backupToDirectory = dserv_backupToDirectory,
                     json_autoRestartEvery = dserv_autoRestartEvery,
+                    json_onCMDCraftRestartInterval = dserv_onCMDCrashRestartInterval,
                     json_difficulty = dserv_difficulty,
                     json_dayTimeSpeedRate = dserv_dayTimeSpeedRate,
                     json_nightTimeSpeedRate = dserv_nightTimeSpeedRate,
@@ -1074,7 +1083,7 @@ namespace PalworldServerManager
 
                             forceBackup = false;
 
-                            
+
                         }
                         catch (Exception ex)
                         {
@@ -1241,7 +1250,7 @@ namespace PalworldServerManager
                     }
                     timer2.Interval = actualTimer;
                 }
-                catch (Exception ex) { SendMessageToConsole($"Restart server timer start catched error{ ex.Message}\n Check your server restart intervals, makesure they are a integer value without mistypes"); return; }
+                catch (Exception ex) { SendMessageToConsole($"Restart server timer start catched error{ex.Message}\n Check your server restart intervals, makesure they are a integer value without mistypes"); return; }
                 timer2.Start();
             }
         }
@@ -1268,13 +1277,13 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                SendMessageToConsole($"timer2 catched errror: "+ex.Message);
+                SendMessageToConsole($"timer2 catched errror: " + ex.Message);
             }
         }
 
         public void SendMessageToConsole(string message)
         {
-            
+
             //Check max lines first
             if (richTextBox_alert.Lines.Length > MaxLines)
             {
@@ -1297,9 +1306,83 @@ namespace PalworldServerManager
             richTextBox_alert.SelectionStart = richTextBox_alert.Text.Length;
             richTextBox_alert.ScrollToCaret();
         }
+
+        public void Start_OnCMDCrashRestartTimer()
+        {
+            if (serv_onCMDCrashRestartInterval != "0" && serv_onCMDCrashRestartInterval != "")
+            {
+                try
+                {
+                    int newInt;
+                    bool isSuccessParse;
+
+                    if (int.TryParse(serv_onCMDCrashRestartInterval, out newInt))
+                    {
+                        //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
+                        isSuccessParse = true;
+                    }
+                    else
+                    {
+       
+                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                        isSuccessParse = false;
+                    }
+
+                    int actualTimer = (newInt * 1000);
+                    if (actualTimer < 0 || isSuccessParse == false)
+                    {
+                        SendMessageToConsole($"cmd crash restart interval value: {serv_onCMDCrashRestartInterval} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        return;
+                    }
+                    timer_onCMDCrashRestart.Interval = actualTimer;
+                }
+                catch (Exception ex) { SendMessageToConsole($"cmd crash restart timer catched error: " + ex.Message); return; }
+                timer_onCMDCrashRestart.Start();
+            }
+            
+        }
         
+        public void Stop_OnCMDCrashRestartTimer()
+        {
+            timer_onCMDCrashRestart.Stop();
+        }
 
 
+        private void timer_onCMDCrashRestart_Tick(object sender, EventArgs e)
+        {
+            OnCrashRestart();
+        }
 
+        private void OnCrashRestart()
+        {
+            //PalServer-Win64-Test-Cmd.exe
+
+            // ProcessName
+            string processName = "PalServer-Win64-Test-Cmd";
+            Process palServerProcess = null;
+
+            //Find the process
+            Process[] processes = Process.GetProcessesByName(processName);
+            foreach (Process process in processes)
+            {
+                //process.Kill();
+                // Process Found
+                palServerProcess = process;
+            }
+
+            if (mainForm.isServerStarted && palServerProcess == null)
+            {
+                SendMessageToConsole($"Detected server is started but process is not found, attempting to restart server...");
+                SendMessageToConsole($"Use 'Stop Server' Button instead if you want to shutdown your server.");
+                mainForm.StopServer();
+                mainForm.StartServer();
+
+            }
+            else
+            {
+                // Dont do anything
+            }
+
+        }
     }
 }

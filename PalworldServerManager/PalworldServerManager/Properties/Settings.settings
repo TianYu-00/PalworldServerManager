@@ -17,8 +17,5 @@
     <Setting Name="Saved_rconAutpUpdatePlayerList" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="Saved_OnCMDCrashRestart" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

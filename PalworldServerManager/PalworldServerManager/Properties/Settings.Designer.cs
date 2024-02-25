@@ -82,17 +82,5 @@ namespace PalworldServerManager.Properties {
                 this["Saved_rconAutpUpdatePlayerList"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Saved_OnCMDCrashRestart {
-            get {
-                return ((bool)(this["Saved_OnCMDCrashRestart"]));
-            }
-            set {
-                this["Saved_OnCMDCrashRestart"] = value;
-            }
-        }
     }
 }
