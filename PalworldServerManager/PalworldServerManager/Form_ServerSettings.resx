@@ -4852,7 +4852,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>2</value>
   </data>
   <data name="label69.Text" xml:space="preserve">
-    <value>On Server CMD Crash Restart Interval (In seconds (0 = Dont restart))</value>
+    <value>Check Server CMD Crash Restart Interval (In seconds (0 = Dont restart))</value>
   </data>
   <data name="label69.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
