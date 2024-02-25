@@ -724,46 +724,6 @@ All全都掉</value>
   <data name="comboBox_rconEnabled.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="panel2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 203</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>; This configuration file is a sample of the default server settings.
-; Changes to this file will NOT be reflected on the server.
-; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
-[/Script/Pal.PalGameWorldSettings]
-OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
-  </data>
-  <data name="richTextBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label64.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
-  </data>
-  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 16</value>
-  </data>
-  <data name="label64.Text" xml:space="preserve">
-    <value>默认服务器世界设置</value>
-  </data>
-  <data name="label64.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="richTextBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 15</value>
-  </data>
-  <data name="label63.Text" xml:space="preserve">
-    <value>当前服务器世界设置</value>
-  </data>
-  <data name="label63.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -777,6 +737,18 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value />
   </data>
   <data name="textBox_autoRestartEvery.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label69.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="label69.Text" xml:space="preserve">
+    <value>检测服务器CMD崩溃重启间隔 (秒 (0 = 不自动重启))</value>
+  </data>
+  <data name="label69.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_onServerCmdCrashRestartInterval.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="panel_backup.ToolTip" xml:space="preserve">
@@ -1031,6 +1003,55 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value />
   </data>
   <data name="textBox_backupInterval.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 203</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>; This configuration file is a sample of the default server settings.
+; Changes to this file will NOT be reflected on the server.
+; To change the server settings, modify Pal/Saved/Config/WindowsServer/PalWorldSettings.ini.
+[/Script/Pal.PalGameWorldSettings]
+OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.000000,ExpRate=1.000000,PalCaptureRate=1.000000,PalSpawnNumRate=1.000000,PalDamageRateAttack=1.000000,PalDamageRateDefense=1.000000,PlayerDamageRateAttack=1.000000,PlayerDamageRateDefense=1.000000,PlayerStomachDecreaceRate=1.000000,PlayerStaminaDecreaceRate=1.000000,PlayerAutoHPRegeneRate=1.000000,PlayerAutoHpRegeneRateInSleep=1.000000,PalStomachDecreaceRate=1.000000,PalStaminaDecreaceRate=1.000000,PalAutoHPRegeneRate=1.000000,PalAutoHpRegeneRateInSleep=1.000000,BuildObjectDamageRate=1.000000,BuildObjectDeteriorationDamageRate=1.000000,CollectionDropRate=1.000000,CollectionObjectHpRate=1.000000,CollectionObjectRespawnSpeedRate=1.000000,EnemyDropItemRate=1.000000,DeathPenalty=All,bEnablePlayerToPlayerDamage=False,bEnableFriendlyFire=False,bEnableInvaderEnemy=True,bActiveUNKO=False,bEnableAimAssistPad=True,bEnableAimAssistKeyboard=False,DropItemMaxNum=3000,DropItemMaxNum_UNKO=100,BaseCampMaxNum=128,BaseCampWorkerMaxNum=15,DropItemAliveMaxHours=1.000000,bAutoResetGuildNoOnlinePlayers=False,AutoResetGuildTimeNoOnlinePlayers=72.000000,GuildPlayerMaxNum=20,PalEggDefaultHatchingTime=72.000000,WorkSpeedRate=1.000000,bIsMultiplay=False,bIsPvP=False,bCanPickupOtherGuildDeathPenaltyDrop=False,bEnableNonLoginPenalty=True,bEnableFastTravel=True,bIsStartLocationSelectByMap=True,bExistPlayerAfterLogout=False,bEnableDefenseOtherGuildPlayer=False,CoopPlayerMaxNum=4,ServerPlayerMaxNum=32,ServerName="Default Palworld Server",ServerDescription="",AdminPassword="",ServerPassword="",PublicPort=8211,PublicIP="",RCONEnabled=False,RCONPort=25575,Region="",bUseAuth=True,BanListURL="https://api.palworldgame.com/api/banlist.txt")</value>
+  </data>
+  <data name="richTextBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label64.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 8.25pt</value>
+  </data>
+  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 16</value>
+  </data>
+  <data name="label64.Text" xml:space="preserve">
+    <value>默认服务器世界设置</value>
+  </data>
+  <data name="label64.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 15</value>
+  </data>
+  <data name="label63.Text" xml:space="preserve">
+    <value>当前服务器世界设置</value>
+  </data>
+  <data name="label63.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox_alert.Text" xml:space="preserve">
+    <value>======================================================================================================
+Message
+======================================================================================================
+</value>
+  </data>
+  <data name="richTextBox_alert.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="$this.ToolTip" xml:space="preserve">
