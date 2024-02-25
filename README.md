@@ -43,8 +43,8 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 _Previews_
 -----------------------
 
-**`v1.1.1 Server Settings Preview`**  
-<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/f5b01a7a-f8ae-4be9-a893-75c98346ae50" alt="Image1" style="width: 100%; height: auto;">   
+**`v1.1.2 Server Settings Preview`**  
+<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/c0d410aa-0311-45fd-8c4c-95d5dcfbea39" alt="Image1" style="width: 100%; height: auto;">   
 **`v1.1.1 RCON Section Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/c0b9df48-8f21-4254-8b60-0610870e6fe6" alt="Image1" style="width: 100%; height: auto;">   
 **`v1.0.8 server restart schedule preview`**    
