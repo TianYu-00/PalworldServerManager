@@ -504,14 +504,8 @@ namespace PalworldServerManager
         private void instructionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string title = "Instruction";
-            string message = "1)Click Download Steam CMD\n" +
-                "2)Click Download/Update/Verify Server\n" +
-                "3)Start the server\n" +
-                "4)Let the server loadup to generate more server files then shutdown the server\n" +
-                "5)Edit any server world settings/startup settings you want\n" +
-                "6)Save it\n" +
-                "7)Done. LocalHostIP is 127.0.0.1\n\n" +
-                "8)If you want others to join, make sure you have portforwarded your ports and added your ports to inbounrd and outbound firewall.\nCommon ports used in palworld: \n8211 ((UDP)Game Server port), \n27015 ((TCP)Steam Port), \n25575 (RCON Port).\n\nBest if you could portforward these with both UDP/TCP.";
+            string message = "1) Download\r\n2) Create a new folder\r\n3) Copy the exe to the new folder\r\n4) Run the exe\r\n5) Download steamcmd\r\n6) Download/Update/Verify server\r\n7) Run server (to finish off creating server files)\r\n8) Shutdown server\r\n9) Make any changes you like to server settings\r\n10) Save it and start the server\n\n" +
+                "Note: If you want others to join, make sure you have portforwarded your ports and added your ports to inbounrd and outbound firewall.\nCommon ports used in palworld: \n8211 ((UDP)Game Server port), \n27015 ((TCP)Steam Port), \n25575 (RCON Port).";
 
             MessageBox.Show(message, title);
         }
