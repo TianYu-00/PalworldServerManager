@@ -40,13 +40,6 @@ namespace PalworldServerManager
 
         private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-        private string isCommunityserver;
-        private string isUseperfthreads;
-        private string isNoAsyncLoadingThread;
-        private string isUseMultithreadForDS;
-        private string isLog;
-        private string isNoSteam;
-        private string isRcon;
         Form_ServerSettings serverSettingsForm;
         Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
@@ -88,12 +81,6 @@ namespace PalworldServerManager
 
         private void OnLoad()
         {
-            //Load Mainform values
-            //publicIP = GetPublicIpAddress();
-            //textBox1.Text = publicIP;
-            //localIP = GetLocalAddress();
-            //textBox2.Text = localIP;
-            ReadStartServerArg();
             //Load Form
             rconForm = new Form_RCON();
             serverRestartForm = new Form_ServerRestart(this);
@@ -409,16 +396,8 @@ namespace PalworldServerManager
 
             if (!isServerStarted)
             {
-                isCommunityserver = checkBox_communityServer.Checked ? " -publiclobby" : "";
-                isUseperfthreads = checkBox_useperfthreads.Checked ? " -useperfthreads" : "";
-                isNoAsyncLoadingThread = checkBox_noAsyncLoadingThread.Checked ? " -NoAsyncLoadingThread" : "";
-                isUseMultithreadForDS = checkBox_useMultithreadForDS.Checked ? " -UseMultithreadForDS" : "";
-                isLog = checkBox_log.Checked ? " -log" : "";
-                isNoSteam = checkBox_noSteam.Checked ? " -nosteam" : "";
-                isRcon = serverSettingsForm.serv_rconEnabled == "True" ? $" -RCONPort={serverSettingsForm.serv_rconPort}" : "";
-                WriteStartServerArg();
-                // Get the content from the TextBox
-                string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe{isCommunityserver}{isUseperfthreads}{isNoAsyncLoadingThread}{isUseMultithreadForDS}{isLog}{isNoSteam}{isRcon}";
+
+                string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe {serverSettingsForm.serv_customServerLaunchArgument}";
                 // Specify the path for the bat file
                 string batFilePath = Path.Combine(baseDirectory, "RunServer.bat");
                 try
@@ -475,36 +454,6 @@ namespace PalworldServerManager
             }
         }
 
-
-        private void WriteStartServerArg()
-        {
-            using (StreamWriter sw = new StreamWriter("serverstartuppreset.txt"))
-            {
-                sw.WriteLine((int)checkBox_communityServer.CheckState);
-                sw.WriteLine((int)checkBox_useperfthreads.CheckState);
-                sw.WriteLine((int)checkBox_noAsyncLoadingThread.CheckState);
-                sw.WriteLine((int)checkBox_useMultithreadForDS.CheckState);
-                sw.WriteLine((int)checkBox_log.CheckState);
-                sw.WriteLine((int)checkBox_noSteam.CheckState);
-            }
-        }
-
-        private void ReadStartServerArg()
-        {
-            // Read values from the text file and set them to TextBoxes on form load
-            if (File.Exists("serverstartuppreset.txt"))
-            {
-                using (StreamReader sr = new StreamReader("serverstartuppreset.txt"))
-                {
-                    checkBox_communityServer.CheckState = ParseCheckState(sr.ReadLine());
-                    checkBox_useperfthreads.CheckState = ParseCheckState(sr.ReadLine());
-                    checkBox_noAsyncLoadingThread.CheckState = ParseCheckState(sr.ReadLine());
-                    checkBox_useMultithreadForDS.CheckState = ParseCheckState(sr.ReadLine());
-                    checkBox_log.CheckState = ParseCheckState(sr.ReadLine());
-                    checkBox_noSteam.CheckState = ParseCheckState(sr.ReadLine());
-                }
-            }
-        }
 
         private CheckState ParseCheckState(string value)
         {
@@ -591,7 +540,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                serverSettingsForm.SendMessageToConsole($"Repo page open catched error: {ex.Message}");
+                serverSettingsForm.SendMessageToConsole($"Webpage open catched error: {ex.Message}");
             }
         }
 

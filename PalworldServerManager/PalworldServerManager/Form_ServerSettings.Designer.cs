@@ -163,14 +163,21 @@ namespace PalworldServerManager
             label62 = new System.Windows.Forms.Label();
             textBox_serverName = new System.Windows.Forms.TextBox();
             comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
+            panel3 = new System.Windows.Forms.Panel();
+            label71 = new System.Windows.Forms.Label();
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            panel4 = new System.Windows.Forms.Panel();
+            button_customServerLaunchArgument = new System.Windows.Forms.Button();
+            textBox_customServerLaunchArgument = new System.Windows.Forms.TextBox();
             label68 = new System.Windows.Forms.Label();
             textBox_autoRestartEvery = new System.Windows.Forms.TextBox();
+            label70 = new System.Windows.Forms.Label();
             label69 = new System.Windows.Forms.Label();
             textBox_onServerCmdCrashRestartInterval = new System.Windows.Forms.TextBox();
             panel_backup = new System.Windows.Forms.Panel();
             tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             label66 = new System.Windows.Forms.Label();
+            panel5 = new System.Windows.Forms.Panel();
             textBox_backupTo = new System.Windows.Forms.TextBox();
             button_backupTo = new System.Windows.Forms.Button();
             tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -191,9 +198,12 @@ namespace PalworldServerManager
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel_worldsettings.SuspendLayout();
+            panel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            panel4.SuspendLayout();
             panel_backup.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
+            panel5.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -251,6 +261,7 @@ namespace PalworldServerManager
             resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             panel1.Controls.Add(tableLayoutPanel_worldsettings);
+            panel1.Controls.Add(panel3);
             panel1.Controls.Add(tableLayoutPanel2);
             panel1.Controls.Add(panel_backup);
             panel1.Controls.Add(panel2);
@@ -1125,14 +1136,46 @@ namespace PalworldServerManager
             comboBox_rconEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_rconEnabled.Items"), resources.GetString("comboBox_rconEnabled.Items1") });
             comboBox_rconEnabled.Name = "comboBox_rconEnabled";
             // 
+            // panel3
+            // 
+            panel3.Controls.Add(label71);
+            resources.ApplyResources(panel3, "panel3");
+            panel3.Name = "panel3";
+            // 
+            // label71
+            // 
+            resources.ApplyResources(label71, "label71");
+            label71.Name = "label71";
+            // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
+            tableLayoutPanel2.Controls.Add(panel4, 1, 2);
             tableLayoutPanel2.Controls.Add(label68, 0, 0);
             tableLayoutPanel2.Controls.Add(textBox_autoRestartEvery, 1, 0);
+            tableLayoutPanel2.Controls.Add(label70, 0, 2);
             tableLayoutPanel2.Controls.Add(label69, 0, 1);
             tableLayoutPanel2.Controls.Add(textBox_onServerCmdCrashRestartInterval, 1, 1);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(button_customServerLaunchArgument);
+            panel4.Controls.Add(textBox_customServerLaunchArgument);
+            resources.ApplyResources(panel4, "panel4");
+            panel4.Name = "panel4";
+            // 
+            // button_customServerLaunchArgument
+            // 
+            resources.ApplyResources(button_customServerLaunchArgument, "button_customServerLaunchArgument");
+            button_customServerLaunchArgument.Name = "button_customServerLaunchArgument";
+            button_customServerLaunchArgument.UseVisualStyleBackColor = true;
+            button_customServerLaunchArgument.Click += button_customServerLaunchArgument_Click;
+            // 
+            // textBox_customServerLaunchArgument
+            // 
+            resources.ApplyResources(textBox_customServerLaunchArgument, "textBox_customServerLaunchArgument");
+            textBox_customServerLaunchArgument.Name = "textBox_customServerLaunchArgument";
             // 
             // label68
             // 
@@ -1144,6 +1187,12 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(textBox_autoRestartEvery, "textBox_autoRestartEvery");
             textBox_autoRestartEvery.Name = "textBox_autoRestartEvery";
+            // 
+            // label70
+            // 
+            resources.ApplyResources(label70, "label70");
+            label70.Name = "label70";
+            toolTip1.SetToolTip(label70, resources.GetString("label70.ToolTip"));
             // 
             // label69
             // 
@@ -1166,8 +1215,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(tableLayoutPanel4, "tableLayoutPanel4");
             tableLayoutPanel4.Controls.Add(label66, 0, 0);
-            tableLayoutPanel4.Controls.Add(textBox_backupTo, 1, 0);
-            tableLayoutPanel4.Controls.Add(button_backupTo, 2, 0);
+            tableLayoutPanel4.Controls.Add(panel5, 1, 0);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // label66
@@ -1175,6 +1223,13 @@ namespace PalworldServerManager
             resources.ApplyResources(label66, "label66");
             label66.Name = "label66";
             toolTip1.SetToolTip(label66, resources.GetString("label66.ToolTip"));
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(textBox_backupTo);
+            panel5.Controls.Add(button_backupTo);
+            resources.ApplyResources(panel5, "panel5");
+            panel5.Name = "panel5";
             // 
             // textBox_backupTo
             // 
@@ -1283,12 +1338,17 @@ namespace PalworldServerManager
             panel1.PerformLayout();
             tableLayoutPanel_worldsettings.ResumeLayout(false);
             tableLayoutPanel_worldsettings.PerformLayout();
+            panel3.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             panel_backup.ResumeLayout(false);
             panel_backup.PerformLayout();
             tableLayoutPanel4.ResumeLayout(false);
             tableLayoutPanel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
             panel2.ResumeLayout(false);
@@ -1456,5 +1516,12 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.TextBox textBox_onServerCmdCrashRestartInterval;
         private System.Windows.Forms.Timer timer_onCMDCrashRestart;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.TextBox textBox_customServerLaunchArgument;
+        private System.Windows.Forms.Button button_customServerLaunchArgument;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

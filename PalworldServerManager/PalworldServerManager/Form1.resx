@@ -153,228 +153,6 @@
   <data name="&gt;&gt;button_stopServer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="checkBox_noSteam.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_noSteam.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_noSteam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 136</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBox_noSteam.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_noSteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 19</value>
-  </data>
-  <data name="checkBox_noSteam.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="checkBox_noSteam.Text" xml:space="preserve">
-    <value>NoSteam</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.Name" xml:space="preserve">
-    <value>checkBox_noSteam</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noSteam.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="checkBox_log.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_log.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_log.Location" type="System.Drawing.Point, System.Drawing">
-    <value>665, 136</value>
-  </data>
-  <data name="checkBox_log.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 19</value>
-  </data>
-  <data name="checkBox_log.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="checkBox_log.Text" xml:space="preserve">
-    <value>Log</value>
-  </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="checkBox_log.ToolTip" xml:space="preserve">
-    <value>Create a log file to capture information about the session, including any errors or important messages.</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.Name" xml:space="preserve">
-    <value>checkBox_log</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_log.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 136</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 19</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.Text" xml:space="preserve">
-    <value>UseMultithreadForDS</value>
-  </data>
-  <data name="checkBox_useMultithreadForDS.ToolTip" xml:space="preserve">
-    <value>Improves performance in multi-threaded CPU environments.
-It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
-</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Name" xml:space="preserve">
-    <value>checkBox_useMultithreadForDS</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useMultithreadForDS.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 136</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 19</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.Text" xml:space="preserve">
-    <value>NoAsyncLoadingThread</value>
-  </data>
-  <data name="checkBox_noAsyncLoadingThread.ToolTip" xml:space="preserve">
-    <value>Improves performance in multi-threaded CPU environments.
-It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.
-</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Name" xml:space="preserve">
-    <value>checkBox_noAsyncLoadingThread</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_noAsyncLoadingThread.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="checkBox_useperfthreads.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_useperfthreads.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_useperfthreads.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 136</value>
-  </data>
-  <data name="checkBox_useperfthreads.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_useperfthreads.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 19</value>
-  </data>
-  <data name="checkBox_useperfthreads.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="checkBox_useperfthreads.Text" xml:space="preserve">
-    <value>useperfthreads</value>
-  </data>
-  <data name="checkBox_useperfthreads.ToolTip" xml:space="preserve">
-    <value>Improves performance in multi-threaded CPU environments.
-It is effective up to a maximum of about 4 threads, and allocating more than this number of threads does not make much sense.</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Name" xml:space="preserve">
-    <value>checkBox_useperfthreads</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_useperfthreads.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="checkBox_communityServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="checkBox_communityServer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_communityServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 136</value>
-  </data>
-  <data name="checkBox_communityServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 19</value>
-  </data>
-  <data name="checkBox_communityServer.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="checkBox_communityServer.Text" xml:space="preserve">
-    <value>Make As Community Server</value>
-  </data>
-  <data name="checkBox_communityServer.ToolTip" xml:space="preserve">
-    <value>Enabling this will allow your server to be in community server list.</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.Name" xml:space="preserve">
-    <value>checkBox_communityServer</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;checkBox_communityServer.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -384,6 +162,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>727, 105</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
@@ -396,6 +175,9 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
   <data name="button5.Text" xml:space="preserve">
     <value>Get Local IP</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="button5.ToolTip" xml:space="preserve">
     <value>Get your local IP locally</value>
   </data>
@@ -409,7 +191,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>1</value>
   </data>
   <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -442,7 +224,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>2</value>
   </data>
   <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -478,7 +260,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>3</value>
   </data>
   <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -511,7 +293,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -547,7 +329,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>5</value>
   </data>
   <data name="button_startServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -583,7 +365,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_startServer.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="button_downloadServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -619,7 +401,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_downloadServer.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>7</value>
   </data>
   <data name="button_downloadSteamCMD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -655,7 +437,7 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button_downloadSteamCMD.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>8</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -781,13 +563,13 @@ It is effective up to a maximum of about 4 threads, and allocating more than thi
     <value>Directory</value>
   </data>
   <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
     <value>Repository</value>

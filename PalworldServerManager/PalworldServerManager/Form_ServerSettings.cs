@@ -36,6 +36,8 @@ namespace PalworldServerManager
         private string serv_autoRestartEvery;
         private string serv_onCMDCrashRestartInterval;
 
+        public string serv_customServerLaunchArgument;
+
 
         //Difficulty Adjusts the overall difficulty of the game.
         private string serv_difficulty;
@@ -234,6 +236,8 @@ namespace PalworldServerManager
         private string dserv_autoRestartEvery = "0";
         private string dserv_onCMDCrashRestartInterval = "0";
 
+        public string dserv_customServerLaunchArgument = "";
+
         private string dserv_difficulty = "None";
         private string dserv_dayTimeSpeedRate = "1.000000";
         private string dserv_nightTimeSpeedRate = "1.000000";
@@ -306,6 +310,8 @@ namespace PalworldServerManager
 
             public string json_autoRestartEvery { get; set; }
             public string json_onCMDCraftRestartInterval { get; set; }
+
+            public string json_customServerLaunchArgument { get; set; }
 
             public string json_difficulty { get; set; }
             public string json_dayTimeSpeedRate { get; set; }
@@ -421,6 +427,7 @@ namespace PalworldServerManager
             serv_onCMDCrashRestartInterval = textBox_onServerCmdCrashRestartInterval.Text;
             serv_rconEnabled = comboBox_rconEnabled.Text;
             serv_rconPort = textBox_rconPort.Text;
+            serv_customServerLaunchArgument = textBox_customServerLaunchArgument.Text;
             richTextBox_alert.AppendText("" + Environment.NewLine); //To add a newline just incase.
         }
 
@@ -526,6 +533,9 @@ namespace PalworldServerManager
             textBox_autoRestartEvery.Text = dserv_autoRestartEvery;
             textBox_onServerCmdCrashRestartInterval.Text = dserv_onCMDCrashRestartInterval;
 
+            //Server launch argument
+            textBox_customServerLaunchArgument.Text = dserv_customServerLaunchArgument;
+
             //Server Settings
             textBox_serverName.Text = dserv_serverName;
             textBox_serverDescription.Text = dserv_serverDescription;
@@ -601,6 +611,9 @@ namespace PalworldServerManager
             //Auto restart
             serv_autoRestartEvery = textBox_autoRestartEvery.Text;
             serv_onCMDCrashRestartInterval = textBox_onServerCmdCrashRestartInterval.Text;
+
+            //Server launch argument
+            serv_customServerLaunchArgument = textBox_customServerLaunchArgument.Text;
 
             //Server Settings
             serv_serverName = textBox_serverName.Text;
@@ -705,6 +718,9 @@ namespace PalworldServerManager
                 json_autoRestartEvery = textBox_autoRestartEvery.Text,
                 json_onCMDCraftRestartInterval = textBox_onServerCmdCrashRestartInterval.Text,
 
+                //Server launch argument
+                json_customServerLaunchArgument = textBox_customServerLaunchArgument.Text,
+
                 // Server settings
                 json_serverName = textBox_serverName.Text,
                 json_serverDescription = textBox_serverDescription.Text,
@@ -801,6 +817,9 @@ namespace PalworldServerManager
                 textBox_autoRestartEvery.Text = settings.json_autoRestartEvery;
                 textBox_onServerCmdCrashRestartInterval.Text = settings.json_onCMDCraftRestartInterval;
 
+                //Server launch argument
+                textBox_customServerLaunchArgument.Text = settings.json_customServerLaunchArgument;
+
                 ////server settings
                 textBox_serverName.Text = settings.json_serverName;
                 textBox_serverDescription.Text = settings.json_serverDescription;
@@ -888,6 +907,7 @@ namespace PalworldServerManager
                     json_backupToDirectory = dserv_backupToDirectory,
                     json_autoRestartEvery = dserv_autoRestartEvery,
                     json_onCMDCraftRestartInterval = dserv_onCMDCrashRestartInterval,
+                    json_customServerLaunchArgument = dserv_customServerLaunchArgument,
                     json_difficulty = dserv_difficulty,
                     json_dayTimeSpeedRate = dserv_dayTimeSpeedRate,
                     json_nightTimeSpeedRate = dserv_nightTimeSpeedRate,
@@ -1325,7 +1345,7 @@ namespace PalworldServerManager
                     }
                     else
                     {
-       
+
                         SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                         isSuccessParse = false;
                     }
@@ -1341,9 +1361,9 @@ namespace PalworldServerManager
                 catch (Exception ex) { SendMessageToConsole($"cmd crash restart timer catched error: " + ex.Message); return; }
                 timer_onCMDCrashRestart.Start();
             }
-            
+
         }
-        
+
         public void Stop_OnCMDCrashRestartTimer()
         {
             timer_onCMDCrashRestart.Stop();
@@ -1385,6 +1405,27 @@ namespace PalworldServerManager
                 // Dont do anything
             }
 
+        }
+
+        private void button_customServerLaunchArgument_Click(object sender, EventArgs e)
+        {
+            string palworldServerLaunchArgumentList = @"https://tech.palworldgame.com/settings-and-operation/arguments";
+
+            OpenURLGiven(palworldServerLaunchArgumentList);
+        }
+
+        private void OpenURLGiven(string URL)
+        {
+            try
+            {
+                //Process.Start(githubRepoUrl); //Wont work on .net core
+                Process.Start(new ProcessStartInfo { FileName = URL, UseShellExecute = true }); //turns useshellexecute on which is defaulted to off after vs update.
+                //System.Diagnostics.Process.Start("explorer.exe", URL); //Works
+            }
+            catch (Exception ex)
+            {
+                SendMessageToConsole($"Webpage open catched error: {ex.Message}");
+            }
         }
     }
 }

@@ -33,12 +33,6 @@ namespace PalworldServerManager
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new System.Windows.Forms.Panel();
             button_stopServer = new System.Windows.Forms.Button();
-            checkBox_noSteam = new System.Windows.Forms.CheckBox();
-            checkBox_log = new System.Windows.Forms.CheckBox();
-            checkBox_useMultithreadForDS = new System.Windows.Forms.CheckBox();
-            checkBox_noAsyncLoadingThread = new System.Windows.Forms.CheckBox();
-            checkBox_useperfthreads = new System.Windows.Forms.CheckBox();
-            checkBox_communityServer = new System.Windows.Forms.CheckBox();
             button5 = new System.Windows.Forms.Button();
             textBox2 = new System.Windows.Forms.TextBox();
             button4 = new System.Windows.Forms.Button();
@@ -73,12 +67,6 @@ namespace PalworldServerManager
             resources.ApplyResources(panel1, "panel1");
             panel1.BackColor = System.Drawing.Color.FromArgb(64, 64, 64);
             panel1.Controls.Add(button_stopServer);
-            panel1.Controls.Add(checkBox_noSteam);
-            panel1.Controls.Add(checkBox_log);
-            panel1.Controls.Add(checkBox_useMultithreadForDS);
-            panel1.Controls.Add(checkBox_noAsyncLoadingThread);
-            panel1.Controls.Add(checkBox_useperfthreads);
-            panel1.Controls.Add(checkBox_communityServer);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(button4);
@@ -95,53 +83,6 @@ namespace PalworldServerManager
             button_stopServer.Name = "button_stopServer";
             button_stopServer.UseVisualStyleBackColor = true;
             button_stopServer.Click += button_stopServer_Click;
-            // 
-            // checkBox_noSteam
-            // 
-            resources.ApplyResources(checkBox_noSteam, "checkBox_noSteam");
-            checkBox_noSteam.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            checkBox_noSteam.Name = "checkBox_noSteam";
-            checkBox_noSteam.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_log
-            // 
-            resources.ApplyResources(checkBox_log, "checkBox_log");
-            checkBox_log.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            checkBox_log.Name = "checkBox_log";
-            toolTip1.SetToolTip(checkBox_log, resources.GetString("checkBox_log.ToolTip"));
-            checkBox_log.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_useMultithreadForDS
-            // 
-            resources.ApplyResources(checkBox_useMultithreadForDS, "checkBox_useMultithreadForDS");
-            checkBox_useMultithreadForDS.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            checkBox_useMultithreadForDS.Name = "checkBox_useMultithreadForDS";
-            toolTip1.SetToolTip(checkBox_useMultithreadForDS, resources.GetString("checkBox_useMultithreadForDS.ToolTip"));
-            checkBox_useMultithreadForDS.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_noAsyncLoadingThread
-            // 
-            resources.ApplyResources(checkBox_noAsyncLoadingThread, "checkBox_noAsyncLoadingThread");
-            checkBox_noAsyncLoadingThread.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            checkBox_noAsyncLoadingThread.Name = "checkBox_noAsyncLoadingThread";
-            toolTip1.SetToolTip(checkBox_noAsyncLoadingThread, resources.GetString("checkBox_noAsyncLoadingThread.ToolTip"));
-            checkBox_noAsyncLoadingThread.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_useperfthreads
-            // 
-            resources.ApplyResources(checkBox_useperfthreads, "checkBox_useperfthreads");
-            checkBox_useperfthreads.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            checkBox_useperfthreads.Name = "checkBox_useperfthreads";
-            toolTip1.SetToolTip(checkBox_useperfthreads, resources.GetString("checkBox_useperfthreads.ToolTip"));
-            checkBox_useperfthreads.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_communityServer
-            // 
-            resources.ApplyResources(checkBox_communityServer, "checkBox_communityServer");
-            checkBox_communityServer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            checkBox_communityServer.Name = "checkBox_communityServer";
-            toolTip1.SetToolTip(checkBox_communityServer, resources.GetString("checkBox_communityServer.ToolTip"));
-            checkBox_communityServer.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -334,12 +275,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel_chilForm;
-        private System.Windows.Forms.CheckBox checkBox_communityServer;
-        private System.Windows.Forms.CheckBox checkBox_useperfthreads;
-        private System.Windows.Forms.CheckBox checkBox_useMultithreadForDS;
-        private System.Windows.Forms.CheckBox checkBox_noAsyncLoadingThread;
-        private System.Windows.Forms.CheckBox checkBox_log;
-        private System.Windows.Forms.CheckBox checkBox_noSteam;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem serverSettingsToolStripMenuItem;

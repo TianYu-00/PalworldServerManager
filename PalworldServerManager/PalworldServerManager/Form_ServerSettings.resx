@@ -4738,7 +4738,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 261</value>
+    <value>0, 320</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -4770,11 +4770,154 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="tableLayoutPanel_worldsettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="comboBox_useAuth" Row="60" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableDefenseOtherGuildPlayer" Row="57" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_existPlayerAfterLogout" Row="56" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isStartLocationSelectByMap" Row="55" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFastTravel" Row="54" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableNonLoginPenalty" Row="53" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_canPickupOtherGuildDeathPenaltyDrop" Row="52" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isPvP" Row="51" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isMultiplay" Row="50" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_autoResetGuildNoOnlinePlayers" Row="45" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistKeyboard" Row="39" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistPad" Row="38" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_activeUNKO" Row="37" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableInvaderEnemy" Row="36" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFriendlyFire" Row="35" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enablePlayerToPlayerDamage" Row="34" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_deathPenalty" Row="33" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_difficulty" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_banListURL" Row="61" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_region" Row="59" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_coopPlayerMaxNum" Row="58" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_workSpeedRate" Row="49" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palEggDefaultHatchingTime" Row="48" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_guildPlayerMaxNum" Row="47" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoResetGuildTimeNoOnlinePlayers" Row="46" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemAliveMaxHours" Row="44" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampWorkerMaxNum" Row="43" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampMaxNum" Row="42" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum_UNKO" Row="41" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum" Row="40" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_enemyDropItemRate" Row="32" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectRespawnSpeedRate" Row="31" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectHpRate" Row="30" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionDropRate" Row="29" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDeteriorationDamageRate" Row="28" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDamageRate" Row="27" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRateInSleep" Row="26" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRate" Row="25" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStaminaDecreaceRate" Row="24" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStomachDecreaceRate" Row="23" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRateInSleep" Row="22" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRate" Row="21" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStaminaDecreaceRate" Row="20" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStomachDecreaceRate" Row="19" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateDefense" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateAttack" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateDefense" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateAttack" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palSpawnNumRate" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palCaptureRate" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_expRate" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_nightTimeSpeedRate" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dayTimeSpeedRate" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_rconPort" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicIP" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicPort" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_adminPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPlayerMaxNum" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="19" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="20" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="21" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="22" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="23" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="24" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="25" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="26" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="27" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="28" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="29" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="30" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="31" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="32" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="33" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="34" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="35" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="36" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="37" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="38" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="39" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="40" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="41" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="42" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="43" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="44" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="45" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="46" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="47" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="48" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="49" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="50" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="51" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="52" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="53" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="54" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="55" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="56" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="57" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="58" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="59" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="60" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="61" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_rconEnabled" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="label71.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label71.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 30</value>
+  </data>
+  <data name="label71.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>↓ PalWorldSettings.ini Edit ↓</value>
+  </data>
+  <data name="label71.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label71.Name" xml:space="preserve">
+    <value>label71</value>
+  </data>
+  <data name="&gt;&gt;label71.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label71.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label71.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 290</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 30</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="button_customServerLaunchArgument.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAShJREFUSEvt1jFLAnEYx/HLGgIHaZEQcnMJfAnVFG05SW3SC2jubdga7S0VLQ0R
+        2NiWTkGT2RAUOUXkVH5/g/Dw5w/CdU+I3Bc+yOl5D57/Oy7Jm8WWcYBLPOMLI7ziGocoIdM28YLfKYbY
+        QyZt4RuxQTE/aOFP6fT2ERvwAZ3q2GefqCB1+wgPeocaVAEN6BSH+x0hdaewB9OAFYRp0dn95Bypu4E9
+        2BVi1WH3E33XvSbCwSdwbRVPCAfvwq1tDBAOvYcWXubpMjuGrtlw6CPKyLwF6LYZDhRdBUW4FFtIb9iB
+        a2ewQ3X3Wod7t7CDL/AvdWAHt5E3X+lppAs9+vSgBwX3lvAOu7i0vQjXqrBDJ9bgWuwX666l993bwAP0
+        H+tV23mzWpKMASYIjVp2k9bKAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button_customServerLaunchArgument.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button_customServerLaunchArgument.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="button_customServerLaunchArgument.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_customServerLaunchArgument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 0</value>
+  </data>
+  <data name="button_customServerLaunchArgument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="button_customServerLaunchArgument.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;button_customServerLaunchArgument.Name" xml:space="preserve">
+    <value>button_customServerLaunchArgument</value>
+  </data>
+  <data name="&gt;&gt;button_customServerLaunchArgument.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_customServerLaunchArgument.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;button_customServerLaunchArgument.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox_customServerLaunchArgument.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBox_customServerLaunchArgument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="textBox_customServerLaunchArgument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 23</value>
+  </data>
+  <data name="textBox_customServerLaunchArgument.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_customServerLaunchArgument.Name" xml:space="preserve">
+    <value>textBox_customServerLaunchArgument</value>
+  </data>
+  <data name="&gt;&gt;textBox_customServerLaunchArgument.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_customServerLaunchArgument.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;textBox_customServerLaunchArgument.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 61</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 23</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label68.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4810,7 +4953,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;label68.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="textBox_autoRestartEvery.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -4834,7 +4977,43 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;textBox_autoRestartEvery.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="label70.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label70.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 58</value>
+  </data>
+  <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 29</value>
+  </data>
+  <data name="label70.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label70.Text" xml:space="preserve">
+    <value>Custom Server Launch Argument</value>
+  </data>
+  <data name="label70.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label70.ToolTip" xml:space="preserve">
+    <value>Custom Server Launch Arguments 'PalServer.exe' is not needed. If you are unsure what this section is click the ? button to be redirected. </value>
+  </data>
+  <data name="&gt;&gt;label70.Name" xml:space="preserve">
+    <value>label70</value>
+  </data>
+  <data name="&gt;&gt;label70.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label70.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label70.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="label69.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4867,7 +5046,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;label69.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="textBox_onServerCmdCrashRestartInterval.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -4891,7 +5070,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;textBox_onServerCmdCrashRestartInterval.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -4900,10 +5079,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0, 203</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 58</value>
+    <value>827, 87</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -4918,10 +5097,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoRestartEvery" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label69" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_onServerCmdCrashRestartInterval" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel4" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoRestartEvery" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label70" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label69" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_onServerCmdCrashRestartInterval" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel_backup.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4930,7 +5109,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>True</value>
   </data>
   <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label66.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4971,14 +5150,14 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="&gt;&gt;label66.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox_backupTo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="textBox_backupTo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="textBox_backupTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 3</value>
+    <value>-1, 0</value>
   </data>
   <data name="textBox_backupTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 23</value>
+    <value>378, 23</value>
   </data>
   <data name="textBox_backupTo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4990,10 +5169,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox_backupTo.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;textBox_backupTo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="button_backupTo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5207,11 +5386,14 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="button_backupTo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="button_backupTo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
   <data name="button_backupTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 3</value>
+    <value>384, 0</value>
   </data>
   <data name="button_backupTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 23</value>
+    <value>24, 23</value>
   </data>
   <data name="button_backupTo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5223,10 +5405,34 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button_backupTo.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;button_backupTo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
+  </data>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 3</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 23</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -5256,7 +5462,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0</value>
   </data>
   <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label66" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupTo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_backupTo" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,46,Percent,4" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label66" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel5" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5446,7 +5652,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel_backup.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="richTextBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -5600,7 +5806,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="richTextBox_alert.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -5630,7 +5836,7 @@ Message
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;richTextBox_alert.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
