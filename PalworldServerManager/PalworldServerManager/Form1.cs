@@ -409,7 +409,7 @@ namespace PalworldServerManager
 
             if (!isServerStarted)
             {
-                isCommunityserver = checkBox_communityServer.Checked ? " EpicApp=PalServer" : "";
+                isCommunityserver = checkBox_communityServer.Checked ? " -publiclobby" : "";
                 isUseperfthreads = checkBox_useperfthreads.Checked ? " -useperfthreads" : "";
                 isNoAsyncLoadingThread = checkBox_noAsyncLoadingThread.Checked ? " -NoAsyncLoadingThread" : "";
                 isUseMultithreadForDS = checkBox_useMultithreadForDS.Checked ? " -UseMultithreadForDS" : "";
