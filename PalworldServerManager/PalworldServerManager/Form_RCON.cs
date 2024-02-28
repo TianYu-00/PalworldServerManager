@@ -50,7 +50,7 @@ namespace PalworldServerManager
         }
 
         private void OnLoad()
-        { 
+        {
             textBox_ipRCON.Text = Properties.Settings.Default.Saved_rconIP;
             textBox_portRCON.Text = Properties.Settings.Default.Saved_rconPort;
             textBox_passwordRCON.Text = Properties.Settings.Default.Saved_rconPassword;
@@ -102,11 +102,13 @@ namespace PalworldServerManager
                 //await _rconClient.ConnectAndAuthenticate();
                 if (await _rconClient.Preconnect())
                 {
-                    try {
+                    try
+                    {
                         var info = await _rconClient.Packets().GetInfo();
                         richTextBox_output.AppendText($"Connected to {info?.Name} | version {info?.Version}" + Environment.NewLine);
                     }
-                    catch (TimeoutException tex) {
+                    catch (TimeoutException tex)
+                    {
                         richTextBox_output.AppendText($"On Connect Timed out: {tex.Message}" + Environment.NewLine);
                         richTextBox_output.AppendText($"Notice: Make sure your server name only has ASCII printable characters" + Environment.NewLine);
                         return;
@@ -124,7 +126,7 @@ namespace PalworldServerManager
                         isAutoUpdatePlayers = false;
                         richTextBox_output.AppendText($"Auto update player list disabled" + Environment.NewLine);
                     }
-                    
+
                 }
                 else
                 {
@@ -183,12 +185,13 @@ namespace PalworldServerManager
                     panel_playerListSection.Controls.Add(button);
                 }
             }
-            catch (TimeoutException tex) { 
+            catch (TimeoutException tex)
+            {
                 richTextBox_output.AppendText($"Get player list timed out: {tex.Message}" + Environment.NewLine);
                 return;
 
             }
-            catch (Exception ex){ }
+            catch (Exception ex) { }
 
 
 
@@ -308,13 +311,14 @@ namespace PalworldServerManager
                 //GetPlayerList has 1 packet PERFECT in this case, itll also update my player list! AWSOME!
                 GetPlayerList();
             }
-            catch (SocketException sex) {
+            catch (SocketException sex)
+            {
                 //ReConnectRCON(ipRCON, portRCON, passwordRCON);
                 //richTextBox_output.AppendText("Reconnected" + Environment.NewLine);
                 richTextBox_output.AppendText("Connection dropped, please disconnect and reconnect RCON" + Environment.NewLine);
             }
             catch (Exception ex) { }
-            
+
         }
 
         private string ProcessResult(object result)
@@ -350,6 +354,55 @@ namespace PalworldServerManager
                 // If prefix is not found, just return the entire result
                 return resultString;
             }
+        }
+
+        public async void RCONAlert(string text)
+        {
+            //Check for empty
+            if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
+            {
+                richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
+                return;
+            }
+
+
+            int newIntPort;
+
+            if (int.TryParse(textBox_portRCON.Text, out newIntPort))
+            {
+                Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
+            }
+            else
+            {
+                Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+            }
+
+            //Store the values
+            ipRCON = textBox_ipRCON.Text;
+            portRCON = newIntPort;
+            passwordRCON = textBox_passwordRCON.Text;
+
+            try
+            {
+                _rconClient = new PersistentRconClient(ipRCON, portRCON, passwordRCON);
+                if (await _rconClient.Preconnect())
+                {
+                    var sendAlert = await _rconClient.SendBroadcast(text);
+
+                }
+                else
+                {
+                    richTextBox_output.AppendText("Failed to connect" + Environment.NewLine);
+                }
+            }
+            catch (Exception ex) { richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine); }
+            DisconnectRCON();
+
+        }
+
+        private void button_test_Click(object sender, EventArgs e)
+        {
+            RCONAlert("Test 123");
         }
     }
 }
