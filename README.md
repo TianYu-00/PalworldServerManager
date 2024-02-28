@@ -49,8 +49,8 @@ _Previews_
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/c0b9df48-8f21-4254-8b60-0610870e6fe6" alt="Image1" style="width: 100%; height: auto;">   
 **`v1.0.8 server restart schedule preview`**    
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/94c04aa3-db5b-4258-a47d-d30841655f58" alt="Image1" style="width: 100%; height: auto;">   
-**`v1.0.7 RCON Demo preview`**  
-<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/944f0858-d44f-4d62-90e4-28eee6d8ed4c" alt="Image1" style="width: 100%; height: auto;">   
+**`v1.1.3 RCON Demo preview`**  
+<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/a143fdfe-d7f8-4ceb-b9f9-16bfffffd968" alt="Image1" style="width: 100%; height: auto;">   
 **`v1.1.0 Full preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/5448c663-69ce-467d-bf7c-aea35b0f6fa7" alt="Image1" style="width: 100%; height: auto;">   
 
