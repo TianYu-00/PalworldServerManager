@@ -1198,6 +1198,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(label69, "label69");
             label69.Name = "label69";
+            toolTip1.SetToolTip(label69, resources.GetString("label69.ToolTip"));
             // 
             // textBox_onServerCmdCrashRestartInterval
             // 

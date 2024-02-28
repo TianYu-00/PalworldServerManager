@@ -724,7 +724,39 @@ All全都掉</value>
   <data name="comboBox_rconEnabled.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="panel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label71.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>↓ PalWorldSettings.ini 修改 ↓</value>
+  </data>
+  <data name="label71.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button_customServerLaunchArgument.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAShJREFUSEvt1jFLAnEYx/HLGgIHaZEQcnMJfAnVFG05SW3SC2jubdga7S0VLQ0R
+        2NiWTkGT2RAUOUXkVH5/g/Dw5w/CdU+I3Bc+yOl5D57/Oy7Jm8WWcYBLPOMLI7ziGocoIdM28YLfKYbY
+        QyZt4RuxQTE/aOFP6fT2ERvwAZ3q2GefqCB1+wgPeocaVAEN6BSH+x0hdaewB9OAFYRp0dn95Bypu4E9
+        2BVi1WH3E33XvSbCwSdwbRVPCAfvwq1tDBAOvYcWXubpMjuGrtlw6CPKyLwF6LYZDhRdBUW4FFtIb9iB
+        a2ewQ3X3Wod7t7CDL/AvdWAHt5E3X+lppAs9+vSgBwX3lvAOu7i0vQjXqrBDJ9bgWuwX666l993bwAP0
+        H+tV23mzWpKMASYIjVp2k9bKAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button_customServerLaunchArgument.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_customServerLaunchArgument.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label68.Font" type="System.Drawing.Font, System.Drawing">
@@ -738,6 +770,12 @@ All全都掉</value>
   </data>
   <data name="textBox_autoRestartEvery.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="label70.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="label70.Text" xml:space="preserve">
+    <value>自定义服务器启动参数</value>
   </data>
   <data name="label69.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -764,6 +802,9 @@ All全都掉</value>
     <value>备份到</value>
   </data>
   <data name="label66.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel5.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="textBox_backupTo.ToolTip" xml:space="preserve">

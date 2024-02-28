@@ -5036,6 +5036,9 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
   <data name="label69.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <data name="label69.ToolTip" xml:space="preserve">
+    <value>Checks every x second to see if CMD process is still running, if its not running then restart the server.</value>
+  </data>
   <data name="&gt;&gt;label69.Name" xml:space="preserve">
     <value>label69</value>
   </data>
