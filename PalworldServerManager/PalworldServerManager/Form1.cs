@@ -46,6 +46,7 @@ namespace PalworldServerManager
         private string isUseMultithreadForDS;
         private string isLog;
         private string isNoSteam;
+        private string isRcon;
         Form_ServerSettings serverSettingsForm;
         Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
@@ -414,9 +415,10 @@ namespace PalworldServerManager
                 isUseMultithreadForDS = checkBox_useMultithreadForDS.Checked ? " -UseMultithreadForDS" : "";
                 isLog = checkBox_log.Checked ? " -log" : "";
                 isNoSteam = checkBox_noSteam.Checked ? " -nosteam" : "";
+                isRcon = serverSettingsForm.serv_rconEnabled == "True" ? $" -RCONPort={serverSettingsForm.serv_rconPort}" : "";
                 WriteStartServerArg();
                 // Get the content from the TextBox
-                string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe{isCommunityserver}{isUseperfthreads}{isNoAsyncLoadingThread}{isUseMultithreadForDS}{isLog}{isNoSteam}";
+                string batContent = $"cd .\\steamapps\\common\\PalServer\nPalServer.exe{isCommunityserver}{isUseperfthreads}{isNoAsyncLoadingThread}{isUseMultithreadForDS}{isLog}{isNoSteam}{isRcon}";
                 // Specify the path for the bat file
                 string batFilePath = Path.Combine(baseDirectory, "RunServer.bat");
                 try

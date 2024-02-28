@@ -209,10 +209,10 @@ namespace PalworldServerManager
         private string serv_publicIP;
 
         //RCONEnabled Enables or disables Remote Console(RCON) for server administration.
-        private string serv_rconEnabled;
+        public string serv_rconEnabled;
 
         //RCONPort Sets the port for Remote Console (RCON) communication.
-        private string serv_rconPort;
+        public string serv_rconPort;
 
         //Region Sets the region for the Palworld server.
         private string serv_region;
@@ -419,6 +419,8 @@ namespace PalworldServerManager
             serv_maxBackup = textBox_maxBackup.Text;
             serv_autoRestartEvery = textBox_autoRestartEvery.Text;
             serv_onCMDCrashRestartInterval = textBox_onServerCmdCrashRestartInterval.Text;
+            serv_rconEnabled = comboBox_rconEnabled.Text;
+            serv_rconPort = textBox_rconPort.Text;
             richTextBox_alert.AppendText("" + Environment.NewLine); //To add a newline just incase.
         }
 
