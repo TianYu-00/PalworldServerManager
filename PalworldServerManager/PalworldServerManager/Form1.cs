@@ -392,7 +392,7 @@ namespace PalworldServerManager
                 return;
             }
 
-            
+
 
             if (!isServerStarted)
             {
@@ -565,5 +565,18 @@ namespace PalworldServerManager
             StopServer();
         }
 
+        private void nexusModsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string Url = @"https://www.nexusmods.com/palworld/mods/512/?tab=files";
+
+            OpenURLGiven(Url);
+        }
+
+        private void githubToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            string Url = @"https://github.com/TianYu-00/PalworldServerManager/releases/latest";
+
+            OpenURLGiven(Url);
+        }
     }
 }

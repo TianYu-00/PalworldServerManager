@@ -532,6 +532,24 @@
   <data name="infoToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
+  <data name="nexusModsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="nexusModsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nexus Mods</value>
+  </data>
+  <data name="githubToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="githubToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Github</value>
+  </data>
+  <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="updateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
@@ -563,13 +581,13 @@
     <value>Directory</value>
   </data>
   <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>130, 22</value>
   </data>
   <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>130, 22</value>
   </data>
   <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
     <value>Repository</value>
@@ -744,6 +762,24 @@
     <value>instructionToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;instructionToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;updateToolStripMenuItem.Name" xml:space="preserve">
+    <value>updateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;updateToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nexusModsToolStripMenuItem.Name" xml:space="preserve">
+    <value>nexusModsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nexusModsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem2.Name" xml:space="preserve">
+    <value>githubToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;githubToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">

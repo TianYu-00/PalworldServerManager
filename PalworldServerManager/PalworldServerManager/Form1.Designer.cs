@@ -50,6 +50,9 @@ namespace PalworldServerManager
             rCONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             instructionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            nexusModsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            githubToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             chineseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -151,7 +154,7 @@ namespace PalworldServerManager
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { serverSettingsToolStripMenuItem, rCONToolStripMenuItem, infoToolStripMenuItem, languageToolStripMenuItem, directoryToolStripMenuItem, githubToolStripMenuItem });
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { serverSettingsToolStripMenuItem, rCONToolStripMenuItem, infoToolStripMenuItem, updateToolStripMenuItem, languageToolStripMenuItem, directoryToolStripMenuItem, githubToolStripMenuItem });
             resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Name = "menuStrip1";
             // 
@@ -192,6 +195,25 @@ namespace PalworldServerManager
             instructionToolStripMenuItem.Name = "instructionToolStripMenuItem";
             resources.ApplyResources(instructionToolStripMenuItem, "instructionToolStripMenuItem");
             instructionToolStripMenuItem.Click += instructionToolStripMenuItem_Click;
+            // 
+            // updateToolStripMenuItem
+            // 
+            updateToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { nexusModsToolStripMenuItem, githubToolStripMenuItem2 });
+            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            resources.ApplyResources(updateToolStripMenuItem, "updateToolStripMenuItem");
+            // 
+            // nexusModsToolStripMenuItem
+            // 
+            nexusModsToolStripMenuItem.Name = "nexusModsToolStripMenuItem";
+            resources.ApplyResources(nexusModsToolStripMenuItem, "nexusModsToolStripMenuItem");
+            nexusModsToolStripMenuItem.Click += nexusModsToolStripMenuItem_Click;
+            // 
+            // githubToolStripMenuItem2
+            // 
+            githubToolStripMenuItem2.Name = "githubToolStripMenuItem2";
+            resources.ApplyResources(githubToolStripMenuItem2, "githubToolStripMenuItem2");
+            githubToolStripMenuItem2.Click += githubToolStripMenuItem2_Click;
             // 
             // languageToolStripMenuItem
             // 
@@ -292,6 +314,9 @@ namespace PalworldServerManager
         private System.Windows.Forms.Button button_stopServer;
         private System.Windows.Forms.ToolStripMenuItem serverSettingsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem serverRestartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nexusModsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem2;
     }
 }
 
