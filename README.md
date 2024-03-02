@@ -46,7 +46,8 @@ _Previews_
 **`v1.1.5 Server Settings Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/ecc453e8-b2ba-49e7-ab6d-934219177adc" alt="Image1" style="width: 100%; height: auto;">   
 
-## OLD Previews
+_Old Previews_
+-----------------------
 
 **`v1.1.1 RCON Section Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/c0b9df48-8f21-4254-8b60-0610870e6fe6" alt="Image1" style="width: 100%; height: auto;">   
