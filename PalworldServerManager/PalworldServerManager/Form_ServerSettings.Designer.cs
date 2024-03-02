@@ -174,17 +174,26 @@ namespace PalworldServerManager
             label70 = new System.Windows.Forms.Label();
             label69 = new System.Windows.Forms.Label();
             textBox_onServerCmdCrashRestartInterval = new System.Windows.Forms.TextBox();
+            label73 = new System.Windows.Forms.Label();
+            tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            textBox_restartServerRCONAlertInterval = new System.Windows.Forms.TextBox();
+            textBox_restartServerRCONAlertMessage = new System.Windows.Forms.TextBox();
+            label75 = new System.Windows.Forms.Label();
             panel_backup = new System.Windows.Forms.Panel();
-            tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            label66 = new System.Windows.Forms.Label();
+            tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             panel5 = new System.Windows.Forms.Panel();
             textBox_backupTo = new System.Windows.Forms.TextBox();
             button_backupTo = new System.Windows.Forms.Button();
-            tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            textBox_maxBackup = new System.Windows.Forms.TextBox();
-            label67 = new System.Windows.Forms.Label();
+            label66 = new System.Windows.Forms.Label();
             label65 = new System.Windows.Forms.Label();
             textBox_backupInterval = new System.Windows.Forms.TextBox();
+            label67 = new System.Windows.Forms.Label();
+            textBox_maxBackup = new System.Windows.Forms.TextBox();
+            label72 = new System.Windows.Forms.Label();
+            tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            textBox_backupRCONAlertInterval = new System.Windows.Forms.TextBox();
+            textBox_backupRCONAlertMessage = new System.Windows.Forms.TextBox();
+            label74 = new System.Windows.Forms.Label();
             panel2 = new System.Windows.Forms.Panel();
             richTextBox1 = new System.Windows.Forms.RichTextBox();
             label64 = new System.Windows.Forms.Label();
@@ -195,16 +204,19 @@ namespace PalworldServerManager
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
             timer_onCMDCrashRestart = new System.Windows.Forms.Timer(components);
+            timer_backupRCONAlertTimer = new System.Windows.Forms.Timer(components);
+            timer_restartServerRCONAlertTimer = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel_worldsettings.SuspendLayout();
             panel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel4.SuspendLayout();
+            tableLayoutPanel6.SuspendLayout();
             panel_backup.SuspendLayout();
-            tableLayoutPanel4.SuspendLayout();
-            panel5.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            panel5.SuspendLayout();
+            tableLayoutPanel5.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -1150,12 +1162,14 @@ namespace PalworldServerManager
             // tableLayoutPanel2
             // 
             resources.ApplyResources(tableLayoutPanel2, "tableLayoutPanel2");
-            tableLayoutPanel2.Controls.Add(panel4, 1, 2);
+            tableLayoutPanel2.Controls.Add(panel4, 1, 3);
             tableLayoutPanel2.Controls.Add(label68, 0, 0);
             tableLayoutPanel2.Controls.Add(textBox_autoRestartEvery, 1, 0);
-            tableLayoutPanel2.Controls.Add(label70, 0, 2);
-            tableLayoutPanel2.Controls.Add(label69, 0, 1);
-            tableLayoutPanel2.Controls.Add(textBox_onServerCmdCrashRestartInterval, 1, 1);
+            tableLayoutPanel2.Controls.Add(label70, 0, 3);
+            tableLayoutPanel2.Controls.Add(label69, 0, 2);
+            tableLayoutPanel2.Controls.Add(textBox_onServerCmdCrashRestartInterval, 1, 2);
+            tableLayoutPanel2.Controls.Add(label73, 0, 1);
+            tableLayoutPanel2.Controls.Add(tableLayoutPanel6, 1, 1);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // panel4
@@ -1205,25 +1219,53 @@ namespace PalworldServerManager
             resources.ApplyResources(textBox_onServerCmdCrashRestartInterval, "textBox_onServerCmdCrashRestartInterval");
             textBox_onServerCmdCrashRestartInterval.Name = "textBox_onServerCmdCrashRestartInterval";
             // 
+            // label73
+            // 
+            resources.ApplyResources(label73, "label73");
+            label73.Name = "label73";
+            toolTip1.SetToolTip(label73, resources.GetString("label73.ToolTip"));
+            // 
+            // tableLayoutPanel6
+            // 
+            resources.ApplyResources(tableLayoutPanel6, "tableLayoutPanel6");
+            tableLayoutPanel6.Controls.Add(textBox_restartServerRCONAlertInterval, 0, 0);
+            tableLayoutPanel6.Controls.Add(textBox_restartServerRCONAlertMessage, 2, 0);
+            tableLayoutPanel6.Controls.Add(label75, 1, 0);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            // 
+            // textBox_restartServerRCONAlertInterval
+            // 
+            resources.ApplyResources(textBox_restartServerRCONAlertInterval, "textBox_restartServerRCONAlertInterval");
+            textBox_restartServerRCONAlertInterval.Name = "textBox_restartServerRCONAlertInterval";
+            // 
+            // textBox_restartServerRCONAlertMessage
+            // 
+            resources.ApplyResources(textBox_restartServerRCONAlertMessage, "textBox_restartServerRCONAlertMessage");
+            textBox_restartServerRCONAlertMessage.Name = "textBox_restartServerRCONAlertMessage";
+            // 
+            // label75
+            // 
+            resources.ApplyResources(label75, "label75");
+            label75.Name = "label75";
+            // 
             // panel_backup
             // 
             resources.ApplyResources(panel_backup, "panel_backup");
-            panel_backup.Controls.Add(tableLayoutPanel4);
             panel_backup.Controls.Add(tableLayoutPanel3);
             panel_backup.Name = "panel_backup";
             // 
-            // tableLayoutPanel4
+            // tableLayoutPanel3
             // 
-            resources.ApplyResources(tableLayoutPanel4, "tableLayoutPanel4");
-            tableLayoutPanel4.Controls.Add(label66, 0, 0);
-            tableLayoutPanel4.Controls.Add(panel5, 1, 0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            // 
-            // label66
-            // 
-            resources.ApplyResources(label66, "label66");
-            label66.Name = "label66";
-            toolTip1.SetToolTip(label66, resources.GetString("label66.ToolTip"));
+            resources.ApplyResources(tableLayoutPanel3, "tableLayoutPanel3");
+            tableLayoutPanel3.Controls.Add(panel5, 1, 3);
+            tableLayoutPanel3.Controls.Add(label66, 0, 3);
+            tableLayoutPanel3.Controls.Add(label65, 0, 0);
+            tableLayoutPanel3.Controls.Add(textBox_backupInterval, 1, 0);
+            tableLayoutPanel3.Controls.Add(label67, 0, 2);
+            tableLayoutPanel3.Controls.Add(textBox_maxBackup, 1, 2);
+            tableLayoutPanel3.Controls.Add(label72, 0, 1);
+            tableLayoutPanel3.Controls.Add(tableLayoutPanel5, 1, 1);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // panel5
             // 
@@ -1244,25 +1286,11 @@ namespace PalworldServerManager
             button_backupTo.UseVisualStyleBackColor = true;
             button_backupTo.Click += button_backupTo_Click;
             // 
-            // tableLayoutPanel3
+            // label66
             // 
-            resources.ApplyResources(tableLayoutPanel3, "tableLayoutPanel3");
-            tableLayoutPanel3.Controls.Add(textBox_maxBackup, 0, 1);
-            tableLayoutPanel3.Controls.Add(label67, 1, 0);
-            tableLayoutPanel3.Controls.Add(label65, 0, 0);
-            tableLayoutPanel3.Controls.Add(textBox_backupInterval, 1, 0);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            // 
-            // textBox_maxBackup
-            // 
-            resources.ApplyResources(textBox_maxBackup, "textBox_maxBackup");
-            textBox_maxBackup.Name = "textBox_maxBackup";
-            // 
-            // label67
-            // 
-            resources.ApplyResources(label67, "label67");
-            label67.Name = "label67";
-            toolTip1.SetToolTip(label67, resources.GetString("label67.ToolTip"));
+            resources.ApplyResources(label66, "label66");
+            label66.Name = "label66";
+            toolTip1.SetToolTip(label66, resources.GetString("label66.ToolTip"));
             // 
             // label65
             // 
@@ -1274,6 +1302,46 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(textBox_backupInterval, "textBox_backupInterval");
             textBox_backupInterval.Name = "textBox_backupInterval";
+            // 
+            // label67
+            // 
+            resources.ApplyResources(label67, "label67");
+            label67.Name = "label67";
+            toolTip1.SetToolTip(label67, resources.GetString("label67.ToolTip"));
+            // 
+            // textBox_maxBackup
+            // 
+            resources.ApplyResources(textBox_maxBackup, "textBox_maxBackup");
+            textBox_maxBackup.Name = "textBox_maxBackup";
+            // 
+            // label72
+            // 
+            resources.ApplyResources(label72, "label72");
+            label72.Name = "label72";
+            toolTip1.SetToolTip(label72, resources.GetString("label72.ToolTip"));
+            // 
+            // tableLayoutPanel5
+            // 
+            resources.ApplyResources(tableLayoutPanel5, "tableLayoutPanel5");
+            tableLayoutPanel5.Controls.Add(textBox_backupRCONAlertInterval, 0, 0);
+            tableLayoutPanel5.Controls.Add(textBox_backupRCONAlertMessage, 2, 0);
+            tableLayoutPanel5.Controls.Add(label74, 1, 0);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            // 
+            // textBox_backupRCONAlertInterval
+            // 
+            resources.ApplyResources(textBox_backupRCONAlertInterval, "textBox_backupRCONAlertInterval");
+            textBox_backupRCONAlertInterval.Name = "textBox_backupRCONAlertInterval";
+            // 
+            // textBox_backupRCONAlertMessage
+            // 
+            resources.ApplyResources(textBox_backupRCONAlertMessage, "textBox_backupRCONAlertMessage");
+            textBox_backupRCONAlertMessage.Name = "textBox_backupRCONAlertMessage";
+            // 
+            // label74
+            // 
+            resources.ApplyResources(label74, "label74");
+            label74.Name = "label74";
             // 
             // panel2
             // 
@@ -1325,6 +1393,14 @@ namespace PalworldServerManager
             // 
             timer_onCMDCrashRestart.Tick += timer_onCMDCrashRestart_Tick;
             // 
+            // timer_backupRCONAlertTimer
+            // 
+            timer_backupRCONAlertTimer.Tick += timer_backupRCONAlertTimer_Tick;
+            // 
+            // timer_restartServerRCONAlertTimer
+            // 
+            timer_restartServerRCONAlertTimer.Tick += timer_restartServerRCONAlertTimer_Tick;
+            // 
             // Form_ServerSettings
             // 
             resources.ApplyResources(this, "$this");
@@ -1344,14 +1420,16 @@ namespace PalworldServerManager
             tableLayoutPanel2.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            tableLayoutPanel6.ResumeLayout(false);
+            tableLayoutPanel6.PerformLayout();
             panel_backup.ResumeLayout(false);
             panel_backup.PerformLayout();
-            tableLayoutPanel4.ResumeLayout(false);
-            tableLayoutPanel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            tableLayoutPanel5.ResumeLayout(false);
+            tableLayoutPanel5.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -1499,7 +1577,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.TextBox textBox_backupInterval;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TextBox textBox_backupTo;
         private System.Windows.Forms.Button button_backupTo;
@@ -1524,5 +1601,17 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TextBox textBox_backupRCONAlertInterval;
+        private System.Windows.Forms.TextBox textBox_backupRCONAlertMessage;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TextBox textBox_restartServerRCONAlertInterval;
+        private System.Windows.Forms.TextBox textBox_restartServerRCONAlertMessage;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Timer timer_backupRCONAlertTimer;
+        private System.Windows.Forms.Timer timer_restartServerRCONAlertTimer;
     }
 }

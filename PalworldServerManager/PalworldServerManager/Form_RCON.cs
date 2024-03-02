@@ -18,6 +18,7 @@ namespace PalworldServerManager
     public partial class Form_RCON : Form
     {
         private IPersistentRconClient _rconClient;
+        private IPersistentRconClient _rconClientSilent;
         string ipRCON;
         int portRCON;
         string passwordRCON;
@@ -25,6 +26,7 @@ namespace PalworldServerManager
         string selectedUID;
         string selectedSteamID;
         bool isAutoUpdatePlayers; //Never used but ill leave it here for later.
+        bool isSilentConnectedToRcon;
 
         public Form_RCON()
 
@@ -65,38 +67,40 @@ namespace PalworldServerManager
             Properties.Settings.Default.Saved_rconPassword = textBox_passwordRCON.Text;
             Properties.Settings.Default.Saved_rconAutpUpdatePlayerList = checkBox_autoUpdatePlayerList.Checked;
             Properties.Settings.Default.Save();
-            //Check for empty
-            if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
-            {
-                richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
-                return;
-            }
-
-
-            int newIntPort;
-
-            if (int.TryParse(textBox_portRCON.Text, out newIntPort))
-            {
-                Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
-            }
-            else
-            {
-                Console.WriteLine("Parsing failed. The input string is not in a correct format.");
-            }
-
-            //Store the values
-            ipRCON = textBox_ipRCON.Text;
-            portRCON = newIntPort;
-            passwordRCON = textBox_passwordRCON.Text;
-            ConnectRCON(ipRCON, portRCON, passwordRCON);
+            
+            ConnectRCON();
 
         }
 
-        private async void ConnectRCON(string ipRcon, int portRcon, string passwordRcon)
+        private async void ConnectRCON()
         {
 
             try
             {
+                //Check for empty
+                if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
+                {
+                    richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
+                    return;
+                }
+
+
+                int newIntPort;
+
+                if (int.TryParse(textBox_portRCON.Text, out newIntPort))
+                {
+                    Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
+                }
+                else
+                {
+                    Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                }
+
+                //Store the values
+                ipRCON = textBox_ipRCON.Text;
+                portRCON = newIntPort;
+                passwordRCON = textBox_passwordRCON.Text;
+
                 _rconClient = new PersistentRconClient(ipRCON, portRCON, passwordRCON);
                 //_rconClient.OnDisconnected += () => richTextBox_output.AppendText($"Connection dropped" + Environment.NewLine);
                 //await _rconClient.ConnectAndAuthenticate();
@@ -106,6 +110,7 @@ namespace PalworldServerManager
                     {
                         var info = await _rconClient.Packets().GetInfo();
                         richTextBox_output.AppendText($"Connected to {info?.Name} | version {info?.Version}" + Environment.NewLine);
+                        
                     }
                     catch (TimeoutException tex)
                     {
@@ -133,9 +138,9 @@ namespace PalworldServerManager
                     richTextBox_output.AppendText("Failed to connect" + Environment.NewLine);
                 }
             }
-            catch (Exception ex) { richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine); }
-
-
+            catch (Exception ex) { 
+                richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
+            }
         }
 
         private void DisconnectRCON()
@@ -149,6 +154,26 @@ namespace PalworldServerManager
                     richTextBox_output.AppendText($"Disconnected" + Environment.NewLine);
                     button_connectRCON.Enabled = true;
                     button_disconnectRCON.Enabled = false;
+                }
+                else
+                {
+                    richTextBox_output.AppendText($"Not Connecetd To RCON" + Environment.NewLine);
+                }
+            }
+            catch (Exception ex)
+            {
+                richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
+            }
+        }
+
+        private void SilentDisconnectRCON()
+        {
+            try
+            {
+
+                if (_rconClientSilent != null)
+                {
+                    _rconClientSilent.Dispose();
                 }
                 else
                 {
@@ -358,51 +383,89 @@ namespace PalworldServerManager
 
         public async void RCONAlert(string text)
         {
-            //Check for empty
-            if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
+
+            if (isSilentConnectedToRcon)
             {
-                richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
-                return;
-            }
+                try
+                {
+                    var sendAlert = await _rconClientSilent.SendBroadcast(text);
+                }
+                catch (Exception ex)
+                {
+                    richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
+                }
 
 
-            int newIntPort;
-
-            if (int.TryParse(textBox_portRCON.Text, out newIntPort))
-            {
-                Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
             }
             else
             {
-                Console.WriteLine("Parsing failed. The input string is not in a correct format.");
-            }
-
-            //Store the values
-            ipRCON = textBox_ipRCON.Text;
-            portRCON = newIntPort;
-            passwordRCON = textBox_passwordRCON.Text;
-
-            try
-            {
-                _rconClient = new PersistentRconClient(ipRCON, portRCON, passwordRCON);
-                if (await _rconClient.Preconnect())
+                try
                 {
-                    var sendAlert = await _rconClient.SendBroadcast(text);
+                    //Check for empty
+                    if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
+                    {
+                        richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
+                        return;
+                    }
+
+
+                    int newIntPort;
+
+                    if (int.TryParse(textBox_portRCON.Text, out newIntPort))
+                    {
+                        Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                    }
+
+                    //Store the values
+                    ipRCON = textBox_ipRCON.Text;
+                    portRCON = newIntPort;
+                    passwordRCON = textBox_passwordRCON.Text;
+
+                    _rconClientSilent = new PersistentRconClient(ipRCON, portRCON, passwordRCON);
+                    //_rconClient.OnDisconnected += () => richTextBox_output.AppendText($"Connection dropped" + Environment.NewLine);
+                    //await _rconClient.ConnectAndAuthenticate();
+                    if (await _rconClientSilent.Preconnect())
+                    {
+                        try
+                        {
+                            var sendAlert = await _rconClientSilent.SendBroadcast(text);
+                            isSilentConnectedToRcon = true;
+
+                        }
+                        catch (TimeoutException tex)
+                        {
+                            richTextBox_output.AppendText($"On Connect Timed out: {tex.Message}" + Environment.NewLine);
+                            richTextBox_output.AppendText($"Notice: Make sure your server name only has ASCII printable characters" + Environment.NewLine);
+                            return;
+                        }
+
+                    }
+                    else
+                    {
+                        richTextBox_output.AppendText("Failed to connect" + Environment.NewLine);
+                    }
 
                 }
-                else
+                catch (Exception ex)
                 {
-                    richTextBox_output.AppendText("Failed to connect" + Environment.NewLine);
+                    richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
                 }
             }
-            catch (Exception ex) { richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine); }
-            DisconnectRCON();
-
         }
+
 
         private void button_test_Click(object sender, EventArgs e)
         {
-            RCONAlert("Test 123");
+            //Save the settings
+            Properties.Settings.Default.Saved_rconIP = textBox_ipRCON.Text;
+            Properties.Settings.Default.Saved_rconPort = textBox_portRCON.Text;
+            Properties.Settings.Default.Saved_rconPassword = textBox_passwordRCON.Text;
+            Properties.Settings.Default.Saved_rconAutpUpdatePlayerList = checkBox_autoUpdatePlayerList.Checked;
+            Properties.Settings.Default.Save();
         }
     }
 }

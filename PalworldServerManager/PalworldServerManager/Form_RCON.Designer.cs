@@ -52,7 +52,7 @@ namespace PalworldServerManager
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
-            button_test = new System.Windows.Forms.Button();
+            button_save = new System.Windows.Forms.Button();
             tableLayoutPanel_topSection = new System.Windows.Forms.TableLayoutPanel();
             button_connectRCON = new System.Windows.Forms.Button();
             button_disconnectRCON = new System.Windows.Forms.Button();
@@ -167,7 +167,7 @@ namespace PalworldServerManager
             tableLayoutPanel2.Controls.Add(label2, 0, 0);
             tableLayoutPanel2.Controls.Add(label3, 1, 0);
             tableLayoutPanel2.Controls.Add(label4, 2, 0);
-            tableLayoutPanel2.Controls.Add(button_test, 1, 2);
+            tableLayoutPanel2.Controls.Add(button_save, 1, 2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // textBox_ipRCON
@@ -206,12 +206,12 @@ namespace PalworldServerManager
             resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
             // 
-            // button_test
+            // button_save
             // 
-            resources.ApplyResources(button_test, "button_test");
-            button_test.Name = "button_test";
-            button_test.UseVisualStyleBackColor = true;
-            button_test.Click += button_test_Click;
+            resources.ApplyResources(button_save, "button_save");
+            button_save.Name = "button_save";
+            button_save.UseVisualStyleBackColor = true;
+            button_save.Click += button_test_Click;
             // 
             // tableLayoutPanel_topSection
             // 
@@ -287,6 +287,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button_test;
+        private System.Windows.Forms.Button button_save;
     }
 }

@@ -41,7 +41,7 @@ namespace PalworldServerManager
         private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
         Form_ServerSettings serverSettingsForm;
-        Form_RCON rconForm;
+        public Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
         public bool isServerStarted = false;
 
@@ -85,8 +85,8 @@ namespace PalworldServerManager
             rconForm = new Form_RCON();
             serverRestartForm = new Form_ServerRestart(this);
             serverSettingsForm = new Form_ServerSettings(this);
-            LoadForm(rconForm, false);
             LoadForm(serverSettingsForm, true);
+            LoadForm(rconForm, true);
             LoadForm(serverRestartForm, true);
 
 
@@ -412,6 +412,8 @@ namespace PalworldServerManager
                     serverSettingsForm.SaveGameTimer_Start();
                     serverSettingsForm.AutoRestartServerTimer_Start();
                     serverSettingsForm.Start_OnCMDCrashRestartTimer();
+                    serverSettingsForm.BackUpAlertTimer_Start();
+                    serverSettingsForm.ServerRestartAlertTimer_Start();
                     isServerStarted = true;
                     button_startServer.Enabled = false;
                     button_stopServer.Enabled = true;
@@ -449,6 +451,8 @@ namespace PalworldServerManager
                 serverSettingsForm.SaveGameTimer_Stop();
                 serverSettingsForm.AutoRestartServerTimer_Stop();
                 serverSettingsForm.Stop_OnCMDCrashRestartTimer();
+                serverSettingsForm.BackUpAlertTimer_Stop();
+                serverSettingsForm.ServerRestartAlertTimer_Stop();
                 serverSettingsForm.SendMessageToConsole("Server Stopped");
 
             }

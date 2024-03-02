@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace PalworldServerManager
         //
 
         private Form1 mainForm;
+        private Form_RCON rconForm;
 
         private const string serverSettingsFileName = "ServerSettingsPreset.json";
         private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -37,6 +39,13 @@ namespace PalworldServerManager
         private string serv_onCMDCrashRestartInterval;
 
         public string serv_customServerLaunchArgument;
+
+        //RCON Alerts
+        private string serv_backupRCONAlertInterval;
+        private string serv_backupRCONAlertMessage;
+
+        private string serv_restartServerRCONAlertInterval;
+        private string serv_restartServerRCONAlertMessage;
 
 
         //Difficulty Adjusts the overall difficulty of the game.
@@ -238,6 +247,13 @@ namespace PalworldServerManager
 
         public string dserv_customServerLaunchArgument = "";
 
+        //RCON ALERTS
+        private string dserv_backupRCONAlertInterval = "0";
+        private string dserv_backupRCONAlertMessage = "";
+
+        private string dserv_restartServerRCONAlertInterval = "0";
+        private string dserv_restartServerRCONAlertMessage = "";
+
         private string dserv_difficulty = "None";
         private string dserv_dayTimeSpeedRate = "1.000000";
         private string dserv_nightTimeSpeedRate = "1.000000";
@@ -313,6 +329,15 @@ namespace PalworldServerManager
 
             public string json_customServerLaunchArgument { get; set; }
 
+            //RCON ALERT
+            public string json_backupRCONAlertInterval { get; set; }
+            public string json_backupRCONAlertMessage { get; set; }
+            public string json_restartServerRCONAlertInterval { get; set; }
+            public string json_restartServerRCONAlertMessage { get; set; }
+
+
+            //WORLD EDIT
+
             public string json_difficulty { get; set; }
             public string json_dayTimeSpeedRate { get; set; }
             public string json_nightTimeSpeedRate { get; set; }
@@ -382,6 +407,7 @@ namespace PalworldServerManager
         {
             InitializeComponent();
             mainForm = form;
+            rconForm = form.rconForm;
         }
 
         public void ServerSettingsOnLoad()
@@ -428,6 +454,13 @@ namespace PalworldServerManager
             serv_rconEnabled = comboBox_rconEnabled.Text;
             serv_rconPort = textBox_rconPort.Text;
             serv_customServerLaunchArgument = textBox_customServerLaunchArgument.Text;
+            //RCON ALERT
+            serv_backupRCONAlertInterval = textBox_backupRCONAlertInterval.Text;
+            serv_backupRCONAlertMessage = textBox_backupRCONAlertMessage.Text;
+            serv_restartServerRCONAlertInterval = textBox_restartServerRCONAlertInterval.Text;
+            serv_restartServerRCONAlertMessage = textBox_restartServerRCONAlertMessage.Text;
+
+
             richTextBox_alert.AppendText("" + Environment.NewLine); //To add a newline just incase.
         }
 
@@ -536,6 +569,12 @@ namespace PalworldServerManager
             //Server launch argument
             textBox_customServerLaunchArgument.Text = dserv_customServerLaunchArgument;
 
+            //RCON ALERT
+            textBox_backupRCONAlertInterval.Text = dserv_backupRCONAlertInterval;
+            textBox_backupRCONAlertMessage.Text = dserv_backupRCONAlertMessage;
+            textBox_restartServerRCONAlertInterval.Text = dserv_restartServerRCONAlertInterval;
+            textBox_restartServerRCONAlertMessage.Text = dserv_restartServerRCONAlertMessage;
+
             //Server Settings
             textBox_serverName.Text = dserv_serverName;
             textBox_serverDescription.Text = dserv_serverDescription;
@@ -614,6 +653,12 @@ namespace PalworldServerManager
 
             //Server launch argument
             serv_customServerLaunchArgument = textBox_customServerLaunchArgument.Text;
+
+            //RCON ALERT
+            serv_backupRCONAlertInterval = textBox_backupRCONAlertInterval.Text;
+            serv_backupRCONAlertMessage = textBox_backupRCONAlertMessage.Text;
+            serv_restartServerRCONAlertInterval = textBox_restartServerRCONAlertInterval.Text;
+            serv_restartServerRCONAlertMessage = textBox_restartServerRCONAlertMessage.Text;
 
             //Server Settings
             serv_serverName = textBox_serverName.Text;
@@ -721,6 +766,13 @@ namespace PalworldServerManager
                 //Server launch argument
                 json_customServerLaunchArgument = textBox_customServerLaunchArgument.Text,
 
+
+                //RCON ALERT
+                json_backupRCONAlertInterval = textBox_backupRCONAlertInterval.Text,
+                json_backupRCONAlertMessage = textBox_backupRCONAlertMessage.Text,
+                json_restartServerRCONAlertInterval = textBox_restartServerRCONAlertInterval.Text,
+                json_restartServerRCONAlertMessage = textBox_restartServerRCONAlertMessage.Text,
+
                 // Server settings
                 json_serverName = textBox_serverName.Text,
                 json_serverDescription = textBox_serverDescription.Text,
@@ -820,6 +872,12 @@ namespace PalworldServerManager
                 //Server launch argument
                 textBox_customServerLaunchArgument.Text = settings.json_customServerLaunchArgument;
 
+                //RCON ALERT
+                textBox_backupRCONAlertInterval.Text = settings.json_backupRCONAlertInterval;
+                textBox_backupRCONAlertMessage.Text = settings.json_backupRCONAlertMessage;
+                textBox_restartServerRCONAlertInterval.Text = settings.json_restartServerRCONAlertInterval;
+                textBox_restartServerRCONAlertMessage.Text = settings.json_restartServerRCONAlertMessage;
+
                 ////server settings
                 textBox_serverName.Text = settings.json_serverName;
                 textBox_serverDescription.Text = settings.json_serverDescription;
@@ -908,6 +966,10 @@ namespace PalworldServerManager
                     json_autoRestartEvery = dserv_autoRestartEvery,
                     json_onCMDCraftRestartInterval = dserv_onCMDCrashRestartInterval,
                     json_customServerLaunchArgument = dserv_customServerLaunchArgument,
+                    json_backupRCONAlertInterval = dserv_backupRCONAlertInterval,
+                    json_backupRCONAlertMessage = dserv_backupRCONAlertMessage,
+                    json_restartServerRCONAlertInterval = dserv_restartServerRCONAlertInterval,
+                    json_restartServerRCONAlertMessage = dserv_restartServerRCONAlertMessage,
                     json_difficulty = dserv_difficulty,
                     json_dayTimeSpeedRate = dserv_dayTimeSpeedRate,
                     json_nightTimeSpeedRate = dserv_nightTimeSpeedRate,
@@ -1049,7 +1111,7 @@ namespace PalworldServerManager
 
         private void SaveGame()
         {
-            if (serv_backupInterval != "0" || forceBackup == true)
+            if (serv_backupInterval != "0" && serv_backupInterval != "" || forceBackup == true)
             {
                 try
                 {
@@ -1244,7 +1306,7 @@ namespace PalworldServerManager
         {
             if (serv_autoRestartEvery != "0" && serv_autoRestartEvery != "")
             {
-                SendMessageToConsole($"Restart timer set to {serv_autoRestartEvery}");
+                //SendMessageToConsole($"Restart timer set to {serv_autoRestartEvery}");
                 try
                 {
                     int newInt;
@@ -1427,5 +1489,130 @@ namespace PalworldServerManager
                 SendMessageToConsole($"Webpage open catched error: {ex.Message}");
             }
         }
+
+
+        public void BackUpAlertTimer_Start()
+        {
+
+            int newInt2;
+            bool isSuccessParse2;
+
+            if (int.TryParse(serv_backupInterval, out newInt2))
+            {
+                //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
+                isSuccessParse2 = true;
+            }
+            else
+            {
+                //SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                isSuccessParse2 = false;
+            }
+
+            if (serv_backupRCONAlertInterval != "0" && serv_backupRCONAlertInterval != "" && serv_rconEnabled == "True" && serv_backupInterval != "0" && serv_backupInterval != "" && isSuccessParse2)
+            {
+                try
+                {
+                    int newInt;
+                    bool isSuccessParse;
+
+                    if (int.TryParse(serv_backupRCONAlertInterval, out newInt))
+                    {
+                        //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
+                        isSuccessParse = true;
+                    }
+                    else
+                    {
+
+                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                        isSuccessParse = false;
+                    }
+
+                    int actualTimer = (newInt * 1000);
+                    if (actualTimer < 0 || isSuccessParse == false)
+                    {
+                        SendMessageToConsole($"backup rcon alert timer interval value: {serv_backupRCONAlertInterval} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        return;
+                    }
+                    timer_backupRCONAlertTimer.Interval = actualTimer; 
+                }
+                catch (Exception ex) { SendMessageToConsole($"backup rcon alert timer catched error: " + ex.Message); return; }
+                timer_backupRCONAlertTimer.Start();
+            }
+        }
+
+        public void BackUpAlertTimer_Stop()
+        {
+            timer_backupRCONAlertTimer.Stop();
+        }
+
+        public void ServerRestartAlertTimer_Start()
+        {
+
+            int newInt2;
+            bool isSuccessParse2;
+
+            if (int.TryParse(serv_autoRestartEvery, out newInt2))
+            {
+                //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
+                isSuccessParse2 = true;
+            }
+            else
+            {
+                //SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                isSuccessParse2 = false;
+            }
+
+            if (serv_restartServerRCONAlertInterval != "0" && serv_restartServerRCONAlertInterval != "" && serv_rconEnabled == "True" && serv_autoRestartEvery != "0" && serv_autoRestartEvery != "" && isSuccessParse2)
+            {
+                try
+                {
+                    int newInt;
+                    bool isSuccessParse;
+
+                    if (int.TryParse(serv_restartServerRCONAlertInterval, out newInt))
+                    {
+                        //SendMessageToConsole("Parsing successful. Parsed integer value: " + newInt);
+                        isSuccessParse = true;
+                    }
+                    else
+                    {
+
+                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                        isSuccessParse = false;
+                    }
+
+                    int actualTimer = (newInt * 1000);
+                    if (actualTimer < 0 || isSuccessParse == false)
+                    {
+                        SendMessageToConsole($"server restart alert timer interval value: {serv_restartServerRCONAlertInterval} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                        return;
+                    }
+                    timer_restartServerRCONAlertTimer.Interval = actualTimer; 
+                }
+                catch (Exception ex) { SendMessageToConsole($"backup rcon alert timer catched error: " + ex.Message); return; }
+                timer_restartServerRCONAlertTimer.Start();
+            }
+        }
+
+        public void ServerRestartAlertTimer_Stop()
+        {
+            timer_restartServerRCONAlertTimer.Stop();
+        }
+
+        private void timer_backupRCONAlertTimer_Tick(object sender, EventArgs e)
+        {
+            rconForm.RCONAlert($"{serv_backupRCONAlertMessage}");
+            SendMessageToConsole($"{serv_backupRCONAlertMessage}");
+        }
+
+        private void timer_restartServerRCONAlertTimer_Tick(object sender, EventArgs e)
+        {
+            rconForm.RCONAlert($"{serv_restartServerRCONAlertMessage}");
+            SendMessageToConsole($"{serv_restartServerRCONAlertMessage}");
+        }
+
+
+
+
     }
 }
