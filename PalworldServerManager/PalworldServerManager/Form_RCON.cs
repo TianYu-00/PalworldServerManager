@@ -466,6 +466,7 @@ namespace PalworldServerManager
             Properties.Settings.Default.Saved_rconPassword = textBox_passwordRCON.Text;
             Properties.Settings.Default.Saved_rconAutpUpdatePlayerList = checkBox_autoUpdatePlayerList.Checked;
             Properties.Settings.Default.Save();
+            richTextBox_output.AppendText($"RCON Settings Saved" + Environment.NewLine);
         }
     }
 }
