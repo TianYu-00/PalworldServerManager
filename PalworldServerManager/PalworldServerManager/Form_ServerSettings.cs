@@ -1085,7 +1085,7 @@ namespace PalworldServerManager
                     else
                     {
                         // Parsing failed, serv_maxBackup does not contain a valid integer format
-                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                        //SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                         isSuccessParse = false;
                     }
 
@@ -1208,7 +1208,7 @@ namespace PalworldServerManager
             else
             {
                 // Parsing failed, serv_maxBackup does not contain a valid integer format
-                SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                //SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                 isSuccessParse = false;
             }
 
@@ -1283,7 +1283,7 @@ namespace PalworldServerManager
             }
             catch (Exception ex)
             {
-                SendMessageToConsole($"timer1 catched error: " + ex.Message);
+                SendMessageToConsole($"timer1_autobackup catched error: " + ex.Message);
             }
         }
 
@@ -1321,7 +1321,7 @@ namespace PalworldServerManager
                     else
                     {
                         // Parsing failed, serv_maxBackup does not contain a valid integer format
-                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                        //SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                         isSuccessParse = false;
                     }
 
@@ -1356,12 +1356,12 @@ namespace PalworldServerManager
                 }
                 else
                 {
-                    SendMessageToConsole("timer2 error: server not started");
+                    SendMessageToConsole("timer2_autorestartserver error: server not started");
                 }
             }
             catch (Exception ex)
             {
-                SendMessageToConsole($"timer2 catched errror: " + ex.Message);
+                SendMessageToConsole($"timer2_autorestartserver catched errror: " + ex.Message);
             }
         }
 
@@ -1408,7 +1408,7 @@ namespace PalworldServerManager
                     else
                     {
 
-                        SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
+                        //SendMessageToConsole("Parsing failed. The input string is not in a correct format.");
                         isSuccessParse = false;
                     }
 
@@ -1589,7 +1589,7 @@ namespace PalworldServerManager
                     }
                     timer_restartServerRCONAlertTimer.Interval = actualTimer; 
                 }
-                catch (Exception ex) { SendMessageToConsole($"backup rcon alert timer catched error: " + ex.Message); return; }
+                catch (Exception ex) { SendMessageToConsole($"server restart alert timer catched error: " + ex.Message); return; }
                 timer_restartServerRCONAlertTimer.Start();
             }
         }
