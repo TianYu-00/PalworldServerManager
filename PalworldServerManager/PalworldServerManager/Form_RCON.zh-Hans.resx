@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="panel2.ToolTip" xml:space="preserve">
+  <data name="panel_playersSection.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="panel_playersSection.ToolTip" xml:space="preserve">
+  <data name="panel_ConsoleAndSendSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="tableLayoutPanel_topSection.ToolTip" xml:space="preserve">
@@ -129,51 +132,13 @@
   <data name="panel1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="button1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="richTextBox_output.Text" xml:space="preserve">
-    <value>====================================================================
-Info - (显示服务器信息)
-Save - (保存游戏)
-Broadcast {消息} - (向服务器上的所有玩家显示消息)
-ShowPlayers - (显示当前服务器玩家)
-KickPlayer {Steam ID} - (踢出玩家)
-BanPlayer {Steam ID} - (封禁玩家)
-Shutdown {秒} {消息} - (通知服务器在线玩家n秒后服务器关闭)
-DoExit - (停止服务器)
-====================================================================
-注意：
-RCON 仅支持 ASCII 可打印字符
-如果您的指令、服务器名称或玩家名称包含非 ascii 可打印字符，指令将会超时
-====================================================================
-</value>
-  </data>
-  <data name="richTextBox_output.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel_sendSection.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_commandText.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button_sendCommand.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 9pt</value>
-  </data>
-  <data name="button_sendCommand.Text" xml:space="preserve">
-    <value>发送</value>
-  </data>
-  <data name="button_sendCommand.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="panel_playerListSection.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button_kick.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
@@ -204,6 +169,41 @@ RCON 仅支持 ASCII 可打印字符
   <data name="label1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="richTextBox_output.Text" xml:space="preserve">
+    <value>====================================================================
+Info - (显示服务器信息)
+Save - (保存游戏)
+Broadcast {消息} - (向服务器上的所有玩家显示消息)
+ShowPlayers - (显示当前服务器玩家)
+KickPlayer {Steam ID} - (踢出玩家)
+BanPlayer {Steam ID} - (封禁玩家)
+Shutdown {秒} {消息} - (通知服务器在线玩家n秒后服务器关闭)
+DoExit - (停止服务器)
+====================================================================
+注意：
+RCON 仅支持 ASCII 可打印字符
+如果您的指令、服务器名称或玩家名称包含非 ascii 可打印字符，指令将会超时
+====================================================================
+</value>
+  </data>
+  <data name="richTextBox_output.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel_sendSection.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_commandText.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button_sendCommand.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="button_sendCommand.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="button_sendCommand.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="textBox_ipRCON.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -211,6 +211,51 @@ RCON 仅支持 ASCII 可打印字符
     <value>RCON 端口</value>
   </data>
   <data name="textBox_portRCON.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_passwordRCON.PlaceholderText" xml:space="preserve">
+    <value>管理员密码</value>
+  </data>
+  <data name="textBox_passwordRCON.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox_autoUpdatePlayerList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="checkBox_autoUpdatePlayerList.Text" xml:space="preserve">
+    <value>自动更新玩家列表</value>
+  </data>
+  <data name="checkBox_autoUpdatePlayerList.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>RCON 端口</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>服务器管理员密码</value>
+  </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button_save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="button_save.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="button_save.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="button_connectRCON.Font" type="System.Drawing.Font, System.Drawing">
@@ -229,15 +274,6 @@ RCON 仅支持 ASCII 可打印字符
     <value>断开 RCON</value>
   </data>
   <data name="button_disconnectRCON.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_passwordRCON.PlaceholderText" xml:space="preserve">
-    <value>管理员密码</value>
-  </data>
-  <data name="textBox_passwordRCON.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox_autoUpdatePlayerList.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="$this.ToolTip" xml:space="preserve">
