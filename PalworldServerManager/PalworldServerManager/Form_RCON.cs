@@ -392,7 +392,7 @@ namespace PalworldServerManager
                 }
                 catch (Exception ex)
                 {
-                    richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
+                    richTextBox_output.AppendText($"RCON ALERT Error: {ex.Message}" + Environment.NewLine);
                 }
 
 
@@ -404,7 +404,7 @@ namespace PalworldServerManager
                     //Check for empty
                     if (textBox_ipRCON.Text == "" || textBox_portRCON.Text == "" || textBox_passwordRCON.Text == "")
                     {
-                        richTextBox_output.AppendText("Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
+                        richTextBox_output.AppendText("RCON ALERT: Ops, please fill in all rcon info before connecting to rcon" + Environment.NewLine);
                         return;
                     }
 
@@ -413,11 +413,11 @@ namespace PalworldServerManager
 
                     if (int.TryParse(textBox_portRCON.Text, out newIntPort))
                     {
-                        Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
+                        //Console.WriteLine("Parsing successful. Parsed integer value: " + newIntPort);
                     }
                     else
                     {
-                        Console.WriteLine("Parsing failed. The input string is not in a correct format.");
+                        //Console.WriteLine("Parsing failed. The input string is not in a correct format.");
                     }
 
                     //Store the values
@@ -438,21 +438,21 @@ namespace PalworldServerManager
                         }
                         catch (TimeoutException tex)
                         {
-                            richTextBox_output.AppendText($"On Connect Timed out: {tex.Message}" + Environment.NewLine);
-                            richTextBox_output.AppendText($"Notice: Make sure your server name only has ASCII printable characters" + Environment.NewLine);
+                            richTextBox_output.AppendText($"RCON ALERT On Connect Timed out: {tex.Message}" + Environment.NewLine);
+                            richTextBox_output.AppendText($"RCON ALERT Notice: Make sure your server name only has ASCII printable characters" + Environment.NewLine);
                             return;
                         }
 
                     }
                     else
                     {
-                        richTextBox_output.AppendText("Failed to connect" + Environment.NewLine);
+                        richTextBox_output.AppendText("RCON ALERT: Failed to connect" + Environment.NewLine);
                     }
 
                 }
                 catch (Exception ex)
                 {
-                    richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
+                    richTextBox_output.AppendText($"RCON ALERT Error: {ex.Message}" + Environment.NewLine);
                 }
             }
         }
