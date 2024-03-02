@@ -123,28 +123,7 @@
   <data name="button_stopServer.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="checkBox_noSteam.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox_log.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
-  </data>
-  <data name="checkBox_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="checkBox_log.Text" xml:space="preserve">
-    <value>日志</value>
-  </data>
-  <data name="checkBox_communityServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
-  </data>
-  <data name="checkBox_communityServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
-  </data>
-  <data name="checkBox_communityServer.Text" xml:space="preserve">
-    <value>改为社区服务器</value>
-  </data>
   <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
   </data>
@@ -212,13 +191,13 @@
     <value>服务器设置</value>
   </data>
   <data name="serverSettingsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>172, 22</value>
   </data>
   <data name="serverSettingsToolStripMenuItem1.Text" xml:space="preserve">
     <value>服务器设置</value>
   </data>
   <data name="serverRestartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>172, 22</value>
   </data>
   <data name="serverRestartToolStripMenuItem.Text" xml:space="preserve">
     <value>服务器重启时间表</value>
@@ -236,10 +215,25 @@
     <value>帮助</value>
   </data>
   <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
     <value>说明</value>
+  </data>
+  <data name="updateToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 9pt</value>
+  </data>
+  <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="updateToolStripMenuItem.Text" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="nexusModsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="githubToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="languageToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -251,10 +245,10 @@
     <value>语言</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="directoryToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 9pt</value>
@@ -266,13 +260,19 @@
     <value>目录</value>
   </data>
   <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
     <value>基层目录</value>
   </data>
   <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 21</value>
+  </data>
+  <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
