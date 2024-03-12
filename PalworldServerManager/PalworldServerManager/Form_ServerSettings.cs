@@ -1212,9 +1212,14 @@ namespace PalworldServerManager
                 isSuccessParse = false;
             }
 
-            if (newMaxBackupInt < 0 || isSuccessParse == false)
+            if (isSuccessParse == false)
             {
                 SendMessageToConsole($"Backup threshold value: {serv_maxBackup} has failed to parse to a valid positive integer number, make sure you enter a valid value.");
+                return;
+            }
+
+            if (newMaxBackupInt <= 0)
+            {
                 return;
             }
 
@@ -1250,7 +1255,7 @@ namespace PalworldServerManager
             else
             {
                 //MessageBox.Show("Directory does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                SendMessageToConsole("Older backup Directory does not exist.");
+                SendMessageToConsole("Older auto backup Directory does not exist.");
             }
         }
 
