@@ -458,18 +458,6 @@ namespace PalworldServerManager
             }
         }
 
-
-        private CheckState ParseCheckState(string value)
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                // Handle null or empty string, assuming Unchecked in this case
-                return CheckState.Unchecked;
-            }
-
-            return (CheckState)Enum.Parse(typeof(CheckState), value);
-        }
-
         //TOOLSTRIPMENU SECTION
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
