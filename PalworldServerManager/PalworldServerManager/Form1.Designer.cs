@@ -61,6 +61,7 @@ namespace PalworldServerManager
             githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             githubToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             repoPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            discordWebhookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             panel1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -79,13 +80,11 @@ namespace PalworldServerManager
             panel1.Controls.Add(button_downloadServer);
             panel1.Controls.Add(button_downloadSteamCMD);
             panel1.Name = "panel1";
-            toolTip1.SetToolTip(panel1, resources.GetString("panel1.ToolTip"));
             // 
             // button_stopServer
             // 
             resources.ApplyResources(button_stopServer, "button_stopServer");
             button_stopServer.Name = "button_stopServer";
-            toolTip1.SetToolTip(button_stopServer, resources.GetString("button_stopServer.ToolTip"));
             button_stopServer.UseVisualStyleBackColor = true;
             button_stopServer.Click += button_stopServer_Click;
             // 
@@ -124,7 +123,6 @@ namespace PalworldServerManager
             resources.ApplyResources(label1, "label1");
             label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             label1.Name = "label1";
-            toolTip1.SetToolTip(label1, resources.GetString("label1.ToolTip"));
             // 
             // button_startServer
             // 
@@ -154,122 +152,126 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(panel_chilForm, "panel_chilForm");
             panel_chilForm.Name = "panel_chilForm";
-            toolTip1.SetToolTip(panel_chilForm, resources.GetString("panel_chilForm.ToolTip"));
             // 
             // menuStrip1
             // 
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { serverSettingsToolStripMenuItem, rCONToolStripMenuItem, infoToolStripMenuItem, updateToolStripMenuItem, languageToolStripMenuItem, directoryToolStripMenuItem, githubToolStripMenuItem, discordWebhookToolStripMenuItem });
             resources.ApplyResources(menuStrip1, "menuStrip1");
-            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { serverSettingsToolStripMenuItem, rCONToolStripMenuItem, infoToolStripMenuItem, updateToolStripMenuItem, languageToolStripMenuItem, directoryToolStripMenuItem, githubToolStripMenuItem });
             menuStrip1.Name = "menuStrip1";
-            toolTip1.SetToolTip(menuStrip1, resources.GetString("menuStrip1.ToolTip"));
             // 
             // serverSettingsToolStripMenuItem
             // 
-            resources.ApplyResources(serverSettingsToolStripMenuItem, "serverSettingsToolStripMenuItem");
             serverSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { serverSettingsToolStripMenuItem1, serverRestartToolStripMenuItem });
             serverSettingsToolStripMenuItem.Name = "serverSettingsToolStripMenuItem";
+            resources.ApplyResources(serverSettingsToolStripMenuItem, "serverSettingsToolStripMenuItem");
             serverSettingsToolStripMenuItem.Click += serverSettingsToolStripMenuItem_Click;
             // 
             // serverSettingsToolStripMenuItem1
             // 
-            resources.ApplyResources(serverSettingsToolStripMenuItem1, "serverSettingsToolStripMenuItem1");
             serverSettingsToolStripMenuItem1.Name = "serverSettingsToolStripMenuItem1";
+            resources.ApplyResources(serverSettingsToolStripMenuItem1, "serverSettingsToolStripMenuItem1");
             serverSettingsToolStripMenuItem1.Click += serverSettingsToolStripMenuItem1_Click;
             // 
             // serverRestartToolStripMenuItem
             // 
-            resources.ApplyResources(serverRestartToolStripMenuItem, "serverRestartToolStripMenuItem");
             serverRestartToolStripMenuItem.Name = "serverRestartToolStripMenuItem";
+            resources.ApplyResources(serverRestartToolStripMenuItem, "serverRestartToolStripMenuItem");
             serverRestartToolStripMenuItem.Click += serverRestartScheduleToolStripMenuItem_Click;
             // 
             // rCONToolStripMenuItem
             // 
-            resources.ApplyResources(rCONToolStripMenuItem, "rCONToolStripMenuItem");
             rCONToolStripMenuItem.Name = "rCONToolStripMenuItem";
+            resources.ApplyResources(rCONToolStripMenuItem, "rCONToolStripMenuItem");
             rCONToolStripMenuItem.Click += rCONToolStripMenuItem_Click;
             // 
             // infoToolStripMenuItem
             // 
-            resources.ApplyResources(infoToolStripMenuItem, "infoToolStripMenuItem");
             infoToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { instructionToolStripMenuItem });
             infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            resources.ApplyResources(infoToolStripMenuItem, "infoToolStripMenuItem");
             // 
             // instructionToolStripMenuItem
             // 
-            resources.ApplyResources(instructionToolStripMenuItem, "instructionToolStripMenuItem");
             instructionToolStripMenuItem.Name = "instructionToolStripMenuItem";
+            resources.ApplyResources(instructionToolStripMenuItem, "instructionToolStripMenuItem");
             instructionToolStripMenuItem.Click += instructionToolStripMenuItem_Click;
             // 
             // updateToolStripMenuItem
             // 
-            resources.ApplyResources(updateToolStripMenuItem, "updateToolStripMenuItem");
             updateToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { nexusModsToolStripMenuItem, githubToolStripMenuItem2 });
             updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            resources.ApplyResources(updateToolStripMenuItem, "updateToolStripMenuItem");
             // 
             // nexusModsToolStripMenuItem
             // 
-            resources.ApplyResources(nexusModsToolStripMenuItem, "nexusModsToolStripMenuItem");
             nexusModsToolStripMenuItem.Name = "nexusModsToolStripMenuItem";
+            resources.ApplyResources(nexusModsToolStripMenuItem, "nexusModsToolStripMenuItem");
             nexusModsToolStripMenuItem.Click += nexusModsToolStripMenuItem_Click;
             // 
             // githubToolStripMenuItem2
             // 
-            resources.ApplyResources(githubToolStripMenuItem2, "githubToolStripMenuItem2");
             githubToolStripMenuItem2.Name = "githubToolStripMenuItem2";
+            resources.ApplyResources(githubToolStripMenuItem2, "githubToolStripMenuItem2");
             githubToolStripMenuItem2.Click += githubToolStripMenuItem2_Click;
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(languageToolStripMenuItem, "languageToolStripMenuItem");
             languageToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { englishToolStripMenuItem, chineseToolStripMenuItem });
             languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(englishToolStripMenuItem, "englishToolStripMenuItem");
             englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(englishToolStripMenuItem, "englishToolStripMenuItem");
             englishToolStripMenuItem.Click += englishToolStripMenuItem_Click;
             // 
             // chineseToolStripMenuItem
             // 
-            resources.ApplyResources(chineseToolStripMenuItem, "chineseToolStripMenuItem");
             chineseToolStripMenuItem.Name = "chineseToolStripMenuItem";
+            resources.ApplyResources(chineseToolStripMenuItem, "chineseToolStripMenuItem");
             chineseToolStripMenuItem.Click += chineseToolStripMenuItem_Click;
             // 
             // directoryToolStripMenuItem
             // 
-            resources.ApplyResources(directoryToolStripMenuItem, "directoryToolStripMenuItem");
             directoryToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             directoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { baseDirectoryToolStripMenuItem });
             directoryToolStripMenuItem.Name = "directoryToolStripMenuItem";
+            resources.ApplyResources(directoryToolStripMenuItem, "directoryToolStripMenuItem");
             // 
             // baseDirectoryToolStripMenuItem
             // 
-            resources.ApplyResources(baseDirectoryToolStripMenuItem, "baseDirectoryToolStripMenuItem");
             baseDirectoryToolStripMenuItem.Name = "baseDirectoryToolStripMenuItem";
+            resources.ApplyResources(baseDirectoryToolStripMenuItem, "baseDirectoryToolStripMenuItem");
             baseDirectoryToolStripMenuItem.Click += baseDirectoryToolStripMenuItem_Click;
             // 
             // githubToolStripMenuItem
             // 
-            resources.ApplyResources(githubToolStripMenuItem, "githubToolStripMenuItem");
             githubToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             githubToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { githubToolStripMenuItem1, repoPageToolStripMenuItem });
             githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            resources.ApplyResources(githubToolStripMenuItem, "githubToolStripMenuItem");
             // 
             // githubToolStripMenuItem1
             // 
-            resources.ApplyResources(githubToolStripMenuItem1, "githubToolStripMenuItem1");
             githubToolStripMenuItem1.Name = "githubToolStripMenuItem1";
+            resources.ApplyResources(githubToolStripMenuItem1, "githubToolStripMenuItem1");
             githubToolStripMenuItem1.Click += githubToolStripMenuItem1_Click;
             // 
             // repoPageToolStripMenuItem
             // 
-            resources.ApplyResources(repoPageToolStripMenuItem, "repoPageToolStripMenuItem");
             repoPageToolStripMenuItem.Name = "repoPageToolStripMenuItem";
+            resources.ApplyResources(repoPageToolStripMenuItem, "repoPageToolStripMenuItem");
             repoPageToolStripMenuItem.Click += repoPageToolStripMenuItem_Click;
+            // 
+            // discordWebhookToolStripMenuItem
+            // 
+            discordWebhookToolStripMenuItem.Name = "discordWebhookToolStripMenuItem";
+            resources.ApplyResources(discordWebhookToolStripMenuItem, "discordWebhookToolStripMenuItem");
+            discordWebhookToolStripMenuItem.Click += discordWebhookToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -280,7 +282,6 @@ namespace PalworldServerManager
             Controls.Add(panel1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
@@ -323,6 +324,7 @@ namespace PalworldServerManager
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nexusModsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem discordWebhookToolStripMenuItem;
     }
 }
 

@@ -44,6 +44,7 @@ namespace PalworldServerManager
         public Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
         public bool isServerStarted = false;
+        Form_DiscordWebHook discordWebHookForm;
 
         public Form1()
         {
@@ -84,10 +85,13 @@ namespace PalworldServerManager
             //Load Form
             rconForm = new Form_RCON();
             serverRestartForm = new Form_ServerRestart(this);
+            discordWebHookForm = new Form_DiscordWebHook(this);
             serverSettingsForm = new Form_ServerSettings(this);
+            
             LoadForm(serverSettingsForm, true);
             LoadForm(rconForm, true);
             LoadForm(serverRestartForm, true);
+            LoadForm(discordWebHookForm, true);
 
 
         }
@@ -569,6 +573,11 @@ namespace PalworldServerManager
             string Url = @"https://github.com/TianYu-00/PalworldServerManager/releases/latest";
 
             OpenURLGiven(Url);
+        }
+
+        private void discordWebhookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm(discordWebHookForm);
         }
     }
 }
