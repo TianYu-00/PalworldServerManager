@@ -418,6 +418,7 @@ namespace PalworldServerManager
                     serverSettingsForm.Start_OnCMDCrashRestartTimer();
                     serverSettingsForm.BackUpAlertTimer_Start();
                     serverSettingsForm.ServerRestartAlertTimer_Start();
+                    discordWebHookForm.SendEmbed("Notification", "🟢 Server has started");
                     isServerStarted = true;
                     button_startServer.Enabled = false;
                     button_stopServer.Enabled = true;
@@ -435,7 +436,7 @@ namespace PalworldServerManager
             StopServer();
         }
 
-        public void StopServer()
+        public async void StopServer()
         {
             if (isServerStarted)
             {
@@ -458,6 +459,8 @@ namespace PalworldServerManager
                 serverSettingsForm.BackUpAlertTimer_Stop();
                 serverSettingsForm.ServerRestartAlertTimer_Stop();
                 serverSettingsForm.SendMessageToConsole("Server Stopped");
+                discordWebHookForm.SendEmbed("Notification", "🔴 Server Stopped");
+                
 
             }
         }

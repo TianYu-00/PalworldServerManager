@@ -82,7 +82,7 @@ namespace PalworldServerManager
         }
 
 
-        private async void SendEmbed(string customTitle = null, string customMessage = null)
+        public async void SendEmbed(string customTitle = null, string customMessage = null)
         {
             string sendMessage;
             string sendTitle;

@@ -119,7 +119,7 @@ namespace PalworldServerManager
         }
 
 
-        private void CheckSettings()
+        private async void CheckSettings()
         {
             if (mainForm.isServerStarted)
             {
@@ -163,6 +163,7 @@ namespace PalworldServerManager
                             if (mainForm != null)
                             {
                                 mainForm.StopServer();
+                                await Task.Delay(1000); // Delay for 1000 milliseconds (1 second)
                                 mainForm.StartServer();
                             }
                             else

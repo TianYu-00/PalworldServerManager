@@ -1350,13 +1350,14 @@ namespace PalworldServerManager
         }
 
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private async void timer2_Tick(object sender, EventArgs e)
         {
             try
             {
                 if (mainForm.isServerStarted)
                 {
                     mainForm.StopServer();
+                    await Task.Delay(1000); // Delay for 1000 milliseconds (1 second)
                     mainForm.StartServer();
                 }
                 else
@@ -1442,7 +1443,7 @@ namespace PalworldServerManager
             OnCrashRestart();
         }
 
-        private void OnCrashRestart()
+        private async void OnCrashRestart()
         {
             //PalServer-Win64-Test-Cmd.exe
 
@@ -1464,6 +1465,7 @@ namespace PalworldServerManager
                 SendMessageToConsole($"Detected server is started but process is not found, attempting to restart server...");
                 SendMessageToConsole($"Use 'Stop Server' Button instead if you want to shutdown your server.");
                 mainForm.StopServer();
+                await Task.Delay(1000); // Delay for 1000 milliseconds (1 second)
                 mainForm.StartServer();
 
             }
