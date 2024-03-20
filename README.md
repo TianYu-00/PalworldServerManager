@@ -46,6 +46,10 @@ _Previews_
 **`v1.1.5 Server Settings Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/ecc453e8-b2ba-49e7-ab6d-934219177adc" alt="Image1" style="width: 100%; height: auto;">   
 
+**`v1.1.7 Discord Webhook Preview`**  
+<img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/7d4b8dc7-4d6e-497b-9df1-cf6cedd3e469" alt="Image1" style="width: 100%; height: auto;">   
+
+
 _Old Previews_
 -----------------------
 
