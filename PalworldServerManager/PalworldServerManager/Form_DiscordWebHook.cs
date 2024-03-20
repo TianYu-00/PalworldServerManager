@@ -108,7 +108,7 @@ namespace PalworldServerManager
             }
 
             //rconForm
-            if (rconForm.isConnectedToRcon)
+            if (rconForm.isAutoUpdatePlayers)
             {
                 sendFooter = "Online Players: " + rconForm.playerAmount.ToString();
             }

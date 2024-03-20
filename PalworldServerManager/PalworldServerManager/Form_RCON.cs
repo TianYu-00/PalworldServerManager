@@ -26,10 +26,9 @@ namespace PalworldServerManager
         string selectedIGN;
         string selectedUID;
         string selectedSteamID;
-        bool isAutoUpdatePlayers; //Never used but ill leave it here for later.
-        public bool isConnectedToRcon = false;
+        public bool isAutoUpdatePlayers = false;
         bool isSilentConnectedToRcon;
-        public int playerAmount = 0;
+        public string playerAmount = "Null";
 
         public Form_RCON()
 
@@ -134,7 +133,6 @@ namespace PalworldServerManager
                         isAutoUpdatePlayers = false;
                         richTextBox_output.AppendText($"Auto update player list disabled" + Environment.NewLine);
                     }
-                    isConnectedToRcon = true;
 
                 }
                 else
@@ -158,7 +156,6 @@ namespace PalworldServerManager
                     richTextBox_output.AppendText($"Disconnected" + Environment.NewLine);
                     button_connectRCON.Enabled = true;
                     button_disconnectRCON.Enabled = false;
-                    isConnectedToRcon = false;
                 }
                 else
                 {
@@ -195,9 +192,23 @@ namespace PalworldServerManager
 
         private async void GetPlayerList()
         {
+            if (!checkBox_autoUpdatePlayerList.Checked)
+            {
+                isAutoUpdatePlayers = false;
+                return;
+            }
+            else
+            {
+                isAutoUpdatePlayers = true;
+            }
+
+
             try
             {
-                var listOfPlayers = await _rconClient.Send("showplayers");
+                var listOfPlayers = await Task.Run(async () => await _rconClient.Send("showplayers"));
+                //var listOfPlayers = await _rconClient.Send("showplayers");
+                if (listOfPlayers != null)
+                { 
                 string processedMessage = ProcessResult(listOfPlayers);
                 //string listOfPlayers = "Player1\nPlayer2\nPlayer3\nPlayer4\nPlayer5\nPlayer6\nPlayer7\nPlayer8\nPlayer9\nPlayer10\nPlayer11\nPlayer12\nPlayer13\nPlayer14\nPlayer15\nPlayer16\nPlayer17\nPlayer18\nPlayer19\nPlayer20\nPlayer21\nPlayer22\nPlayer23\nPlayer24\nPlayer25\nPlayer26\nPlayer27\nPlayer28\nPlayer29\nPlayer30\nPlayer31\nPlayer32\n";
                 // Clear existing buttons if any
@@ -216,13 +227,15 @@ namespace PalworldServerManager
                     tempPlayerCounter++;
                     
                 }
-                playerAmount = tempPlayerCounter;
+                playerAmount = tempPlayerCounter.ToString();
                 Debug.WriteLine(playerAmount);
+                }
+                
             }
             catch (TimeoutException tex)
             {
-                richTextBox_output.AppendText($"Get player list timed out: {tex.Message}" + Environment.NewLine);
-                DisconnectRCON();
+                richTextBox_output.AppendText($"Get player list timed out: {tex.Message} \nIt's likely that the names of your server players include non-ASCII characters.'Auto Update Player List' feature has been disabled to resolve this issue." + Environment.NewLine);
+                checkBox_autoUpdatePlayerList.Checked = false;
                 return;
 
             }
