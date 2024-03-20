@@ -44,7 +44,7 @@ namespace PalworldServerManager
         public Form_RCON rconForm;
         Form_ServerRestart serverRestartForm;
         public bool isServerStarted = false;
-        Form_DiscordWebHook discordWebHookForm;
+        public Form_DiscordWebHook discordWebHookForm;
 
         public Form1()
         {

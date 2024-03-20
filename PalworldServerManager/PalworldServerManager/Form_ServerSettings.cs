@@ -22,6 +22,7 @@ namespace PalworldServerManager
 
         private Form1 mainForm;
         private Form_RCON rconForm;
+        private Form_DiscordWebHook discordWebhookForm;
 
         private const string serverSettingsFileName = "ServerSettingsPreset.json";
         private string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -408,6 +409,7 @@ namespace PalworldServerManager
             InitializeComponent();
             mainForm = form;
             rconForm = form.rconForm;
+            discordWebhookForm = form.discordWebHookForm;
         }
 
         public void ServerSettingsOnLoad()
@@ -1144,6 +1146,7 @@ namespace PalworldServerManager
 
                                 CheckMaxBackup();
                                 SendMessageToConsole("Auto Backup completed successfully!");
+                                discordWebhookForm.SendEmbed("Notification", "Auto Backup completed successfully!");
                             }
                             else if (forceBackup)
                             {
@@ -1163,6 +1166,7 @@ namespace PalworldServerManager
                                 }
 
                                 SendMessageToConsole("Manual Backup completed successfully!");
+                                discordWebhookForm.SendEmbed("Notification", "Manual Backup completed successfully!");
                             }
 
                             forceBackup = false;
