@@ -20,6 +20,7 @@ namespace PalworldServerManager
         //Webhook Guide: https://birdie0.github.io/discord-webhooks-guide/index.html
         //Avatar: https://i.imgur.com/qhTj0IT.jpeg
         //COLOR: 16761035
+        Form_RCON rconForm;
 
         private string WebhookUrl;
         private string txtUsername;
@@ -41,6 +42,7 @@ namespace PalworldServerManager
         public Form_DiscordWebHook(Form1 form)
         {
             InitializeComponent();
+            rconForm = form.rconForm;
         }
 
         private void Form_DiscordWebHook_Load(object sender, EventArgs e)
@@ -86,6 +88,7 @@ namespace PalworldServerManager
         {
             string sendMessage;
             string sendTitle;
+            string sendFooter;
             if (customMessage != null)
             {
                 sendMessage = customMessage;
@@ -102,6 +105,16 @@ namespace PalworldServerManager
             else
             {
                 sendTitle = txtEmbedTitle;
+            }
+
+            //rconForm
+            if (rconForm.isConnectedToRcon)
+            {
+                sendFooter = "Online Players: " + rconForm.playerAmount.ToString();
+            }
+            else
+            {
+                sendFooter = txtEmbedFooter_text;
             }
 
             DiscordEmbedAuthor author = new DiscordEmbedAuthor()
@@ -123,7 +136,7 @@ namespace PalworldServerManager
 
             DiscordEmbedFooter footer = new DiscordEmbedFooter()
             {
-                footerText = txtEmbedFooter_text,
+                footerText = sendFooter,
                 footerIconUrl = txtEmbedFooter_url
             };
 

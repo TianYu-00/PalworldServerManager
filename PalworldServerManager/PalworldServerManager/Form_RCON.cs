@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net.Sockets;
@@ -26,7 +27,9 @@ namespace PalworldServerManager
         string selectedUID;
         string selectedSteamID;
         bool isAutoUpdatePlayers; //Never used but ill leave it here for later.
+        public bool isConnectedToRcon = false;
         bool isSilentConnectedToRcon;
+        public int playerAmount = 0;
 
         public Form_RCON()
 
@@ -131,6 +134,7 @@ namespace PalworldServerManager
                         isAutoUpdatePlayers = false;
                         richTextBox_output.AppendText($"Auto update player list disabled" + Environment.NewLine);
                     }
+                    isConnectedToRcon = true;
 
                 }
                 else
@@ -154,6 +158,7 @@ namespace PalworldServerManager
                     richTextBox_output.AppendText($"Disconnected" + Environment.NewLine);
                     button_connectRCON.Enabled = true;
                     button_disconnectRCON.Enabled = false;
+                    isConnectedToRcon = false;
                 }
                 else
                 {
@@ -199,7 +204,7 @@ namespace PalworldServerManager
                 panel_playerListSection.Controls.Clear();
                 // Split the player list string into individual player names
                 string[] players = processedMessage.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-
+                int tempPlayerCounter = 0;
                 // Create and add buttons for each player except the line on the list
                 for (int i = 1; i < players.Length; i++)
                 {
@@ -208,11 +213,16 @@ namespace PalworldServerManager
                     button.Dock = DockStyle.Top;
                     button.Click += SelectedPlayer_Click; // Subscribe to Click event
                     panel_playerListSection.Controls.Add(button);
+                    tempPlayerCounter++;
+                    
                 }
+                playerAmount = tempPlayerCounter;
+                Debug.WriteLine(playerAmount);
             }
             catch (TimeoutException tex)
             {
                 richTextBox_output.AppendText($"Get player list timed out: {tex.Message}" + Environment.NewLine);
+                DisconnectRCON();
                 return;
 
             }
