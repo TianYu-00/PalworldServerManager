@@ -739,6 +739,33 @@ If your command, server name, or player names contain non-ascii printable charac
   <data name="&gt;&gt;button_save.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="button_banListTxt.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="button_banListTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 50</value>
+  </data>
+  <data name="button_banListTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 37</value>
+  </data>
+  <data name="button_banListTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button_banListTxt.Text" xml:space="preserve">
+    <value>Open Ban List File</value>
+  </data>
+  <data name="&gt;&gt;button_banListTxt.Name" xml:space="preserve">
+    <value>button_banListTxt</value>
+  </data>
+  <data name="&gt;&gt;button_banListTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_banListTxt.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;button_banListTxt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -767,7 +794,7 @@ If your command, server name, or player names contain non-ascii printable charac
     <value>2</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_ipRCON" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_portRCON" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_passwordRCON" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="checkBox_autoUpdatePlayerList" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button_save" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.333336,Percent,33.333336" /&gt;&lt;Rows Styles="Absolute,18,Absolute,29,Absolute,43" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox_ipRCON" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_portRCON" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_passwordRCON" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="checkBox_autoUpdatePlayerList" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button_save" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_banListTxt" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.333336,Percent,33.333336" /&gt;&lt;Rows Styles="Absolute,18,Absolute,29,Absolute,43" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel_topSection.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>

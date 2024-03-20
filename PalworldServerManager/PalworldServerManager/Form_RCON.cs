@@ -5,6 +5,7 @@ using System.ComponentModel.Design;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Reflection.PortableExecutable;
@@ -69,7 +70,7 @@ namespace PalworldServerManager
             Properties.Settings.Default.Saved_rconPassword = textBox_passwordRCON.Text;
             Properties.Settings.Default.Saved_rconAutpUpdatePlayerList = checkBox_autoUpdatePlayerList.Checked;
             Properties.Settings.Default.Save();
-            
+
             ConnectRCON();
 
         }
@@ -112,7 +113,7 @@ namespace PalworldServerManager
                     {
                         var info = await _rconClient.Packets().GetInfo();
                         richTextBox_output.AppendText($"Connected to {info?.Name} | version {info?.Version}" + Environment.NewLine);
-                        
+
                     }
                     catch (TimeoutException tex)
                     {
@@ -140,7 +141,8 @@ namespace PalworldServerManager
                     richTextBox_output.AppendText("Failed to connect" + Environment.NewLine);
                 }
             }
-            catch (Exception ex) { 
+            catch (Exception ex)
+            {
                 richTextBox_output.AppendText($"Error: {ex.Message}" + Environment.NewLine);
             }
         }
@@ -208,29 +210,29 @@ namespace PalworldServerManager
                 var listOfPlayers = await Task.Run(async () => await _rconClient.Send("showplayers"));
                 //var listOfPlayers = await _rconClient.Send("showplayers");
                 if (listOfPlayers != null)
-                { 
-                string processedMessage = ProcessResult(listOfPlayers);
-                //string listOfPlayers = "Player1\nPlayer2\nPlayer3\nPlayer4\nPlayer5\nPlayer6\nPlayer7\nPlayer8\nPlayer9\nPlayer10\nPlayer11\nPlayer12\nPlayer13\nPlayer14\nPlayer15\nPlayer16\nPlayer17\nPlayer18\nPlayer19\nPlayer20\nPlayer21\nPlayer22\nPlayer23\nPlayer24\nPlayer25\nPlayer26\nPlayer27\nPlayer28\nPlayer29\nPlayer30\nPlayer31\nPlayer32\n";
-                // Clear existing buttons if any
-                panel_playerListSection.Controls.Clear();
-                // Split the player list string into individual player names
-                string[] players = processedMessage.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                int tempPlayerCounter = 0;
-                // Create and add buttons for each player except the line on the list
-                for (int i = 1; i < players.Length; i++)
                 {
-                    Button button = new Button();
-                    button.Text = players[i];
-                    button.Dock = DockStyle.Top;
-                    button.Click += SelectedPlayer_Click; // Subscribe to Click event
-                    panel_playerListSection.Controls.Add(button);
-                    tempPlayerCounter++;
-                    
+                    string processedMessage = ProcessResult(listOfPlayers);
+                    //string listOfPlayers = "Player1\nPlayer2\nPlayer3\nPlayer4\nPlayer5\nPlayer6\nPlayer7\nPlayer8\nPlayer9\nPlayer10\nPlayer11\nPlayer12\nPlayer13\nPlayer14\nPlayer15\nPlayer16\nPlayer17\nPlayer18\nPlayer19\nPlayer20\nPlayer21\nPlayer22\nPlayer23\nPlayer24\nPlayer25\nPlayer26\nPlayer27\nPlayer28\nPlayer29\nPlayer30\nPlayer31\nPlayer32\n";
+                    // Clear existing buttons if any
+                    panel_playerListSection.Controls.Clear();
+                    // Split the player list string into individual player names
+                    string[] players = processedMessage.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    int tempPlayerCounter = 0;
+                    // Create and add buttons for each player except the line on the list
+                    for (int i = 1; i < players.Length; i++)
+                    {
+                        Button button = new Button();
+                        button.Text = players[i];
+                        button.Dock = DockStyle.Top;
+                        button.Click += SelectedPlayer_Click; // Subscribe to Click event
+                        panel_playerListSection.Controls.Add(button);
+                        tempPlayerCounter++;
+
+                    }
+                    playerAmount = tempPlayerCounter.ToString();
+                    Debug.WriteLine(playerAmount);
                 }
-                playerAmount = tempPlayerCounter.ToString();
-                Debug.WriteLine(playerAmount);
-                }
-                
+
             }
             catch (TimeoutException tex)
             {
@@ -490,6 +492,21 @@ namespace PalworldServerManager
             Properties.Settings.Default.Saved_rconAutpUpdatePlayerList = checkBox_autoUpdatePlayerList.Checked;
             Properties.Settings.Default.Save();
             richTextBox_output.AppendText($"RCON Settings Saved" + Environment.NewLine);
+        }
+
+        private void button_banListTxt_Click(object sender, EventArgs e)
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string FilePath = Path.Combine(baseDirectory, "steamapps", "common", "PalServer", "Pal", "Saved", "SaveGames", "banlist.txt");
+            try
+            {
+                Process.Start(new ProcessStartInfo { FileName = FilePath, UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                richTextBox_output.AppendText($"Open file directory given catched Error: {ex.Message}");
+            }
+
         }
     }
 }

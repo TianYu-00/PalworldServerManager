@@ -53,6 +53,7 @@ namespace PalworldServerManager
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             button_save = new System.Windows.Forms.Button();
+            button_banListTxt = new System.Windows.Forms.Button();
             tableLayoutPanel_topSection = new System.Windows.Forms.TableLayoutPanel();
             button_connectRCON = new System.Windows.Forms.Button();
             button_disconnectRCON = new System.Windows.Forms.Button();
@@ -168,6 +169,7 @@ namespace PalworldServerManager
             tableLayoutPanel2.Controls.Add(label3, 1, 0);
             tableLayoutPanel2.Controls.Add(label4, 2, 0);
             tableLayoutPanel2.Controls.Add(button_save, 1, 2);
+            tableLayoutPanel2.Controls.Add(button_banListTxt, 2, 2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // textBox_ipRCON
@@ -212,6 +214,13 @@ namespace PalworldServerManager
             button_save.Name = "button_save";
             button_save.UseVisualStyleBackColor = true;
             button_save.Click += button_test_Click;
+            // 
+            // button_banListTxt
+            // 
+            resources.ApplyResources(button_banListTxt, "button_banListTxt");
+            button_banListTxt.Name = "button_banListTxt";
+            button_banListTxt.UseVisualStyleBackColor = true;
+            button_banListTxt.Click += button_banListTxt_Click;
             // 
             // tableLayoutPanel_topSection
             // 
@@ -288,5 +297,6 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_save;
+        private System.Windows.Forms.Button button_banListTxt;
     }
 }
