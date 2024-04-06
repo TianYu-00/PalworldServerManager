@@ -49,7 +49,8 @@ _Previews_
 **`v1.1.7 Discord Webhook Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/7d4b8dc7-4d6e-497b-9df1-cf6cedd3e469" alt="Image1" style="width: 100%; height: auto;">   
 In order to use Discord Webhook, you need to fill in your **`Webhook URL`** and save it.    
-To test to see if its set up properly, fill in **`Embed Title`** with **`Test123`** or whatever, then save it and press the **`Test`** button.
+To test to see if its set up properly, fill in **`Embed Title`** with **`Test123`** or whatever, then save it and press the **`Test`** button.    
+Some Webhook notification features do require you to connect to your RCON. You can do that by going to RCON Section, fill out the RCON details then connect to RCON and leave it on.
 
 
 _Old Previews_
