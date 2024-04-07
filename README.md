@@ -12,6 +12,11 @@ Current PSM Language Options Available: **`English`** **`Chinese`**
 > [!IMPORTANT]
 > If you got data wiped after updating the game, check out my guide on how to recover it. It might or might not help but there arent many options out there. [Guide](https://github.com/TianYu-00/PalworldServerManager/blob/897b7ab60dd4125ab35e4f76af7af772d16e0819/PlayerDataRecovery.md)
 
+> [!NOTE]
+In order to use Discord Webhook, you need to fill in your **`Webhook URL`** and save it.    
+To test to see if its set up properly, fill in **`Embed Title`** with **`Test123`** or whatever, then save it and press the **`Test`** button.    
+Some Webhook notification features do require you to connect to your RCON. You can do that by going to RCON Section, fill out the RCON details then connect to RCON and leave it connected.
+
 _Installation_
 -----------------------
 1) Download    
@@ -48,6 +53,7 @@ _Previews_
 
 **`v1.1.7 Discord Webhook Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/7d4b8dc7-4d6e-497b-9df1-cf6cedd3e469" alt="Image1" style="width: 100%; height: auto;">   
+
 
 
 _Old Previews_
