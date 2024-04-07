@@ -442,7 +442,7 @@ namespace PalworldServerManager
             {
 
                 // Specify the name of the process without the .exe extension
-                string processName = "PalServer-Win64-Test-Cmd";
+                string processName = "PalServer-Win64-Shipping-Cmd";
 
                 // Find and kill the process if it's running
                 Process[] processes = Process.GetProcessesByName(processName);
