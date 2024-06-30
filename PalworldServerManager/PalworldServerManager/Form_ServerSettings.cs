@@ -1452,7 +1452,7 @@ namespace PalworldServerManager
             //PalServer-Win64-Test-Cmd.exe
 
             // ProcessName
-            string processName = "PalServer-Win64-Test-Cmd";
+            string processName = "PalServer-Win64-Shipping-Cmd";
             Process palServerProcess = null;
 
             //Find the process

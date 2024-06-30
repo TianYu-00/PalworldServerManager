@@ -133,7 +133,7 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 68</value>
+    <value>827, 77</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
@@ -179,7 +179,7 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 67</value>
+    <value>198, 76</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -215,7 +215,7 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 67</value>
+    <value>198, 76</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -245,7 +245,7 @@
     <value>415, 3</value>
   </data>
   <data name="button_manualSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 67</value>
+    <value>200, 76</value>
   </data>
   <data name="button_manualSave.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -272,7 +272,7 @@
     <value>621, 3</value>
   </data>
   <data name="button_openManualAutoSaveDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 67</value>
+    <value>203, 76</value>
   </data>
   <data name="button_openManualAutoSaveDirectory.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -296,7 +296,7 @@
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 68</value>
+    <value>0, 77</value>
   </data>
   <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -305,7 +305,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 93</value>
+    <value>827, 105</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -323,7 +323,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_manualSave" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button_openManualAutoSaveDirectory" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button_manualSave" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button_openManualAutoSaveDirectory" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100,Absolute,23" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -344,13 +344,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_useAuth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1749</value>
+    <value>409, 1990</value>
   </data>
   <data name="comboBox_useAuth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_useAuth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_useAuth.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
@@ -377,13 +377,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableDefenseOtherGuildPlayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1662</value>
+    <value>409, 1891</value>
   </data>
   <data name="comboBox_enableDefenseOtherGuildPlayer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableDefenseOtherGuildPlayer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableDefenseOtherGuildPlayer.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
@@ -410,13 +410,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_existPlayerAfterLogout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1633</value>
+    <value>409, 1858</value>
   </data>
   <data name="comboBox_existPlayerAfterLogout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_existPlayerAfterLogout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_existPlayerAfterLogout.TabIndex" type="System.Int32, mscorlib">
     <value>140</value>
@@ -443,13 +443,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_isStartLocationSelectByMap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1604</value>
+    <value>409, 1825</value>
   </data>
   <data name="comboBox_isStartLocationSelectByMap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_isStartLocationSelectByMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_isStartLocationSelectByMap.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -476,13 +476,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableFastTravel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1575</value>
+    <value>409, 1792</value>
   </data>
   <data name="comboBox_enableFastTravel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableFastTravel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableFastTravel.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -509,13 +509,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableNonLoginPenalty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1546</value>
+    <value>409, 1759</value>
   </data>
   <data name="comboBox_enableNonLoginPenalty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableNonLoginPenalty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableNonLoginPenalty.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
@@ -542,13 +542,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_canPickupOtherGuildDeathPenaltyDrop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1517</value>
+    <value>409, 1726</value>
   </data>
   <data name="comboBox_canPickupOtherGuildDeathPenaltyDrop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_canPickupOtherGuildDeathPenaltyDrop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_canPickupOtherGuildDeathPenaltyDrop.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -575,13 +575,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_isPvP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1488</value>
+    <value>409, 1693</value>
   </data>
   <data name="comboBox_isPvP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_isPvP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_isPvP.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -608,13 +608,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_isMultiplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1459</value>
+    <value>409, 1660</value>
   </data>
   <data name="comboBox_isMultiplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_isMultiplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_isMultiplay.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
@@ -641,13 +641,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_autoResetGuildNoOnlinePlayers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1314</value>
+    <value>409, 1495</value>
   </data>
   <data name="comboBox_autoResetGuildNoOnlinePlayers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_autoResetGuildNoOnlinePlayers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_autoResetGuildNoOnlinePlayers.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -674,13 +674,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableAimAssistKeyboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1140</value>
+    <value>409, 1297</value>
   </data>
   <data name="comboBox_enableAimAssistKeyboard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableAimAssistKeyboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableAimAssistKeyboard.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -707,13 +707,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableAimAssistPad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1111</value>
+    <value>409, 1264</value>
   </data>
   <data name="comboBox_enableAimAssistPad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableAimAssistPad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableAimAssistPad.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -740,13 +740,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_activeUNKO.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1082</value>
+    <value>409, 1231</value>
   </data>
   <data name="comboBox_activeUNKO.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_activeUNKO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_activeUNKO.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -773,13 +773,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableInvaderEnemy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1053</value>
+    <value>409, 1198</value>
   </data>
   <data name="comboBox_enableInvaderEnemy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableInvaderEnemy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableInvaderEnemy.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -806,13 +806,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enableFriendlyFire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1024</value>
+    <value>409, 1165</value>
   </data>
   <data name="comboBox_enableFriendlyFire.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enableFriendlyFire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enableFriendlyFire.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -839,13 +839,13 @@
     <value>False</value>
   </data>
   <data name="comboBox_enablePlayerToPlayerDamage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 995</value>
+    <value>409, 1132</value>
   </data>
   <data name="comboBox_enablePlayerToPlayerDamage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_enablePlayerToPlayerDamage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_enablePlayerToPlayerDamage.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -878,13 +878,13 @@
     <value>All</value>
   </data>
   <data name="comboBox_deathPenalty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 966</value>
+    <value>409, 1099</value>
   </data>
   <data name="comboBox_deathPenalty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_deathPenalty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_deathPenalty.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -908,13 +908,13 @@
     <value>None</value>
   </data>
   <data name="comboBox_difficulty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 270</value>
+    <value>409, 307</value>
   </data>
   <data name="comboBox_difficulty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_difficulty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_difficulty.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -935,13 +935,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_banListURL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1778</value>
+    <value>409, 2023</value>
   </data>
   <data name="textBox_banListURL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_banListURL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_banListURL.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -962,13 +962,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_region.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1720</value>
+    <value>409, 1957</value>
   </data>
   <data name="textBox_region.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_region.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_region.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -989,13 +989,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_coopPlayerMaxNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1691</value>
+    <value>409, 1924</value>
   </data>
   <data name="textBox_coopPlayerMaxNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_coopPlayerMaxNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_coopPlayerMaxNum.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -1016,13 +1016,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_workSpeedRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1430</value>
+    <value>409, 1627</value>
   </data>
   <data name="textBox_workSpeedRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_workSpeedRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_workSpeedRate.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -1043,13 +1043,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palEggDefaultHatchingTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1401</value>
+    <value>409, 1594</value>
   </data>
   <data name="textBox_palEggDefaultHatchingTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palEggDefaultHatchingTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palEggDefaultHatchingTime.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -1070,13 +1070,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_guildPlayerMaxNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1372</value>
+    <value>409, 1561</value>
   </data>
   <data name="textBox_guildPlayerMaxNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_guildPlayerMaxNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_guildPlayerMaxNum.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -1097,13 +1097,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_autoResetGuildTimeNoOnlinePlayers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1343</value>
+    <value>409, 1528</value>
   </data>
   <data name="textBox_autoResetGuildTimeNoOnlinePlayers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_autoResetGuildTimeNoOnlinePlayers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_autoResetGuildTimeNoOnlinePlayers.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -1124,13 +1124,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_dropItemAliveMaxHours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1285</value>
+    <value>409, 1462</value>
   </data>
   <data name="textBox_dropItemAliveMaxHours.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_dropItemAliveMaxHours.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_dropItemAliveMaxHours.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -1151,13 +1151,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_baseCampWorkerMaxNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1256</value>
+    <value>409, 1429</value>
   </data>
   <data name="textBox_baseCampWorkerMaxNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_baseCampWorkerMaxNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_baseCampWorkerMaxNum.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -1178,13 +1178,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_baseCampMaxNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1227</value>
+    <value>409, 1396</value>
   </data>
   <data name="textBox_baseCampMaxNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_baseCampMaxNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_baseCampMaxNum.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -1205,13 +1205,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_dropItemMaxNum_UNKO.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1198</value>
+    <value>409, 1363</value>
   </data>
   <data name="textBox_dropItemMaxNum_UNKO.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_dropItemMaxNum_UNKO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_dropItemMaxNum_UNKO.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -1232,13 +1232,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_dropItemMaxNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 1169</value>
+    <value>409, 1330</value>
   </data>
   <data name="textBox_dropItemMaxNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_dropItemMaxNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_dropItemMaxNum.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -1259,13 +1259,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_enemyDropItemRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 937</value>
+    <value>409, 1066</value>
   </data>
   <data name="textBox_enemyDropItemRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_enemyDropItemRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_enemyDropItemRate.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1286,13 +1286,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_collectionObjectRespawnSpeedRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 908</value>
+    <value>409, 1033</value>
   </data>
   <data name="textBox_collectionObjectRespawnSpeedRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_collectionObjectRespawnSpeedRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_collectionObjectRespawnSpeedRate.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -1313,13 +1313,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_collectionObjectHpRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 879</value>
+    <value>409, 1000</value>
   </data>
   <data name="textBox_collectionObjectHpRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_collectionObjectHpRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_collectionObjectHpRate.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1340,13 +1340,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_collectionDropRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 850</value>
+    <value>409, 967</value>
   </data>
   <data name="textBox_collectionDropRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_collectionDropRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_collectionDropRate.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -1367,13 +1367,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_buildObjectDeteriorationDamageRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 821</value>
+    <value>409, 934</value>
   </data>
   <data name="textBox_buildObjectDeteriorationDamageRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_buildObjectDeteriorationDamageRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_buildObjectDeteriorationDamageRate.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1394,13 +1394,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_buildObjectDamageRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 792</value>
+    <value>409, 901</value>
   </data>
   <data name="textBox_buildObjectDamageRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_buildObjectDamageRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_buildObjectDamageRate.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -1421,13 +1421,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palAutoHpRegeneRateInSleep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 763</value>
+    <value>409, 868</value>
   </data>
   <data name="textBox_palAutoHpRegeneRateInSleep.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palAutoHpRegeneRateInSleep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palAutoHpRegeneRateInSleep.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -1448,13 +1448,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palAutoHpRegeneRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 734</value>
+    <value>409, 835</value>
   </data>
   <data name="textBox_palAutoHpRegeneRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palAutoHpRegeneRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palAutoHpRegeneRate.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -1475,13 +1475,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palStaminaDecreaceRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 705</value>
+    <value>409, 802</value>
   </data>
   <data name="textBox_palStaminaDecreaceRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palStaminaDecreaceRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palStaminaDecreaceRate.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -1502,13 +1502,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palStomachDecreaceRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 676</value>
+    <value>409, 769</value>
   </data>
   <data name="textBox_palStomachDecreaceRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palStomachDecreaceRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palStomachDecreaceRate.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -1529,13 +1529,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRateInSleep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 647</value>
+    <value>409, 736</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRateInSleep.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRateInSleep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRateInSleep.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -1556,13 +1556,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 618</value>
+    <value>409, 703</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_playerAutoHpRegeneRate.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -1583,13 +1583,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_playerStaminaDecreaceRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 589</value>
+    <value>409, 670</value>
   </data>
   <data name="textBox_playerStaminaDecreaceRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_playerStaminaDecreaceRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_playerStaminaDecreaceRate.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -1610,13 +1610,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_playerStomachDecreaceRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 560</value>
+    <value>409, 637</value>
   </data>
   <data name="textBox_playerStomachDecreaceRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_playerStomachDecreaceRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_playerStomachDecreaceRate.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -1637,13 +1637,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_playerDamageRateDefense.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 531</value>
+    <value>409, 604</value>
   </data>
   <data name="textBox_playerDamageRateDefense.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_playerDamageRateDefense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_playerDamageRateDefense.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -1664,13 +1664,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_playerDamageRateAttack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 502</value>
+    <value>409, 571</value>
   </data>
   <data name="textBox_playerDamageRateAttack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_playerDamageRateAttack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_playerDamageRateAttack.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -1691,13 +1691,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palDamageRateDefense.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 473</value>
+    <value>409, 538</value>
   </data>
   <data name="textBox_palDamageRateDefense.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palDamageRateDefense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palDamageRateDefense.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -1718,13 +1718,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palDamageRateAttack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 444</value>
+    <value>409, 505</value>
   </data>
   <data name="textBox_palDamageRateAttack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palDamageRateAttack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palDamageRateAttack.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -1745,13 +1745,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palSpawnNumRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 415</value>
+    <value>409, 472</value>
   </data>
   <data name="textBox_palSpawnNumRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palSpawnNumRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palSpawnNumRate.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -1772,13 +1772,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_palCaptureRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 386</value>
+    <value>409, 439</value>
   </data>
   <data name="textBox_palCaptureRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_palCaptureRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_palCaptureRate.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -1799,13 +1799,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_expRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 357</value>
+    <value>409, 406</value>
   </data>
   <data name="textBox_expRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_expRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_expRate.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1826,13 +1826,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_nightTimeSpeedRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 328</value>
+    <value>409, 373</value>
   </data>
   <data name="textBox_nightTimeSpeedRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_nightTimeSpeedRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_nightTimeSpeedRate.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -1853,13 +1853,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_dayTimeSpeedRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 299</value>
+    <value>409, 340</value>
   </data>
   <data name="textBox_dayTimeSpeedRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_dayTimeSpeedRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_dayTimeSpeedRate.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -1880,13 +1880,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_rconPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 241</value>
+    <value>409, 274</value>
   </data>
   <data name="textBox_rconPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_rconPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_rconPort.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1907,13 +1907,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_publicIP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 183</value>
+    <value>409, 208</value>
   </data>
   <data name="textBox_publicIP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_publicIP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_publicIP.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -1934,13 +1934,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_publicPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 154</value>
+    <value>409, 175</value>
   </data>
   <data name="textBox_publicPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_publicPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_publicPort.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -1961,13 +1961,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_serverPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 125</value>
+    <value>409, 142</value>
   </data>
   <data name="textBox_serverPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_serverPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_serverPassword.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -1988,13 +1988,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_adminPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 96</value>
+    <value>409, 109</value>
   </data>
   <data name="textBox_adminPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_adminPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_adminPassword.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -2015,13 +2015,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_serverPlayerMaxNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 67</value>
+    <value>409, 76</value>
   </data>
   <data name="textBox_serverPlayerMaxNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_serverPlayerMaxNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_serverPlayerMaxNum.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -2042,13 +2042,13 @@
     <value>Fill</value>
   </data>
   <data name="textBox_serverDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 38</value>
+    <value>409, 43</value>
   </data>
   <data name="textBox_serverDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_serverDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_serverDescription.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -2075,13 +2075,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 6</value>
+    <value>10, 7</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2117,13 +2117,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 35</value>
+    <value>10, 40</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2159,13 +2159,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 64</value>
+    <value>10, 73</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2201,13 +2201,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 93</value>
+    <value>10, 106</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2243,13 +2243,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 122</value>
+    <value>10, 139</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2285,13 +2285,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 151</value>
+    <value>10, 172</value>
   </data>
   <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2327,13 +2327,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 180</value>
+    <value>10, 205</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2369,13 +2369,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 209</value>
+    <value>10, 238</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2411,13 +2411,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 238</value>
+    <value>10, 271</value>
   </data>
   <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2453,13 +2453,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 267</value>
+    <value>10, 304</value>
   </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2495,13 +2495,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 296</value>
+    <value>10, 337</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2537,13 +2537,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 325</value>
+    <value>10, 370</value>
   </data>
   <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2579,13 +2579,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 354</value>
+    <value>10, 403</value>
   </data>
   <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2621,13 +2621,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 383</value>
+    <value>10, 436</value>
   </data>
   <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2663,13 +2663,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 412</value>
+    <value>10, 469</value>
   </data>
   <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2705,13 +2705,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 441</value>
+    <value>10, 502</value>
   </data>
   <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -2747,13 +2747,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 470</value>
+    <value>10, 535</value>
   </data>
   <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2789,13 +2789,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 499</value>
+    <value>10, 568</value>
   </data>
   <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -2831,13 +2831,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 528</value>
+    <value>10, 601</value>
   </data>
   <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -2873,13 +2873,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 557</value>
+    <value>10, 634</value>
   </data>
   <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2915,13 +2915,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 586</value>
+    <value>10, 667</value>
   </data>
   <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2957,13 +2957,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 615</value>
+    <value>10, 700</value>
   </data>
   <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -2999,13 +2999,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 644</value>
+    <value>10, 733</value>
   </data>
   <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -3041,13 +3041,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 673</value>
+    <value>10, 766</value>
   </data>
   <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -3083,13 +3083,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 702</value>
+    <value>10, 799</value>
   </data>
   <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -3125,13 +3125,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 731</value>
+    <value>10, 832</value>
   </data>
   <data name="label26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -3167,13 +3167,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 760</value>
+    <value>10, 865</value>
   </data>
   <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -3209,13 +3209,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 789</value>
+    <value>10, 898</value>
   </data>
   <data name="label28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label28.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -3251,13 +3251,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 818</value>
+    <value>10, 931</value>
   </data>
   <data name="label29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label29.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -3293,13 +3293,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 847</value>
+    <value>10, 964</value>
   </data>
   <data name="label30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label30.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -3335,13 +3335,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 876</value>
+    <value>10, 997</value>
   </data>
   <data name="label31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -3377,13 +3377,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 905</value>
+    <value>10, 1030</value>
   </data>
   <data name="label32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -3419,13 +3419,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 934</value>
+    <value>10, 1063</value>
   </data>
   <data name="label33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -3461,13 +3461,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 963</value>
+    <value>10, 1096</value>
   </data>
   <data name="label34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label34.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -3508,13 +3508,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 992</value>
+    <value>10, 1129</value>
   </data>
   <data name="label35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label35.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -3550,13 +3550,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1021</value>
+    <value>10, 1162</value>
   </data>
   <data name="label36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label36.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -3592,13 +3592,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1050</value>
+    <value>10, 1195</value>
   </data>
   <data name="label37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label37.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -3634,13 +3634,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1079</value>
+    <value>10, 1228</value>
   </data>
   <data name="label38.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label38.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -3676,13 +3676,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1108</value>
+    <value>10, 1261</value>
   </data>
   <data name="label39.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label39.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -3718,13 +3718,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1137</value>
+    <value>10, 1294</value>
   </data>
   <data name="label40.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label40.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -3760,13 +3760,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1166</value>
+    <value>10, 1327</value>
   </data>
   <data name="label41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label41.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -3802,13 +3802,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1195</value>
+    <value>10, 1360</value>
   </data>
   <data name="label42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label42.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -3844,13 +3844,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1224</value>
+    <value>10, 1393</value>
   </data>
   <data name="label43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label43.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -3886,13 +3886,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1253</value>
+    <value>10, 1426</value>
   </data>
   <data name="label44.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label44.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -3928,13 +3928,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1282</value>
+    <value>10, 1459</value>
   </data>
   <data name="label45.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label45.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -3970,13 +3970,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1311</value>
+    <value>10, 1492</value>
   </data>
   <data name="label46.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label46.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -4012,13 +4012,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1340</value>
+    <value>10, 1525</value>
   </data>
   <data name="label47.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label47.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -4054,13 +4054,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1369</value>
+    <value>10, 1558</value>
   </data>
   <data name="label48.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label48.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -4096,13 +4096,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1398</value>
+    <value>10, 1591</value>
   </data>
   <data name="label49.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label49.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -4138,13 +4138,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1427</value>
+    <value>10, 1624</value>
   </data>
   <data name="label50.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label50.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -4180,13 +4180,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1456</value>
+    <value>10, 1657</value>
   </data>
   <data name="label51.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label51.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -4222,13 +4222,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1485</value>
+    <value>10, 1690</value>
   </data>
   <data name="label52.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label52.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -4264,13 +4264,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1514</value>
+    <value>10, 1723</value>
   </data>
   <data name="label53.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label53.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -4306,13 +4306,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1543</value>
+    <value>10, 1756</value>
   </data>
   <data name="label54.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label54.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -4348,13 +4348,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label55.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1572</value>
+    <value>10, 1789</value>
   </data>
   <data name="label55.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label55.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -4390,13 +4390,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label56.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1601</value>
+    <value>10, 1822</value>
   </data>
   <data name="label56.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label56.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -4432,13 +4432,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1630</value>
+    <value>10, 1855</value>
   </data>
   <data name="label57.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label57.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -4474,13 +4474,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1659</value>
+    <value>10, 1888</value>
   </data>
   <data name="label58.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label58.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -4516,13 +4516,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1688</value>
+    <value>10, 1921</value>
   </data>
   <data name="label59.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label59.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -4558,13 +4558,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1717</value>
+    <value>10, 1954</value>
   </data>
   <data name="label60.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label60.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -4600,13 +4600,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1746</value>
+    <value>10, 1987</value>
   </data>
   <data name="label61.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label61.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -4642,13 +4642,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label62.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 1775</value>
+    <value>10, 2020</value>
   </data>
   <data name="label62.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label62.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 29</value>
+    <value>391, 33</value>
   </data>
   <data name="label62.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -4678,13 +4678,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_serverName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 9</value>
+    <value>409, 10</value>
   </data>
   <data name="textBox_serverName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="textBox_serverName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 23</value>
   </data>
   <data name="textBox_serverName.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -4711,13 +4711,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>False</value>
   </data>
   <data name="comboBox_rconEnabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 212</value>
+    <value>409, 241</value>
   </data>
   <data name="comboBox_rconEnabled.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="comboBox_rconEnabled.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 23</value>
+    <value>391, 25</value>
   </data>
   <data name="comboBox_rconEnabled.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -4738,19 +4738,19 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 402</value>
+    <value>0, 453</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>6, 7, 6, 7</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.RowCount" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 1810</value>
+    <value>810, 2060</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4768,7 +4768,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0</value>
   </data>
   <data name="tableLayoutPanel_worldsettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="comboBox_useAuth" Row="60" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableDefenseOtherGuildPlayer" Row="57" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_existPlayerAfterLogout" Row="56" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isStartLocationSelectByMap" Row="55" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFastTravel" Row="54" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableNonLoginPenalty" Row="53" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_canPickupOtherGuildDeathPenaltyDrop" Row="52" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isPvP" Row="51" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isMultiplay" Row="50" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_autoResetGuildNoOnlinePlayers" Row="45" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistKeyboard" Row="39" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistPad" Row="38" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_activeUNKO" Row="37" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableInvaderEnemy" Row="36" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFriendlyFire" Row="35" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enablePlayerToPlayerDamage" Row="34" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_deathPenalty" Row="33" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_difficulty" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_banListURL" Row="61" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_region" Row="59" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_coopPlayerMaxNum" Row="58" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_workSpeedRate" Row="49" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palEggDefaultHatchingTime" Row="48" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_guildPlayerMaxNum" Row="47" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoResetGuildTimeNoOnlinePlayers" Row="46" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemAliveMaxHours" Row="44" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampWorkerMaxNum" Row="43" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampMaxNum" Row="42" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum_UNKO" Row="41" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum" Row="40" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_enemyDropItemRate" Row="32" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectRespawnSpeedRate" Row="31" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectHpRate" Row="30" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionDropRate" Row="29" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDeteriorationDamageRate" Row="28" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDamageRate" Row="27" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRateInSleep" Row="26" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRate" Row="25" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStaminaDecreaceRate" Row="24" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStomachDecreaceRate" Row="23" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRateInSleep" Row="22" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRate" Row="21" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStaminaDecreaceRate" Row="20" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStomachDecreaceRate" Row="19" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateDefense" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateAttack" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateDefense" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateAttack" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palSpawnNumRate" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palCaptureRate" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_expRate" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_nightTimeSpeedRate" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dayTimeSpeedRate" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_rconPort" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicIP" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicPort" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_adminPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPlayerMaxNum" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="19" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="20" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="21" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="22" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="23" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="24" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="25" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="26" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="27" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="28" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="29" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="30" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="31" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="32" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="33" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="34" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="35" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="36" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="37" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="38" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="39" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="40" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="41" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="42" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="43" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="44" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="45" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="46" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="47" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="48" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="49" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="50" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="51" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="52" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="53" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="54" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="55" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="56" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="57" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="58" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="59" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="60" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="61" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_rconEnabled" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="comboBox_useAuth" Row="60" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableDefenseOtherGuildPlayer" Row="57" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_existPlayerAfterLogout" Row="56" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isStartLocationSelectByMap" Row="55" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFastTravel" Row="54" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableNonLoginPenalty" Row="53" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_canPickupOtherGuildDeathPenaltyDrop" Row="52" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isPvP" Row="51" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_isMultiplay" Row="50" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_autoResetGuildNoOnlinePlayers" Row="45" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistKeyboard" Row="39" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableAimAssistPad" Row="38" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_activeUNKO" Row="37" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableInvaderEnemy" Row="36" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enableFriendlyFire" Row="35" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_enablePlayerToPlayerDamage" Row="34" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_deathPenalty" Row="33" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_difficulty" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_banListURL" Row="61" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_region" Row="59" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_coopPlayerMaxNum" Row="58" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_workSpeedRate" Row="49" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palEggDefaultHatchingTime" Row="48" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_guildPlayerMaxNum" Row="47" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoResetGuildTimeNoOnlinePlayers" Row="46" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemAliveMaxHours" Row="44" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampWorkerMaxNum" Row="43" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_baseCampMaxNum" Row="42" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum_UNKO" Row="41" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dropItemMaxNum" Row="40" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_enemyDropItemRate" Row="32" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectRespawnSpeedRate" Row="31" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionObjectHpRate" Row="30" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_collectionDropRate" Row="29" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDeteriorationDamageRate" Row="28" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_buildObjectDamageRate" Row="27" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRateInSleep" Row="26" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palAutoHpRegeneRate" Row="25" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStaminaDecreaceRate" Row="24" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palStomachDecreaceRate" Row="23" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRateInSleep" Row="22" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerAutoHpRegeneRate" Row="21" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStaminaDecreaceRate" Row="20" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerStomachDecreaceRate" Row="19" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateDefense" Row="18" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_playerDamageRateAttack" Row="17" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateDefense" Row="16" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palDamageRateAttack" Row="15" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palSpawnNumRate" Row="14" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_palCaptureRate" Row="13" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_expRate" Row="12" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_nightTimeSpeedRate" Row="11" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_dayTimeSpeedRate" Row="10" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_rconPort" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicIP" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_publicPort" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_adminPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverPlayerMaxNum" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverDescription" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="10" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="11" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="12" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="13" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="14" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="15" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="16" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="17" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="18" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="19" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="20" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="21" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="22" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="23" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="24" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="25" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="26" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="27" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="28" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="29" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="30" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="31" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="32" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="33" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="34" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="35" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="36" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="37" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="38" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="39" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="40" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="41" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="42" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="43" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="44" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="45" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="46" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="47" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="48" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="49" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="50" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="51" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="52" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="53" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="54" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="55" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="56" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="57" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="58" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="59" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="60" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="61" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_serverName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox_rconEnabled" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,33,Absolute,23" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="label71.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -4777,7 +4777,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0, 0</value>
   </data>
   <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 30</value>
+    <value>810, 34</value>
   </data>
   <data name="label71.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4804,10 +4804,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 372</value>
+    <value>0, 419</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 30</value>
+    <value>810, 34</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4851,10 +4851,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>NoControl</value>
   </data>
   <data name="button_customServerLaunchArgument.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 0</value>
+    <value>375, 0</value>
   </data>
   <data name="button_customServerLaunchArgument.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 26</value>
+    <value>24, 30</value>
   </data>
   <data name="button_customServerLaunchArgument.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4878,7 +4878,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0, 0</value>
   </data>
   <data name="textBox_customServerLaunchArgument.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 23</value>
+    <value>369, 23</value>
   </data>
   <data name="textBox_customServerLaunchArgument.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -4899,10 +4899,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 99</value>
+    <value>408, 111</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 26</value>
+    <value>399, 30</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4929,7 +4929,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>3, 0</value>
   </data>
   <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label68.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4959,13 +4959,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_autoRestartEvery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 3</value>
+    <value>408, 3</value>
   </data>
   <data name="textBox_autoRestartEvery.PlaceholderText" xml:space="preserve">
     <value>In seconds, 0 = dont restart</value>
   </data>
   <data name="textBox_autoRestartEvery.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 23</value>
+    <value>399, 23</value>
   </data>
   <data name="textBox_autoRestartEvery.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4989,10 +4989,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 96</value>
+    <value>3, 108</value>
   </data>
   <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label70.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5025,10 +5025,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="label69.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 64</value>
+    <value>3, 72</value>
   </data>
   <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label69.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5058,13 +5058,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_onServerCmdCrashRestartInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 67</value>
+    <value>408, 75</value>
   </data>
   <data name="textBox_onServerCmdCrashRestartInterval.PlaceholderText" xml:space="preserve">
     <value>In seconds, 0 = dont restart</value>
   </data>
   <data name="textBox_onServerCmdCrashRestartInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 23</value>
+    <value>399, 23</value>
   </data>
   <data name="textBox_onServerCmdCrashRestartInterval.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5088,10 +5088,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="label73.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 32</value>
+    <value>3, 36</value>
   </data>
   <data name="label73.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label73.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5131,7 +5131,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>In seconds, 0 = dont alert</value>
   </data>
   <data name="textBox_restartServerRCONAlertInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 23</value>
+    <value>162, 23</value>
   </data>
   <data name="textBox_restartServerRCONAlertInterval.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5152,10 +5152,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_restartServerRCONAlertMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 3</value>
+    <value>232, 3</value>
   </data>
   <data name="textBox_restartServerRCONAlertMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 23</value>
+    <value>164, 23</value>
   </data>
   <data name="textBox_restartServerRCONAlertMessage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5179,10 +5179,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="label75.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 0</value>
+    <value>171, 0</value>
   </data>
   <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 26</value>
+    <value>55, 30</value>
   </data>
   <data name="label75.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5209,13 +5209,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 35</value>
+    <value>408, 39</value>
   </data>
   <data name="tableLayoutPanel6.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 26</value>
+    <value>399, 30</value>
   </data>
   <data name="tableLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -5239,13 +5239,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 244</value>
+    <value>0, 275</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 128</value>
+    <value>810, 144</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -5263,7 +5263,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>2</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel4" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoRestartEvery" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label70" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label69" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_onServerCmdCrashRestartInterval" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label73" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,32,Absolute,32,Absolute,32,Absolute,32" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel4" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label68" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_autoRestartEvery" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label70" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label69" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_onServerCmdCrashRestartInterval" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label73" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,36,Absolute,36,Absolute,36,Absolute,36" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel_backup.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5281,7 +5281,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>-1, 0</value>
   </data>
   <data name="textBox_backupTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 23</value>
+    <value>369, 23</value>
   </data>
   <data name="textBox_backupTo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5514,10 +5514,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Right</value>
   </data>
   <data name="button_backupTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 0</value>
+    <value>375, 0</value>
   </data>
   <data name="button_backupTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 26</value>
+    <value>24, 30</value>
   </data>
   <data name="button_backupTo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5538,10 +5538,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 99</value>
+    <value>408, 111</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 26</value>
+    <value>399, 30</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5568,10 +5568,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label66.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 96</value>
+    <value>3, 108</value>
   </data>
   <data name="label66.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label66.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5610,7 +5610,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>3, 0</value>
   </data>
   <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label65.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5641,13 +5641,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_backupInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 3</value>
+    <value>408, 3</value>
   </data>
   <data name="textBox_backupInterval.PlaceholderText" xml:space="preserve">
     <value>In seconds, 0 = dont auto save</value>
   </data>
   <data name="textBox_backupInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 23</value>
+    <value>399, 23</value>
   </data>
   <data name="textBox_backupInterval.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5677,10 +5677,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>NoControl</value>
   </data>
   <data name="label67.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 64</value>
+    <value>3, 72</value>
   </data>
   <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label67.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5710,13 +5710,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_maxBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 67</value>
+    <value>408, 75</value>
   </data>
   <data name="textBox_maxBackup.PlaceholderText" xml:space="preserve">
     <value>max autobackup amount, 0 = delete auto backup</value>
   </data>
   <data name="textBox_maxBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 23</value>
+    <value>399, 23</value>
   </data>
   <data name="textBox_maxBackup.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5740,10 +5740,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="label72.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 32</value>
+    <value>3, 36</value>
   </data>
   <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 32</value>
+    <value>399, 36</value>
   </data>
   <data name="label72.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -5785,7 +5785,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>In seconds, 0 = dont alert</value>
   </data>
   <data name="textBox_backupRCONAlertInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 23</value>
+    <value>162, 23</value>
   </data>
   <data name="textBox_backupRCONAlertInterval.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5806,10 +5806,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="textBox_backupRCONAlertMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 3</value>
+    <value>232, 3</value>
   </data>
   <data name="textBox_backupRCONAlertMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 23</value>
+    <value>164, 23</value>
   </data>
   <data name="textBox_backupRCONAlertMessage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5833,10 +5833,10 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="label74.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 0</value>
+    <value>171, 0</value>
   </data>
   <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 26</value>
+    <value>55, 30</value>
   </data>
   <data name="label74.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5863,13 +5863,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 35</value>
+    <value>408, 39</value>
   </data>
   <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 26</value>
+    <value>399, 30</value>
   </data>
   <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5899,7 +5899,7 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>4</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 128</value>
+    <value>810, 144</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -5917,16 +5917,16 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>0</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label66" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_maxBackup" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label72" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,32,Absolute,32,Absolute,32,Absolute,32" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel5" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label66" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_backupInterval" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox_maxBackup" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label72" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,36,Absolute,36,Absolute,36,Absolute,36" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel_backup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="panel_backup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 116</value>
+    <value>0, 131</value>
   </data>
   <data name="panel_backup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 128</value>
+    <value>810, 144</value>
   </data>
   <data name="panel_backup.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -5947,13 +5947,13 @@ All (Default) - When players die, they drop their items, equipment, and Pals.</v
     <value>Top</value>
   </data>
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 202</value>
+    <value>0, 228</value>
   </data>
   <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 172</value>
+    <value>810, 194</value>
   </data>
   <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5984,13 +5984,13 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>Top</value>
   </data>
   <data name="label64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 187</value>
+    <value>0, 211</value>
   </data>
   <data name="label64.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 15</value>
+    <value>180, 17</value>
   </data>
   <data name="label64.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -6014,13 +6014,13 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>Top</value>
   </data>
   <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 15</value>
+    <value>0, 17</value>
   </data>
   <data name="richTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 172</value>
+    <value>810, 194</value>
   </data>
   <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -6053,7 +6053,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 15</value>
+    <value>182, 17</value>
   </data>
   <data name="label63.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -6077,10 +6077,10 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>Bottom</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2319</value>
+    <value>0, 2513</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 360</value>
+    <value>810, 408</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -6104,7 +6104,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
     <value>0, 0</value>
   </data>
   <data name="richTextBox_alert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 116</value>
+    <value>810, 131</value>
   </data>
   <data name="richTextBox_alert.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -6131,7 +6131,7 @@ Message
     <value>Fill</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 161</value>
+    <value>0, 182</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -6173,10 +6173,10 @@ Message
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>7, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>827, 2840</value>
+    <value>827, 2861</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
