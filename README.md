@@ -69,10 +69,6 @@ _Old Previews_
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/5448c663-69ce-467d-bf7c-aea35b0f6fa7" alt="Image1" style="width: 100%; height: auto;">   
 
 
- 
-
-
-
 Official way to create dedicated server: https://tech.palworldgame.com/dedicated-server-guide    
 
 _Credits_
