@@ -235,6 +235,37 @@ namespace PalworldServerManager
         //BanListURL Sets the URL for the server's ban list.
         private string serv_banListURL;
 
+        //
+        private string serv_baseCampMaxNumInGuild;
+
+        //
+        private string serv_bInvisibleOtherGuildBaseCampAreaFX;
+
+        //
+        private string serv_autoSaveSpan;
+
+        //
+        private string serv_RESTAPIEnabled;
+
+        //
+        private string serv_RESTAPIPort;
+
+        //
+        private string serv_bShowPlayerList;
+
+        //
+        private string serv_allowConnectPlatform;
+
+        //
+        private string serv_bIsUseBackupSaveData;
+
+        //
+        private string serv_logFormatType;
+
+        //
+        private string serv_supplyDropSpan;
+
+
         /// <summary>
         /// DEFAULT SERVER WORLD SETTINGS
         /// </summary>
@@ -255,6 +286,7 @@ namespace PalworldServerManager
         private string dserv_restartServerRCONAlertInterval = "0";
         private string dserv_restartServerRCONAlertMessage = "";
 
+        // SERVER WORLD SETTINGS
         private string dserv_difficulty = "None";
         private string dserv_dayTimeSpeedRate = "1.000000";
         private string dserv_nightTimeSpeedRate = "1.000000";
@@ -317,6 +349,16 @@ namespace PalworldServerManager
         private string dserv_region = "";
         private string dserv_useAuth = "True";
         private string dserv_banListURL = "https://api.palworldgame.com/api/banlist.txt";
+        private string dserv_baseCampMaxNumInGuild = "4";
+        private string dserv_bInvisibleOtherGuildBaseCampAreaFX = "False";
+        private string dserv_autoSaveSpan = "30.000000";
+        private string dserv_RESTAPIEnabled = "False";
+        private string dserv_RESTAPIPort = "8212";
+        private string dserv_bShowPlayerList = "False";
+        private string dserv_allowConnectPlatform = "Steam";
+        private string dserv_bIsUseBackupSaveData = "True";
+        private string dserv_logFormatType = "Text";
+        private string dserv_supplyDropSpan = "180";
 
         public class ServerSettingsPreset
         {
@@ -338,7 +380,6 @@ namespace PalworldServerManager
 
 
             //WORLD EDIT
-
             public string json_difficulty { get; set; }
             public string json_dayTimeSpeedRate { get; set; }
             public string json_nightTimeSpeedRate { get; set; }
@@ -401,6 +442,36 @@ namespace PalworldServerManager
             public string json_region { get; set; }
             public string json_useAuth { get; set; }
             public string json_banListURL { get; set; }
+
+            //
+            public string json_baseCampMaxNumInGuild { get; set; }
+
+            //
+            public string json_bInvisibleOtherGuildBaseCampAreaFX { get; set; }
+
+            //
+            public string json_autoSaveSpan { get; set; }
+
+            //
+            public string json_RESTAPIEnabled { get; set; }
+
+            //
+            public string json_RESTAPIPort { get; set; }
+
+            //
+            public string json_bShowPlayerList { get; set; }
+
+            //
+            public string json_allowConnectPlatform { get; set; }
+
+            //
+            public string json_bIsUseBackupSaveData { get; set; }
+
+            //
+            public string json_logFormatType { get; set; }
+
+            //
+            public string json_supplyDropSpan { get; set; }
         }
 
 
@@ -539,7 +610,7 @@ namespace PalworldServerManager
                     // Display the content in the RichTextBox
                     //richTextBox2.Text = iniContent;
                     string newWorldSettings = $"[/Script/Pal.PalGameWorldSettings]\n" +
-                        $"OptionSettings=(Difficulty={serv_difficulty},DayTimeSpeedRate={serv_dayTimeSpeedRate},NightTimeSpeedRate={serv_nightTimeSpeedRate},ExpRate={serv_expRate},PalCaptureRate={serv_palCaptureRate},PalSpawnNumRate={serv_palSpawnNumRate},PalDamageRateAttack={serv_palDamageRateAttack},PalDamageRateDefense={serv_palDamageRateDefense},PlayerDamageRateAttack={serv_playerDamageRateAttack},PlayerDamageRateDefense={serv_playerDamageRateDefense},PlayerStomachDecreaceRate={serv_playerStomachDecreaseRate},PlayerStaminaDecreaceRate={serv_playerStaminaDecreaseRate},PlayerAutoHPRegeneRate={serv_playerAutoHpRegenRate},PlayerAutoHpRegeneRateInSleep={serv_playerAutoHpRegenRateInSleep},PalStomachDecreaceRate={serv_palStomachDecreaseRate},PalStaminaDecreaceRate={serv_palStaminaDecreaseRate},PalAutoHPRegeneRate={serv_palAutoHpRegeneRate},PalAutoHpRegeneRateInSleep={serv_palAutoHpRegeneRateInSleep},BuildObjectDamageRate={serv_buildObjectDamageRate},BuildObjectDeteriorationDamageRate={serv_buildObjectDeteriorationDamageRate},CollectionDropRate={serv_collectionDropRate},CollectionObjectHpRate={serv_collectionObjectHpRate},CollectionObjectRespawnSpeedRate={serv_collectionObjectRespawnSpeedRate},EnemyDropItemRate={serv_enemyDropItemRate},DeathPenalty={serv_deathPenalty},bEnablePlayerToPlayerDamage={serv_enablePlayerToPlayerDamage},bEnableFriendlyFire={serv_enableFriendlyFire},bEnableInvaderEnemy={serv_enableInvaderEnemy},bActiveUNKO={serv_activeUNKO},bEnableAimAssistPad={serv_enableAimAssistPad},bEnableAimAssistKeyboard={serv_enableAimAssistKeyboard},DropItemMaxNum={serv_dropItemMaxNum},DropItemMaxNum_UNKO={serv_dropItemMaxNum_UNKO},BaseCampMaxNum={serv_baseCampMaxNum},BaseCampWorkerMaxNum={serv_baseCampWorkerMaxNum},DropItemAliveMaxHours={serv_dropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers={serv_autoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers={serv_autoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum={serv_guildPlayerMaxNum},PalEggDefaultHatchingTime={serv_palEggDefaultHatchingTime},WorkSpeedRate={serv_workSpeedRate},bIsMultiplay={serv_isMultiplay},bIsPvP={serv_isPvP},bCanPickupOtherGuildDeathPenaltyDrop={serv_canPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty={serv_enableNonLoginPenalty},bEnableFastTravel={serv_enableFastTravel},bIsStartLocationSelectByMap={serv_isStartLocationSelectByMap},bExistPlayerAfterLogout={serv_existPlayerAfterLogout},bEnableDefenseOtherGuildPlayer={serv_enableDefenseOtherGuildPlayer},CoopPlayerMaxNum={serv_coopPlayerMaxNum},ServerPlayerMaxNum={serv_serverPlayerMaxNum},ServerName=\"{serv_serverName}\",ServerDescription=\"{serv_serverDescription}\",AdminPassword=\"{serv_adminPassword}\",ServerPassword=\"{serv_serverPassword}\",PublicPort={serv_publicPort},PublicIP=\"{serv_publicIP}\",RCONEnabled={serv_rconEnabled},RCONPort={serv_rconPort},Region=\"{serv_region}\",bUseAuth={serv_useAuth},BanListURL=\"{serv_banListURL}\")";
+                        $"OptionSettings=(Difficulty={serv_difficulty},DayTimeSpeedRate={serv_dayTimeSpeedRate},NightTimeSpeedRate={serv_nightTimeSpeedRate},ExpRate={serv_expRate},PalCaptureRate={serv_palCaptureRate},PalSpawnNumRate={serv_palSpawnNumRate},PalDamageRateAttack={serv_palDamageRateAttack},PalDamageRateDefense={serv_palDamageRateDefense},PlayerDamageRateAttack={serv_playerDamageRateAttack},PlayerDamageRateDefense={serv_playerDamageRateDefense},PlayerStomachDecreaceRate={serv_playerStomachDecreaseRate},PlayerStaminaDecreaceRate={serv_playerStaminaDecreaseRate},PlayerAutoHPRegeneRate={serv_playerAutoHpRegenRate},PlayerAutoHpRegeneRateInSleep={serv_playerAutoHpRegenRateInSleep},PalStomachDecreaceRate={serv_palStomachDecreaseRate},PalStaminaDecreaceRate={serv_palStaminaDecreaseRate},PalAutoHPRegeneRate={serv_palAutoHpRegeneRate},PalAutoHpRegeneRateInSleep={serv_palAutoHpRegeneRateInSleep},BuildObjectDamageRate={serv_buildObjectDamageRate},BuildObjectDeteriorationDamageRate={serv_buildObjectDeteriorationDamageRate},CollectionDropRate={serv_collectionDropRate},CollectionObjectHpRate={serv_collectionObjectHpRate},CollectionObjectRespawnSpeedRate={serv_collectionObjectRespawnSpeedRate},EnemyDropItemRate={serv_enemyDropItemRate},DeathPenalty={serv_deathPenalty},bEnablePlayerToPlayerDamage={serv_enablePlayerToPlayerDamage},bEnableFriendlyFire={serv_enableFriendlyFire},bEnableInvaderEnemy={serv_enableInvaderEnemy},bActiveUNKO={serv_activeUNKO},bEnableAimAssistPad={serv_enableAimAssistPad},bEnableAimAssistKeyboard={serv_enableAimAssistKeyboard},DropItemMaxNum={serv_dropItemMaxNum},DropItemMaxNum_UNKO={serv_dropItemMaxNum_UNKO},BaseCampMaxNum={serv_baseCampMaxNum},BaseCampWorkerMaxNum={serv_baseCampWorkerMaxNum},DropItemAliveMaxHours={serv_dropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers={serv_autoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers={serv_autoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum={serv_guildPlayerMaxNum},PalEggDefaultHatchingTime={serv_palEggDefaultHatchingTime},WorkSpeedRate={serv_workSpeedRate},bIsMultiplay={serv_isMultiplay},bIsPvP={serv_isPvP},bCanPickupOtherGuildDeathPenaltyDrop={serv_canPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty={serv_enableNonLoginPenalty},bEnableFastTravel={serv_enableFastTravel},bIsStartLocationSelectByMap={serv_isStartLocationSelectByMap},bExistPlayerAfterLogout={serv_existPlayerAfterLogout},bEnableDefenseOtherGuildPlayer={serv_enableDefenseOtherGuildPlayer},CoopPlayerMaxNum={serv_coopPlayerMaxNum},ServerPlayerMaxNum={serv_serverPlayerMaxNum},ServerName=\"{serv_serverName}\",ServerDescription=\"{serv_serverDescription}\",AdminPassword=\"{serv_adminPassword}\",ServerPassword=\"{serv_serverPassword}\",PublicPort={serv_publicPort},PublicIP=\"{serv_publicIP}\",RCONEnabled={serv_rconEnabled},RCONPort={serv_rconPort},Region=\"{serv_region}\",bUseAuth={serv_useAuth},BanListURL=\"{serv_banListURL}\",BaseCampMaxNumInGuild={serv_baseCampMaxNumInGuild},bInvisibleOtherGuildBaseCampAreaFX={serv_bInvisibleOtherGuildBaseCampAreaFX},AutoSaveSpan={serv_autoSaveSpan},RESTAPIEnabled={serv_RESTAPIEnabled},RESTAPIPort={serv_RESTAPIPort},bShowPlayerList={serv_bShowPlayerList},AllowConnectPlatform={serv_allowConnectPlatform},bIsUseBackupSaveData={serv_bIsUseBackupSaveData},LogFormatType={serv_logFormatType},SupplyDropSpan={serv_supplyDropSpan})";
                     File.WriteAllText(iniFilePath, newWorldSettings);
                     //return true to indicate success
                     return true;
@@ -640,6 +711,17 @@ namespace PalworldServerManager
             textBox_region.Text = dserv_region;
             comboBox_useAuth.Text = dserv_useAuth;
             textBox_banListURL.Text = dserv_banListURL;
+            textBox_baseCampMaxNumInGuild.Text = dserv_baseCampMaxNumInGuild;
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX.Text = dserv_bInvisibleOtherGuildBaseCampAreaFX;
+            textBox_autoSaveSpan.Text = dserv_autoSaveSpan;
+            comboBox_RESTAPIEnabled.Text = dserv_RESTAPIEnabled;
+            textBox_RESTAPIPort.Text = dserv_RESTAPIPort;
+            comboBox_bShowPlayerList.Text = dserv_bShowPlayerList;
+            textBox_allowConnectPlatform.Text = dserv_allowConnectPlatform;
+            comboBox_bIsUseBackupSaveData.Text = dserv_bIsUseBackupSaveData;
+            textBox_logFormatType.Text = dserv_logFormatType;
+            textBox_supplyDropSpan.Text = dserv_supplyDropSpan;
+            
         }
 
         private void ReadSettingControlsToVariables()
@@ -696,35 +778,19 @@ namespace PalworldServerManager
             serv_collectionObjectHpRate = textBox_collectionObjectHpRate.Text;
             serv_collectionObjectRespawnSpeedRate = textBox_collectionObjectRespawnSpeedRate.Text;
             serv_enemyDropItemRate = textBox_enemyDropItemRate.Text;
-            //serv_deathPenalty = textBox_deathPenalty.Text;
-            //serv_enablePlayerToPlayerDamage = textBox_enablePlayerToPlayerDamage.Text;
-            //serv_enableFriendlyFire = textBox_enableFriendlyFire.Text;
-            //serv_enableInvaderEnemy = textBox_enableInvaderEnemy.Text;
-            //serv_activeUNKO = textBox_activeUNKO.Text;
-            //serv_enableAimAssistPad = textBox_enableAimAssistPad.Text;
-            //serv_enableAimAssistKeyboard = textBox_enableAimAssistKeyboard.Text;
             serv_dropItemMaxNum = textBox_dropItemMaxNum.Text;
             serv_dropItemMaxNum_UNKO = textBox_dropItemMaxNum_UNKO.Text;
             serv_baseCampMaxNum = textBox_baseCampMaxNum.Text;
             serv_baseCampWorkerMaxNum = textBox_baseCampWorkerMaxNum.Text;
             serv_dropItemAliveMaxHours = textBox_dropItemAliveMaxHours.Text;
-            //serv_autoResetGuildNoOnlinePlayers = textBox_autoResetGuildNoOnlinePlayers.Text;
             serv_autoResetGuildTimeNoOnlinePlayers = textBox_autoResetGuildTimeNoOnlinePlayers.Text;
             serv_guildPlayerMaxNum = textBox_guildPlayerMaxNum.Text;
             serv_palEggDefaultHatchingTime = textBox_palEggDefaultHatchingTime.Text;
             serv_workSpeedRate = textBox_workSpeedRate.Text;
-            //serv_isMultiplay = textBox_isMultiplay.Text;
-            //serv_isPvP = textBox_isPvP.Text;
-            //serv_canPickupOtherGuildDeathPenaltyDrop = textBox_canPickupOtherGuildDeathPenaltyDrop.Text;
-            //serv_enableNonLoginPenalty = textBox_enableNonLoginPenalty.Text;
-            //serv_enableFastTravel = textBox_enableFastTravel.Text;
-            //serv_isStartLocationSelectByMap = textBox_isStartLocationSelectByMap.Text;
-            //serv_existPlayerAfterLogout = textBox_existPlayerAfterLogout.Text;
-            //serv_enableDefenseOtherGuildPlayer = textBox_enableDefenseOtherGuildPlayer.Text;
             serv_coopPlayerMaxNum = textBox_coopPlayerMaxNum.Text;
             serv_region = textBox_region.Text;
-            //serv_useAuth = textBox_useAuth.Text;
             serv_banListURL = textBox_banListURL.Text;
+
 
             //Combo boxes
             serv_rconEnabled = comboBox_rconEnabled.Text;
@@ -746,6 +812,19 @@ namespace PalworldServerManager
             serv_existPlayerAfterLogout = comboBox_existPlayerAfterLogout.Text;
             serv_enableDefenseOtherGuildPlayer = comboBox_enableDefenseOtherGuildPlayer.Text;
             serv_useAuth = comboBox_useAuth.Text;
+
+            // New 03/08/2024
+            serv_baseCampMaxNumInGuild = textBox_baseCampMaxNumInGuild.Text;
+            serv_bInvisibleOtherGuildBaseCampAreaFX = comboBox_bInvisibleOtherGuildBaseCampAreaFX.Text;
+            serv_autoSaveSpan = textBox_autoSaveSpan.Text;
+            serv_RESTAPIEnabled = comboBox_RESTAPIEnabled.Text;
+            serv_RESTAPIPort = textBox_RESTAPIPort.Text;
+            serv_bShowPlayerList = comboBox_bShowPlayerList.Text;
+            serv_allowConnectPlatform = textBox_allowConnectPlatform.Text;
+            serv_bIsUseBackupSaveData = comboBox_bIsUseBackupSaveData.Text;
+            serv_logFormatType = textBox_logFormatType.Text;
+            serv_supplyDropSpan = textBox_supplyDropSpan.Text;
+
         }
 
 
@@ -837,7 +916,19 @@ namespace PalworldServerManager
                 json_coopPlayerMaxNum = textBox_coopPlayerMaxNum.Text,
                 json_region = textBox_region.Text,
                 json_useAuth = comboBox_useAuth.Text,
-                json_banListURL = textBox_banListURL.Text
+                json_banListURL = textBox_banListURL.Text,
+
+                // New 03/08/2024
+                json_baseCampMaxNumInGuild = textBox_baseCampMaxNumInGuild.Text,
+                json_bInvisibleOtherGuildBaseCampAreaFX = comboBox_bInvisibleOtherGuildBaseCampAreaFX.Text,
+                json_autoSaveSpan = textBox_autoSaveSpan.Text,
+                json_RESTAPIEnabled = comboBox_RESTAPIEnabled.Text,
+                json_RESTAPIPort = textBox_RESTAPIPort.Text,
+                json_bShowPlayerList = comboBox_bShowPlayerList.Text,
+                json_allowConnectPlatform = textBox_allowConnectPlatform.Text,
+                json_bIsUseBackupSaveData = comboBox_bIsUseBackupSaveData.Text,
+                json_logFormatType = textBox_logFormatType.Text,
+                json_supplyDropSpan = textBox_supplyDropSpan.Text
 
             };
 
@@ -944,6 +1035,16 @@ namespace PalworldServerManager
                 comboBox_useAuth.Text = settings.json_useAuth;
                 textBox_banListURL.Text = settings.json_banListURL;
 
+                textBox_baseCampMaxNumInGuild.Text = settings.json_baseCampMaxNumInGuild;
+                comboBox_bInvisibleOtherGuildBaseCampAreaFX.Text = settings.json_bInvisibleOtherGuildBaseCampAreaFX;
+                textBox_autoSaveSpan.Text = settings.json_autoSaveSpan;
+                comboBox_RESTAPIEnabled.Text = settings.json_RESTAPIEnabled;
+                textBox_RESTAPIPort.Text = settings.json_RESTAPIPort;
+                comboBox_bShowPlayerList.Text = settings.json_bShowPlayerList; 
+                textBox_allowConnectPlatform.Text = settings.json_allowConnectPlatform;
+                comboBox_bIsUseBackupSaveData.Text = settings.json_bIsUseBackupSaveData;
+                textBox_logFormatType.Text = settings.json_logFormatType;
+                textBox_supplyDropSpan.Text = settings.json_supplyDropSpan;
 
                 //MessageBox.Show("Settings loaded successfully.");
             }
@@ -1033,7 +1134,18 @@ namespace PalworldServerManager
                     json_rconPort = dserv_rconPort,
                     json_region = dserv_region,
                     json_useAuth = dserv_useAuth,
-                    json_banListURL = dserv_banListURL
+                    json_banListURL = dserv_banListURL,
+                    // New 03/08/2024
+                    json_baseCampMaxNumInGuild = dserv_baseCampMaxNumInGuild,
+                    json_bInvisibleOtherGuildBaseCampAreaFX = dserv_bInvisibleOtherGuildBaseCampAreaFX,
+                    json_autoSaveSpan = dserv_autoSaveSpan,
+                    json_RESTAPIEnabled = dserv_RESTAPIEnabled,
+                    json_RESTAPIPort = dserv_RESTAPIPort,
+                    json_bShowPlayerList = dserv_bShowPlayerList,
+                    json_allowConnectPlatform = dserv_allowConnectPlatform,
+                    json_bIsUseBackupSaveData = dserv_bIsUseBackupSaveData,
+                    json_logFormatType = dserv_logFormatType,
+                    json_supplyDropSpan = dserv_supplyDropSpan
 
                 };
 

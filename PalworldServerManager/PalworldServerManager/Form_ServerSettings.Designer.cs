@@ -163,6 +163,26 @@ namespace PalworldServerManager
             label62 = new System.Windows.Forms.Label();
             textBox_serverName = new System.Windows.Forms.TextBox();
             comboBox_rconEnabled = new System.Windows.Forms.ComboBox();
+            label76 = new System.Windows.Forms.Label();
+            label77 = new System.Windows.Forms.Label();
+            label78 = new System.Windows.Forms.Label();
+            label79 = new System.Windows.Forms.Label();
+            label80 = new System.Windows.Forms.Label();
+            label81 = new System.Windows.Forms.Label();
+            label82 = new System.Windows.Forms.Label();
+            label83 = new System.Windows.Forms.Label();
+            label84 = new System.Windows.Forms.Label();
+            label85 = new System.Windows.Forms.Label();
+            textBox_baseCampMaxNumInGuild = new System.Windows.Forms.TextBox();
+            textBox_autoSaveSpan = new System.Windows.Forms.TextBox();
+            textBox_RESTAPIPort = new System.Windows.Forms.TextBox();
+            textBox_allowConnectPlatform = new System.Windows.Forms.TextBox();
+            textBox_logFormatType = new System.Windows.Forms.TextBox();
+            textBox_supplyDropSpan = new System.Windows.Forms.TextBox();
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX = new System.Windows.Forms.ComboBox();
+            comboBox_RESTAPIEnabled = new System.Windows.Forms.ComboBox();
+            comboBox_bShowPlayerList = new System.Windows.Forms.ComboBox();
+            comboBox_bIsUseBackupSaveData = new System.Windows.Forms.ComboBox();
             panel3 = new System.Windows.Forms.Panel();
             label71 = new System.Windows.Forms.Label();
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -195,8 +215,6 @@ namespace PalworldServerManager
             textBox_backupRCONAlertMessage = new System.Windows.Forms.TextBox();
             label74 = new System.Windows.Forms.Label();
             panel2 = new System.Windows.Forms.Panel();
-            richTextBox1 = new System.Windows.Forms.RichTextBox();
-            label64 = new System.Windows.Forms.Label();
             richTextBox2 = new System.Windows.Forms.RichTextBox();
             label63 = new System.Windows.Forms.Label();
             richTextBox_alert = new System.Windows.Forms.RichTextBox();
@@ -407,6 +425,26 @@ namespace PalworldServerManager
             tableLayoutPanel_worldsettings.Controls.Add(label62, 0, 61);
             tableLayoutPanel_worldsettings.Controls.Add(textBox_serverName, 1, 0);
             tableLayoutPanel_worldsettings.Controls.Add(comboBox_rconEnabled, 1, 7);
+            tableLayoutPanel_worldsettings.Controls.Add(label76, 0, 62);
+            tableLayoutPanel_worldsettings.Controls.Add(label77, 0, 63);
+            tableLayoutPanel_worldsettings.Controls.Add(label78, 0, 64);
+            tableLayoutPanel_worldsettings.Controls.Add(label79, 0, 65);
+            tableLayoutPanel_worldsettings.Controls.Add(label80, 0, 66);
+            tableLayoutPanel_worldsettings.Controls.Add(label81, 0, 67);
+            tableLayoutPanel_worldsettings.Controls.Add(label82, 0, 68);
+            tableLayoutPanel_worldsettings.Controls.Add(label83, 0, 69);
+            tableLayoutPanel_worldsettings.Controls.Add(label84, 0, 70);
+            tableLayoutPanel_worldsettings.Controls.Add(label85, 0, 71);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_baseCampMaxNumInGuild, 1, 62);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_autoSaveSpan, 1, 64);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_RESTAPIPort, 1, 66);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_allowConnectPlatform, 1, 68);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_logFormatType, 1, 70);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_supplyDropSpan, 1, 71);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_bInvisibleOtherGuildBaseCampAreaFX, 1, 63);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_RESTAPIEnabled, 1, 65);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_bShowPlayerList, 1, 67);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_bIsUseBackupSaveData, 1, 69);
             tableLayoutPanel_worldsettings.Name = "tableLayoutPanel_worldsettings";
             // 
             // comboBox_useAuth
@@ -1148,6 +1186,118 @@ namespace PalworldServerManager
             comboBox_rconEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_rconEnabled.Items"), resources.GetString("comboBox_rconEnabled.Items1") });
             comboBox_rconEnabled.Name = "comboBox_rconEnabled";
             // 
+            // label76
+            // 
+            resources.ApplyResources(label76, "label76");
+            label76.Name = "label76";
+            // 
+            // label77
+            // 
+            resources.ApplyResources(label77, "label77");
+            label77.Name = "label77";
+            // 
+            // label78
+            // 
+            resources.ApplyResources(label78, "label78");
+            label78.Name = "label78";
+            // 
+            // label79
+            // 
+            resources.ApplyResources(label79, "label79");
+            label79.Name = "label79";
+            // 
+            // label80
+            // 
+            resources.ApplyResources(label80, "label80");
+            label80.Name = "label80";
+            // 
+            // label81
+            // 
+            resources.ApplyResources(label81, "label81");
+            label81.Name = "label81";
+            // 
+            // label82
+            // 
+            resources.ApplyResources(label82, "label82");
+            label82.Name = "label82";
+            // 
+            // label83
+            // 
+            resources.ApplyResources(label83, "label83");
+            label83.Name = "label83";
+            // 
+            // label84
+            // 
+            resources.ApplyResources(label84, "label84");
+            label84.Name = "label84";
+            // 
+            // label85
+            // 
+            resources.ApplyResources(label85, "label85");
+            label85.Name = "label85";
+            // 
+            // textBox_baseCampMaxNumInGuild
+            // 
+            resources.ApplyResources(textBox_baseCampMaxNumInGuild, "textBox_baseCampMaxNumInGuild");
+            textBox_baseCampMaxNumInGuild.Name = "textBox_baseCampMaxNumInGuild";
+            // 
+            // textBox_autoSaveSpan
+            // 
+            resources.ApplyResources(textBox_autoSaveSpan, "textBox_autoSaveSpan");
+            textBox_autoSaveSpan.Name = "textBox_autoSaveSpan";
+            // 
+            // textBox_RESTAPIPort
+            // 
+            resources.ApplyResources(textBox_RESTAPIPort, "textBox_RESTAPIPort");
+            textBox_RESTAPIPort.Name = "textBox_RESTAPIPort";
+            // 
+            // textBox_allowConnectPlatform
+            // 
+            resources.ApplyResources(textBox_allowConnectPlatform, "textBox_allowConnectPlatform");
+            textBox_allowConnectPlatform.Name = "textBox_allowConnectPlatform";
+            // 
+            // textBox_logFormatType
+            // 
+            resources.ApplyResources(textBox_logFormatType, "textBox_logFormatType");
+            textBox_logFormatType.Name = "textBox_logFormatType";
+            // 
+            // textBox_supplyDropSpan
+            // 
+            resources.ApplyResources(textBox_supplyDropSpan, "textBox_supplyDropSpan");
+            textBox_supplyDropSpan.Name = "textBox_supplyDropSpan";
+            // 
+            // comboBox_bInvisibleOtherGuildBaseCampAreaFX
+            // 
+            resources.ApplyResources(comboBox_bInvisibleOtherGuildBaseCampAreaFX, "comboBox_bInvisibleOtherGuildBaseCampAreaFX");
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX.FormattingEnabled = true;
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX.Items.AddRange(new object[] { resources.GetString("comboBox_bInvisibleOtherGuildBaseCampAreaFX.Items"), resources.GetString("comboBox_bInvisibleOtherGuildBaseCampAreaFX.Items1") });
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX.Name = "comboBox_bInvisibleOtherGuildBaseCampAreaFX";
+            // 
+            // comboBox_RESTAPIEnabled
+            // 
+            resources.ApplyResources(comboBox_RESTAPIEnabled, "comboBox_RESTAPIEnabled");
+            comboBox_RESTAPIEnabled.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_RESTAPIEnabled.FormattingEnabled = true;
+            comboBox_RESTAPIEnabled.Items.AddRange(new object[] { resources.GetString("comboBox_RESTAPIEnabled.Items"), resources.GetString("comboBox_RESTAPIEnabled.Items1") });
+            comboBox_RESTAPIEnabled.Name = "comboBox_RESTAPIEnabled";
+            // 
+            // comboBox_bShowPlayerList
+            // 
+            resources.ApplyResources(comboBox_bShowPlayerList, "comboBox_bShowPlayerList");
+            comboBox_bShowPlayerList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_bShowPlayerList.FormattingEnabled = true;
+            comboBox_bShowPlayerList.Items.AddRange(new object[] { resources.GetString("comboBox_bShowPlayerList.Items"), resources.GetString("comboBox_bShowPlayerList.Items1") });
+            comboBox_bShowPlayerList.Name = "comboBox_bShowPlayerList";
+            // 
+            // comboBox_bIsUseBackupSaveData
+            // 
+            resources.ApplyResources(comboBox_bIsUseBackupSaveData, "comboBox_bIsUseBackupSaveData");
+            comboBox_bIsUseBackupSaveData.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_bIsUseBackupSaveData.FormattingEnabled = true;
+            comboBox_bIsUseBackupSaveData.Items.AddRange(new object[] { resources.GetString("comboBox_bIsUseBackupSaveData.Items"), resources.GetString("comboBox_bIsUseBackupSaveData.Items1") });
+            comboBox_bIsUseBackupSaveData.Name = "comboBox_bIsUseBackupSaveData";
+            // 
             // panel3
             // 
             panel3.Controls.Add(label71);
@@ -1345,24 +1495,10 @@ namespace PalworldServerManager
             // 
             // panel2
             // 
-            panel2.Controls.Add(richTextBox1);
-            panel2.Controls.Add(label64);
             panel2.Controls.Add(richTextBox2);
             panel2.Controls.Add(label63);
             resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(richTextBox1, "richTextBox1");
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ReadOnly = true;
-            // 
-            // label64
-            // 
-            resources.ApplyResources(label64, "label64");
-            label64.Name = "label64";
             // 
             // richTextBox2
             // 
@@ -1569,9 +1705,7 @@ namespace PalworldServerManager
         private System.Windows.Forms.ComboBox comboBox_deathPenalty;
         private System.Windows.Forms.ComboBox comboBox_difficulty;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label65;
@@ -1613,5 +1747,25 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Timer timer_backupRCONAlertTimer;
         private System.Windows.Forms.Timer timer_restartServerRCONAlertTimer;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.TextBox textBox_baseCampMaxNumInGuild;
+        private System.Windows.Forms.TextBox textBox_autoSaveSpan;
+        private System.Windows.Forms.TextBox textBox_RESTAPIPort;
+        private System.Windows.Forms.TextBox textBox_allowConnectPlatform;
+        private System.Windows.Forms.TextBox textBox_logFormatType;
+        private System.Windows.Forms.TextBox textBox_supplyDropSpan;
+        private System.Windows.Forms.ComboBox comboBox_bInvisibleOtherGuildBaseCampAreaFX;
+        private System.Windows.Forms.ComboBox comboBox_RESTAPIEnabled;
+        private System.Windows.Forms.ComboBox comboBox_bShowPlayerList;
+        private System.Windows.Forms.ComboBox comboBox_bIsUseBackupSaveData;
     }
 }
