@@ -3,7 +3,7 @@ _DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I1U729N)
 
 > [!NOTE]
-Last Tested Game Version: **`v0.3.4.56710`** using PSM: **`v1.2.0`**   
+Last Tested Game Version: **`v0.3.6.57672`** using PSM: **`v1.2.0`**   
 Current PSM Language Options Available: **`English`** **`Chinese`**
 
 > [!IMPORTANT]
