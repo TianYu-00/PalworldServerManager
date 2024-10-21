@@ -17,6 +17,7 @@ In order to use Discord Webhook, you need to fill in your **`Webhook URL`** and 
 To test to see if its set up properly, fill in **`Embed Title`** with **`Test123`** or whatever, then save it and press the **`Test`** button.    
 Some Webhook notification features do require you to connect to your RCON. You can do that by going to RCON Section, fill out the RCON details then connect to RCON and leave it connected.
 
+
 _Installation_
 -----------------------
 1) Download    
