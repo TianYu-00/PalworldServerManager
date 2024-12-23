@@ -7,10 +7,10 @@ Last Tested Game Version: **`v0.3.9.59545`** using PSM: **`v1.2.0`**
 Current PSM Language Options Available: **`English`** **`Chinese`**
 
 > [!IMPORTANT]
-> It is recommended that you use the backup feature I implemented in update `v1.0.4` and beyond to backup your saved files just in case updating your game server causes a loss of player progression. This is not a bug from my side but a bug from Palworld's side, so do remember to use the backup feature just in case.
+> This project is no longer being maintained. Please feel free to fork the repository and continue working on it.
 
 > [!IMPORTANT]
-> If you got data wiped after updating the game, check out my guide on how to recover it. It might or might not help but there arent many options out there. [Guide](https://github.com/TianYu-00/PalworldServerManager/blob/897b7ab60dd4125ab35e4f76af7af772d16e0819/PlayerDataRecovery.md)
+> It is recommended that you use the backup feature I implemented in update `v1.0.4` and beyond to backup your saved files just in case updating your game server causes a loss of player progression. This is not a bug from my side but a bug from Palworld's side, so do remember to use the backup feature just in case.
 
 > [!NOTE]
 In order to use Discord Webhook, you need to fill in your **`Webhook URL`** and save it.    
